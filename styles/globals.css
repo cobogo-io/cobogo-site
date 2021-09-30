@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.title {
+  @apply text-3xl text-white;
+}
+
+.subtitle {
+  @apply text-2xl text-white;
+}
+
+.subtitle-cobogo {
+  @apply text-2xl text-cobogo;
+}
+
+.body {
+  @apply text-lg text-white;
+}
+
+.body-small {
+  @apply text-base text-white;
+}
