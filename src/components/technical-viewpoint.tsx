@@ -11,7 +11,7 @@ const TechnicalViewpoint: NextPage = () => {
         <h1 className="title text-center pb-7 font-bold">
           {t('Technical viewpoint')}
         </h1>
-        <h2 className="subtitle text-center pb-20 w-screen md:w-1/2 md:px-0 px-5 font-light">
+        <h2 className="subtitle text-left pb-20 w-screen md:w-1/2 md:px-0 px-5 font-light">
           {t(
             'cobogo is a dApp that leverages the Dev Protocol funding system to sustainably fund YouTube Creators. Fans can stake DEV Tokens on their favorite YouTuber pool and automatically start to get paid with Dev Rewards.'
           )}

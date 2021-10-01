@@ -18,7 +18,7 @@ const Team: NextPage = () => {
           )}
         </h2>
       </div>
-      <div className="flex flex-col lg:flex-row px-5 md:px-52 w-full ">
+      <div className="flex flex-col lg:flex-row px-5 md:px-20 w-full ">
         <div className="md:mr-32 mb-10 md:mb-0">
           <div className="mb-5  cursor-pointer" onClick={() => setSelected(0)}>
             <div className={selected === 0 ? 'subtitle-cobogo' : 'subtitle'}>
@@ -39,7 +39,7 @@ const Team: NextPage = () => {
             <div className="body-small">Developer</div>
           </div>
           <div
-            className="sm:mb-20 lg:mb:5 cursor-pointer"
+            className="sm:mb-20 lg:mb-5 cursor-pointer"
             onClick={() => setSelected(3)}
           >
             <div className={selected === 3 ? 'subtitle-cobogo' : 'subtitle'}>
@@ -48,7 +48,7 @@ const Team: NextPage = () => {
             <div className="body-small">Designer </div>
           </div>
         </div>
-        <div className="pb-20">
+        <div className="pb-5 pr-20 flex flex-1">
           <div className={selected === 0 ? 'body' : 'hidden'}>
             <div className="subtitle pb-10">Business Developer</div>
             <div className="body pb-5">

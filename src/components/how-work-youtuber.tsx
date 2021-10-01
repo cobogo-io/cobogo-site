@@ -8,7 +8,7 @@ const HowWorkYoutuber: NextPage = () => {
   return (
     <section
       id="how-work-youtuber"
-      className="flex flex-col items-center h-full w-screen py-24 bg-bgsecundary"
+      className="flex flex-col px-5 md:px-0 items-center h-full w-screen py-24 bg-bgsecundary"
     >
       <div>
         <h1 className="title text-center pb-7 font-bold">
@@ -74,7 +74,7 @@ const HowWorkYoutuber: NextPage = () => {
           </div>
         </div>
       </div>
-      <button className="subtitle bg-youtuber px-4 py-4 font-bold">
+      <button className="subtitle bg-youtuber px-8 py-4 font-bold">
         {t('Monetize your channel')}
       </button>
     </section>
