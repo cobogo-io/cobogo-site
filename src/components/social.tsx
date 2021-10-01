@@ -26,7 +26,7 @@ const Social: NextPage = () => {
         <a
           className="flex items-center pb-5 cursor-pointer justify-center"
           target="_blank"
-          href="https://telegram.com/cobogosocial"
+          href="https://t.me/cobogosocial"
           rel="noopener noreferrer"
         >
           <div className="w-16 h-11 relative">

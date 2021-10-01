@@ -8,7 +8,7 @@ const HowWorkPatron: NextPage = () => {
   return (
     <section
       id="how-work-patron"
-      className="flex flex-col items-center h-full w-full py-24 bg-bgprimary"
+      className="flex flex-col px-5 md:px-0 items-center h-full w-full py-24 bg-bgprimary"
     >
       <div>
         <h1 className="title text-center pb-7 font-bold">
@@ -74,7 +74,7 @@ const HowWorkPatron: NextPage = () => {
           </div>
         </div>
       </div>
-      <button className="subtitle bg-patron px-4 py-4 font-bold">
+      <button className="subtitle bg-patron px-8 py-4 font-bold">
         {t('Become a Patron')}
       </button>
     </section>

@@ -10,8 +10,8 @@ const Header: NextPage = () => {
 
   return (
     <section className="flex h-full w-full py-24 bg-bgprimary">
-      <div className="flex-1 mx-20 text-white">
-        <div className=" w-60 h-14 relative">
+      <div className="flex-1 px-5 md:px-20 text-white">
+        <div className="w-60 h-14 relative">
           <Image
             layout="fill"
             objectFit="contain"
@@ -36,12 +36,12 @@ const Header: NextPage = () => {
           <Link
             href="#how-work-youtuber"
             passHref
-            className="bg-youtuber px-2 py-4 mr-5 text-2xl font-bold"
+            className="bg-youtuber px-8 py-4 mr-5 text-2xl font-bold"
           >
             <button>{t("I'm a Youtuber")}</button>
           </Link>
           <Link
-            className="bg-patron px-2 py-4 text-2xl font-bold"
+            className="bg-patron px-8 py-4 text-2xl font-bold"
             href="#how-work-patron"
             passHref
           >
@@ -50,7 +50,7 @@ const Header: NextPage = () => {
         </div>
       </div>
       <div className="flex-1 mr-20 hidden md:block">
-        <div className="w-4/5 h-4/5 relative">
+        <div className="w-full h-full relative">
           <Image
             layout="fill"
             objectFit="contain"
@@ -61,32 +61,23 @@ const Header: NextPage = () => {
         <div className="absolute right-10 top-5">
           <Link
             href="/"
-            locale={router.locale === 'en' ? 'pt' : 'en'}
-            className="flex flex-row text-white justify-center item-center"
+            locale={router.locale === 'en-US' ? 'pt-BR' : 'en-US'}
+            className="flex flex-row text-white body-small justify-center item-center"
           >
-            <div
-              className={
-                router.locale === 'en'
-                  ? 'border-cobogo border-double border-2 flex p-1'
-                  : 'flex p-1'
-              }
-            >
-              <Image
-                width="30"
-                height="20"
-                alt="United States"
-                src="/icons/US.svg"
-              />
+            <div>
+              <span className={router.locale === 'en-US' ? 'text-cobogo' : ''}>
+                EN
+              </span>
             </div>
-            <span className="px-2"></span>
-            <div
-              className={
-                router.locale === 'pt'
-                  ? 'border-cobogo border-double border-2 flex p-1'
-                  : 'flex p-1'
-              }
-            >
-              <Image width="30" height="20" alt="Brazil" src="/icons/BR.svg" />
+            <span className="px-4"></span>
+            <div>
+              <span
+                className={
+                  router.locale === 'pt-BR' ? 'text-cobogo font-bold ' : ''
+                }
+              >
+                PT
+              </span>
             </div>
           </Link>
         </div>
