@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import Link from '../components/NextLink';
+import Link from '../NextLink';
 
 const Header: NextPage = () => {
   const router = useRouter();

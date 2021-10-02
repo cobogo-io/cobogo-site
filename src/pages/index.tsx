@@ -1,14 +1,14 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Team from '../components/Team';
-import Header from '../components/Header';
-import Social from '../components/Social';
-import Partners from '../components/Partners';
-import Footer from '../components/Footer';
-import HowWorkYoutuber from '../components/HowWorkYoutuber';
-import HowWorkPatron from '../components/HowWorkPatron';
-import TechnicalViewpoint from '../components/TechnicalViewpoint';
-import DevProtocol from '../components/DevProtocol';
+import Team from '../components/pages/Team';
+import Header from '../components/pages/Header';
+import Social from '../components/pages/Social';
+import Partners from '../components/pages/Partners';
+import Footer from '../components/pages/Footer';
+import HowWorkYoutuber from '../components/pages/HowWorkYoutuber';
+import HowWorkPatron from '../components/pages/HowWorkPatron';
+import TechnicalViewpoint from '../components/pages/TechnicalViewpoint';
+import DevProtocol from '../components/pages/DevProtocol';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import React from 'react';
 

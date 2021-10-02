@@ -9,7 +9,7 @@ import {
   StakerAPY,
   SupplyGrowth,
   CreatorsRewardsUsd,
-} from './DevStats';
+} from '../DevStats';
 
 const DevProtocol: NextPage = () => {
   const { t } = useTranslation('dev-protocol');
