@@ -1,20 +1,20 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Team from '../components/team';
-import Header from '../components/header';
-import Social from '../components/social';
-import Partners from '../components/partners';
-import Footer from '../components/footer';
-import HowWorkYoutuber from '../components/how-work-youtuber';
-import HowWorkPatron from '../components/how-work-patron';
-import TechnicalViewpoint from '../components/technical-viewpoint';
-import DevProtocol from '../components/dev-protocol';
+import Team from '../components/Team';
+import Header from '../components/Header';
+import Social from '../components/Social';
+import Partners from '../components/Partners';
+import Footer from '../components/Footer';
+import HowWorkYoutuber from '../components/HowWorkYoutuber';
+import HowWorkPatron from '../components/HowWorkPatron';
+import TechnicalViewpoint from '../components/TechnicalViewpoint';
+import DevProtocol from '../components/DevProtocol';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import React from 'react';
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="overflow-x-auto">
       <Head>
         <title>Cobogo</title>
         <meta name="description" content="Cobogo" />

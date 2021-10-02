@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 const Social: NextPage = () => {
   return (
-    <section className="flex flex-wrap items-center md:justify-between h-full w-full py-10 px-5 md:px-32 bg-bgsecundary">
+    <section className="flex flex-wrap items-center md:justify-between h-full w-full py-5 px-5 md:px-32 bg-bgsecundary">
       <div className="min-w-full md:min-w-0">
         <a
-          className="flex items-center pb-5 cursor-pointer justify-center"
+          className="flex items-center pb-5 md:pb-0 cursor-pointer justify-center"
           target="_blank"
           href="mailto:hi@cobogo.social"
           rel="noopener noreferrer"
@@ -19,12 +19,12 @@ const Social: NextPage = () => {
               alt="Email icon"
             />
           </div>
-          <div className="body">hi@cobogo.social</div>
+          <div className="bold-18">hi@cobogo.social</div>
         </a>
       </div>
       <div className="min-w-full md:min-w-0">
         <a
-          className="flex items-center pb-5 cursor-pointer justify-center"
+          className="flex items-center pb-5 md:pb-0 cursor-pointer justify-center"
           target="_blank"
           href="https://t.me/cobogosocial"
           rel="noopener noreferrer"
@@ -37,12 +37,12 @@ const Social: NextPage = () => {
               alt="Telegram icon"
             />
           </div>
-          <div className="body">/cobogosocial</div>
+          <div className="bold-18">/cobogosocial</div>
         </a>
       </div>
       <div className="min-w-full md:min-w-0">
         <a
-          className="flex items-center pb-5 cursor-pointer justify-center"
+          className="flex items-center pb-5 md:pb-0 cursor-pointer justify-center"
           target="_blank"
           href="https://twitter.com/cobogosocial"
           rel="noopener noreferrer"
@@ -55,12 +55,12 @@ const Social: NextPage = () => {
               alt="Twitter icon"
             />
           </div>
-          <div className="body">@cobogosocial</div>
+          <div className="bold-18">@cobogosocial</div>
         </a>
       </div>
       <div className="min-w-full md:min-w-0">
         <a
-          className="flex items-center pb-5 cursor-pointer justify-center"
+          className="flex items-center cursor-pointer justify-center"
           target="_blank"
           href="https://github.com/cobogo-social"
           rel="noopener noreferrer"
@@ -73,7 +73,7 @@ const Social: NextPage = () => {
               alt="Github icon"
             />
           </div>
-          <div className="body">/cobogo-social</div>
+          <div className="bold-18">/cobogo-social</div>
         </a>
       </div>
     </section>
