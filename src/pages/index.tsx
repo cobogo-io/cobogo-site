@@ -17,8 +17,39 @@ const Home: NextPage = () => {
     <div className="overflow-x-auto">
       <Head>
         <title>Cobogo</title>
-        <meta name="description" content="Cobogo" />
+        <meta
+          name="description"
+          content="cobogo allows fans to support their favorite Youtube channels by sharing the rewards of their investments in a fashion way"
+        />
         <link rel="icon" href="/favicon.ico" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:site" content="@cobogosocial" />
+        <meta name="twitter:title" content="Título da página" />
+        <meta
+          name="twitter:description"
+          content="Descrição da página. No máximo 200 caracteres"
+        />
+        <meta name="twitter:creator" content="@cobogosocial" />
+        <meta
+          name="twitter:image"
+          content="http://cobogo-site.vercel.app/cobogo.png"
+        />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Cobogo dApp" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="http://cobogo-site.vercel.app/" />
+        <meta
+          property="og:image"
+          content="http://cobogo-site.vercel.app/cobogo.png"
+        />
+        <meta
+          property="og:description"
+          content="cobogo allows fans to support their favorite Youtube channels by sharing the rewards of their investments in a fashion way"
+        />
+        <meta property="og:site_name" content="Cobogo" />
       </Head>
 
       <Header />
