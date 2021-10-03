@@ -21,7 +21,7 @@ const Home: NextPage = () => {
           name="description"
           content="cobogo allows fans to support their favorite Youtube channels by sharing the rewards of their investments in a fashion way"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/images/favicon.ico" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary" key="twcard" />
