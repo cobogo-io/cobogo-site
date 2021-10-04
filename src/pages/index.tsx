@@ -50,6 +50,43 @@ const Home: NextPage = () => {
           content="cobogo allows fans to support their favorite Youtube channels by sharing the rewards of their investments in a fashion way"
         />
         <meta property="og:site_name" content="Cobogo" />
+
+        <link
+          rel="preload"
+          href="/fonts/ProximaNova/ProximaNova-Light.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/ProximaNova/ProximaNova-Regular.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/ProximaNova/ProximaNova-Semibold.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/ProximaNova/ProximaNova-Bold.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/ProximaNova/ProximaNova-Extrabld.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/ProximaNova/ProximaNova-Black.ttf"
+          as="font"
+          crossOrigin=""
+        />
       </Head>
 
       <Header />

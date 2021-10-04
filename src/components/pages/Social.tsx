@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Social: NextPage = () => {
   return (
-    <section className="flex flex-wrap items-center md:justify-between h-full w-full py-5 px-5 md:px-32 bg-bgsecundary">
+    <section className="flex flex-wrap items-center md:justify-between h-full w-full py-5 md:py-10 px-5 md:px-32 bg-bgsecundary">
       <div className="min-w-full md:min-w-0">
         <a
           className="flex items-center pb-5 md:pb-0 cursor-pointer justify-center"

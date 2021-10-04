@@ -31,9 +31,9 @@ const HowWorkYoutuber: NextPage = () => {
           <div className="bold-24 text-center py-4">
             1. {t('Submit your channel')}
           </div>
-          <div className="regular-24 text-center sm:px-20 md:px-0">
+          <div className="regular-18 text-center sm:px-20 md:px-0">
             {t('To be able to receive rewards from your followers, you must')}{' '}
-            <span className="regular-cobogo-24">{t('apply your channel')}</span>
+            <span className="regular-cobogo-18">{t('apply your channel')}</span>
             .{' '}
             {t(
               'The cobogo team will review and approve if it is a real channel with real followers.'
@@ -52,7 +52,7 @@ const HowWorkYoutuber: NextPage = () => {
           <div className="bold-24 text-center py-4">
             2. {t('Spread the news')}
           </div>
-          <div className="regular-24 text-center  sm:px-20 md:px-0">
+          <div className="regular-18 text-center  sm:px-20 md:px-0">
             {t(
               'You have to publish at least one video explaining to your audience what cobogo is and how they can support you. It is important to spin the wheel.'
             )}
@@ -70,7 +70,7 @@ const HowWorkYoutuber: NextPage = () => {
           <div className="bold-24 text-center py-4">
             3. {t('Receive rewards')}
           </div>
-          <div className="regular-24 text-center  sm:px-20 md:px-0">
+          <div className="regular-18 text-center  sm:px-20 md:px-0">
             {t(
               'Continue your good work and wait for your followers to stake for you. You will receive the rewards on a daily basis and will be able to stake for other Youtubers as well.'
             )}

@@ -9,8 +9,8 @@ const Header: NextPage = () => {
   const { t } = useTranslation('header');
 
   return (
-    <section className="flex h-full w-full py-24 bg-bgprimary">
-      <div className="flex-1 px-5 md:px-20 text-white">
+    <section className="flex h-full w-full py-24  bg-bgprimary">
+      <div className="flex-1 px-5 md:px-20 mb-0 md:mb-20 text-white">
         <div className="w-60 h-14 relative">
           <Image
             layout="fill"
@@ -22,12 +22,12 @@ const Header: NextPage = () => {
         <h1 className="bold-36 py-7">
           {t('The next generation of Youtube monetization')}
         </h1>
-        <h2 className=".light-24 pb-7 font-light">
+        <h2 className="light-24 pb-7 font-light">
           {t(
             'cobogo allows fans to support their favorite Youtube channels by sharing the rewards of their investments in a fashion way.'
           )}
         </h2>
-        <h4 className=".regular-18 pb-9 font-light">
+        <h4 className="regular-18 pb-9 font-light">
           {t(
             'Any Youtuber can submit your channel to receive rewards and any fan can invest money and share the rewards. A super intelligent mechanism made possible by the cryptocurrency smart contracts system.'
           )}
@@ -49,7 +49,7 @@ const Header: NextPage = () => {
           </Link>
         </div>
       </div>
-      <div className="flex-1 mr-20 hidden md:block">
+      <div className="flex-1  hidden md:block">
         <div className="w-full h-full relative">
           <Image
             layout="fill"

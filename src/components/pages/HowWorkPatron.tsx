@@ -31,8 +31,8 @@ const HowWorkPatron: NextPage = () => {
           <div className="bold-24 text-center py-4">
             1. {t('Choose a channel')}
           </div>
-          <div className="regular-24 text-center sm:px-20 md:px-0">
-            <span className="regular-cobogo-24">
+          <div className="regular-18 text-center sm:px-20 md:px-0">
+            <span className="regular-cobogo-18">
               {t('Choose your favorite channel')}
             </span>{' '}
             {t(
@@ -52,12 +52,12 @@ const HowWorkPatron: NextPage = () => {
           <div className="bold-24 text-center py-4">
             2. {t('Stake DEV tokens')}
           </div>
-          <div className="regular-24 text-center sm:px-20 md:px-0">
+          <div className="regular-18 text-center sm:px-20 md:px-0">
             {t(
               'First of all you need to buy DEV tokens, which is the token used to stake and earn rewards. You can buy it on'
             )}{' '}
             <a
-              className="regular-cobogo-24"
+              className="regular-cobogo-18"
               target="_blank"
               href="https://app.uniswap.org/#/swap"
               rel="noopener noreferrer"
@@ -79,7 +79,7 @@ const HowWorkPatron: NextPage = () => {
           <div className="bold-24 text-center py-4">
             3. {t('Receive rewards')}
           </div>
-          <div className="regular-24 text-center sm:px-20 md:px-0">
+          <div className="regular-18 text-center sm:px-20 md:px-0">
             {t(
               'Do nothing more, wait for your rewards and at any time you can withdraw to your wallet.'
             )}
