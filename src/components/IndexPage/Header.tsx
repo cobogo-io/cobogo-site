@@ -1,11 +1,10 @@
 import type { NextPage } from 'next';
 import { useTranslation } from 'next-i18next';
-import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from '../NextLink';
+import ChooseLanguage from '../ChooseLanguage';
 
 const Header: NextPage = () => {
-  const router = useRouter();
   const { t } = useTranslation('header');
 
   return (
@@ -20,16 +19,16 @@ const Header: NextPage = () => {
           />
         </div>
         <h1 className="bold-36 py-7">
-          {t('The next generation of Youtube monetization')}
+          {t('The next generation of YouTube monetization')}
         </h1>
         <h2 className="light-24 pb-7 font-light">
           {t(
-            'cobogo allows fans to support their favorite Youtube channels by sharing the rewards of their investments in a fashion way.'
+            'cobogo allows fans to support their favorite YouTube channels by sharing the rewards of their investments in a fashion way.'
           )}
         </h2>
         <h4 className="regular-18 pb-9 font-light">
           {t(
-            'Any Youtuber can submit your channel to receive rewards and any fan can invest money and share the rewards. A super intelligent mechanism made possible by the cryptocurrency smart contracts system.'
+            'Any YouTuber can submit your channel to receive rewards and any fan can invest money and share the rewards. A super intelligent mechanism made possible by the cryptocurrency smart contracts system.'
           )}
         </h4>
         <div className="flex">
@@ -38,7 +37,7 @@ const Header: NextPage = () => {
             passHref
             className="bg-youtuber px-6 py-2 mr-5"
           >
-            <button className="bold-24">{t("I'm a Youtuber")}</button>
+            <button className="bold-24">{t("I'm a YouTuber")}</button>
           </Link>
           <Link
             className="bg-patron px-6 py-2"
@@ -49,7 +48,7 @@ const Header: NextPage = () => {
           </Link>
         </div>
       </div>
-      <div className="flex-1  hidden md:block">
+      <div className="flex-1 md:pr-20 hidden md:block">
         <div className="w-full h-full relative">
           <Image
             layout="fill"
@@ -58,29 +57,7 @@ const Header: NextPage = () => {
             alt="Guy playing youtube site"
           />
         </div>
-        <div className="absolute right-10 top-5">
-          <Link
-            href="/"
-            locale={router.locale === 'en-US' ? 'pt-BR' : 'en-US'}
-            className="flex flex-row text-white body-small justify-center item-center"
-          >
-            <div>
-              <span className={router.locale === 'en-US' ? 'text-cobogo' : ''}>
-                EN
-              </span>
-            </div>
-            <span className="px-4"></span>
-            <div>
-              <span
-                className={
-                  router.locale === 'pt-BR' ? 'text-cobogo font-bold ' : ''
-                }
-              >
-                PT
-              </span>
-            </div>
-          </Link>
-        </div>
+        <ChooseLanguage />
       </div>
     </section>
   );

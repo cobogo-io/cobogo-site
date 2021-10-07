@@ -57,6 +57,10 @@
   @apply text-3xl text-white font-bold;
 }
 
+.bold-cobogo-30 {
+  @apply text-3xl text-cobogo font-bold;
+}
+
 .bold-24 {
   @apply text-2xl text-white font-bold;
 }

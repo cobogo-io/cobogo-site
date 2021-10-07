@@ -15,7 +15,7 @@ const HowWorkPatron: NextPage = () => {
           {t('How it works for a Patron')}
         </h1>
         <h2 className="light-24 text-center pb-16">
-          {t('Support your favorite Youtuber while you also earn money.')}
+          {t('Support your favorite YouTuber while you also earn money.')}
         </h2>
       </div>
       <div className="flex flex-wrap justify-center pb-5">
@@ -25,7 +25,7 @@ const HowWorkPatron: NextPage = () => {
               layout="fill"
               objectFit="contain"
               src="/icons/youtube-icon.svg"
-              alt="Youtube icon"
+              alt="YouTube icon"
             />
           </div>
           <div className="bold-24 text-center py-4">
