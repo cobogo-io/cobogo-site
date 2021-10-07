@@ -12,10 +12,10 @@ const HowWorkYoutuber: NextPage = () => {
     >
       <div>
         <h1 className="bold-36 text-center pb-5">
-          {t('How it works for a Youtuber')}
+          {t('How it works for a YouTuber')}
         </h1>
         <h2 className="light-24 text-center pb-16 font-light">
-          {t('Monetize and empower your Youtube community with cobogo.')}
+          {t('Monetize and empower your YouTube community with cobogo.')}
         </h2>
       </div>
       <div className="flex flex-wrap justify-center pb-5">
@@ -25,7 +25,7 @@ const HowWorkYoutuber: NextPage = () => {
               layout="fill"
               objectFit="contain"
               src="/icons/youtube-icon.svg"
-              alt="Youtube icon"
+              alt="YouTube icon"
             />
           </div>
           <div className="bold-24 text-center py-4">
@@ -72,7 +72,7 @@ const HowWorkYoutuber: NextPage = () => {
           </div>
           <div className="regular-18 text-center  sm:px-20 md:px-0">
             {t(
-              'Continue your good work and wait for your followers to stake for you. You will receive the rewards on a daily basis and will be able to stake for other Youtubers as well.'
+              'Continue your good work and wait for your followers to stake for you. You will receive the rewards on a daily basis and will be able to stake for other YouTubers as well.'
             )}
           </div>
         </div>
