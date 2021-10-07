@@ -8,7 +8,7 @@ const HowWorkYoutuber: NextPage = () => {
   return (
     <section
       id="how-work-youtuber"
-      className="flex flex-col px-5 md:px-0 items-center h-full w-screen py-16 bg-bgsecundary"
+      className="flex flex-col px-5 md:px-0 items-center h-full w-full py-16 bg-bgsecundary"
     >
       <div>
         <h1 className="bold-36 text-center pb-5">

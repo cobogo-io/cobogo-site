@@ -6,7 +6,7 @@ const Footer: NextPage = () => {
   const { t } = useTranslation('footer');
 
   return (
-    <section className="flex flex-wrap md:flex-nowrap justify-center  py-5 bg-cobogo">
+    <section className="flex flex-wrap md:flex-nowrap justify-center py-5 bg-cobogo">
       <div className="flex items-center pb-5 md:pb-0 min-w-full md:min-w-0 justify-center px-0 md:px-5 ">
         <Link href="/faq" className="bold-18">
           FAQ

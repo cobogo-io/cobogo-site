@@ -27,6 +27,7 @@ const FavIcon = (): JSX.Element => {
       />
 
       <link rel="manifest" href="/site.webmanifest" />
+      <link rel="manifest" href="/manifes.json" />
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="##4FB9E3" />
       <meta name="apple-mobile-web-app-title" content="Snippit" />
       <meta name="application-name" content="Cobogo" />

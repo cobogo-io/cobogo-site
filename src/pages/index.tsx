@@ -14,7 +14,7 @@ import React from 'react';
 
 const Home: NextPage = () => {
   return (
-    <div className="overflow-x-auto">
+    <div>
       <Head>
         <title>Cobogo</title>
       </Head>
