@@ -2,16 +2,20 @@ import type { NextPage } from 'next';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 
-const HowWorkPatron: NextPage = () => {
+interface Props {
+  setShowModal: (bool: boolean) => void;
+}
+
+const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
   const { t } = useTranslation('how-work-patron');
 
   return (
     <section
       id="how-work-patron"
-      className="flex flex-col px-5 md:px-0 items-center h-full w-full py-16 bg-bgprimary"
+      className="flex flex-col px-5 md:px-0 items-center h-full w-full py-24 bg-bgprimary"
     >
       <div>
-        <h1 className="bold-36 text-center pb-5">
+        <h1 className="bold-36 text-center pb-7">
           {t('How it works for a Patron')}
         </h1>
         <h2 className="light-24 text-center pb-16">
@@ -32,7 +36,7 @@ const HowWorkPatron: NextPage = () => {
             1. {t('Choose a channel')}
           </div>
           <div className="regular-18 text-center sm:px-20 md:px-0">
-            <span className="regular-cobogo-18">
+            <span className="regular-18">
               {t('Choose your favorite channel')}
             </span>{' '}
             {t(
@@ -86,7 +90,10 @@ const HowWorkPatron: NextPage = () => {
           </div>
         </div>
       </div>
-      <button className="bold-24 bg-patron px-8 py-4">
+      <button
+        className="bold-24 bg-patron hover:bg-patronhover px-8 py-4"
+        onClick={() => setShowModal(true)}
+      >
         {t('Become a Patron')}
       </button>
     </section>

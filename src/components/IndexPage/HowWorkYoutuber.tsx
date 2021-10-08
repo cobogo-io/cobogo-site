@@ -2,16 +2,20 @@ import type { NextPage } from 'next';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 
-const HowWorkYoutuber: NextPage = () => {
+interface Props {
+  setShowModal: (bool: boolean) => void;
+}
+
+const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
   const { t } = useTranslation('how-work-youtuber');
 
   return (
     <section
       id="how-work-youtuber"
-      className="flex flex-col px-5 md:px-0 items-center h-full w-full py-16 bg-bgsecundary"
+      className="flex flex-col px-5 md:px-0 items-center h-full w-full py-24 bg-bgsecundary"
     >
       <div>
-        <h1 className="bold-36 text-center pb-5">
+        <h1 className="bold-36 text-center pb-7">
           {t('How it works for a YouTuber')}
         </h1>
         <h2 className="light-24 text-center pb-16 font-light">
@@ -33,8 +37,7 @@ const HowWorkYoutuber: NextPage = () => {
           </div>
           <div className="regular-18 text-center sm:px-20 md:px-0">
             {t('To be able to receive rewards from your followers, you must')}{' '}
-            <span className="regular-cobogo-18">{t('apply your channel')}</span>
-            .{' '}
+            <span className="regular-18">{t('apply your channel')}</span>.{' '}
             {t(
               'The cobogo team will review and approve if it is a real channel with real followers.'
             )}
@@ -77,7 +80,10 @@ const HowWorkYoutuber: NextPage = () => {
           </div>
         </div>
       </div>
-      <button className="bold-24 bg-youtuber px-8 py-4">
+      <button
+        className="bold-24 bg-youtuber hover:bg-youtuberhover px-8 py-4"
+        onClick={() => setShowModal(true)}
+      >
         {t('Monetize your channel')}
       </button>
     </section>

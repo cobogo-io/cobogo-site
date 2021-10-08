@@ -8,8 +8,11 @@ module.exports = {
   theme: {
     colors: {
       cobogo: '#4FB9E3',
+      cobogohover: '#4FB9E3',
       youtuber: '#514E7F',
+      youtuberhover: '#373556',
       patron: '#6C63FF',
+      patronhover: '#4C46A1',
       white: '#FFFFFF',
       bgprimary: '#121212',
       bgsecundary: '#1C1C1C',

@@ -20,27 +20,21 @@ const Team: NextPage = () => {
         <div className="md:mr-32 mb-10 md:mb-0">
           <div className="mb-5  cursor-pointer" onClick={() => setSelected(0)}>
             <div className={selected === 0 ? 'bold-cobogo-24' : 'bold-24'}>
-              Pedro Alves
-            </div>
-            <div className="light-16">Business Developer</div>
-          </div>
-          <div className="mb-5  cursor-pointer" onClick={() => setSelected(1)}>
-            <div className={selected === 1 ? 'bold-cobogo-24' : 'bold-24'}>
               Rafael Lima
             </div>
             <div className="light-16">Product Strategist</div>
           </div>
-          <div className="mb-5  cursor-pointer" onClick={() => setSelected(2)}>
-            <div className={selected === 2 ? 'bold-cobogo-24' : 'bold-24'}>
+          <div className="mb-5  cursor-pointer" onClick={() => setSelected(1)}>
+            <div className={selected === 1 ? 'bold-cobogo-24' : 'bold-24'}>
               Jonatas Martins
             </div>
             <div className="light-16">Developer</div>
           </div>
           <div
             className="sm:mb-20 lg:mb-5 cursor-pointer"
-            onClick={() => setSelected(3)}
+            onClick={() => setSelected(2)}
           >
-            <div className={selected === 3 ? 'bold-cobogo-24' : 'bold-24'}>
+            <div className={selected === 2 ? 'bold-cobogo-24' : 'bold-24'}>
               Mikael Carrara
             </div>
             <div className="light-16">Designer </div>
@@ -48,20 +42,6 @@ const Team: NextPage = () => {
         </div>
         <div className="pb-5 pr-20 flex flex-1">
           <div className={selected === 0 ? 'regular-18' : 'hidden'}>
-            <div className="bold-24 pb-10">Business Developer</div>
-            <div className="regular-18 pb-5">
-              {t(
-                "Pedro is an economist involved with blockchain since 2013. He will help to develop Cobogo's business and maximize growth"
-              )}
-            </div>
-            <a
-              href="https://www.linkedin.com/in/pedro-a-2313a51b2"
-              className="bold-cobogo-16 cursor-pointer"
-            >
-              Linkedin
-            </a>
-          </div>
-          <div className={selected === 1 ? 'regular-18' : 'hidden'}>
             <div className="bold-24 pb-10">Product Strategist</div>
             <div className="regular-18 pb-5">
               {t(
@@ -76,7 +56,7 @@ const Team: NextPage = () => {
             </a>
           </div>
 
-          <div className={selected === 2 ? 'regular-18' : 'hidden'}>
+          <div className={selected === 1 ? 'regular-18' : 'hidden'}>
             <div className="bold-24 pb-10">Developer</div>
             <div className="regular-18 pb-5">
               {t(
@@ -97,11 +77,11 @@ const Team: NextPage = () => {
             </a>
           </div>
 
-          <div className={selected === 3 ? 'regular-18' : 'hidden'}>
+          <div className={selected === 2 ? 'regular-18' : 'hidden'}>
             <div className="bold-24 pb-10">Designer</div>
             <div className="regular-18 pb-5">
               {t(
-                'Mikael is a UI/UX designer with skills in front-end and mobile development'
+                'Mikael is an UI/UX designer with skills in front-end and mobile development'
               )}
             </div>
             <a

@@ -35,12 +35,12 @@ const Header: NextPage = () => {
           <Link
             href="#how-work-youtuber"
             passHref
-            className="bg-youtuber px-6 py-2 mr-5"
+            className="bg-youtuber px-6 py-2 mr-5 hover:bg-youtuberhover"
           >
             <button className="bold-24">{t("I'm a YouTuber")}</button>
           </Link>
           <Link
-            className="bg-patron px-6 py-2"
+            className="bg-patron px-6 py-2 hover:bg-patronhover"
             href="#how-work-patron"
             passHref
           >

@@ -3,10 +3,12 @@ import Head from 'next/head';
 import React from 'react';
 import Image from 'next/image';
 import Link from '../components/NextLink';
+import Social from '../components/IndexPage/Social';
+import Footer from '../components/IndexPage/Footer';
 
 const Code: NextPage = () => {
   return (
-    <div className="overflow-x-auto bg-bgprimary">
+    <div className="flex flex-col min-h-screen h-full bg-bgprimary">
       <Head>
         <title>Cobogo - Code of Conduct</title>
       </Head>
@@ -22,7 +24,7 @@ const Code: NextPage = () => {
           </div>
         </Link>
       </div>
-      <div className="mx-5 md:mx-20 pb-20">
+      <div className="flex flex-1 flex-col mx-5 md:mx-20 pb-20">
         <h1 className="bold-36 mb-5">Code of Conduct</h1>
         <h2 className="bold-30 mb-2">Our Pledge</h2>
         <p className="regular-18 break-normal mb-5">
@@ -140,6 +142,8 @@ const Code: NextPage = () => {
           </a>
         </p>
       </div>
+      <Social />
+      <Footer />
     </div>
   );
 };
