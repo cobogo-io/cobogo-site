@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: none;
+}
+
+html body {
+  padding: 0;
+  margin: 0;
+  overflow-y: inherit;
+}
+
 @font-face {
   font-family: 'ProximaNova';
   src: url('/fonts/ProximaNova/ProximaNova-Light.ttf');
