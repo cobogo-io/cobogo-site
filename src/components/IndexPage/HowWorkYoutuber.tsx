@@ -32,6 +32,7 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
               alt="YouTube icon"
             />
           </div>
+          <div className="h-5" />
           <div className="bold-24 text-center py-4">
             1. {t('Submit your channel')}
           </div>
@@ -44,7 +45,7 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
           </div>
         </div>
         <div className="flex flex-col items-center px-5 md:px-20 w-full md:w-1/3 min-w-full md:min-w-0 pb-10">
-          <div className="w-16 h-11 relative">
+          <div className="w-10 h-16 relative">
             <Image
               layout="fill"
               objectFit="contain"
@@ -70,6 +71,7 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
               alt="Coins icon"
             />
           </div>
+          <div className="h-5" />
           <div className="bold-24 text-center py-4">
             3. {t('Receive rewards')}
           </div>

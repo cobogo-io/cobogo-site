@@ -11,6 +11,7 @@ import TechnicalViewpoint from '../components/IndexPage/TechnicalViewpoint';
 import DevProtocol from '../components/IndexPage/DevProtocol';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const Home: NextPage = () => {
   const [showModal, setShowModal] = useState(false);
@@ -38,7 +39,15 @@ const Home: NextPage = () => {
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 <div className="relative p-6 flex-auto">
-                  <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
+                  <div className="w-96 h-96 relative">
+                    <Image
+                      layout="fill"
+                      objectFit="contain"
+                      src="/images/underconstruction.svg"
+                      alt="Coins icon"
+                    />
+                  </div>
+                  <p className="my-4 text-3xl text-center leading-relaxed">
                     Under construction.
                   </p>
                 </div>
