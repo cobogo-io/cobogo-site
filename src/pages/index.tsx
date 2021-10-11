@@ -48,7 +48,7 @@ const Home: NextPage = () => {
                     />
                   </div>
                   <p className="my-4 text-3xl text-center leading-relaxed">
-                    Under construction.
+                    Coming soon
                   </p>
                 </div>
               </div>

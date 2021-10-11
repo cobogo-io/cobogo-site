@@ -30,9 +30,10 @@ const Code: NextPage = () => {
           For All Users
           <br />
           Rude, annoying or unethical behavior towards other users is not
-          allowed. Cobogo is intended for contributors to the OSS ecosystem.
-          Unauthorized Github accounts or deleting repositories after onboarding
-          will be punished as fraud. Please use the site with good manners.
+          allowed. Cobogo is intended for contributors to the YouTube channels
+          ecosystem. Unauthorized YouTube accounts or deleting repositories
+          after onboarding will be punished as fraud. Please use the site with
+          good manners.
         </p>
         <h1 className="bold-36 mb-5">Terms of Use</h1>
 
@@ -128,9 +129,9 @@ const Code: NextPage = () => {
         </h2>
         <p className="regular-18 break-normal mb-10">
           This Agreement shall be governed by and construed in accordance with
-          the laws of Japan, and all disputes arising out of this Agreement
-          shall be subject to the exclusive jurisdiction of the Tokyo District
-          Court as the court of first instance.
+          the laws of Brazil, and all disputes arising out of this Agreement
+          shall be subject to the exclusive jurisdiction of the Rio de Janeiro
+          District Court as the court of first instance.
         </p>
 
         <p className="regular-16 break-normal mb-20">
