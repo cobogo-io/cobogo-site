@@ -52,7 +52,7 @@ const Team: NextPage = () => {
               href="https://rafael.adm.br"
               className="bold-cobogo-16 cursor-pointer"
             >
-              Site
+              Website
             </a>
           </div>
 
