@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div className="w-screen overflow-hidden">
+    <div className="w-full overflow-hidden">
       <Head>
         <title>Cobogo</title>
       </Head>
