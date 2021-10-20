@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   return (
     <div className="w-full overflow-hidden">
       <Head>
-        <title>Cobogo</title>
+        <title>cobogo</title>
       </Head>
       <Header />
       <HowWorkYoutuber setShowModal={setShowModal} />
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
                     />
                   </div>
                   <p className="my-4 text-3xl text-center leading-relaxed">
-                    Coming soon
+                    coming soon
                   </p>
                 </div>
               </div>

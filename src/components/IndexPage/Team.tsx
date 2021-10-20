@@ -9,10 +9,10 @@ const Team: NextPage = () => {
   return (
     <section className="flex flex-col items-center h-full w-full py-24 bg-bgsecundary">
       <div className="flex flex-col items-center">
-        <h1 className="bold-36 text-center pb-7">{t('Meet the team')}</h1>
+        <h1 className="bold-36 text-center pb-7">{t('meet the team')}</h1>
         <h2 className="light-24 text-center pb-20 w-full md:w-1/2 px-5 md:px-0">
           {t(
-            'Our team works specifically on the dAPP to make the best experience for patrons and creators. We have a huge experience in software development, blockchain and tokenomics.'
+            'our team works specifically on the dapp to make the best experience for patrons and creators. We have a huge experience in software development, blockchain and tokenomics.'
           )}
         </h2>
       </div>
@@ -45,7 +45,7 @@ const Team: NextPage = () => {
             <div className="bold-24 pb-10">Product Strategist</div>
             <div className="regular-18 pb-5">
               {t(
-                "Right now, I'm a 'hacker of life', yogi, digital entrepreneur, software developer, and investor in the cryptocurrency ecosystem. I've founded some tech companies in Brazil in financial, software, and metaverse fields."
+                "right now, i'm a 'hacker of life', yogi, digital entrepreneur, software developer, and investor in the cryptocurrency ecosystem. I've founded some tech companies in Brazil in financial, software, and metaverse fields."
               )}
             </div>
             <a
@@ -60,7 +60,7 @@ const Team: NextPage = () => {
             <div className="bold-24 pb-10">Developer</div>
             <div className="regular-18 pb-5">
               {t(
-                'Jonatas is a full stack developer specialized in mobile development, constantly updating his knowledge as a programmer. Currently focusing on Web 3, Blockchain and Dapp technologies. His responsibility is to develop the Cobogo dApp.'
+                'Jonatas is a full stack developer specialized in mobile development, constantly updating his knowledge as a programmer. Currently focusing on web 3, blockchain and dapp technologies. His responsibility is to develop the bobogo dapp.'
               )}
             </div>
             <a

@@ -10,7 +10,7 @@ const Code: NextPage = () => {
   return (
     <div className="flex flex-col min-h-screen h-full bg-bgprimary">
       <Head>
-        <title>Cobogo - Code of Conduct</title>
+        <title>cobogo - code of conduct</title>
       </Head>
       <div className="mx-5 md:mx-20 py-20">
         <Link href="/">

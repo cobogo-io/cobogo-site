@@ -16,10 +16,10 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
     >
       <div>
         <h1 className="bold-36 text-center pb-7">
-          {t('How it works for a YouTuber')}
+          {t('how it works for a youtuber')}
         </h1>
         <h2 className="light-24 text-center pb-16 font-light">
-          {t('Monetize and empower your YouTube community with cobogo.')}
+          {t('monetize and empower your YouTube community with cobogo.')}
         </h2>
       </div>
       <div className="flex flex-wrap justify-center pb-5">
@@ -34,13 +34,13 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
           </div>
           <div className="h-5" />
           <div className="bold-24 text-center py-4">
-            1. {t('Submit your channel')}
+            1. {t('submit your channel')}
           </div>
           <div className="regular-18 text-center sm:px-20 md:px-0">
-            {t('To be able to receive rewards from your followers, you must')}{' '}
+            {t('to be able to receive rewards from your followers, you must')}{' '}
             <span className="regular-18">{t('apply your channel')}</span>.{' '}
             {t(
-              'The cobogo team will review and approve if it is a real channel with real followers.'
+              'the cobogo team will review and approve if it is a real channel with real followers.'
             )}
           </div>
         </div>
@@ -54,11 +54,11 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
             />
           </div>
           <div className="bold-24 text-center py-4">
-            2. {t('Spread the news')}
+            2. {t('spread the news')}
           </div>
           <div className="regular-18 text-center  sm:px-20 md:px-0">
             {t(
-              'You have to publish at least one video explaining to your audience what cobogo is and how they can support you. It is important to spin the wheel.'
+              'you have to publish at least one video explaining to your audience what cobogo is and how they can support you. It is important to spin the wheel.'
             )}
           </div>
         </div>
@@ -73,11 +73,11 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
           </div>
           <div className="h-5" />
           <div className="bold-24 text-center py-4">
-            3. {t('Receive rewards')}
+            3. {t('receive rewards')}
           </div>
           <div className="regular-18 text-center  sm:px-20 md:px-0">
             {t(
-              'Continue your good work and wait for your followers to stake for you. You will receive the rewards on a daily basis and will be able to stake for other YouTubers as well.'
+              'continue your good work and wait for your followers to stake for you. You will receive the rewards on a daily basis and will be able to stake for other youtubers as well.'
             )}
           </div>
         </div>
@@ -86,7 +86,7 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
         className="bold-24 bg-youtuber hover:bg-youtuberhover px-8 py-4"
         onClick={() => setShowModal(true)}
       >
-        {t('Monetize your channel')}
+        {t('monetize your channel')}
       </button>
     </section>
   );

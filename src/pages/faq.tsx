@@ -42,7 +42,7 @@ const Faq: NextPage = () => {
                 </a>{' '}
                 is a crypto network, it has been adopted by numerous projects
                 from all over the world. It is the largest network that hosts
-                dApps. It is also where most developer activity happens in the
+                dapps. It is also where most developer activity happens in the
                 crypto space. Ethereum is particularly interesting because of
                 its security and ability to host smart contracts.
               </p>
