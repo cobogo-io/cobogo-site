@@ -16,7 +16,7 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
     >
       <div>
         <h1 className="bold-36 text-center pb-7">
-          {t('how it works for a youtuber')}
+          {t('how it works for a YouTuber')}
         </h1>
         <h2 className="light-24 text-center pb-16 font-light">
           {t('monetize and empower your YouTube community with cobogo.')}
@@ -77,7 +77,7 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
           </div>
           <div className="regular-18 text-center  sm:px-20 md:px-0">
             {t(
-              'continue your good work and wait for your followers to stake for you. You will receive the rewards on a daily basis and will be able to stake for other youtubers as well.'
+              'continue your good work and wait for your followers to stake for you. You will receive the rewards on a daily basis and will be able to stake for other YouTubers as well.'
             )}
           </div>
         </div>

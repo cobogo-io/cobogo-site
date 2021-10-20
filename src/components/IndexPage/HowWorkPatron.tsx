@@ -19,7 +19,7 @@ const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
           {t('how it works for a patron')}
         </h1>
         <h2 className="light-24 text-center pb-16">
-          {t('support your favorite youtuber while you also earn money.')}
+          {t('support your favorite YouTuber while you also earn money.')}
         </h2>
       </div>
       <div className="flex flex-wrap justify-center pb-5">

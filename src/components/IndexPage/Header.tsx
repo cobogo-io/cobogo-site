@@ -28,7 +28,7 @@ const Header: NextPage = () => {
         </h2>
         <h4 className="regular-18 pb-9 font-light">
           {t(
-            'any youtuber can submit your channel to receive rewards and any fan can invest money and share the rewards. A super intelligent mechanism made possible by the cryptocurrency smart contracts system.'
+            'any YouTuber can submit your channel to receive rewards and any fan can invest money and share the rewards. A super intelligent mechanism made possible by the cryptocurrency smart contracts system.'
           )}
         </h4>
         <div className="flex">
@@ -37,7 +37,7 @@ const Header: NextPage = () => {
             passHref
             className="bg-youtuber px-6 py-2 mr-5 hover:bg-youtuberhover"
           >
-            <button className="bold-24">{t("i'm a youtuber")}</button>
+            <button className="bold-24">{t("i'm a YouTuber")}</button>
           </Link>
           <Link
             className="bg-patron px-6 py-2 hover:bg-patronhover"
