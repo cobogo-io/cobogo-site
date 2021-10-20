@@ -9,10 +9,10 @@ const Partners: NextPage = () => {
   return (
     <section className="flex flex-col px-5 md:px-0 items-center h-full w-full py-24 bg-bgprimary">
       <div className="flex flex-col items-center">
-        <h1 className="bold-36 text-center pb-7">{t('Partners')}</h1>
+        <h1 className="bold-36 text-center pb-7">{t('partners')}</h1>
         <h2 className="light-24 text-center pb-20 w-full md:w-1/2">
           {t(
-            'Our main partnership is with DEV Protocol, the token behind the dApp. If you want to partner with us, feel free to keep in touch.'
+            'our main partnership is with DEV Protocol, the token behind the dapp. If you want to partner with us, feel free to keep in touch.'
           )}
         </h2>
       </div>

@@ -16,10 +16,10 @@ const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
     >
       <div>
         <h1 className="bold-36 text-center pb-7">
-          {t('How it works for a Patron')}
+          {t('how it works for a patron')}
         </h1>
         <h2 className="light-24 text-center pb-16">
-          {t('Support your favorite YouTuber while you also earn money.')}
+          {t('support your favorite youtuber while you also earn money.')}
         </h2>
       </div>
       <div className="flex flex-wrap justify-center pb-5">
@@ -33,11 +33,11 @@ const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
             />
           </div>
           <div className="bold-24 text-center py-4">
-            1. {t('Choose a channel')}
+            1. {t('choose a channel')}
           </div>
           <div className="regular-18 text-center sm:px-20 md:px-0">
             <span className="regular-18">
-              {t('Choose your favorite channel')}
+              {t('choose your favorite channel')}
             </span>{' '}
             {t(
               'to support and to stake for. Part of the rewards will go to the channel you chose, the other part for you. You can stake to multiple channels if you want.'
@@ -54,11 +54,11 @@ const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
             />
           </div>
           <div className="bold-24 text-center py-4">
-            2. {t('Stake DEV tokens')}
+            2. {t('stake DEV tokens')}
           </div>
           <div className="regular-18 text-center sm:px-20 md:px-0">
             {t(
-              'First of all you need to buy DEV tokens, which is the token used to stake and earn rewards. You can buy it on'
+              'first of all you need to buy DEV tokens, which is the token used to stake and earn rewards. You can buy it on Uniswap.'
             )}{' '}
             <a
               className="regular-cobogo-18"
@@ -81,11 +81,11 @@ const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
             />
           </div>
           <div className="bold-24 text-center py-4">
-            3. {t('Receive rewards')}
+            3. {t('receive rewards')}
           </div>
           <div className="regular-18 text-center sm:px-20 md:px-0">
             {t(
-              'Do nothing more, wait for your rewards and at any time you can withdraw to your wallet.'
+              'do nothing more, wait for your rewards and at any time you can withdraw to your wallet.'
             )}
           </div>
         </div>
@@ -94,7 +94,7 @@ const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
         className="bold-24 bg-patron hover:bg-patronhover px-8 py-4"
         onClick={() => setShowModal(true)}
       >
-        {t('Become a Patron')}
+        {t('become a patron')}
       </button>
     </section>
   );

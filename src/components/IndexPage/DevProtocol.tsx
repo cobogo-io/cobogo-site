@@ -18,12 +18,12 @@ const DevProtocol: NextPage = () => {
     <section className="flex px-5 md:px-0 flex-col items-center h-full w-full py-24 bg-bgprimary">
       <div className="flex flex-col items-center">
         <h1 className="bold-36 text-center pb-7">
-          {t('The DEV Protocol Ecosystem')}
+          {t('the DEV Protocol ecosystem')}
         </h1>
 
         <h2 className="light-24 text-center px-5 md:px-48 pb-20">
           {t(
-            'Dev Protocol’s mission is to provide Open Assets a sustainable value capture model. Open Assets are free to consume and share like YouTube videos, Spotify music, and Academic research. Stakes Social will eventually support the tokenization of these markets to unleash their untapped economic value.'
+            'Dev Protocol’s mission is to provide Open Assets a sustainable value capture model. Open Assets are free to consume and share like YouTube videos, Spotify music, and Academic research. cobogo will eventually support the tokenization of these markets to unleash their untapped economic value.'
           )}
         </h2>
       </div>
@@ -32,9 +32,9 @@ const DevProtocol: NextPage = () => {
           <div className="bold-24 text-center">
             $ <DevMarketCap />
           </div>
-          <div className="regular-18 text-center">{t('DEV Market Cap')}</div>
+          <div className="regular-18 text-center">{t('DEV market cap')}</div>
           <div className="regular-18 text-center">
-            {t('The total value of all DEV circulating.')}
+            {t('the total value of all DEV circulating.')}
           </div>
         </div>
 
@@ -42,9 +42,9 @@ const DevProtocol: NextPage = () => {
           <div className="bold-24 text-center">
             $ <DevPrice />
           </div>
-          <div className="regular-18 text-center">{t('DEV Price')}</div>
+          <div className="regular-18 text-center">{t('DEV price')}</div>
           <div className="regular-18 text-center">
-            {t('The current price of DEV token.')}
+            {t('the current price of DEV token.')}
           </div>
         </div>
 
@@ -55,7 +55,7 @@ const DevProtocol: NextPage = () => {
           <div className="regular-18 text-center">{t('DEV Staked Ratio')}</div>
           <div className="regular-18 text-center">
             {t(
-              'The percentage of DEV tokens that are staked from circulating supply.'
+              'the percentage of DEV tokens that are staked from circulating supply.'
             )}
           </div>
         </div>
@@ -64,9 +64,9 @@ const DevProtocol: NextPage = () => {
           <div className="bold-24 text-center">
             $ <DevStakingValue />
           </div>
-          <div className="regular-18 text-center">{t('DEV Staked Value')}</div>
+          <div className="regular-18 text-center">{t('DEV staked value')}</div>
           <div className="regular-18 text-center">
-            {t('The total value of DEV staked.')}
+            {t('the total value of DEV staked.')}
           </div>
         </div>
 
@@ -74,9 +74,9 @@ const DevProtocol: NextPage = () => {
           <div className="bold-24 text-center">
             <CreatorAPY />%
           </div>
-          <div className="regular-18 text-center">{t('Creator APY')}</div>
+          <div className="regular-18 text-center">{t('creator APY')}</div>
           <div className="regular-18 text-center">
-            {t('The current yield for creators.')}
+            {t('the current yield for creators.')}
           </div>
         </div>
 
@@ -84,9 +84,9 @@ const DevProtocol: NextPage = () => {
           <div className="bold-24 text-center">
             <StakerAPY />%
           </div>
-          <div className="regular-18 text-center">{t('Staker APY')}</div>
+          <div className="regular-18 text-center">{t('staker APY')}</div>
           <div className="regular-18 text-center">
-            {t('The current yield for stakers.')}
+            {t('the current yield for stakers.')}
           </div>
         </div>
 
@@ -94,9 +94,9 @@ const DevProtocol: NextPage = () => {
           <div className="bold-24 text-center">
             <SupplyGrowth />%
           </div>
-          <div className="regular-18 text-center">{t('Supply Growth')}</div>
+          <div className="regular-18 text-center">{t('supply growth')}</div>
           <div className="regular-18 text-center">
-            {t('The current supply growth of DEV.')}
+            {t('the current supply growth of DEV.')}
           </div>
         </div>
 
@@ -105,10 +105,10 @@ const DevProtocol: NextPage = () => {
             <AssetOnboarded />
           </div>
           <div className="regular-18 text-center">
-            {t('OSS Projects Onboarded')}
+            {t('OSS projects onboarded')}
           </div>
           <div className="regular-18 text-center">
-            {t('The total number of creator assets onboarded.')}
+            {t('the total number of creator assets onboarded.')}
           </div>
         </div>
 
@@ -117,10 +117,10 @@ const DevProtocol: NextPage = () => {
             $ <CreatorsRewardsUsd />
           </div>
           <div className="regular-18 text-center">
-            {t("Creator's Rewards USD")}
+            {t("creator's rewards USD")}
           </div>
           <div className="regular-18 text-center">
-            {t("The value of current creator's rewards in USD.")}
+            {t("the value of current creator's rewards in USD.")}
           </div>
         </div>
       </div>
