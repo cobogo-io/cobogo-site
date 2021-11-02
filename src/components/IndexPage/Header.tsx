@@ -32,7 +32,7 @@ const Header: NextPage = () => {
           )}
         </h4>
         <div className="flex">
-          <Link
+          {/* <Link
             href="#how-work-youtuber"
             passHref
             className="bg-youtuber px-6 py-2 mr-5 hover:bg-youtuberhover"
@@ -45,6 +45,13 @@ const Header: NextPage = () => {
             passHref
           >
             <button className="bold-24">{t("i'm a patron")}</button>
+          </Link> */}
+          <Link
+            className="bg-patron px-6 py-2 hover:bg-patronhover"
+            href="https://t.me/cobogosocial"
+            passHref
+          >
+            <button className="bold-24">{t("join our Telegram")}</button>
           </Link>
         </div>
       </div>

@@ -22,13 +22,13 @@ const Team: NextPage = () => {
             <div className={selected === 0 ? 'bold-cobogo-24' : 'bold-24'}>
               Rafael Lima
             </div>
-            <div className="light-16">Product Strategist</div>
+            <div className="light-16">{t('product strategist')}</div>
           </div>
           <div className="mb-5  cursor-pointer" onClick={() => setSelected(1)}>
             <div className={selected === 1 ? 'bold-cobogo-24' : 'bold-24'}>
               Jonatas Martins
             </div>
-            <div className="light-16">Developer</div>
+            <div className="light-16">{t('developer')}</div>
           </div>
           <div
             className="sm:mb-20 lg:mb-5 cursor-pointer"
@@ -37,12 +37,12 @@ const Team: NextPage = () => {
             <div className={selected === 2 ? 'bold-cobogo-24' : 'bold-24'}>
               Mikael Carrara
             </div>
-            <div className="light-16">Designer </div>
+            <div className="light-16">{t('designer')}</div>
           </div>
         </div>
         <div className="pb-5 pr-20 flex flex-1">
           <div className={selected === 0 ? 'regular-18' : 'hidden'}>
-            <div className="bold-24 pb-10">Product Strategist</div>
+            <div className="bold-24 pb-10">{t('product strategist')}</div>
             <div className="regular-18 pb-5">
               {t(
                 "right now, i'm a 'hacker of life', yogi, digital entrepreneur, software developer, and investor in the cryptocurrency ecosystem. I've founded some tech companies in Brazil in financial, software, and metaverse fields."
@@ -57,7 +57,7 @@ const Team: NextPage = () => {
           </div>
 
           <div className={selected === 1 ? 'regular-18' : 'hidden'}>
-            <div className="bold-24 pb-10">Developer</div>
+            <div className="bold-24 pb-10">{t('developer')}</div>
             <div className="regular-18 pb-5">
               {t(
                 'Jonatas is a full stack developer specialized in mobile development, constantly updating his knowledge as a programmer. Currently focusing on web 3, blockchain and dapp technologies. His responsibility is to develop the bobogo dapp.'
@@ -78,10 +78,10 @@ const Team: NextPage = () => {
           </div>
 
           <div className={selected === 2 ? 'regular-18' : 'hidden'}>
-            <div className="bold-24 pb-10">Designer</div>
+            <div className="bold-24 pb-10">{t('designer')}</div>
             <div className="regular-18 pb-5">
               {t(
-                'Mikael is an UI/UX designer with skills in front-end and mobile development'
+                'Mikael is an UI/UX designer with skills in front-end and mobile development.'
               )}
             </div>
             <a
