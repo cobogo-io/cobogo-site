@@ -23,7 +23,7 @@ const Header: NextPage = () => {
         </h1>
         <h2 className="light-24 pb-7 font-light">
           {t(
-            'cobogo allows fans to support their favorite YouTube channels by sharing the rewards of their investments in a fashion way.'
+            'cobogo allows fans to support their favorite YouTube channels by sharing the rewards of their investments in a easy way.'
           )}
         </h2>
         <h4 className="regular-18 pb-9 font-light">
