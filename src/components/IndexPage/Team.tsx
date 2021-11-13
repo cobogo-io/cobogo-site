@@ -30,14 +30,17 @@ const Team: NextPage = () => {
             </div>
             <div className="light-16">{t('developer')}</div>
           </div>
-          <div
-            className="sm:mb-20 lg:mb-5 cursor-pointer"
-            onClick={() => setSelected(2)}
-          >
+          <div className="sm:mb-20 lg:mb-5 cursor-pointer" onClick={() => setSelected(2)}>
             <div className={selected === 2 ? 'bold-cobogo-24' : 'bold-24'}>
               Mikael Carrara
             </div>
             <div className="light-16">{t('designer')}</div>
+          </div>
+          <div className="sm:mb-20 lg:mb-5 cursor-pointer" onClick={() => setSelected(3)}>
+            <div className={selected === 3 ? 'bold-cobogo-24' : 'bold-24'}>
+              Isabela Reis
+            </div>
+            <div className="light-16">{t('communications')}</div>
           </div>
         </div>
         <div className="pb-5 pr-20 flex flex-1">
@@ -90,6 +93,15 @@ const Team: NextPage = () => {
             >
               Linkedin
             </a>
+          </div>
+
+          <div className={selected === 3 ? 'regular-18' : 'hidden'}>
+            <div className="bold-24 pb-10">{t('communications')}</div>
+            <div className="regular-18 pb-5">
+              {t(
+                'Isabela is a PhD student in Social Psychology, responsible for creating content, as well as the cobogo’s team relationship with the community.'
+              )}
+            </div>
           </div>
         </div>
       </div>
