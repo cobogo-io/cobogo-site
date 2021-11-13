@@ -63,7 +63,7 @@ const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
             <a
               className="regular-cobogo-18"
               target="_blank"
-              href="https://app.uniswap.org/#/swap"
+              href="https://app.uniswap.org/#/swap?outputCurrency=0x5caf454ba92e6f2c929df14667ee360ed9fd5b26&use=V2"
               rel="noopener noreferrer"
             >
               {t('Uniswap')}
