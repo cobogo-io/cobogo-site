@@ -23,7 +23,7 @@ const DevProtocol: NextPage = () => {
 
         <h2 className="light-24 text-center px-5 md:px-48 pb-20">
           {t(
-            'Dev Protocol’s mission is to provide Open Assets a sustainable value capture model. Open Assets are free to consume and share like YouTube videos, Spotify music, and Academic research. cobogo will eventually support the tokenization of these markets to unleash their untapped economic value.'
+            'Dev Protocol’s mission is to provide Open Assets with a sustainable value capture model. Open Assets are free to consume and share, like YouTube videos, Spotify music, and Academic research. cobogo will eventually support the tokenization of these markets to unleash their untapped economic value.'
           )}
         </h2>
       </div>

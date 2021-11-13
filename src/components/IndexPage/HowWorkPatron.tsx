@@ -16,10 +16,10 @@ const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
     >
       <div>
         <h1 className="bold-36 text-center pb-7">
-          {t('how it works for a patron')}
+          {t('how it works for the Patron')}
         </h1>
         <h2 className="light-24 text-center pb-16">
-          {t('support your favorite YouTuber while you also earn money.')}
+          {t('support your favorite YouTuber while also earning money.')}
         </h2>
       </div>
       <div className="flex flex-wrap justify-center pb-5">
@@ -40,7 +40,7 @@ const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
               {t('choose your favorite channel')}
             </span>{' '}
             {t(
-              'to support and to stake for. Part of the rewards will go to the channel you chose, the other part for you. You can stake to multiple channels if you want.'
+              'to support and to stake on. Part of the rewards will go to the channel you chose, the other part for you. You can stake on multiple channels if you want to.'
             )}
           </div>
         </div>
@@ -58,7 +58,7 @@ const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
           </div>
           <div className="regular-18 text-center sm:px-20 md:px-0">
             {t(
-              'first of all you need to buy DEV tokens, which is the token used to stake and earn rewards. You can buy it on Uniswap.'
+              'first, you need to buy DEV tokens, which is the token used to stake and earn rewards. You can buy it on '
             )}{' '}
             <a
               className="regular-cobogo-18"
@@ -85,7 +85,7 @@ const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
           </div>
           <div className="regular-18 text-center sm:px-20 md:px-0">
             {t(
-              'do nothing more, wait for your rewards and at any time you can withdraw to your wallet.'
+              'that’s it, you don’t need to do anything else, wait for your rewards and at any time you can withdraw them to your wallet.'
             )}
           </div>
         </div>

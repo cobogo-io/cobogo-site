@@ -16,7 +16,7 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
     >
       <div>
         <h1 className="bold-36 text-center pb-7">
-          {t('how it works for a YouTuber')}
+          {t('how it works for the YouTuber')}
         </h1>
         <h2 className="light-24 text-center pb-16 font-light">
           {t('monetize and empower your YouTube community with cobogo.')}
@@ -40,7 +40,7 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
             {t('to be able to receive rewards from your followers, you must')}{' '}
             <span className="regular-18">{t('apply your channel')}</span>.{' '}
             {t(
-              'the cobogo team will review and approve if it is a real channel with real followers.'
+              'to be able to receive rewards from your followers, you must apply your channel. the cobogo team will verify if it is a real channel with real followers, and approve it.'
             )}
           </div>
         </div>
@@ -58,7 +58,7 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
           </div>
           <div className="regular-18 text-center  sm:px-20 md:px-0">
             {t(
-              'you have to publish at least one video explaining to your audience what cobogo is and how they can support you. It is important to spin the wheel.'
+              'you have to publish at least one video explaining to your audience what cobogo is and how they can support you. It is important to keep the wheels turning.'
             )}
           </div>
         </div>
@@ -77,7 +77,7 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
           </div>
           <div className="regular-18 text-center  sm:px-20 md:px-0">
             {t(
-              'continue your good work and wait for your followers to stake for you. You will receive the rewards on a daily basis and will be able to stake for other YouTubers as well.'
+              'continue your good work and wait for your followers to stake on your channel. You will receive the rewards on a block (minutes) basis and will be able to stake for other YouTubers as well.'
             )}
           </div>
         </div>

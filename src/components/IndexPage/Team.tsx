@@ -12,7 +12,7 @@ const Team: NextPage = () => {
         <h1 className="bold-36 text-center pb-7">{t('meet the team')}</h1>
         <h2 className="light-24 text-center pb-20 w-full md:w-1/2 px-5 md:px-0">
           {t(
-            'our team works specifically on the dapp to make the best experience for patrons and creators. We have a huge experience in software development, blockchain and tokenomics.'
+            'our team works specifically on the dapp to make the best experience for patrons and creators. We have extensive experience in software development, blockchain and tokenomics.'
           )}
         </h2>
       </div>
@@ -45,7 +45,7 @@ const Team: NextPage = () => {
             <div className="bold-24 pb-10">{t('product strategist')}</div>
             <div className="regular-18 pb-5">
               {t(
-                "right now, i'm a 'hacker of life', yogi, digital entrepreneur, software developer, and investor in the cryptocurrency ecosystem. I've founded some tech companies in Brazil in financial, software, and metaverse fields."
+                "Rafael is a 'hacker of life', yogi, digital entrepreneur, software developer, and investor in the cryptocurrency ecosystem. He has founded tech companies in Brazil in the financial, software, and metaverse fields."
               )}
             </div>
             <a
@@ -60,7 +60,7 @@ const Team: NextPage = () => {
             <div className="bold-24 pb-10">{t('developer')}</div>
             <div className="regular-18 pb-5">
               {t(
-                'Jonatas is a full stack developer specialized in mobile development, constantly updating his knowledge as a programmer. Currently focusing on web 3, blockchain and dapp technologies. His responsibility is to develop the bobogo dapp.'
+                'Jonatas is a full stack developer specialized in mobile development, and is constantly updating his knowledge as a programmer. Currently focusing on web 3, blockchain and dapp technologies. His responsibility is to develop the cobogo dapp.'
               )}
             </div>
             <a

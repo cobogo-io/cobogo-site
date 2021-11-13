@@ -23,12 +23,12 @@ const Header: NextPage = () => {
         </h1>
         <h2 className="light-24 pb-7 font-light">
           {t(
-            'cobogo allows fans to support their favorite YouTube channels by sharing the rewards of their investments in a easy way.'
+            'cobogo allows fans to support their favorite YouTube channels by splitting the rewards of their investment in an easy way.'
           )}
         </h2>
         <h4 className="regular-18 pb-9 font-light">
           {t(
-            'any YouTuber can submit your channel to receive rewards and any fan can invest money and share the rewards. A super intelligent mechanism made possible by the cryptocurrency smart contracts system.'
+            'any YouTuber can submit their channel to receive funding and any fan can invest their Tokens, so both Patron and Creator receive rewards in the form of a yield. An intelligent mechanism only made possible by the cryptocurrency smart contracts system.'
           )}
         </h4>
         <div className="flex">
