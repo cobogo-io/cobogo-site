@@ -1,7 +1,11 @@
 import { Accordion } from './Accordion';
 
-const Faq = (props): JSX.Element => {
-  switch(props.locale) {
+interface IRouterProps {
+  locale: string;
+}
+
+const Faq = (router: IRouterProps): JSX.Element => {
+  switch(router.locale) {
     case 'pt-BR':
       return (
         <div>
