@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from '../components/NextLink';
 import Social from '../components/IndexPage/Social';
 import Footer from '../components/IndexPage/Footer';
-import FaqContent from '../components/Faq';
+import FaqContent from '../components/FaqContent';
 import ChooseLanguage from '../components/ChooseLanguage';
 
 const Faq: NextPage = () => {
