@@ -1,7 +1,11 @@
 import { useRouter } from 'next/router';
 import Link from './NextLink';
 
-const LanguageItem = (props): JSX.Element => {
+interface ILanguageProps {
+  locale: string;
+}
+
+const LanguageItem = (props: ILanguageProps): JSX.Element => {
   const router = useRouter();
 
   if(props.locale === router.locale) {
