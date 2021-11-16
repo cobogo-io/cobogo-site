@@ -40,7 +40,7 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
             {t('to be able to receive rewards from your followers, you must')}{' '}
             <span className="regular-18">{t('apply your channel')}</span>.{' '}
             {t(
-              'to be able to receive rewards from your followers, you must apply your channel. the cobogo team will verify if it is a real channel with real followers, and approve it.'
+              'the cobogo team will verify if it is a real channel with real followers, and approve it.'
             )}
           </div>
         </div>
