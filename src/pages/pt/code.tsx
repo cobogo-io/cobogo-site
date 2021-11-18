@@ -52,7 +52,7 @@ const Code = (): JSX.Element => {
           <li>Publicar informações privadas de terceiros, como um endereço físico ou eletrônico, sem permissão explícita</li>
           <li>Outra conduta que poderia ser considerada inadequada em um ambiente profissional</li>
         </ul>
-        <h2 className="bold-30 mb-2">Nossas responsabilidades</h2>
+        <h2 className="bold-30 mb-2">Nossas Responsabilidades</h2>
         <p className="regular-18 break-normal mb-5">
           Os encarregados de manter o projeto são responsáveis ​​por esclarecer os padrões de comportamento aceitável e devem tomar as medidas corretivas adequadas e justas em resposta a quaisquer instâncias de comportamento inaceitável.
         </p>

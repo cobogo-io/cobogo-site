@@ -109,11 +109,12 @@ const Faq = (): JSX.Element => {
               </p>
             </div>
           </Accordion>
-          <Accordion title="Q: O que é “Staking”">
+          <Accordion title="Q: O que é “Staking”?">
             <div className="panel-body regular-18 mb-5">
               <p>
                 Staking é o processo de bloquear fundos em contratos inteligentes como uma forma de beneficiar a rede na qual os fundos estão em staking, e sendo recompensado por isso. Essas recompensas podem ser vistas como um tipo de juros que se acumula com o tempo.
-                <br /><br />
+              </p>
+              <p>
                 Fazer staking usando tokens DEV significa que os Patronos estão depositando os tokens DEV em um contrato inteligente do respectivo Criador que o Patrono deseja financiar de forma sustentável. Ao fazer isso, tanto Patrono como Criador são recompensados com tokens DEV.
               </p>
             </div>
