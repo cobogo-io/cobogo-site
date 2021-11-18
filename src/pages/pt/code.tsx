@@ -54,7 +54,7 @@ const Code = (): JSX.Element => {
         </ul>
         <h2 className="bold-30 mb-2">Nossas Responsabilidades</h2>
         <p className="regular-18 break-normal mb-5">
-          Os encarregados de manter o projeto são responsáveis ​​por esclarecer os padrões de comportamento aceitável e devem tomar as medidas corretivas adequadas e justas em resposta a quaisquer instâncias de comportamento inaceitável.
+          Os encarregados de manter o projeto são responsáveis por esclarecer os padrões de comportamento aceitável e devem tomar as medidas corretivas adequadas e justas em resposta a quaisquer instâncias de comportamento inaceitável.
         </p>
         <p className="regular-18 break-normal mb-5">
           Os mantenedores do projeto têm o direito e a responsabilidade de remover, editar ou rejeitar comentários, commits, códigos, edições da wiki, perguntas e outras contribuições que não estejam alinhadas a este Código de Conduta, ou banir temporária ou permanentemente qualquer contribuidor por outros comportamentos que eles considerem inadequados, ameaçadores, ofensivos ou prejudiciais.
