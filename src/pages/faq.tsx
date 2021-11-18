@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import React from 'react';
 import PageEn from './en/faq';
 import PagePt from './pt/faq';
+import PageEs from './es/faq';
 
 const Faq: NextPage = () => {
   const router = useRouter();
@@ -11,6 +12,10 @@ const Faq: NextPage = () => {
     case 'pt':
       return (
         <PagePt />
+      );
+    case 'es':
+      return (
+        <PageEs />
       );
     default:
       return (
