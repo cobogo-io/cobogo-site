@@ -6,7 +6,7 @@ interface IRouterProps {
 
 const FaqContent = (router: IRouterProps): JSX.Element => {
   switch(router.locale) {
-    case 'pt-BR':
+    case 'pt':
       return (
         <div>
           <Accordion title="Q: O que é Blockchain?">
