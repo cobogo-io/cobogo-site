@@ -7,7 +7,7 @@ import Footer from '../../components/IndexPage/Footer';
 import Link from '../../components/NextLink';
 import ChooseLanguage from '../../components/ChooseLanguage';
 
-const wom: NextPage = () => {
+const Wom: NextPage = () => {
   return (
     <div className="flex flex-col min-h-screen h-full bg-bgprimary">
       <ChooseLanguage />
@@ -38,4 +38,4 @@ const wom: NextPage = () => {
   );
 };
 
-export default wom;
+export default Wom;

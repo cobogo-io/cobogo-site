@@ -5,7 +5,7 @@ import PageEn from './en/wom';
 import PagePt from './pt/wom';
 import PageEs from './es/wom';
 
-const wom: NextPage = () => {
+const Wom: NextPage = () => {
   const router = useRouter();
 
   switch(router.locale) {
@@ -24,4 +24,4 @@ const wom: NextPage = () => {
   }
 };
 
-export default wom;
+export default Wom;

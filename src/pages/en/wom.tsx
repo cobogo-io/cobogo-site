@@ -7,7 +7,7 @@ import Footer from '../../components/IndexPage/Footer';
 import Link from '../../components/NextLink';
 import ChooseLanguage from '../../components/ChooseLanguage';
 
-const wom: NextPage = () => {
+const Wom: NextPage = () => {
   return (
     <div className="flex flex-col min-h-screen h-full bg-bgprimary">
       <ChooseLanguage />
@@ -27,9 +27,11 @@ const wom: NextPage = () => {
         </Link>
       </div>
       <div className="flex flex-1 flex-col mx-5 md:mx-20 pb-20">
-        <h1 className="bold-36 mb-5">Wom</h1>
-        <p className="regular-18 break-normal mb-5">
-          english
+        <h1 className="mb-5">
+          <span className="light-50">enjoyed</span> <span className="bold-50">cobogo?</span>
+        </h1>
+        <p className="break-normal mb-5">
+          <span className="regular-40">record a recommendation for it using </span> <span className="bold-40">BULLZ</span> <span className="regular-40">and earn</span> <span className="bold-40">WOM</span> <span className="regular-40">rewards!</span>
         </p>
       </div>
       <Social />
@@ -38,4 +40,4 @@ const wom: NextPage = () => {
   );
 };
 
-export default wom;
+export default Wom;
