@@ -32,8 +32,8 @@ export const initRecorder = () => {
     facilitatorld: 'COBOGO_61a81230237f2c2d1f2d8fe6',
     publisher: 'cobogo social',
     selector: '#wom-recorder-CBG01',
-    background: 'https://stackroom.devprotocol.xyz/integration/wom/background.png',
-    logo: 'https://stackroom.devprotocol.xyz/brand/dev-protocol__avatar-brandmark--white--w_980.png',
+    background: 'https://cobogo.social/images/wom/background.png',
+    logo: 'https://cobogo.social/images/wom/logo.png',
     color: 'white',
     backgroundColor: 'black',
     remoteProduct: {
@@ -41,7 +41,7 @@ export const initRecorder = () => {
       brand: 'cobogo',
       publicld: 'CBG01',
       url: 'https://cobogo.social/',
-      imageUrl: 'https://stackroom.devprotocol.xyz/integration/wom/background.png',
+      imageUrl: 'https://cobogo.social/images/wom/background.png',
     },
     isDev: false,
   })
