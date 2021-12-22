@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const useScript = url => {
+const useScript = (url:string) => {
   useEffect(() => {
     const script = document.createElement('script');
 
@@ -8,7 +8,7 @@ const useScript = url => {
     script.async = false;
 
     document.body.appendChild(script);
-    console.log('script loaded '+url)
+    console.log('script loaded ' + url);
 
     return () => {
       document.body.removeChild(script);

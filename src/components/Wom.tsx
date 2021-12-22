@@ -1,3 +1,10 @@
+declare global {
+  interface Window {
+    bullz: any;
+    wom: any;
+  }
+}
+
 export const Wom = (): JSX.Element => {
   return (
     <>
@@ -51,7 +58,7 @@ export const initViewer = () => {
     isDev: false
   }
 
-  window.wom.check(params).then(values => {
+  window.wom.check(params).then((values:any) => {
     if (values[0].isSuccess) {
       window.wom.init(params);
       return console.log('womjs config success');
