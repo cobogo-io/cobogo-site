@@ -35,7 +35,7 @@ export const initRecorder = () => {
     background: 'https://cobogo.social/images/wom/background.png',
     logo: 'https://cobogo.social/images/wom/logo.png',
     color: 'white',
-    backgroundColor: 'black',
+    backgroundColor: '#4ab9e3',
     remoteProduct: {
       name: 'cobogo social',
       brand: 'cobogo',
