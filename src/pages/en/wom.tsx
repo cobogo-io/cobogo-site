@@ -14,26 +14,24 @@ const Wom: NextPage = () => {
       <Head>
         <title>Cobogo - WOM</title>
       </Head>
-      <div className="mx-5 md:mx-20 py-20">
+      <header className="mx-5 md:mx-20 bg-zinc-500">
         <Link href="/">
-          <div className="w-60 h-14 relative">
-            <Image
-              layout="fill"
-              objectFit="contain"
-              src="/logos/cobogo-logo.svg"
-              alt="Guy playing youtube site"
-            />
-          </div>
+          <Image
+            src="/logos/cobogo-logo.svg"
+            alt="Cobogo"
+            width="120"
+            height="27"
+          />
         </Link>
-      </div>
-      <div className="flex flex-1 flex-col mx-5 md:mx-20 pb-20">
+      </header>
+      <section className="flex flex-1 flex-col mx-5 md:mx-20 pb-20">
         <h1 className="mb-5">
           <span className="light-50">enjoyed</span> <span className="bold-50">cobogo?</span>
         </h1>
         <p className="break-normal mb-5">
-          <span className="regular-40">record a recommendation for it using </span> <span className="bold-40">BULLZ</span> <span className="regular-40">and earn</span> <span className="bold-40">WOM</span> <span className="regular-40">rewards!</span>
+          <span className="regular-40">record a recommendation for it using </span> <span className="bold-40">BULLZ </span> <span className="regular-40">and earn </span> <span className="bold-40"> WOM </span> <span className="regular-40">rewards!</span>
         </p>
-      </div>
+      </section>
       <Social />
       <Footer />
     </div>
