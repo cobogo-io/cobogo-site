@@ -15,7 +15,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   useEffect(() => {
     if (process.env.NEXT_PUBLIC_BULLZ === 'true' && router.pathname !== '/review') {
-      router.push(`https://cobogo.social/${router.locale}/${router.asPath}`)
+      const locale:string = router.locale ?? 'en'
+      router.push(`https://cobogo.social/${locale}/${router.asPath}`)
     }
   }, [router]);
 
