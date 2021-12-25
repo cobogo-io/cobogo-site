@@ -26,14 +26,13 @@ export const Wom = (): JSX.Element => {
 };
 
 export const initRecorder = () => {
-  console.log('bullz-recorder-init');
   window.bullz.init({
     organizationPublicId: 'COBOGO_61a81230237f2c2d1f2d8fe6',
     facilitatorld: 'COBOGO_61a81230237f2c2d1f2d8fe6',
     publisher: 'cobogo social',
     selector: '#wom-recorder-CBG01',
-    background: 'https://cobogo.social/images/wom/background.png',
-    logo: 'https://cobogo.social/images/wom/logo.png',
+    background: 'https://bullz.cobogo.xyz/images/wom/background.png',
+    logo: 'https://bullz.cobogo.xyz/images/wom/logo.png',
     color: 'white',
     backgroundColor: '#4ab9e3',
     remoteProduct: {
@@ -41,14 +40,13 @@ export const initRecorder = () => {
       brand: 'cobogo',
       publicld: 'CBG01',
       url: 'https://cobogo.social/',
-      imageUrl: 'https://cobogo.social/images/wom/background.png',
+      imageUrl: 'https://bullz.cobogo.xyz/images/wom/background.png',
     },
     isDev: false,
   })
 }
 
 export const initViewer = () => {
-  console.log('wom-viewer-init');
   const params = {
     organizationPublicId: 'COBOGO_61a81230237f2c2d1f2d8fe6',
     selector: '#wom-viewer-plugin',
@@ -63,7 +61,7 @@ export const initViewer = () => {
       window.wom.init(params);
       return console.log('womjs config success');
     }
-  }).catch(console.log)
+  }).catch(console.error)
 }
 
 export default Wom;
