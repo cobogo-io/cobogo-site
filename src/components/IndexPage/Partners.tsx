@@ -7,7 +7,7 @@ const Partners: NextPage = () => {
   const { t } = useTranslation('partners');
 
   return (
-    <section className="flex flex-col px-5 md:px-0 items-center h-full w-full py-24 bg-bgprimary">
+    <section className="flex flex-col px-5 md:px-0 items-center h-full w-full py-24 bg-primary">
       <div className="flex flex-col items-center">
         <h1 className="bold-36 text-center pb-7">{t('partners')}</h1>
         <h2 className="light-24 text-center pb-20 w-full md:w-1/2">
@@ -16,21 +16,34 @@ const Partners: NextPage = () => {
           )}
         </h2>
       </div>
-      <a
-        className="pb-20 md:pb-0 flex flex-col items-center"
-        target="_blank"
-        href="https://devprotocol.xyz/"
-        rel="noopener noreferrer"
-      >
-        <div className="w-56 h-20 relative">
+      <div className="flex">
+        <a
+          className="mr-8"
+          target="_blank"
+          href="https://devprotocol.xyz/"
+          rel="noopener noreferrer"
+        >
           <Image
-            layout="fill"
-            objectFit="contain"
+            width={136}
+            height={68}
             src="/logos/dev-logo.svg"
             alt="DEV logo"
           />
-        </div>
-      </a>
+        </a>
+        <a
+          className="ml-8"
+          target="_blank"
+          href="https://womprotocol.io/"
+          rel="noopener noreferrer"
+        >
+          <Image
+            width={149}
+            height={68}
+            src="/logos/wom-logo.svg"
+            alt="DEV logo"
+          />
+        </a>
+      </div>
     </section>
   );
 };

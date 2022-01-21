@@ -8,7 +8,7 @@ import ChooseLanguage from '../../components/ChooseLanguage';
 
 const Code = (): JSX.Element => {
   return (
-    <div className="flex flex-col min-h-screen h-full bg-bgprimary">
+    <div className="flex flex-col min-h-screen h-full bg-primary">
       <ChooseLanguage />
       <Head>
         <title>cobogo - code of conduct</title>

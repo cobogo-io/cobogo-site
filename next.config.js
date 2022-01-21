@@ -4,7 +4,7 @@ const { i18n } = require('./next-i18next.config');
 module.exports = {
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'es', 'pt'],
+    locales: ['en', 'pt', 'es', 'tr'],
 },
   reactStrictMode: true,
   async redirects() {

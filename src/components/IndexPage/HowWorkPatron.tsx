@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
+import CallToActionButton from '../CallToActionButton';
 
 interface Props {
   setShowModal: (bool: boolean) => void;
@@ -12,19 +13,28 @@ const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
   return (
     <section
       id="how-work-patron"
-      className="flex flex-col px-5 md:px-0 items-center h-full w-full py-24 bg-bgprimary"
+      className="flex flex-col px-5 md:px-0 items-center h-full w-full py-24 bg-primary"
     >
       <div>
+        <div className="mb-24">
+          <Image
+            className="mb-24"
+            width="1359px"
+            height="401px"
+            src="/images/airdrop.svg"
+            alt="airdrop"
+          />
+        </div>
         <h1 className="bold-36 text-center pb-7">
           {t('how it works for the Patron')}
         </h1>
         <h2 className="light-24 text-center pb-16">
-          {t('support your favorite YouTuber while also earning money.')}
+          {t('support your favorite Content Creator while also earning money.')}
         </h2>
       </div>
       <div className="flex flex-wrap justify-center pb-5">
         <div className="flex flex-col items-center px-5 md:px-20 w-full md:w-1/3  min-w-full md:min-w-0 pb-10">
-          <div className="w-16 h-11 relative">
+          <div className="w-16 h-11 relative ">
             <Image
               layout="fill"
               objectFit="contain"
@@ -90,12 +100,11 @@ const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
           </div>
         </div>
       </div>
-      <button
-        className="bold-24 bg-patron hover:bg-patronhover px-8 py-4"
+      <CallToActionButton
+        color="purple-light"
+        placeholder={t('become a patron')}
         onClick={() => setShowModal(true)}
-      >
-        {t('become a patron')}
-      </button>
+      />
     </section>
   );
 };

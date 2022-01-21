@@ -1,73 +1,51 @@
-import type { NextPage } from 'next';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
-import Link from '../NextLink';
-import ChooseLanguage from '../ChooseLanguage';
+import CallToActionButton from '../CallToActionButton';
 
-const Header: NextPage = () => {
+export default function Header() {
   const { t } = useTranslation('header');
 
   return (
-    <section className="flex h-full w-full py-24  bg-bgprimary">
-      <div className="flex-1 px-5 md:px-20 mb-0 md:mb-20 text-white">
-        <div className="w-60 h-14 relative">
-          <Image
-            layout="fill"
-            objectFit="contain"
-            src="/logos/cobogo-logo.svg"
-            alt="Guy playing youtube site"
-          />
-        </div>
-        <h1 className="bold-36 py-7">
-          {t('the next generation of YouTube monetization')}
-        </h1>
-        <h2 className="light-24 pb-7 font-light">
-          {t(
-            'cobogo allows fans to support their favorite YouTube channels by splitting the rewards of their investment in an easy way.'
-          )}
+    <section className="flex h-full w-full pt-24  bg-primary">
+      <div className="flex-1 md:px-20 mb-0 text-white">
+        <h2 className="font-normal text-2xl sm:text-4xl lg:text-5xl flex flex-col justify-center items-center mb-16">
+          {t('the next generation of')}
+          <h1 className="font-bold  text-2xl sm:text-4xl md:text-5xl lg:text-7xl flex flex-col justify-center items-center">
+            {t('YouTube monetization')}
+          </h1>
         </h2>
-        <h4 className="regular-18 pb-9 font-light">
-          {t(
-            'any YouTuber can submit their channel to receive funding and any fan can invest their Tokens, so both Patron and Creator receive rewards in the form of a yield. An intelligent mechanism only made possible by the cryptocurrency smart contracts system.'
-          )}
-        </h4>
-        <div className="flex">
-          {/* <Link
-            href="#how-work-youtuber"
-            passHref
-            className="bg-youtuber px-6 py-2 mr-5 hover:bg-youtuberhover"
-          >
-            <button className="bold-24">{t("i'm a YouTuber")}</button>
-          </Link>
-          <Link
-            className="bg-patron px-6 py-2 hover:bg-patronhover"
-            href="#how-work-patron"
-            passHref
-          >
-            <button className="bold-24">{t("i'm a patron")}</button>
-          </Link> */}
-          <Link
-            className="bg-patron px-6 py-2 hover:bg-patronhover"
-            href="https://t.me/cobogosocial"
-            passHref
-          >
-            <button className="bold-24">{t("join our Telegram")}</button>
-          </Link>
+        <div className="flex flex-row justify-around items-center">
+          <div className="w-1/2 h-1/2">
+            <div className="mb-8">
+              <h2 className="font-normal text-xl md:text-2xl lg:text-3xl">
+                {t(
+                  'cobogo allows fans to support their favorite Content Creators channels by splitting the rewards of their investment in an easy way.'
+                )}
+              </h2>
+            </div>
+            <div className="mb-8">
+              <p className="font-normal sm:text-md md:text-lg lg:text-xl leading-6">
+                {t(
+                  'any Content Creator can submit their channel to receive funding and any fan can invest their Tokens, so both Patron and Creator receive rewards in the form of a yield. An intelligent mechanism only made possible by the cryptocurrency smart contracts system.'
+                )}
+              </p>
+            </div>
+            <CallToActionButton
+              color="purple-light"
+              placeholder={t('join our Telegram')}
+            />
+          </div>
+          <div className="hidden lg:block">
+            <Image
+              width="486px"
+              height="492px"
+              objectFit="contain"
+              src="/images/main.svg"
+              alt="Guy playing youtube site"
+            />
+          </div>
         </div>
-      </div>
-      <div className="flex-1 md:pr-20 hidden md:block">
-        <div className="w-full h-full relative">
-          <Image
-            layout="fill"
-            objectFit="contain"
-            src="/hero.svg"
-            alt="Guy playing youtube site"
-          />
-        </div>
-        <ChooseLanguage />
       </div>
     </section>
   );
-};
-
-export default Header;
+}

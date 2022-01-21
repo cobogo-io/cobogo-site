@@ -6,20 +6,20 @@ import Social from '../../components/IndexPage/Social';
 import Footer from '../../components/IndexPage/Footer';
 import Link from '../../components/NextLink';
 import ChooseLanguage from '../../components/ChooseLanguage';
-import {Wom, initRecorder, initViewer} from '../../components/Wom'
+import { Wom, initRecorder, initViewer } from '../../components/Wom';
 
 const Review: NextPage = () => {
   useEffect(() => {
     console.log('es');
 
-    if(window.bullz) {
+    if (window.bullz) {
       initRecorder();
       initViewer();
     }
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen h-full bg-bgprimary">
+    <div className="flex flex-col min-h-screen h-full bg-primary">
       <ChooseLanguage />
       <Head>
         <title>Cobogo - Fans</title>
@@ -40,10 +40,17 @@ const Review: NextPage = () => {
         <div className="panel panel-default mb-3">
           <section className="flex flex-1 flex-col mx-5 md:mx-20 pb-20">
             <h1 className="mb-5">
-              <span className="light-50">¿disfrutó</span> <span className="bold-50">de cobogo?</span>
+              <span className="light-50">¿disfrutó</span>{' '}
+              <span className="bold-50">de cobogo?</span>
             </h1>
             <p className="break-normal mb-5">
-              <span className="regular-40">graba una recomendación para nosotros usando </span> <span className="bold-40">BULLZ </span> <span className="regular-40">y gane recompensas en </span> <span className="bold-40"> WOM </span> <span className="regular-40">!</span>
+              <span className="regular-40">
+                graba una recomendación para nosotros usando{' '}
+              </span>{' '}
+              <span className="bold-40">BULLZ </span>{' '}
+              <span className="regular-40">y gane recompensas en </span>{' '}
+              <span className="bold-40"> WOM </span>{' '}
+              <span className="regular-40">!</span>
             </p>
             <Wom />
           </section>

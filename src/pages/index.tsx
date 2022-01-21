@@ -1,19 +1,21 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import Team from '../components/IndexPage/Team';
-import Header from '../components/IndexPage/Header';
-import Social from '../components/IndexPage/Social';
-import Partners from '../components/IndexPage/Partners';
-import Footer from '../components/IndexPage/Footer';
-import HowWorkYoutuber from '../components/IndexPage/HowWorkYoutuber';
-import HowWorkPatron from '../components/IndexPage/HowWorkPatron';
-import TechnicalViewpoint from '../components/IndexPage/TechnicalViewpoint';
-import DevProtocol from '../components/IndexPage/DevProtocol';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import React, { useState } from 'react';
+import Head from 'next/head';
 import Image from 'next/image';
+import React, { useState } from 'react';
 
-const Home: NextPage = () => {
+import DevProtocol from '../components/IndexPage/DevProtocol';
+import Footer from '../components/IndexPage/Footer';
+import Header from '../components/IndexPage/Header';
+import HowWorkPatron from '../components/IndexPage/HowWorkPatron';
+import HowWorkContentCreator from '../components/IndexPage/HowWorkContentCreator';
+import Partners from '../components/IndexPage/Partners';
+import Social from '../components/IndexPage/Social';
+import Team from '../components/IndexPage/Team';
+import TechnicalViewpoint from '../components/IndexPage/TechnicalViewpoint';
+import LightOnTop from '../components/LightOnTop';
+import NavBar from '../components/NavBar';
+
+export default function Home() {
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -21,8 +23,10 @@ const Home: NextPage = () => {
       <Head>
         <title>cobogo</title>
       </Head>
+      <LightOnTop />
+      <NavBar />
       <Header />
-      <HowWorkYoutuber setShowModal={setShowModal} />
+      <HowWorkContentCreator setShowModal={setShowModal} />
       <HowWorkPatron setShowModal={setShowModal} />
       <TechnicalViewpoint />
       <DevProtocol />
@@ -30,6 +34,7 @@ const Home: NextPage = () => {
       <Partners />
       <Social />
       <Footer />
+
       {showModal ? (
         <>
           <div
@@ -54,19 +59,18 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
         </>
       ) : null}
     </div>
   );
-};
+}
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
   props: {
     ...(await serverSideTranslations(locale, [
       'header',
       'footer',
-      'how-work-youtuber',
+      'how-work-content-creator',
       'how-work-patron',
       'technical-viewpoint',
       'dev-protocol',
@@ -76,5 +80,3 @@ export const getStaticProps = async ({ locale }: { locale: string }) => ({
     ])),
   },
 });
-
-export default Home;

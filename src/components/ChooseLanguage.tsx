@@ -4,8 +4,10 @@ import LanguageItem from './LanguageItem';
 const ChooseLanguage = (): JSX.Element => {
   const router = useRouter();
   return (
-    <div className="absolute right-10 top-5">
-      {router?.locales?.map((locale) => <LanguageItem key={locale} locale={locale} />)}
+    <div className="">
+      {router?.locales?.map((locale) => (
+        <LanguageItem key={locale} locale={locale} />
+      ))}
     </div>
   );
 };

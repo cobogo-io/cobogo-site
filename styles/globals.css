@@ -83,7 +83,7 @@ html body {
 }
 
 .bold-cobogo-30 {
-  @apply text-3xl text-cobogo font-bold;
+  @apply text-3xl text-blue font-bold;
 }
 
 .bold-24 {
@@ -91,7 +91,7 @@ html body {
 }
 
 .bold-cobogo-24 {
-  @apply text-2xl text-cobogo font-bold;
+  @apply text-2xl text-blue font-bold;
 }
 
 .bold-18 {
@@ -99,7 +99,7 @@ html body {
 }
 
 .bold-cobogo-16 {
-  @apply text-base text-cobogo font-bold;
+  @apply text-base text-blue font-bold;
 }
 
 .regular-50 {
@@ -119,7 +119,7 @@ html body {
 }
 
 .regular-cobogo-24 {
-  @apply text-2xl text-cobogo;
+  @apply text-2xl text-blue;
 }
 
 .regular-18 {
@@ -127,7 +127,7 @@ html body {
 }
 
 .regular-cobogo-18 {
-  @apply text-lg text-cobogo;
+  @apply text-lg text-blue;
 }
 
 .regular-16 {

@@ -6,7 +6,7 @@ const TechnicalViewpoint: NextPage = () => {
   const { t } = useTranslation('technical-viewpoint');
 
   return (
-    <section className="flex flex-col items-center h-full w-full py-24 bg-bgsecundary">
+    <section className="flex flex-col items-center h-full w-full py-24 bg-secondary">
       <div className="flex flex-col items-center">
         <h1 className="bold-36 text-center pb-7">{t('technical viewpoint')}</h1>
         <h2 className="light-24 text-center pb-0 md:pb-20 w-screen md:w-1/2 md:px-0 px-5">

@@ -1,25 +1,27 @@
-import type { NextPage } from 'next';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
+import CallToActionButton from '../../components/CallToActionButton';
 
-interface Props {
+interface HowWorkContentCreatorProps {
   setShowModal: (bool: boolean) => void;
 }
 
-const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
-  const { t } = useTranslation('how-work-youtuber');
+export default function HowWorkContentCreator({
+  setShowModal,
+}: HowWorkContentCreatorProps) {
+  const { t } = useTranslation('how-work-content-creator');
 
   return (
     <section
-      id="how-work-youtuber"
-      className="flex flex-col px-5 md:px-0 items-center h-full w-full py-24 bg-bgsecundary"
+      id="how-work-content-creator"
+      className="flex flex-col px-5 md:px-0 items-center h-full w-full py-24 bg-secondary"
     >
       <div>
         <h1 className="bold-36 text-center pb-7">
-          {t('how it works for the YouTuber')}
+          {t('how it works for a Content Creator')}
         </h1>
         <h2 className="light-24 text-center pb-16 font-light">
-          {t('monetize and empower your YouTube community with cobogo.')}
+          {t('monetize and empower your fans and community with cobogo.')}
         </h2>
       </div>
       <div className="flex flex-wrap justify-center pb-5">
@@ -82,14 +84,11 @@ const HowWorkYoutuber: NextPage<Props> = ({ setShowModal }) => {
           </div>
         </div>
       </div>
-      <button
-        className="bold-24 bg-youtuber hover:bg-youtuberhover px-8 py-4"
+      <CallToActionButton
+        color="purple"
+        placeholder={t('monetize your channel')}
         onClick={() => setShowModal(true)}
-      >
-        {t('monetize your channel')}
-      </button>
+      />
     </section>
   );
-};
-
-export default HowWorkYoutuber;
+}

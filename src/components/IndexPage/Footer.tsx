@@ -1,12 +1,11 @@
-import type { NextPage } from 'next';
 import { useTranslation } from 'react-i18next';
 import Link from '../NextLink';
 
-const Footer: NextPage = () => {
+export default function Footer() {
   const { t } = useTranslation('footer');
 
   return (
-    <section className="flex flex-wrap md:flex-nowrap justify-center py-5 bg-cobogo">
+    <section className="flex flex-wrap md:flex-nowrap justify-center py-5 bg-blue">
       <div className="flex items-center pb-5 md:pb-0 min-w-full md:min-w-0 justify-center px-0 md:px-5 ">
         <Link href="/faq" className="bold-18">
           faq
@@ -34,6 +33,4 @@ const Footer: NextPage = () => {
       </div>
     </section>
   );
-};
-
-export default Footer;
+}

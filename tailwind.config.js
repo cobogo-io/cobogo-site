@@ -7,15 +7,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
-      cobogo: '#4FB9E3',
-      cobogohover: '#2E6C85',
-      youtuber: '#514E7F',
-      youtuberhover: '#373556',
-      patron: '#6C63FF',
-      patronhover: '#4C46A1',
+      blue: '#4FB9E3',
+      bluehover: '#2E6C85',
+      purple: '#514E7F',
+      purplehover: '#373556',
+      purplelight: '#6C63FF',
+      purplelighthover: '#4C46A1',
       white: '#FFFFFF',
-      bgprimary: '#121212',
-      bgsecundary: '#1C1C1C',
+      primary: '#121212',
+      secondary: '#1C1C1C',
     },
     extend: {},
   },

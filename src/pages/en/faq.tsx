@@ -9,7 +9,7 @@ import { Accordion } from '../../components/Accordion';
 
 const Faq = (): JSX.Element => {
   return (
-    <div className="flex flex-col min-h-screen h-full bg-bgprimary">
+    <div className="flex flex-col min-h-screen h-full bg-primary">
       <ChooseLanguage />
       <Head>
         <title>Cobogo - FAQ</title>
@@ -32,7 +32,13 @@ const Faq = (): JSX.Element => {
           <Accordion title="Q: What is Blockchain?">
             <div className="panel-body regular-18 mb-5">
               <p>
-                Blockchain is a technology that features a continuous list of blocks of information on a live network of computers. Each block contains a number of transactions that when filled, are closed and linked to the previously filled block. Blockchains are decentralized, and for that it is very difficult for someone to modify the record of events stored in this “chain”, making it a suitable technology for financial applications.
+                Blockchain is a technology that features a continuous list of
+                blocks of information on a live network of computers. Each block
+                contains a number of transactions that when filled, are closed
+                and linked to the previously filled block. Blockchains are
+                decentralized, and for that it is very difficult for someone to
+                modify the record of events stored in this “chain”, making it a
+                suitable technology for financial applications.
               </p>
             </div>
           </Accordion>
@@ -87,7 +93,10 @@ const Faq = (): JSX.Element => {
           <Accordion title="Q: What are Smart Contracts?">
             <div className="panel-body regular-18 mb-5">
               <p>
-                Smart Contract is basically a contract that executes itself, which means they are not controlled by a user, but instead, are run independently on the network with some predetermined “terms of agreement”.
+                Smart Contract is basically a contract that executes itself,
+                which means they are not controlled by a user, but instead, are
+                run independently on the network with some predetermined “terms
+                of agreement”.
               </p>
             </div>
           </Accordion>
@@ -105,7 +114,11 @@ const Faq = (): JSX.Element => {
           <Accordion title="Q: What are dApps?">
             <div className="panel-body regular-18 mb-5">
               <p>
-                dApps are short for Decentralised Applications, and are software applications built on top of Smart Contracts. They are different from regular apps in a way that they are not connected to private, centralised servers, and for that, are more transparent over how its back-end works.
+                dApps are short for Decentralised Applications, and are software
+                applications built on top of Smart Contracts. They are different
+                from regular apps in a way that they are not connected to
+                private, centralised servers, and for that, are more transparent
+                over how its back-end works.
               </p>
             </div>
           </Accordion>
@@ -159,7 +172,13 @@ const Faq = (): JSX.Element => {
           <Accordion title="Q: Why should I use cobogo?">
             <div className="panel-body regular-18 mb-5">
               <p>
-                cobogo is a dApp, built on top of the Dev Protocol Ecosystem that allows fans to support their favorite YouTubers in a sustainable way. They can stake their DEV Tokens on the Youtuber’s pool, and both of them receive the rewards. cobogo allows Creators to monetize their channel in a different way, without relying solely on Ads or one-off donations, and it allows fans to support these Creators while still earning money.
+                cobogo is a dApp, built on top of the Dev Protocol Ecosystem
+                that allows fans to support their favorite YouTubers in a
+                sustainable way. They can stake their DEV Tokens on the
+                Youtuber’s pool, and both of them receive the rewards. cobogo
+                allows Creators to monetize their channel in a different way,
+                without relying solely on Ads or one-off donations, and it
+                allows fans to support these Creators while still earning money.
               </p>
             </div>
           </Accordion>

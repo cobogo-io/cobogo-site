@@ -1,18 +1,18 @@
 import BigNumber from 'bignumber.js';
 import React, { useMemo, useEffect, useState } from 'react';
-import { useGetDevPrice } from '../../fixtures/uniswap/hooks';
+import { useGetDevPrice } from '../fixtures/uniswap/hooks';
 import {
   useListPropertyQuery,
   useCountAccountLockupUniqueQuery,
-} from '../../graphql';
+} from '../graphql';
 import {
   useAPY,
   useAnnualSupplyGrowthRatio,
   useCirculatingSupply,
   useTotalSupply,
   useTotalStakingAmountOnProtocol,
-} from '../../fixtures/dev-kit/hooks';
-import { toNaturalNumber } from '../../fixtures/utility';
+} from '../fixtures/dev-kit/hooks';
+import { toNaturalNumber } from '../fixtures/utility';
 
 export const DevTotalCap = (_: {}) => {
   const { totalSupply } = useTotalSupply();

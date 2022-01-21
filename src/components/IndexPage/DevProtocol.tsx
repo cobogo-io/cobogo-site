@@ -15,7 +15,7 @@ const DevProtocol: NextPage = () => {
   const { t } = useTranslation('dev-protocol');
 
   return (
-    <section className="flex px-5 md:px-0 flex-col items-center h-full w-full py-24 bg-bgprimary">
+    <section className="flex px-5 md:px-0 flex-col items-center h-full w-full py-24 bg-primary">
       <div className="flex flex-col items-center">
         <h1 className="bold-36 text-center pb-7">
           {t('the DEV Protocol ecosystem')}

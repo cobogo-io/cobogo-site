@@ -8,22 +8,18 @@ interface ILanguageProps {
 const LanguageItem = (props: ILanguageProps): JSX.Element => {
   const router = useRouter();
 
-  if(props.locale === router.locale) {
-    return(
-      <span className='pr-4 text-cobogo font-bold'>
-        {props.locale}
-      </span>
-    )
+  if (props.locale === router.locale) {
+    return <a className="pr-4 text-blue font-bold">{props.locale}</a>;
   } else {
-    return(
+    return (
       <Link
         href={router.pathname}
         locale={props.locale}
         className="pr-4 text-white body-small justify-center item-center"
       >
-        <span>{props.locale}</span>
+        {props.locale}
       </Link>
-    )
+    );
   }
 };
 

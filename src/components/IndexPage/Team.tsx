@@ -7,7 +7,7 @@ const Team: NextPage = () => {
   const [selected, setSelected] = useState<Number>(0);
 
   return (
-    <section className="flex flex-col items-center h-full w-full py-24 bg-bgsecundary">
+    <section className="flex flex-col items-center h-full w-full py-24 bg-secondary">
       <div className="flex flex-col items-center">
         <h1 className="bold-36 text-center pb-7">{t('meet the team')}</h1>
         <h2 className="light-24 text-center pb-20 w-full md:w-1/2 px-5 md:px-0">
@@ -30,13 +30,19 @@ const Team: NextPage = () => {
             </div>
             <div className="light-16">{t('developer')}</div>
           </div>
-          <div className="sm:mb-20 lg:mb-5 cursor-pointer" onClick={() => setSelected(2)}>
+          <div
+            className="sm:mb-20 lg:mb-5 cursor-pointer"
+            onClick={() => setSelected(2)}
+          >
             <div className={selected === 2 ? 'bold-cobogo-24' : 'bold-24'}>
               Mikael Carrara
             </div>
             <div className="light-16">{t('designer')}</div>
           </div>
-          <div className="sm:mb-20 lg:mb-5 cursor-pointer" onClick={() => setSelected(3)}>
+          <div
+            className="sm:mb-20 lg:mb-5 cursor-pointer"
+            onClick={() => setSelected(3)}
+          >
             <div className={selected === 3 ? 'bold-cobogo-24' : 'bold-24'}>
               Isabela Reis
             </div>
