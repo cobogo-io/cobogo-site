@@ -1,30 +1,13 @@
 import Head from 'next/head';
 import React from 'react';
-import Image from 'next/image';
-import Link from '../../components/NextLink';
-import Social from '../../components/IndexPage/Social';
-import Footer from '../../components/IndexPage/Footer';
-import ChooseLanguage from '../../components/ChooseLanguage';
 
 const Code = (): JSX.Element => {
   return (
     <div className="flex flex-col min-h-screen h-full bg-primary">
-      <ChooseLanguage />
       <Head>
         <title>cobogo - código de conduta</title>
       </Head>
-      <div className="mx-5 md:mx-20 py-20">
-        <Link href="/">
-          <div className="w-60 h-14 relative">
-            <Image
-              layout="fill"
-              objectFit="contain"
-              src="/logos/cobogo-logo.svg"
-              alt="Guy playing youtube site"
-            />
-          </div>
-        </Link>
-      </div>
+
       <div className="flex flex-1 flex-col mx-5 md:mx-20 pb-20">
         <h1 className="bold-36 mb-5">Código de Conduta</h1>
         <h2 className="bold-30 mb-2">Nosso Compromisso</h2>
@@ -149,8 +132,6 @@ const Code = (): JSX.Element => {
           </a>
         </p>
       </div>
-      <Social />
-      <Footer />
     </div>
   );
 };

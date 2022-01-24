@@ -3,7 +3,7 @@ import SocialLink from '../SocialLink';
 export default function Social() {
   return (
     <section className="flex flex-wrap flex-col items-center md:justify-between w-full py-5 md:py-10 px-5 md:px-32 bg-secondary">
-      <div className="flex w-full flex-col md:flex-row justify-around md:mb-8">
+      <div className="flex w-full flex-col md:flex-row justify-between md:mb-8">
         <SocialLink
           href="mailto:hi@cobogo.social"
           icon="/icons/mail-icon.svg"
@@ -21,7 +21,7 @@ export default function Social() {
         />
       </div>
 
-      <div className="flex w-full flex-col md:flex-row justify-around">
+      <div className="flex w-full flex-col md:flex-row justify-between">
         <SocialLink
           href="https://twitter.com/cobogosocial"
           icon="/icons/twitter-icon.svg"

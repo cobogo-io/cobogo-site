@@ -1,11 +1,6 @@
 import type { NextPage } from 'next';
 import { useEffect } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
-import Social from '../../components/IndexPage/Social';
-import Footer from '../../components/IndexPage/Footer';
-import Link from '../../components/NextLink';
-import ChooseLanguage from '../../components/ChooseLanguage';
 import { Wom, initRecorder, initViewer } from '../../components/Wom';
 
 const Review: NextPage = () => {
@@ -20,22 +15,10 @@ const Review: NextPage = () => {
 
   return (
     <div className="flex flex-col min-h-screen h-full bg-primary">
-      <ChooseLanguage />
       <Head>
         <title>Cobogo - Fans</title>
       </Head>
-      <div className="mx-5 md:mx-20 py-20">
-        <Link href="/">
-          <div className="w-60 h-14 relative">
-            <Image
-              layout="fill"
-              objectFit="contain"
-              src="/logos/cobogo-logo.svg"
-              alt="Guy playing youtube site"
-            />
-          </div>
-        </Link>
-      </div>
+
       <div className="flex flex-1 flex-col mx-5 md:mx-20 pb-20">
         <div className="panel panel-default mb-3">
           <section className="flex flex-1 flex-col mx-5 md:mx-20 pb-20">
@@ -56,8 +39,6 @@ const Review: NextPage = () => {
           </section>
         </div>
       </div>
-      <Social />
-      <Footer />
     </div>
   );
 };

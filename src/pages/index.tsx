@@ -4,16 +4,13 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 
 import DevProtocol from '../components/IndexPage/DevProtocol';
-import Footer from '../components/IndexPage/Footer';
 import Header from '../components/IndexPage/Header';
-import HowWorkPatron from '../components/IndexPage/HowWorkPatron';
 import HowWorkContentCreator from '../components/IndexPage/HowWorkContentCreator';
+import HowWorkPatron from '../components/IndexPage/HowWorkPatron';
 import Partners from '../components/IndexPage/Partners';
-import Social from '../components/IndexPage/Social';
 import Team from '../components/IndexPage/Team';
 import TechnicalViewpoint from '../components/IndexPage/TechnicalViewpoint';
 import LightOnTop from '../components/LightOnTop';
-import NavBar from '../components/NavBar';
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -23,8 +20,8 @@ export default function Home() {
       <Head>
         <title>cobogo</title>
       </Head>
+
       <LightOnTop />
-      <NavBar />
       <Header />
       <HowWorkContentCreator setShowModal={setShowModal} />
       <HowWorkPatron setShowModal={setShowModal} />
@@ -32,8 +29,6 @@ export default function Home() {
       <DevProtocol />
       <Team />
       <Partners />
-      <Social />
-      <Footer />
 
       {showModal ? (
         <>

@@ -1,13 +1,12 @@
-import type { NextPage } from 'next';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import CallToActionButton from '../CallToActionButton';
 
-interface Props {
+interface HowWorkPatronProps {
   setShowModal: (bool: boolean) => void;
 }
 
-const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
+export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
   const { t } = useTranslation('how-work-patron');
 
   return (
@@ -16,14 +15,22 @@ const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
       className="flex flex-col px-5 md:px-0 items-center h-full w-full py-24 bg-primary"
     >
       <div>
-        <div className="mb-24">
+        <div className="mb-24 relative">
           <Image
-            className="mb-24"
-            width="1359px"
-            height="401px"
-            src="/images/airdrop.svg"
-            alt="airdrop"
+            src="/images/airdrop-bg.svg"
+            width={1159}
+            height={200}
+            alt="airdrop background"
           />
+          <div className="absolute z-10 top-0 flex flex-col justify-center items-start w-full h-full p-2 sm:p-2 md:p-4 lg:p-8">
+            <h2 className="text-blue font-bold text-xs sm:text-xl md:text-2xl lg:text-3xl">
+              {t('join our Telegram')}
+            </h2>
+            <p className="text-white font-normal text-xs sm:text-md md:text-lg lg:text-xl">
+              {t(`before the onboarding waitlist is up to see if you're eligible for
+              the airdrop`)}
+            </p>
+          </div>
         </div>
         <h1 className="bold-36 text-center pb-7">
           {t('how it works for the Patron')}
@@ -107,6 +114,4 @@ const HowWorkPatron: NextPage<Props> = ({ setShowModal }) => {
       />
     </section>
   );
-};
-
-export default HowWorkPatron;
+}

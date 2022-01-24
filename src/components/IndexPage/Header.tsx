@@ -6,7 +6,7 @@ export default function Header() {
   const { t } = useTranslation('header');
 
   return (
-    <section className="flex h-full w-full pt-24  bg-primary">
+    <section className="flex h-full w-full bg-primary pb-24 lg:pb-0">
       <div className="flex-1 md:px-20 mb-0 text-white">
         <h2 className="font-normal text-2xl sm:text-4xl lg:text-5xl flex flex-col justify-center items-center mb-16">
           {t('the next generation of')}
@@ -14,8 +14,8 @@ export default function Header() {
             {t('YouTube monetization')}
           </h1>
         </h2>
-        <div className="flex flex-row justify-around items-center">
-          <div className="w-1/2 h-1/2">
+        <div className="flex flex-row justify-around items-start">
+          <div className="w-1/2 h-1/2 flex flex-col items-start">
             <div className="mb-8">
               <h2 className="font-normal text-xl md:text-2xl lg:text-3xl">
                 {t(

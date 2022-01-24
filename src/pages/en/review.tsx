@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Social from '../../components/IndexPage/Social';
 import Footer from '../../components/IndexPage/Footer';
 import Link from '../../components/NextLink';
-import ChooseLanguage from '../../components/ChooseLanguage';
+import SelectLanguage from '../../components/SelectLanguage';
 import { Wom, initRecorder, initViewer } from '../../components/Wom';
 
 const Review: NextPage = () => {
@@ -20,7 +20,7 @@ const Review: NextPage = () => {
 
   return (
     <div className="flex flex-col min-h-screen h-full bg-primary">
-      <ChooseLanguage />
+      <SelectLanguage />
       <Head>
         <title>Cobogo - Fans</title>
       </Head>

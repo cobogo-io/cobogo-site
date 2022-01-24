@@ -13,19 +13,19 @@ export default function CallToActionButton({
     <>
       {color === 'purple' && (
         <button
-          className="bold-24 bg-purple hover:bg-purplehover px-8 py-4 m-2"
+          className="bold-24 bg-purple hover:bg-purplehover px-8 py-4"
           onClick={onClick}
         >
-          <span className="text-sm md:text-md lg:text-lg">{placeholder}</span>
+          <span className="text-md md:text-xl lg:text-2xl">{placeholder}</span>
         </button>
       )}
 
       {color === 'purple-light' && (
         <button
-          className="bold-24 bg-purplelight hover:bg-purplelighthover px-8 py-4 m-2 text-sm"
+          className="bold-24 bg-purplelight hover:bg-purplelighthover px-8 py-4"
           onClick={onClick}
         >
-          <span className="text-sm md:text-md lg:text-lg">{placeholder}</span>
+          <span className="text-md md:text-xl lg:text-2xl">{placeholder}</span>
         </button>
       )}
     </>

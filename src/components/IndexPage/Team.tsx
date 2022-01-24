@@ -26,7 +26,7 @@ const Team: NextPage = () => {
           </div>
           <div className="mb-5  cursor-pointer" onClick={() => setSelected(1)}>
             <div className={selected === 1 ? 'bold-cobogo-24' : 'bold-24'}>
-              Jonatas Martins
+              Thiago Machado
             </div>
             <div className="light-16">{t('developer')}</div>
           </div>
@@ -69,17 +69,17 @@ const Team: NextPage = () => {
             <div className="bold-24 pb-10">{t('developer')}</div>
             <div className="regular-18 pb-5">
               {t(
-                'Jonatas is a full stack developer specialized in mobile development, and is constantly updating his knowledge as a programmer. Currently focusing on web 3, blockchain and dapp technologies. His responsibility is to develop the cobogo dapp.'
+                'Thiago is a full stack developer specialized in web development, and is constantly updating his knowledge as a programmer.'
               )}
             </div>
             <a
-              href="https://www.linkedin.com/in/jonatas-cmartins/"
+              href="https://www.linkedin.com/in/thiago0x01/"
               className="bold-cobogo-16 cursor-pointer mr-5"
             >
               Linkedin
             </a>
             <a
-              href="https://github.com/jonatascm"
+              href="https://github.com/thiago0x01"
               className="bold-cobogo-16 cursor-pointer"
             >
               Github
