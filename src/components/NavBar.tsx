@@ -17,7 +17,7 @@ export default function NavBar() {
           </div>
         </Link>
       </div>
-      <div className="w-full sm:w-auto flex flex-row justify-around sm:justify-center items-center">
+      <div className="w-full sm:w-auto flex flex-row justify-around sm:justify-center items-center z-10">
         <a href="https://docs.cobogo.social" className="sm:mr-8 font-bold">
           whitepaper
         </a>
