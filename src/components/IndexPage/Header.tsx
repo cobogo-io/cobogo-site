@@ -1,6 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import CallToActionButton from '../CallToActionButton';
+import Link from 'next/link';
 
 export default function Header() {
   const { t } = useTranslation('header');
@@ -30,10 +31,14 @@ export default function Header() {
                 )}
               </p>
             </div>
-            <CallToActionButton
-              color="purple-light"
-              placeholder={t('join our Telegram')}
-            />
+            <Link href="https://t.me/cobogosocial">
+              <a target="_blank" rel="noopener noreferrer">
+                <CallToActionButton
+                  color="purple-light"
+                  placeholder={t('join our Telegram')}
+                />
+              </a>
+            </Link>
           </div>
           <div className="hidden lg:block">
             <Image
