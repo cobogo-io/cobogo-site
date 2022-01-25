@@ -15,8 +15,8 @@ export default function Header() {
             {t('YouTube monetization')}
           </h1>
         </h2>
-        <div className="flex flex-row justify-around items-start">
-          <div className="w-1/2 h-1/2 flex flex-col items-start">
+        <div className="flex flex-row justify-around items-start px-5">
+          <div className="lg:w-1/2 lg:h-1/2 flex flex-col items-start">
             <div className="mb-8">
               <h2 className="font-normal text-xl md:text-2xl lg:text-3xl">
                 {t(
