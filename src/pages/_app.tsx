@@ -5,9 +5,9 @@ import { appWithTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
-import Footer from '../components/IndexPage/Footer';
-import Social from '../components/IndexPage/Social';
+import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
+import Social from '../components/Social';
 
 import type { AppProps } from 'next/app';
 const cache = new InMemoryCache();

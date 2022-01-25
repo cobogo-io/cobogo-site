@@ -1,14 +1,14 @@
-import type { NextPage } from 'next';
-import { useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import Social from '../../components/IndexPage/Social';
-import Footer from '../../components/IndexPage/Footer';
+import { useEffect } from 'react';
+
+import Footer from '../../components/Footer';
 import Link from '../../components/NextLink';
 import SelectLanguage from '../../components/SelectLanguage';
-import { Wom, initRecorder, initViewer } from '../../components/Wom';
+import Social from '../../components/Social';
+import { initRecorder, initViewer, Wom } from '../../components/Wom';
 
-const Review: NextPage = () => {
+export default function Review() {
   useEffect(() => {
     console.log('en');
 
@@ -60,6 +60,4 @@ const Review: NextPage = () => {
       <Footer />
     </div>
   );
-};
-
-export default Review;
+}

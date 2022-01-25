@@ -1,4 +1,4 @@
-const FavIcon = (): JSX.Element => {
+export default function FavIcon() {
   return (
     <>
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -35,6 +35,4 @@ const FavIcon = (): JSX.Element => {
       <meta name="theme-color" content="#ffffff" />
     </>
   );
-};
-
-export default FavIcon;
+}

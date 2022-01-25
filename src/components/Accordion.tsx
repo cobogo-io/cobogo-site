@@ -5,7 +5,7 @@ interface AccordionProps {
   children: JSX.Element;
 }
 
-export const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
+export default function Accordion({ title, children }: AccordionProps) {
   const [active, setActive] = useState(false);
   const [height, setHeight] = useState('0px');
 
@@ -13,7 +13,6 @@ export const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
 
   function toggleAccordion() {
     setActive(!active);
-    // eslint-disable-next-line
     setHeight(active ? '0px' : `${contentSpace.current.scrollHeight}px`);
   }
 
@@ -34,4 +33,4 @@ export const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
       </div>
     </div>
   );
-};
+}

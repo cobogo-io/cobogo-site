@@ -1,18 +1,19 @@
 import BigNumber from 'bignumber.js';
-import { useMemo, useEffect, useState } from 'react';
-import { useGetDevPrice } from '../fixtures/uniswap/hooks';
+import { useEffect, useMemo, useState } from 'react';
+
 import {
-  useListPropertyQuery,
-  useCountAccountLockupUniqueQuery,
-} from '../graphql';
-import {
-  useAPY,
   useAnnualSupplyGrowthRatio,
+  useAPY,
   useCirculatingSupply,
-  useTotalSupply,
   useTotalStakingAmountOnProtocol,
+  useTotalSupply,
 } from '../fixtures/dev-kit/hooks';
+import { useGetDevPrice } from '../fixtures/uniswap/hooks';
 import { toNaturalNumber } from '../fixtures/utility';
+import {
+  useCountAccountLockupUniqueQuery,
+  useListPropertyQuery,
+} from '../graphql';
 
 export const DevTotalCap = (_: {}) => {
   const { totalSupply } = useTotalSupply();
@@ -64,7 +65,7 @@ export const DevStakingRatio = (_: {}) => {
   const { circulatingSupply } = useCirculatingSupply();
 
   useEffect(() => {
-    circulatingSupply().then((circulatingSupplyValue: any) => {
+    circulatingSupply().then((circulatingSupplyValue: number) => {
       const totalStakingAmountValue = toNaturalNumber(
         new BigNumber(totalStakingAmount ?? 0)
       );
@@ -135,9 +136,7 @@ export const AssetOnboarded = (_: {}) => {
 };
 
 export const PatronOnboarded = (_: {}) => {
-  console.log('1AQUI');
   const { data } = useCountAccountLockupUniqueQuery();
-  console.log('DAQUI');
   const formatPatronOnboarded = new BigNumber(
     data?.account_lockup_aggregate.aggregate?.count ?? 0
   );

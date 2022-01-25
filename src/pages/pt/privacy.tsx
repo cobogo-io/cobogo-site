@@ -1,7 +1,6 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
 
-const Privacy: NextPage = () => {
+export default function Privacy() {
   return (
     <div className="flex flex-col min-h-screen h-full bg-primary">
       <Head>
@@ -127,6 +126,4 @@ const Privacy: NextPage = () => {
       </div>
     </div>
   );
-};
-
-export default Privacy;
+}

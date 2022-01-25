@@ -1,7 +1,6 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
 
-const Code: NextPage = () => {
+export default function Terms() {
   return (
     <div className="flex flex-col min-h-screen h-full bg-primary">
       <Head>
@@ -121,6 +120,4 @@ const Code: NextPage = () => {
       </div>
     </div>
   );
-};
-
-export default Code;
+}

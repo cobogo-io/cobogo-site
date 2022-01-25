@@ -1,9 +1,7 @@
-import type { NextPage } from 'next';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 
-const Partners: NextPage = () => {
-  // const router = useRouter();
+export default function Partners() {
   const { t } = useTranslation('partners');
 
   return (
@@ -46,6 +44,4 @@ const Partners: NextPage = () => {
       </div>
     </section>
   );
-};
-
-export default Partners;
+}

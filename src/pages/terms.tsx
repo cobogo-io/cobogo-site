@@ -1,10 +1,10 @@
-import type { NextPage } from 'next';
 import { useRouter } from 'next/router';
-import PageEn from './en/terms';
-import PagePt from './pt/terms';
-import PageEs from './es/terms';
 
-const Terms: NextPage = () => {
+import PageEn from './en/terms';
+import PageEs from './es/terms';
+import PagePt from './pt/terms';
+
+export default function Terms() {
   const router = useRouter();
 
   switch (router.locale) {
@@ -15,6 +15,4 @@ const Terms: NextPage = () => {
     default:
       return <PageEn />;
   }
-};
-
-export default Terms;
+}

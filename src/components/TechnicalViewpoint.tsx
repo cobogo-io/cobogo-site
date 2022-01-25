@@ -1,8 +1,7 @@
-import type { NextPage } from 'next';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 
-const TechnicalViewpoint: NextPage = () => {
+export default function TechnicalViewpoint() {
   const { t } = useTranslation('technical-viewpoint');
 
   return (
@@ -40,6 +39,4 @@ const TechnicalViewpoint: NextPage = () => {
       </div>
     </section>
   );
-};
-
-export default TechnicalViewpoint;
+}

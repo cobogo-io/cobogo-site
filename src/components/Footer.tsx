@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import Link from '../NextLink';
+
+import Link from './NextLink';
 
 export default function Footer() {
   const { t } = useTranslation('footer');

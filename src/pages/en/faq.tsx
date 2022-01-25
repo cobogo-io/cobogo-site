@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import { Accordion } from '../../components/Accordion';
+
+import Accordion from '../../components/Accordion';
 
 export default function Faq() {
   return (

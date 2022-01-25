@@ -1,26 +1,18 @@
-import type { NextPage } from 'next';
-import { useRouter } from 'next/router'
-import PageEn from './en/code';
-import PagePt from './pt/code';
-import PageEs from './es/code';
+import { useRouter } from 'next/router';
 
-const Code: NextPage = () => {
+import PageEn from './en/code';
+import PageEs from './es/code';
+import PagePt from './pt/code';
+
+export default function Code() {
   const router = useRouter();
 
-  switch(router.locale) {
+  switch (router.locale) {
     case 'pt':
-      return (
-        <PagePt />
-      );
+      return <PagePt />;
     case 'es':
-      return (
-        <PageEs />
-      );
+      return <PageEs />;
     default:
-      return (
-        <PageEn />
-      )
+      return <PageEn />;
   }
-};
-
-export default Code;
+}

@@ -9,15 +9,15 @@ export const Wom = (): JSX.Element => {
   return (
     <>
       <style jsx>{`
-      .wom-recorder {
-        width: 300px;
-        height: 700px;
-        overflow-y:auto;
-      }
-      .wom-viewer {
-        width: 285px;
-        height: 700px;
-      }
+        .wom-recorder {
+          width: 300px;
+          height: 700px;
+          overflow-y: auto;
+        }
+        .wom-viewer {
+          width: 285px;
+          height: 700px;
+        }
       `}</style>
       <div id="wom-recorder-CBG01" className="wom-recorder"></div>
       <div id="wom-viewer-plugin" className="wom-viewer"></div>
@@ -43,8 +43,8 @@ export const initRecorder = () => {
       imageUrl: 'https://bullz.cobogo.xyz/images/wom/background.png',
     },
     isDev: false,
-  })
-}
+  });
+};
 
 export const initViewer = () => {
   const params = {
@@ -53,15 +53,18 @@ export const initViewer = () => {
     remoteProductId: 'CBG01',
     color: 'black',
     textColor: 'white',
-    isDev: false
-  }
+    isDev: false,
+  };
 
-  window.wom.check(params).then((values:any) => {
-    if (values[0].isSuccess) {
-      window.wom.init(params);
-      return console.log('womjs config success');
-    }
-  }).catch(console.error)
-}
+  window.wom
+    .check(params)
+    .then((values: any) => {
+      if (values[0].isSuccess) {
+        window.wom.init(params);
+        return console.log('womjs config success');
+      }
+    })
+    .catch(console.error);
+};
 
 export default Wom;

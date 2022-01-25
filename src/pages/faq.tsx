@@ -1,26 +1,18 @@
-import type { NextPage } from 'next';
-import { useRouter } from 'next/router'
-import PageEn from './en/faq';
-import PagePt from './pt/faq';
-import PageEs from './es/faq';
+import { useRouter } from 'next/router';
 
-const Faq: NextPage = () => {
+import PageEn from './en/faq';
+import PageEs from './es/faq';
+import PagePt from './pt/faq';
+
+export default function Faq() {
   const router = useRouter();
 
-  switch(router.locale) {
+  switch (router.locale) {
     case 'pt':
-      return (
-        <PagePt />
-      );
+      return <PagePt />;
     case 'es':
-      return (
-        <PageEs />
-      );
+      return <PageEs />;
     default:
-      return (
-        <PageEn />
-      )
+      return <PageEn />;
   }
-};
-
-export default Faq;
+}

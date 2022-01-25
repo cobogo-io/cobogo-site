@@ -1,26 +1,18 @@
-import type { NextPage } from 'next';
-import { useRouter } from 'next/router'
-import PageEn from './en/privacy';
-import PagePt from './pt/privacy';
-import PageEs from './es/privacy';
+import { useRouter } from 'next/router';
 
-const Privacy: NextPage = () => {
+import PageEn from './en/privacy';
+import PageEs from './es/privacy';
+import PagePt from './pt/privacy';
+
+export default function Privacy() {
   const router = useRouter();
 
-  switch(router.locale) {
+  switch (router.locale) {
     case 'pt':
-      return (
-        <PagePt />
-      );
+      return <PagePt />;
     case 'es':
-      return (
-        <PageEs />
-      );
+      return <PageEs />;
     default:
-      return (
-        <PageEn />
-      )
+      return <PageEn />;
   }
-};
-
-export default Privacy;
+}

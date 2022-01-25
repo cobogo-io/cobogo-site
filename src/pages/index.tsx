@@ -3,16 +3,16 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
 
-import DevProtocol from '../components/IndexPage/DevProtocol';
-import Header from '../components/IndexPage/Header';
-import HowWorkContentCreator from '../components/IndexPage/HowWorkContentCreator';
-import HowWorkPatron from '../components/IndexPage/HowWorkPatron';
-import Partners from '../components/IndexPage/Partners';
-import Team from '../components/IndexPage/Team';
-import TechnicalViewpoint from '../components/IndexPage/TechnicalViewpoint';
+import DevProtocol from '../components/DevProtocol';
+import Header from '../components/Header';
+import HowWorkContentCreator from '../components/HowWorkContentCreator';
+import HowWorkPatron from '../components/HowWorkPatron';
 import LightOnTop from '../components/LightOnTop';
+import Partners from '../components/Partners';
+import Team from '../components/Team';
+import TechnicalViewpoint from '../components/TechnicalViewpoint';
 
-export default function Home() {
+export default function Index() {
   const [showModal, setShowModal] = useState(false);
 
   return (

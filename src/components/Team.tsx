@@ -1,9 +1,9 @@
-import { useState } from 'react';
 import { useTranslation } from 'next-i18next';
+import { useState } from 'react';
 
 export default function Team() {
   const { t } = useTranslation('team');
-  const [selected, setSelected] = useState<Number>(0);
+  const [selected, setSelected] = useState(0);
 
   return (
     <section className="flex flex-col items-center h-full w-full py-24 bg-secondary">

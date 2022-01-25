@@ -1,9 +1,9 @@
-import type { NextPage } from 'next';
-import { useEffect } from 'react';
 import Head from 'next/head';
-import { Wom, initRecorder, initViewer } from '../../components/Wom';
+import { useEffect } from 'react';
 
-const Review: NextPage = () => {
+import { initRecorder, initViewer, Wom } from '../../components/Wom';
+
+export default function Review() {
   useEffect(() => {
     console.log('es');
 
@@ -41,6 +41,4 @@ const Review: NextPage = () => {
       </div>
     </div>
   );
-};
-
-export default Review;
+}

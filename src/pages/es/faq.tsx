@@ -1,7 +1,8 @@
 import Head from 'next/head';
-import { Accordion } from '../../components/Accordion';
 
-const Faq = (): JSX.Element => {
+import Accordion from '../../components/Accordion';
+
+export default function Faq() {
   return (
     <div className="flex flex-col min-h-screen h-full bg-primary">
       <Head>
@@ -176,6 +177,4 @@ const Faq = (): JSX.Element => {
       </div>
     </div>
   );
-};
-
-export default Faq;
+}

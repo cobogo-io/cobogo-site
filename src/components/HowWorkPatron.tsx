@@ -1,6 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
-import CallToActionButton from '../CallToActionButton';
+
+import CallToActionButton from './CallToActionButton';
 
 interface HowWorkPatronProps {
   setShowModal: (bool: boolean) => void;

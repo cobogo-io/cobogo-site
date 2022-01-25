@@ -1,11 +1,11 @@
 import NextLink, { LinkProps } from 'next/link';
-import { FC, HTMLProps, useCallback } from 'react';
+import { HTMLProps, useCallback } from 'react';
 
 interface FLinkProps
   extends Omit<HTMLProps<HTMLAnchorElement>, 'href' | 'as'>,
     LinkProps {}
 
-const Link: FC<FLinkProps> = ({
+export default function Link({
   children,
   href,
   as,
@@ -17,7 +17,7 @@ const Link: FC<FLinkProps> = ({
   locale,
   target,
   ...anchorProps
-}) => {
+}: FLinkProps) {
   const handleClick = useCallback(
     (e) => {
       if ((href as string).startsWith('#')) {
@@ -55,6 +55,4 @@ const Link: FC<FLinkProps> = ({
       </a>
     </NextLink>
   );
-};
-
-export default Link;
+}

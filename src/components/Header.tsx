@@ -1,7 +1,8 @@
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
-import CallToActionButton from '../CallToActionButton';
 import Link from 'next/link';
+
+import CallToActionButton from './CallToActionButton';
 
 export default function Header() {
   const { t } = useTranslation('header');

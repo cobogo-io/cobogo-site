@@ -1,17 +1,18 @@
-import type { NextPage } from 'next';
 import { useTranslation } from 'next-i18next';
+
 import {
-  DevPrice,
+  AssetOnboarded,
+  CreatorAPY,
+  CreatorsRewardsUsd,
   DevMarketCap,
+  DevPrice,
   DevStakingRatio,
   DevStakingValue,
-  CreatorAPY,
   StakerAPY,
   SupplyGrowth,
-  AssetOnboarded,
-  CreatorsRewardsUsd,
-} from '../DevStats';
-const DevProtocol: NextPage = () => {
+} from './DevStats';
+
+export default function DevProtocol() {
   const { t } = useTranslation('dev-protocol');
 
   return (
@@ -126,6 +127,4 @@ const DevProtocol: NextPage = () => {
       </div>
     </section>
   );
-};
-
-export default DevProtocol;
+}
