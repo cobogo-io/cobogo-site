@@ -12,12 +12,12 @@ export default function Header() {
       <div className="flex-1 md:px-20 mb-0 text-white">
         <h2 className="font-normal text-2xl sm:text-4xl lg:text-5xl flex flex-col justify-center items-center mb-16">
           {t('the next generation of')}
-          <h1 className="font-bold  text-2xl sm:text-4xl md:text-5xl lg:text-7xl flex flex-col justify-center items-center">
+          <p className="font-bold text-2xl sm:text-4xl md:text-5xl lg:text-7xl flex flex-col justify-center items-center">
             {t('YouTube monetization')}
-          </h1>
+          </p>
         </h2>
-        <div className="flex flex-row justify-around items-start px-5">
-          <div className="lg:w-1/2 lg:h-1/2 flex flex-col items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 px-5">
+          <div className="lg:w-full lg:h-full flex flex-col items-start">
             <div className="mb-8">
               <h2 className="font-normal text-xl md:text-2xl lg:text-3xl">
                 {t(
@@ -41,7 +41,7 @@ export default function Header() {
               </a>
             </Link>
           </div>
-          <div className="hidden lg:block h-[492px]">
+          <div className="hidden h-[492px] lg:w-full lg:flex lg:justify-center">
             <Image
               width="486px"
               height="492px"

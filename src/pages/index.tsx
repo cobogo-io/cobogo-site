@@ -73,5 +73,6 @@ export const getStaticProps = async ({ locale }: { locale: string }) => ({
       'partners',
       'social',
     ])),
+    revalidate: 60 * 60,
   },
 });
