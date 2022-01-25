@@ -40,7 +40,7 @@ export default function Header() {
               </a>
             </Link>
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden lg:block h-[492px]">
             <Image
               width="486px"
               height="492px"

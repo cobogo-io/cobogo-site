@@ -24,7 +24,7 @@ export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
               alt="airdrop background"
             />
           </div>
-          <div className="absolute z-10 top-0 flex flex-col justify-center items-start w-full h-full p-2 sm:p-2 md:p-4 lg:p-8">
+          <div className="absolute z-10 top-0 flex flex-col justify-center items-start w-full h-full pl-12">
             <div className="flex flex-row">
               <p className="text-blue font-bold text-2xl mr-2">
                 {t('join our Telegram')}
@@ -39,25 +39,25 @@ export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
           </div>
         </div>
         <div className="mb-24 relative visible md:invisible md:hidden w-full flex justify-center items-center">
-          <div className="absolute z-10 top-0 flex flex-col justify-start items-start h-full text-left p-8">
+          <div className="absolute z-10 top-0 flex flex-col justify-start items-start h-full text-left pt-12">
             <div className="flex">
-              <p className="text-blue font-bold text-lg sm:text-3xl mr-2">
+              <p className="text-blue font-bold text-xl sm:text-3xl mr-2">
                 {t('join our Telegram')}
               </p>
-              <p className="text-white font-normal text-lg sm:text-3xl">
+              <p className="text-white font-normal text-xl sm:text-3xl">
                 {t('before')}
               </p>
             </div>
-            <p className="text-white font-normal text-lg sm:text-3xl">
+            <p className="text-white font-normal text-xl sm:text-3xl">
               {t('the waitlist is up to be')}
             </p>
-            <p className="text-white font-normal text-lg sm:text-3xl">
+            <p className="text-white font-normal text-xl sm:text-3xl">
               {t('informed of future')}
             </p>
-            <p className="text-white font-normal text-lg sm:text-3xl">
+            <p className="text-white font-normal text-xl sm:text-3xl">
               {t('bounties and')}
             </p>
-            <p className="text-white font-normal text-lg sm:text-3xl">
+            <p className="text-white font-normal text-xl sm:text-3xl">
               {t('airdrops')}
             </p>
           </div>
