@@ -65,7 +65,7 @@ export const DevStakingRatio = (_: {}) => {
   const { circulatingSupply } = useCirculatingSupply();
 
   useEffect(() => {
-    circulatingSupply().then((circulatingSupplyValue: number) => {
+    circulatingSupply().then((circulatingSupplyValue: any) => {
       const totalStakingAmountValue = toNaturalNumber(
         new BigNumber(totalStakingAmount ?? 0)
       );
