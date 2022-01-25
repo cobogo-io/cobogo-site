@@ -3,7 +3,7 @@ import '../../styles/globals.css';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import { appWithTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 import Footer from '../components/IndexPage/Footer';
 import Social from '../components/IndexPage/Social';

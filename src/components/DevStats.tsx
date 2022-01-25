@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js';
-import React, { useMemo, useEffect, useState } from 'react';
+import { useMemo, useEffect, useState } from 'react';
 import { useGetDevPrice } from '../fixtures/uniswap/hooks';
 import {
   useListPropertyQuery,

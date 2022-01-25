@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import React from 'react';
 import { Accordion } from '../../components/Accordion';
 
 const Faq = (): JSX.Element => {

@@ -21,7 +21,7 @@ const TechnicalViewpoint: NextPage = () => {
             layout="fill"
             objectFit="contain"
             sizes="100%"
-            src="/technical-viewpoint.svg"
+            src="/images/technical-viewpoint.svg"
             alt="technical viewpoint flow"
           />
         </div>

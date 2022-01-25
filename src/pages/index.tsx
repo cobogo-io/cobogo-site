@@ -1,7 +1,7 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import DevProtocol from '../components/IndexPage/DevProtocol';
 import Header from '../components/IndexPage/Header';

@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import { useRouter } from 'next/router'
-import React from 'react';
 import PageEn from './en/code';
 import PagePt from './pt/code';
 import PageEs from './es/code';
