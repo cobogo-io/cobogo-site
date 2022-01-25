@@ -27,7 +27,7 @@ export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
           <div className="absolute z-10 top-0 flex flex-col justify-center items-start w-full h-full p-2 sm:p-2 md:p-4 lg:p-8">
             <div className="flex flex-row">
               <p className="text-blue font-bold text-2xl mr-2">
-                {t('join our Telegram ')}
+                {t('join our Telegram')}
               </p>
               <p className="text-white font-normal text-2xl">
                 {t('before the waitlist is up to be')}

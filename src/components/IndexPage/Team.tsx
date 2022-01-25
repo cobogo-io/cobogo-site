@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import type { NextPage } from 'next';
 import { useTranslation } from 'next-i18next';
 
-const Team: NextPage = () => {
+export default function Team() {
   const { t } = useTranslation('team');
   const [selected, setSelected] = useState<Number>(0);
 
@@ -24,25 +23,19 @@ const Team: NextPage = () => {
             </div>
             <div className="light-16">{t('product strategist')}</div>
           </div>
-          <div className="mb-5  cursor-pointer" onClick={() => setSelected(1)}>
+          <div className="mb-5 cursor-pointer" onClick={() => setSelected(1)}>
             <div className={selected === 1 ? 'bold-cobogo-24' : 'bold-24'}>
               Thiago Machado
             </div>
             <div className="light-16">{t('developer')}</div>
           </div>
-          <div
-            className="sm:mb-20 lg:mb-5 cursor-pointer"
-            onClick={() => setSelected(2)}
-          >
+          <div className="mb-5 cursor-pointer" onClick={() => setSelected(2)}>
             <div className={selected === 2 ? 'bold-cobogo-24' : 'bold-24'}>
               Mikael Carrara
             </div>
             <div className="light-16">{t('designer')}</div>
           </div>
-          <div
-            className="sm:mb-20 lg:mb-5 cursor-pointer"
-            onClick={() => setSelected(3)}
-          >
+          <div className="mb-5 cursor-pointer" onClick={() => setSelected(3)}>
             <div className={selected === 3 ? 'bold-cobogo-24' : 'bold-24'}>
               Isabela Reis
             </div>
@@ -113,6 +106,4 @@ const Team: NextPage = () => {
       </div>
     </section>
   );
-};
-
-export default Team;
+}
