@@ -16,7 +16,7 @@ export default function Header() {
             {t('YouTube monetization')}
           </p>
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 px-5">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 px-5">
           <div className="lg:w-full lg:h-full flex flex-col items-start">
             <div className="mb-8">
               <h2 className="font-normal text-xl md:text-2xl lg:text-3xl">
@@ -41,14 +41,13 @@ export default function Header() {
               </a>
             </Link>
           </div>
-          <div className="hidden h-[492px] lg:w-full lg:flex lg:justify-center">
-            <Image
-              width="486px"
-              height="492px"
-              objectFit="contain"
-              src="/images/main.svg"
-              alt="Guy playing youtube site"
-            />
+          <div className="hidden h-[492px] lg:w-full lg:flex lg:justify-center w-full">
+            <div className="flex justify-center items-center h-full w-full">
+              <img
+                className="object-fill w-full h-full"
+                src="/images/main.png"
+              />
+            </div>
           </div>
         </div>
       </div>
