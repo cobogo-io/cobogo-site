@@ -22,7 +22,7 @@ export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="mb-24 relative invisible hidden md:visible md:flex cursor-pointer">
+          <div className="mb-24 relative invisible hidden md:visible md:flex cursor-pointer hover:opacity-90">
             <div>
               <Image
                 src="/images/airdrop-bg.svg"
@@ -51,7 +51,7 @@ export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="mb-24 relative visible md:invisible md:hidden w-full flex justify-center items-center cursor-pointer">
+          <div className="mb-24 relative visible md:invisible md:hidden w-full flex justify-center items-center cursor-pointer hover:opacity-90">
             <div className="absolute z-10 top-0 flex flex-col justify-start items-start h-full text-left pt-12">
               <div className="flex">
                 <p className="text-blue font-bold text-xl sm:text-3xl mr-2">
