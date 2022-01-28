@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import CallToActionButton from './CallToActionButton';
 
@@ -16,61 +17,65 @@ export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
       className="flex flex-col px-5 md:px-0 items-center h-full w-full py-24 bg-primary"
     >
       <div>
-        <div className="mb-24 relative invisible hidden md:visible md:flex">
-          <div>
-            <Image
-              src="/images/airdrop-bg.svg"
-              width={1159}
-              height={200}
-              alt="airdrop background"
-            />
-          </div>
-          <div className="absolute z-10 top-0 flex flex-col justify-center items-start w-full h-full pl-12">
-            <div className="flex flex-row">
-              <p className="text-blue font-bold text-2xl mr-2">
-                {t('join our Telegram')}
-              </p>
+        <Link href="https://t.me/cobogosocial">
+          <div className="mb-24 relative invisible hidden md:visible md:flex cursor-pointer">
+            <div>
+              <Image
+                src="/images/airdrop-bg.svg"
+                width={1159}
+                height={200}
+                alt="airdrop background"
+              />
+            </div>
+            <div className="absolute z-10 top-0 flex flex-col justify-center items-start w-full h-full pl-12">
+              <div className="flex flex-row">
+                <p className="text-blue font-bold text-2xl mr-2">
+                  {t('join our Telegram')}
+                </p>
+                <p className="text-white font-normal text-2xl">
+                  {t('before the waitlist is up to be')}
+                </p>
+              </div>
               <p className="text-white font-normal text-2xl">
-                {t('before the waitlist is up to be')}
+                {t('informed of future bounties and airdrops')}
               </p>
             </div>
-            <p className="text-white font-normal text-2xl">
-              {t('informed of future bounties and airdrops')}
-            </p>
           </div>
-        </div>
-        <div className="mb-24 relative visible md:invisible md:hidden w-full flex justify-center items-center">
-          <div className="absolute z-10 top-0 flex flex-col justify-start items-start h-full text-left pt-12">
-            <div className="flex">
-              <p className="text-blue font-bold text-xl sm:text-3xl mr-2">
-                {t('join our Telegram')}
+        </Link>
+        <Link href="https://t.me/cobogosocial">
+          <div className="mb-24 relative visible md:invisible md:hidden w-full flex justify-center items-center cursor-pointer">
+            <div className="absolute z-10 top-0 flex flex-col justify-start items-start h-full text-left pt-12">
+              <div className="flex">
+                <p className="text-blue font-bold text-xl sm:text-3xl mr-2">
+                  {t('join our Telegram')}
+                </p>
+                <p className="text-white font-normal text-xl sm:text-3xl">
+                  {t('before')}
+                </p>
+              </div>
+              <p className="text-white font-normal text-xl sm:text-3xl">
+                {t('the waitlist is up to be')}
               </p>
               <p className="text-white font-normal text-xl sm:text-3xl">
-                {t('before')}
+                {t('informed of future')}
+              </p>
+              <p className="text-white font-normal text-xl sm:text-3xl">
+                {t('bounties and')}
+              </p>
+              <p className="text-white font-normal text-xl sm:text-3xl">
+                {t('airdrops')}
               </p>
             </div>
-            <p className="text-white font-normal text-xl sm:text-3xl">
-              {t('the waitlist is up to be')}
-            </p>
-            <p className="text-white font-normal text-xl sm:text-3xl">
-              {t('informed of future')}
-            </p>
-            <p className="text-white font-normal text-xl sm:text-3xl">
-              {t('bounties and')}
-            </p>
-            <p className="text-white font-normal text-xl sm:text-3xl">
-              {t('airdrops')}
-            </p>
+            <div className="w-full flex justify-center items-center">
+              <Image
+                src="/images/airdrop-mobile-bg.png"
+                width={456}
+                height={788}
+                alt="airdrop mobile background"
+              />
+            </div>
           </div>
-          <div className="w-full flex justify-center items-center">
-            <Image
-              src="/images/airdrop-mobile-bg.png"
-              width={456}
-              height={788}
-              alt="airdrop mobile background"
-            />
-          </div>
-        </div>
+        </Link>
         <h1 className="bold-36 text-center pb-7">
           {t('how it works for the Patron')}
         </h1>

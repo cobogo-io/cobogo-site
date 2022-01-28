@@ -38,9 +38,9 @@ export default function Social() {
       <div className="flex flex-col justify-center items-start w-[225px]">
         <div className="mb-10">
           <SocialLink
-            href="https://medium.com/@cobogosocial"
-            icon="/icons/medium-icon.svg"
-            placeholder="@cobogosocial"
+            href="https://t.me/cobogosocial"
+            icon="/icons/telegram-icon.svg"
+            placeholder="/cobogosocial"
           />
         </div>
         <SocialLink
