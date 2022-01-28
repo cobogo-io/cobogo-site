@@ -22,12 +22,12 @@ export default function Footer() {
           {t('privacy policy')}
         </Link>
       </div>
-      <div className="flex items-center min-w-full md:min-w-0 justify-center px-0 md:px-5">
+      <div className="flex items-center pb-5 md:pb-0 min-w-full md:min-w-0 justify-center px-0 md:px-5">
         <Link href="/terms" className="bold-18">
           {t('terms of use')}
         </Link>
       </div>
-      <div className="flex items-center min-w-full md:min-w-0 justify-center px-0 md:px-5">
+      <div className="flex items-center md:pb-0 min-w-full md:min-w-0 justify-center px-0 md:px-5">
         <Link href="http://docs.cobogo.social" className="bold-18">
           {t('docs')}
         </Link>

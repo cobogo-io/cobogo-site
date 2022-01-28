@@ -14,7 +14,7 @@ export default function SocialLink({
   return (
     <div className="min-w-full md:min-w-0">
       <a
-        className="flex items-center pb-5 md:pb-0 cursor-pointer justify-center group"
+        className="flex items-center md:pb-0 cursor-pointer justify-center group"
         target="_blank"
         href={href}
         rel="noopener noreferrer"

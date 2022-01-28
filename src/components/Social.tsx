@@ -2,7 +2,7 @@ import SocialLink from './SocialLink';
 
 export default function Social() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-around w-full p-20 bg-secondary">
+    <section className="flex flex-col md:flex-row items-center justify-around w-full p-10 md:p-20 bg-secondary">
       <div className="flex flex-col justify-center items-start w-[225px]">
         <div className="mb-10">
           <SocialLink
