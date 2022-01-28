@@ -78,8 +78,8 @@ export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
           {t('support your favorite Content Creator while also earning money.')}
         </h2>
       </div>
-      <div className="flex flex-wrap justify-center pb-5">
-        <div className="flex flex-col items-center px-5 md:px-20 w-full md:w-1/3  min-w-full md:min-w-0 pb-10">
+      <div className="flex flex-col lg:flex-row justify-center items-center pb-5">
+        <div className="flex flex-col items-center px-5 md:px-20 w-full lg:w-1/3 min-w-full lg:min-w-0 pb-10">
           <div className="w-16 h-11 relative ">
             <Image
               layout="fill"
@@ -100,7 +100,7 @@ export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
             )}
           </div>
         </div>
-        <div className="flex flex-col items-center px-5 md:px-20 w-full md:w-1/3  min-w-full md:min-w-0 pb-10">
+        <div className="flex flex-col items-center px-5 md:px-20 w-full lg:w-1/3 min-w-full lg:min-w-0 pb-10">
           <div className="w-16 h-11 relative">
             <Image
               layout="fill"
@@ -127,7 +127,7 @@ export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
             .
           </div>
         </div>
-        <div className="flex flex-col items-center px-5 md:px-20 w-full md:w-1/3  min-w-full md:min-w-0 pb-10">
+        <div className="flex flex-col items-center px-5 md:px-20 w-full lg:w-1/3 min-w-full lg:min-w-0 pb-10">
           <div className="w-16 h-11 relative">
             <Image
               layout="fill"

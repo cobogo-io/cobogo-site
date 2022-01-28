@@ -25,8 +25,8 @@ export default function HowWorkContentCreator({
           {t('monetize and empower your fans and community with cobogo.')}
         </h2>
       </div>
-      <div className="flex flex-wrap justify-center pb-5">
-        <div className="flex flex-col items-center px-5 md:px-20 w-full md:w-1/3 min-w-full md:min-w-0 pb-10">
+      <div className="flex flex-col lg:flex-row justify-center items-center pb-5">
+        <div className="flex flex-col items-center px-5 md:px-20 w-full lg:w-1/3 min-w-full lg:min-w-0 pb-10">
           <div className="w-16 h-11 relative">
             <Image
               layout="fill"
@@ -47,7 +47,7 @@ export default function HowWorkContentCreator({
             )}
           </div>
         </div>
-        <div className="flex flex-col items-center px-5 md:px-20 w-full md:w-1/3 min-w-full md:min-w-0 pb-10">
+        <div className="flex flex-col items-center px-5 md:px-20 w-full lg:w-1/3 min-w-full lg:min-w-0 pb-10">
           <div className="w-10 h-16 relative">
             <Image
               layout="fill"
@@ -65,7 +65,7 @@ export default function HowWorkContentCreator({
             )}
           </div>
         </div>
-        <div className="flex flex-col items-center px-5 md:px-20 w-full md:w-1/3 min-w-full md:min-w-0 pb-10">
+        <div className="flex flex-col items-center px-5 md:px-20 w-full lg:w-1/3 min-w-full lg:min-w-0 pb-10">
           <div className="w-16 h-11 relative">
             <Image
               layout="fill"

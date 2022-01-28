@@ -62,7 +62,7 @@ export default function Team() {
             <div className="bold-24 pb-10">{t('developer')}</div>
             <div className="regular-18 pb-5">
               {t(
-                'Thiago is a full stack developer specialized in web development, and is constantly updating his knowledge as a programmer.'
+                'Thiago is a full stack developer focused on the JavaScript ecosystem and web applications development, seeking to be constantly evolving his knowledge within the subject, focusing on modern technologies for web2, and studying web3 technologies.'
               )}
             </div>
             <a
