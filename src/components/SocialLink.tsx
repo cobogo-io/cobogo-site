@@ -19,7 +19,7 @@ export default function SocialLink({
         href={href}
         rel="noopener noreferrer"
       >
-        <div className="w-16 h-11 relative">
+        <div className="w-24 h-11 relative">
           <Image
             layout="fill"
             objectFit="contain"
