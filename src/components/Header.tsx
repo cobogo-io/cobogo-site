@@ -1,5 +1,4 @@
 import { useTranslation } from 'next-i18next';
-import Link from 'next/link';
 
 import CallToActionButton from './CallToActionButton';
 
@@ -31,14 +30,16 @@ export default function Header() {
                 )}
               </p>
             </div>
-            <Link href="https://t.me/cobogosocial">
-              <a target="_blank" rel="noopener noreferrer">
-                <CallToActionButton
-                  color="purple-light"
-                  placeholder={t('join our Telegram')}
-                />
-              </a>
-            </Link>
+            <a
+              href="https://t.me/cobogosocial"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <CallToActionButton
+                color="purple-light"
+                placeholder={t('join our Telegram')}
+              />
+            </a>
           </div>
           <div className="hidden h-full lg:w-full lg:flex lg:justify-center w-full">
             <div className="flex justify-center items-center h-full w-full">

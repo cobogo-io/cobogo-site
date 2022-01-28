@@ -17,7 +17,11 @@ export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
       className="flex flex-col px-5 md:px-0 items-center h-full w-full py-24 bg-primary"
     >
       <div>
-        <Link href="https://t.me/cobogosocial">
+        <a
+          href="https://t.me/cobogosocial"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="mb-24 relative invisible hidden md:visible md:flex cursor-pointer">
             <div>
               <Image
@@ -41,8 +45,12 @@ export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
               </p>
             </div>
           </div>
-        </Link>
-        <Link href="https://t.me/cobogosocial">
+        </a>
+        <a
+          href="https://t.me/cobogosocial"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="mb-24 relative visible md:invisible md:hidden w-full flex justify-center items-center cursor-pointer">
             <div className="absolute z-10 top-0 flex flex-col justify-start items-start h-full text-left pt-12">
               <div className="flex">
@@ -75,7 +83,7 @@ export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
               />
             </div>
           </div>
-        </Link>
+        </a>
         <h1 className="bold-36 text-center pb-7">
           {t('how it works for the Patron')}
         </h1>
