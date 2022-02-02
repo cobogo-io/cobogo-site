@@ -16,6 +16,7 @@ module.exports = {
       white: '#FFFFFF',
       primary: '#121212',
       secondary: '#1C1C1C',
+      details: '#333333',
     },
     extend: {},
   },

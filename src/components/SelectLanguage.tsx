@@ -19,7 +19,7 @@ export default function SelectLanguage() {
   return (
     <div className="relative inline-block">
       <div
-        className="w-32 p-2 bg-secondary flex justify-center items-center cursor-pointer"
+        className="w-32 p-2 bg-details flex justify-center items-center cursor-pointer"
         onClick={handleOpenModal}
       >
         <span className="font-bold">
@@ -37,12 +37,12 @@ export default function SelectLanguage() {
       </div>
 
       {modalIsOpen && (
-        <div className=" bg-secondary flex flex-col justify-center items-center absolute right-0 cursor-pointer">
+        <div className=" w-[200px] py-4 bg-details flex flex-col justify-center items-center absolute right-0 cursor-pointer">
           {router?.locales?.map((locale) => {
             return (
               <div
                 key={locale}
-                className="p-2 w-48 hover:bg-primary font-bold"
+                className="px-6 py-1 w-full hover:bg-blue font-bold"
                 onClick={() => handleChangeLanguage(locale)}
               >
                 {locale === 'en' && 'english'}
