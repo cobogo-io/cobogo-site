@@ -10,7 +10,7 @@ export default function TechnicalViewpoint() {
         <h1 className="bold-36 text-center pb-7">{t('technical viewpoint')}</h1>
         <h2 className="light-24 text-center pb-0 md:pb-20 w-screen md:w-1/2 md:px-0 px-5">
           {t(
-            'cobogo is a dapp that leverages the Dev Protocol funding system to sustainably fund YouTube creators. Fans can stake DEV tokens on their favorite YouTuber pool and automatically start getting paid with Dev rewards.'
+            'cobogo is a dapp that leverages the Dev Protocol funding system to sustainably fund YouTube creators. Fans can stake CBG tokens on their favorite YouTuber pool and automatically start getting paid with CBG rewards.'
           )}
         </h2>
       </div>
@@ -28,7 +28,7 @@ export default function TechnicalViewpoint() {
       <div className="flex flex-col lg:flex-row w-full sm:justify-center lg:justify-between px-5 md:px-20">
         <div className="regular-18 text-left lg:w-1/3 pr-24 lg:pr-0 pb-20 lg:pb-0">
           {t(
-            'with sTokens, creators can design all the perks developed in Dev Protocol for their fans. In this way, everyone that uses this method of funding can receive benefits not found anywhere else.'
+            'with CBG (NFT), creators can design all the perks for their fans. In this way, everyone that uses this method of funding can receive benefits not found anywhere else.'
           )}
         </div>
         <div className="regular-18 text-right lg:w-1/3 pl-24 lg:pl-0">

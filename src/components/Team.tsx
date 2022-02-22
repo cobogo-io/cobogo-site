@@ -41,6 +41,12 @@ export default function Team() {
             </div>
             <div className="light-16">{t('communications')}</div>
           </div>
+          <div className="mb-5 cursor-pointer" onClick={() => setSelected(4)}>
+            <div className={selected === 4 ? 'bold-cobogo-24' : 'bold-24'}>
+              Pedro
+            </div>
+            <div className="light-16">{t('economist')}</div>
+          </div>
         </div>
         <div className="pb-5 pr-20 flex flex-1">
           <div className={selected === 0 ? 'regular-18' : 'hidden'}>
@@ -99,6 +105,15 @@ export default function Team() {
             <div className="regular-18 pb-5">
               {t(
                 'Isabela is a PhD student in Social Psychology, responsible for creating content, as well as the cobogo’s team relationship with the community.'
+              )}
+            </div>
+          </div>
+
+          <div className={selected === 4 ? 'regular-18' : 'hidden'}>
+            <div className="bold-24 pb-10">{t('economist')}</div>
+            <div className="regular-18 pb-5">
+              {t(
+                `Pedro is a multilingual economist, finishing a master's degree related to DeFi. He has been involved with crypto since 2017, and has experience with integrations. He has worked as a blockchain researcher in the Social Tokens field for over a year.`
               )}
             </div>
           </div>

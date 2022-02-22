@@ -118,26 +118,17 @@ export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
             <Image
               layout="fill"
               objectFit="contain"
-              src="/icons/dev-icon.svg"
-              alt="DEV icon"
+              src="/logos/cobogo-logo.svg"
+              alt="cobogo icon"
             />
           </div>
           <div className="bold-24 text-center py-4">
-            2. {t('stake DEV tokens')}
+            2. {t('stake CBG tokens')}
           </div>
           <div className="regular-18 text-center sm:px-20 md:px-0">
             {t(
-              'first, you need to buy DEV tokens, which is the token used to stake and earn rewards. You can buy it on '
-            )}{' '}
-            <a
-              className="regular-cobogo-18"
-              target="_blank"
-              href="https://app.uniswap.org/#/swap?outputCurrency=0x5caf454ba92e6f2c929df14667ee360ed9fd5b26&use=V2"
-              rel="noopener noreferrer"
-            >
-              {t('Uniswap')}
-            </a>
-            .
+              'first, you need to buy CBG tokens, which is the token used to stake and earn rewards.'
+            )}
           </div>
         </div>
         <div className="flex flex-col items-center px-5 md:px-20 w-full lg:w-1/3 min-w-full lg:min-w-0 pb-10">

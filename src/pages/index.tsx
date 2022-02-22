@@ -26,7 +26,6 @@ export default function Index() {
       <HowWorkContentCreator setShowModal={setShowModal} />
       <HowWorkPatron setShowModal={setShowModal} />
       <TechnicalViewpoint />
-      <DevProtocol />
       <Team />
       <Partners />
 
