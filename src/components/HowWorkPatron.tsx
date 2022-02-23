@@ -114,11 +114,11 @@ export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
           </div>
         </div>
         <div className="flex flex-col items-center px-5 md:px-20 w-full lg:w-1/3 min-w-full lg:min-w-0 pb-10">
-          <div className="w-20 h-8 relative">
+          <div className="w-16 h-11 relative">
             <Image
               layout="fill"
               objectFit="contain"
-              src="/logos/cobogo-logo.svg"
+              src="/icons/cbg-icon.svg"
               alt="cobogo icon"
             />
           </div>

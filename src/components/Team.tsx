@@ -17,6 +17,12 @@ export default function Team() {
       </div>
       <div className="flex flex-col lg:flex-row px-5 md:px-20 w-full ">
         <div className="md:mr-32 mb-10 md:mb-0">
+          <div className="mb-5 cursor-pointer" onClick={() => setSelected(4)}>
+            <div className={selected === 4 ? 'bold-cobogo-24' : 'bold-24'}>
+              Pedro
+            </div>
+            <div className="light-16">{t('CEO')}</div>
+          </div>
           <div className="mb-5  cursor-pointer" onClick={() => setSelected(0)}>
             <div className={selected === 0 ? 'bold-cobogo-24' : 'bold-24'}>
               Rafael Lima
@@ -40,12 +46,6 @@ export default function Team() {
               Isabela Reis
             </div>
             <div className="light-16">{t('communications')}</div>
-          </div>
-          <div className="mb-5 cursor-pointer" onClick={() => setSelected(4)}>
-            <div className={selected === 4 ? 'bold-cobogo-24' : 'bold-24'}>
-              Pedro
-            </div>
-            <div className="light-16">{t('economist')}</div>
           </div>
         </div>
         <div className="pb-5 pr-20 flex flex-1">
@@ -110,7 +110,7 @@ export default function Team() {
           </div>
 
           <div className={selected === 4 ? 'regular-18' : 'hidden'}>
-            <div className="bold-24 pb-10">{t('economist')}</div>
+            <div className="bold-24 pb-10">{t('CEO')}</div>
             <div className="regular-18 pb-5">
               {t(
                 `Pedro is a multilingual economist, finishing a master's degree related to DeFi. He has been involved with crypto since 2017, and has experience with integrations. He has worked as a blockchain researcher in the Social Tokens field for over a year.`
