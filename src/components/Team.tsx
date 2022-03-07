@@ -19,7 +19,7 @@ export default function Team() {
         <div className="md:mr-32 mb-10 md:mb-0">
           <div className="mb-5 cursor-pointer" onClick={() => setSelected(4)}>
             <div className={selected === 4 ? 'bold-cobogo-24' : 'bold-24'}>
-              Pedro
+              Pedro Alves (P.)
             </div>
             <div className="light-16">{t('CEO')}</div>
           </div>
