@@ -16,7 +16,7 @@ export default function TechnicalViewpoint() {
         </h2>
       </div>
 
-      <div className="px-4">
+      <div className="px-4 my-32 sm:my-0">
         <Image
           width={801}
           height={443}
