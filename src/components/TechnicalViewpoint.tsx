@@ -16,12 +16,14 @@ export default function TechnicalViewpoint() {
         </h2>
       </div>
 
-      <Image
-        width={801}
-        height={443}
-        src="/images/technical-viewpoint.png"
-        alt="technical viewpoint"
-      />
+      <div className="px-4">
+        <Image
+          width={801}
+          height={443}
+          src="/images/technical-viewpoint.png"
+          alt="technical viewpoint"
+        />
+      </div>
 
       <div className="flex flex-col lg:flex-row w-full sm:justify-center lg:justify-between px-5 md:px-20">
         <div className="regular-18 text-left lg:w-1/3 pr-24 lg:pr-0 pb-20 lg:pb-0">
