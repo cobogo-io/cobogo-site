@@ -11,7 +11,7 @@ export default function TechnicalViewpoint() {
 
         <h2 className="light-24 text-center pb-0 md:pb-20 w-screen md:w-1/2 md:px-0 px-5">
           {t(
-            'cobogo is a dapp that leverages the Dev Protocol funding system to sustainably fund YouTube creators. Fans can stake CBG tokens on their favorite YouTuber pool and automatically start getting paid with CBG rewards.'
+            'cobogo leverages its unique split funding system to sustainably monetize YouTube Creators. Fans can stake CBG tokens on the pool of their favorite YouTube Creator and automatically start getting CBG rewards.'
           )}
         </h2>
       </div>
