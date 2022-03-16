@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
 
-import DevProtocol from '../components/DevProtocol';
 import Header from '../components/Header';
 import HowWorkContentCreator from '../components/HowWorkContentCreator';
 import HowWorkPatron from '../components/HowWorkPatron';
@@ -22,11 +21,17 @@ export default function Index() {
       </Head>
 
       <LightOnTop />
+
       <Header />
+
       <HowWorkContentCreator setShowModal={setShowModal} />
+
       <HowWorkPatron setShowModal={setShowModal} />
+
       <TechnicalViewpoint />
+
       <Team />
+
       <Partners />
 
       {showModal ? (

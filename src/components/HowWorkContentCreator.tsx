@@ -21,11 +21,13 @@ export default function HowWorkContentCreator({
         <h1 className="bold-36 text-center pb-7">
           {t('how it works for a Content Creator')}
         </h1>
+
         <h2 className="light-24 text-center pb-16 font-light">
           {t('monetize and empower your fans and community with cobogo.')}
         </h2>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center items-center pb-5">
+
+      <div className="flex flex-col lg:flex-row justify-center items-start pb-5">
         <div className="flex flex-col items-center px-5 md:px-20 w-full lg:w-1/3 min-w-full lg:min-w-0 pb-10">
           <div className="w-16 h-11 relative">
             <Image
@@ -35,10 +37,13 @@ export default function HowWorkContentCreator({
               alt="YouTube icon"
             />
           </div>
+
           <div className="h-5" />
+
           <div className="bold-24 text-center py-4">
             1. {t('submit your channel')}
           </div>
+
           <div className="regular-18 text-center sm:px-20 md:px-0">
             {t('to be able to receive rewards from your followers, you must')}{' '}
             <span className="regular-18">{t('apply your channel')}</span>.{' '}
@@ -47,6 +52,7 @@ export default function HowWorkContentCreator({
             )}
           </div>
         </div>
+
         <div className="flex flex-col items-center px-5 md:px-20 w-full lg:w-1/3 min-w-full lg:min-w-0 pb-10">
           <div className="w-10 h-16 relative">
             <Image
@@ -56,15 +62,18 @@ export default function HowWorkContentCreator({
               alt="Microphone icon"
             />
           </div>
+
           <div className="bold-24 text-center py-4">
             2. {t('spread the news')}
           </div>
+
           <div className="regular-18 text-center  sm:px-20 md:px-0">
             {t(
               'you have to publish at least one video explaining to your audience what cobogo is and how they can support you. It is important to keep the wheels turning.'
             )}
           </div>
         </div>
+
         <div className="flex flex-col items-center px-5 md:px-20 w-full lg:w-1/3 min-w-full lg:min-w-0 pb-10">
           <div className="w-16 h-11 relative">
             <Image
@@ -74,10 +83,13 @@ export default function HowWorkContentCreator({
               alt="Coins icon"
             />
           </div>
+
           <div className="h-5" />
+
           <div className="bold-24 text-center py-4">
             3. {t('receive rewards')}
           </div>
+
           <div className="regular-18 text-center  sm:px-20 md:px-0">
             {t(
               'continue your good work and wait for your followers to stake on your channel. You will receive the rewards on a block (minutes) basis and will be able to stake for other YouTubers as well.'
@@ -85,6 +97,7 @@ export default function HowWorkContentCreator({
           </div>
         </div>
       </div>
+
       <CallToActionButton
         color="purple"
         placeholder={t('monetize your channel')}
