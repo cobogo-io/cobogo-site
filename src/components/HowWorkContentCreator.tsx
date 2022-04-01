@@ -98,11 +98,16 @@ export default function HowWorkContentCreator({
         </div>
       </div>
 
-      <CallToActionButton
-        color="purple"
-        placeholder={t('monetize your channel')}
-        onClick={() => setShowModal(true)}
-      />
+      <a
+        href="https://app.cobogo.social/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <CallToActionButton
+          color="purple"
+          placeholder={t('monetize your channel')}
+        />
+      </a>
     </section>
   );
 }

@@ -1,8 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 
-import CallToActionButton from './CallToActionButton';
-
 interface HowWorkPatronProps {
   setShowModal: (bool: boolean) => void;
 }
@@ -165,11 +163,11 @@ export default function HowWorkPatron({ setShowModal }: HowWorkPatronProps) {
         </div>
       </div>
 
-      <CallToActionButton
+      {/* <CallToActionButton
         color="purple-light"
         placeholder={t('become a patron')}
         onClick={() => setShowModal(true)}
-      />
+      /> */}
     </section>
   );
 }
