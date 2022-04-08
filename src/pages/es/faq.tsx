@@ -4,16 +4,17 @@ import Accordion from '../../components/Accordion';
 
 export default function Faq() {
   return (
-    <div className="flex flex-col min-h-screen h-full bg-primary">
+    <div className="flex flex-col h-full min-h-screen bg-primary">
       <Head>
         <title>Cobogo - FAQ</title>
       </Head>
 
-      <div className="flex flex-1 flex-col mx-5 md:mx-20 pb-20">
-        <h1 className="bold-36 mb-5">FAQ</h1>
-        <div className="panel panel-default mb-3">
+      <div className="flex flex-col flex-1 pb-20 mx-5 md:mx-20">
+        <h1 className="mb-5 bold-36">FAQ</h1>
+
+        <div className="mb-3 panel panel-default">
           <Accordion title="Q: ¿Qué es Blockchain?">
-            <div className="panel-body regular-18 mb-5">
+            <div className="mb-5 panel-body regular-18">
               <p>
                 Blockchain es una tecnología que presenta una lista continua de
                 bloques de información en una red informática activa. Cada
@@ -26,8 +27,9 @@ export default function Faq() {
               </p>
             </div>
           </Accordion>
+
           <Accordion title="Q: ¿Qué es Ethereum?">
-            <div className="panel-body regular-18 mb-5">
+            <div className="mb-5 panel-body regular-18">
               <p>
                 <a
                   className="regular-cobogo-18"
@@ -46,8 +48,9 @@ export default function Faq() {
               </p>
             </div>
           </Accordion>
+
           <Accordion title="Q: ¿Qué es “Gas”?">
-            <div className="panel-body regular-18 mb-5">
+            <div className="mb-5 panel-body regular-18">
               <p>
                 <a
                   className="regular-cobogo-18"
@@ -64,8 +67,9 @@ export default function Faq() {
               </p>
             </div>
           </Accordion>
+
           <Accordion title="Q: ¿Qué es una “Wallet”?">
-            <div className="panel-body regular-18 mb-5">
+            <div className="mb-5 panel-body regular-18">
               <p>
                 Una “Wallet” es un software que puede contener criptomonedas a
                 través del almacenamiento de sus claves privadas, que se
@@ -75,8 +79,9 @@ export default function Faq() {
               </p>
             </div>
           </Accordion>
+
           <Accordion title="Q: ¿Qué son los Smart Contracts?">
-            <div className="panel-body regular-18 mb-5">
+            <div className="mb-5 panel-body regular-18">
               <p>
                 Smart Contract es básicamente un contrato autoejecutable, lo que
                 significa que no están controlados por un usuario, sino que se
@@ -85,20 +90,9 @@ export default function Faq() {
               </p>
             </div>
           </Accordion>
-          <Accordion title="Q: ¿Qué es DEV?">
-            <div className="panel-body regular-18 mb-5">
-              <p>
-                DEV Token es el token de utilidad que impulsa el ecosistema del
-                Dev Protocol. Al hacer staking de tokens DEV, los patrocinadores
-                pueden financiar a los creadores de manera sostenible: ambos
-                reciben recompensas, no es una transacción unidireccional. De
-                esta manera, los creadores pueden crecer mientras empoderan a
-                sus comunidades.
-              </p>
-            </div>
-          </Accordion>
+
           <Accordion title="Q: ¿Qué son las dApps?">
-            <div className="panel-body regular-18 mb-5">
+            <div className="mb-5 panel-body regular-18">
               <p>
                 dApps es la abreviatura de aplicaciones descentralizadas y son
                 aplicaciones de software desarrolladas en base a Smart
@@ -108,26 +102,9 @@ export default function Faq() {
               </p>
             </div>
           </Accordion>
-          <Accordion title="Q: ¿Dónde puedo comprar tokens DEV?">
-            <div className="panel-body regular-18 mb-5">
-              <p>
-                La mejor manera de comprar tokens DEV es con el par más líquido.
-                Puede encontrarlos en los pares comerciales que figuran en
-                Coingecko. El mejor par para negociar DEV / ETH se encuentra
-                actualmente en{' '}
-                <a
-                  className="regular-cobogo-18"
-                  target="_blank"
-                  href="https://app.uniswap.org/#/swap?outputCurrency=0x5caf454ba92e6f2c929df14667ee360ed9fd5b26&use=V2"
-                  rel="noopener noreferrer"
-                >
-                  Uniswap V2
-                </a>
-              </p>
-            </div>
-          </Accordion>
+
           <Accordion title="Q: ¿Qué es “Staking”?">
-            <div className="panel-body regular-18 mb-5">
+            <div className="mb-5 panel-body regular-18">
               <p>
                 Staking es el proceso de bloquear fondos en Smart Contracts como
                 una forma de beneficiar a la red en la que los fondos están en
@@ -144,8 +121,9 @@ export default function Faq() {
               </p>
             </div>
           </Accordion>
+
           <Accordion title="Q: ¿Qué es APY y cómo se calcula?">
-            <div className="panel-body regular-18 mb-5">
+            <div className="mb-5 panel-body regular-18">
               <p>
                 El Rendimiento Porcentual Anual (Annual Percentage Yield)
                 representa la ganancia financiera en términos de un token
@@ -159,17 +137,17 @@ export default function Faq() {
               </p>
             </div>
           </Accordion>
+
           <Accordion title="Q: ¿Por qué debería usar cobogo?">
-            <div className="panel-body regular-18 mb-5">
+            <div className="mb-5 panel-body regular-18">
               <p>
-                cobogo es una dApp, construida sobre el Ecosistema de Dev
-                Protocol, que permite a los fans apoyar a sus YouTubers
-                favoritos de una manera sostenible. Pueden hacer staking de sus
-                tokens DEV en el pool del YouTuber y ambos reciben las
+                cobogo es una dApp que permite a los fans apoyar de manera
+                sostenible a sus YouTubers favoritos. Pueden hacer staking com
+                sus tokens CBG en el pool del Youtuber y ambos reciben las
                 recompensas. cobogo permite a los creadores monetizar su canal
-                de una manera diferente, sin depender solo de anuncios o
+                de forma alternativa, sin depender únicamente de anuncios o
                 donaciones únicas, y permite a los fans apoyar a esos creadores
-                mientras ganan dinero.
+                mientras siguen ganando dinero.
               </p>
             </div>
           </Accordion>
