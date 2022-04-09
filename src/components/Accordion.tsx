@@ -1,7 +1,7 @@
-import { useRef, useState } from 'react';
+import { ReactNode, useRef, useState } from 'react';
 
 interface AccordionProps {
-  title: React.ReactNode;
+  title: ReactNode;
   children: JSX.Element;
 }
 
@@ -19,11 +19,12 @@ export default function Accordion({ title, children }: AccordionProps) {
   return (
     <div>
       <button
-        className="py-6 box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between"
+        className="py-6 box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between text-end"
         onClick={toggleAccordion}
       >
-        <p className="inline-block bold-24">{title}</p>
+        <p className="inline-block bold-24 text-left">{title}</p>
       </button>
+
       <div
         ref={contentSpace}
         style={{ maxHeight: `${height}` }}
