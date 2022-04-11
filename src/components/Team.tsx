@@ -6,19 +6,19 @@ export default function Team() {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section className="flex flex-col items-center h-full w-full py-24 bg-secondary">
+    <section className="flex flex-col items-center w-full h-full py-24 bg-secondary">
       <div className="flex flex-col items-center">
-        <h1 className="bold-36 text-center pb-7">{t('meet the team')}</h1>
+        <h1 className="text-center bold-36 pb-7">{t('meet the team')}</h1>
 
-        <h2 className="light-24 text-center pb-20 w-full md:w-1/2 px-5 md:px-0">
+        <h2 className="w-full px-5 pb-20 text-center light-24 md:w-1/2 md:px-0">
           {t(
             'our team works specifically on the dapp to make the best experience for patrons and creators. We have extensive experience in software development, blockchain and tokenomics.'
           )}
         </h2>
       </div>
 
-      <div className="flex flex-col lg:flex-row px-5 md:px-20 w-full ">
-        <div className="md:mr-32 mb-10 md:mb-0">
+      <div className="flex flex-col w-full px-5 lg:flex-row md:px-20 ">
+        <div className="mb-10 md:mr-32 md:mb-0">
           <div className="mb-5 cursor-pointer" onClick={() => setSelected(4)}>
             <div className={selected === 4 ? 'bold-cobogo-24' : 'bold-24'}>
               Pedro Alves (P.)
@@ -26,7 +26,7 @@ export default function Team() {
             <div className="light-16">{t('co-founder')}</div>
           </div>
 
-          <div className="mb-5  cursor-pointer" onClick={() => setSelected(0)}>
+          <div className="mb-5 cursor-pointer" onClick={() => setSelected(0)}>
             <div className={selected === 0 ? 'bold-cobogo-24' : 'bold-24'}>
               Rafael Lima
             </div>
@@ -51,15 +51,15 @@ export default function Team() {
             <div className={selected === 3 ? 'bold-cobogo-24' : 'bold-24'}>
               Isabela Reis
             </div>
-            <div className="light-16">{t('communications')}</div>
+            <div className="light-16">{t('technical writer')}</div>
           </div>
         </div>
 
-        <div className="pb-5 pr-20 flex flex-1">
+        <div className="flex flex-1 pb-5 pr-20">
           <div className={selected === 0 ? 'regular-18' : 'hidden'}>
-            <div className="bold-24 pb-10">{t('co-founder')}</div>
+            <div className="pb-10 bold-24">{t('co-founder')}</div>
 
-            <div className="regular-18 pb-5">
+            <div className="pb-5 regular-18">
               {t(
                 "Rafael is a 'hacker of life', yogi, digital entrepreneur, software developer, and investor in the cryptocurrency ecosystem. He has founded tech companies in Brazil in the financial, software, and metaverse fields."
               )}
@@ -67,16 +67,16 @@ export default function Team() {
 
             <a
               href="https://rafael.adm.br"
-              className="bold-cobogo-16 cursor-pointer"
+              className="cursor-pointer bold-cobogo-16"
             >
               Website
             </a>
           </div>
 
           <div className={selected === 1 ? 'regular-18' : 'hidden'}>
-            <div className="bold-24 pb-10">{t('developer')}</div>
+            <div className="pb-10 bold-24">{t('developer')}</div>
 
-            <div className="regular-18 pb-5">
+            <div className="pb-5 regular-18">
               {t(
                 'Thiago is a full stack developer focused on the JavaScript ecosystem and web applications development, seeking to be constantly evolving his knowledge within the subject, focusing on modern technologies for web2, and studying web3 technologies.'
               )}
@@ -84,23 +84,23 @@ export default function Team() {
 
             <a
               href="https://www.linkedin.com/in/thiago0x01/"
-              className="bold-cobogo-16 cursor-pointer mr-5"
+              className="mr-5 cursor-pointer bold-cobogo-16"
             >
               Linkedin
             </a>
 
             <a
               href="https://github.com/thiago0x01"
-              className="bold-cobogo-16 cursor-pointer"
+              className="cursor-pointer bold-cobogo-16"
             >
               Github
             </a>
           </div>
 
           <div className={selected === 2 ? 'regular-18' : 'hidden'}>
-            <div className="bold-24 pb-10">{t('designer')}</div>
+            <div className="pb-10 bold-24">{t('designer')}</div>
 
-            <div className="regular-18 pb-5">
+            <div className="pb-5 regular-18">
               {t(
                 'Mikael is an UI/UX designer with skills in front-end and mobile development.'
               )}
@@ -108,16 +108,16 @@ export default function Team() {
 
             <a
               href="https://www.linkedin.com/in/mikaelcarrara/"
-              className="bold-cobogo-16 cursor-pointer"
+              className="cursor-pointer bold-cobogo-16"
             >
               Linkedin
             </a>
           </div>
 
           <div className={selected === 3 ? 'regular-18' : 'hidden'}>
-            <div className="bold-24 pb-10">{t('communications')}</div>
+            <div className="pb-10 bold-24">{t('technical writer')}</div>
 
-            <div className="regular-18 pb-5">
+            <div className="pb-5 regular-18">
               {t(
                 'Isabela is a PhD student in Social Psychology, responsible for creating content, as well as the cobogo’s team relationship with the community.'
               )}
@@ -125,9 +125,9 @@ export default function Team() {
           </div>
 
           <div className={selected === 4 ? 'regular-18' : 'hidden'}>
-            <div className="bold-24 pb-10">{t('co-founder')}</div>
+            <div className="pb-10 bold-24">{t('co-founder')}</div>
 
-            <div className="regular-18 pb-5">
+            <div className="pb-5 regular-18">
               {t(
                 `Pedro is a multilingual economist, finishing a master's degree related to DeFi. He has been involved with crypto since 2017, and has experience with integrations. He has worked as a blockchain researcher in the Social Tokens field for over a year.`
               )}
