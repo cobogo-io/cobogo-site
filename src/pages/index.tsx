@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import HowWorkContentCreator from '../components/HowWorkContentCreator';
 import HowWorkPatron from '../components/HowWorkPatron';
 import LightOnTop from '../components/LightOnTop';
-import Partners from '../components/Partners';
+import PlannedIntegrations from '../components/PlannedIntegrations';
 import Team from '../components/Team';
 import TechnicalViewpoint from '../components/TechnicalViewpoint';
 
@@ -32,7 +32,7 @@ export default function Index() {
 
       <Team />
 
-      <Partners />
+      <PlannedIntegrations />
 
       {showModal ? (
         <>
