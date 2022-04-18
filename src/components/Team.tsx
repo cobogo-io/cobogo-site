@@ -19,44 +19,59 @@ export default function Team() {
 
       <div className="flex flex-col w-full px-5 lg:flex-row md:px-20 ">
         <div className="mb-10 md:mr-32 md:mb-0">
-          <div className="mb-5 cursor-pointer" onClick={() => setSelected(4)}>
-            <div className={selected === 4 ? 'bold-cobogo-24' : 'bold-24'}>
-              Pedro Alves (P.)
-            </div>
-            <div className="light-16">{t('co-founder')}</div>
-          </div>
-
           <div className="mb-5 cursor-pointer" onClick={() => setSelected(0)}>
             <div className={selected === 0 ? 'bold-cobogo-24' : 'bold-24'}>
-              Rafael Lima
+              Pedro Alves (P.)
             </div>
+
             <div className="light-16">{t('co-founder')}</div>
           </div>
 
           <div className="mb-5 cursor-pointer" onClick={() => setSelected(1)}>
             <div className={selected === 1 ? 'bold-cobogo-24' : 'bold-24'}>
-              Thiago Machado
+              Rafael Lima
             </div>
-            <div className="light-16">{t('developer')}</div>
+
+            <div className="light-16">{t('co-founder')}</div>
           </div>
 
           <div className="mb-5 cursor-pointer" onClick={() => setSelected(2)}>
             <div className={selected === 2 ? 'bold-cobogo-24' : 'bold-24'}>
-              Mikael Carrara
+              Thiago Machado
             </div>
-            <div className="light-16">{t('designer')}</div>
+
+            <div className="light-16">{t('developer')}</div>
           </div>
 
           <div className="mb-5 cursor-pointer" onClick={() => setSelected(3)}>
             <div className={selected === 3 ? 'bold-cobogo-24' : 'bold-24'}>
+              Mikael Carrara
+            </div>
+
+            <div className="light-16">{t('designer')}</div>
+          </div>
+
+          <div className="mb-5 cursor-pointer" onClick={() => setSelected(4)}>
+            <div className={selected === 4 ? 'bold-cobogo-24' : 'bold-24'}>
               Isabela Reis
             </div>
+
             <div className="light-16">{t('technical writer')}</div>
           </div>
         </div>
 
         <div className="flex flex-1 pb-5 pr-20">
           <div className={selected === 0 ? 'regular-18' : 'hidden'}>
+            <div className="pb-10 bold-24">{t('co-founder')}</div>
+
+            <div className="pb-5 regular-18">
+              {t(
+                `Pedro is a multilingual economist, finishing a master's degree related to DeFi. He has been involved with crypto since 2017, and has experience with integrations. He has worked as a blockchain researcher in the Social Tokens field for over a year.`
+              )}
+            </div>
+          </div>
+
+          <div className={selected === 1 ? 'regular-18' : 'hidden'}>
             <div className="pb-10 bold-24">{t('co-founder')}</div>
 
             <div className="pb-5 regular-18">
@@ -73,7 +88,7 @@ export default function Team() {
             </a>
           </div>
 
-          <div className={selected === 1 ? 'regular-18' : 'hidden'}>
+          <div className={selected === 2 ? 'regular-18' : 'hidden'}>
             <div className="pb-10 bold-24">{t('developer')}</div>
 
             <div className="pb-5 regular-18">
@@ -97,7 +112,7 @@ export default function Team() {
             </a>
           </div>
 
-          <div className={selected === 2 ? 'regular-18' : 'hidden'}>
+          <div className={selected === 3 ? 'regular-18' : 'hidden'}>
             <div className="pb-10 bold-24">{t('designer')}</div>
 
             <div className="pb-5 regular-18">
@@ -114,22 +129,12 @@ export default function Team() {
             </a>
           </div>
 
-          <div className={selected === 3 ? 'regular-18' : 'hidden'}>
+          <div className={selected === 4 ? 'regular-18' : 'hidden'}>
             <div className="pb-10 bold-24">{t('technical writer')}</div>
 
             <div className="pb-5 regular-18">
               {t(
                 'Isabela is a PhD student in Social Psychology, responsible for creating content, as well as the cobogo’s team relationship with the community.'
-              )}
-            </div>
-          </div>
-
-          <div className={selected === 4 ? 'regular-18' : 'hidden'}>
-            <div className="pb-10 bold-24">{t('co-founder')}</div>
-
-            <div className="pb-5 regular-18">
-              {t(
-                `Pedro is a multilingual economist, finishing a master's degree related to DeFi. He has been involved with crypto since 2017, and has experience with integrations. He has worked as a blockchain researcher in the Social Tokens field for over a year.`
               )}
             </div>
           </div>
