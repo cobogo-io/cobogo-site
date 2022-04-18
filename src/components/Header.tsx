@@ -39,7 +39,7 @@ export default function Header() {
               rel="noopener noreferrer"
             >
               <CallToActionButton
-                color="purple-light"
+                color="purple"
                 placeholder={t('monetize your channel')}
               />
             </a>
