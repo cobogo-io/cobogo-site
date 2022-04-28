@@ -7,7 +7,16 @@ export default function ReferralProgramToFans() {
   const { t } = useTranslation('referral-program-to-fans');
 
   return (
-    <section className="flex flex-row items-center justify-between w-full h-full px-5 py-24 md:px-20 bg-secondary">
+    <section className="flex flex-col items-center justify-center w-full h-full px-5 py-24 md:justify-between md:flex-row md:px-20 bg-secondary">
+      <div className="flex md:hidden mb-[65px]">
+        <Image
+          src="/images/referral-program-to-fans.svg"
+          width={226}
+          height={223}
+          alt="referral program to fans image"
+        />
+      </div>
+
       <div className="flex flex-col">
         <p className="text-4xl font-bold text-white mb-[34px]">
           {t('do you know any YouTuber?')}
