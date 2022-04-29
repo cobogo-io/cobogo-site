@@ -22,7 +22,7 @@ export default function Review() {
     <div className="flex flex-col min-h-screen h-full bg-primary">
       <SelectLanguage />
       <Head>
-        <title>Cobogo - Fans</title>
+        <title>cobogo - fans</title>
       </Head>
       <div className="mx-5 md:mx-20 py-20">
         <Link href="/">

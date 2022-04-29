@@ -6,7 +6,7 @@ export default function Faq() {
   return (
     <div className="flex flex-col h-full min-h-screen bg-primary">
       <Head>
-        <title>Cobogo - FAQ</title>
+        <title>cobogo - FAQ</title>
       </Head>
 
       <div className="flex flex-col flex-1 pb-20 mx-5 md:mx-20">

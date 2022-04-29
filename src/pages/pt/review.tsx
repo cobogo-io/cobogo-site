@@ -15,7 +15,7 @@ export default function Review() {
   return (
     <div className="flex flex-col min-h-screen h-full bg-primary">
       <Head>
-        <title>Cobogo - Fans</title>
+        <title>cobogo - fans</title>
       </Head>
       <div className="flex flex-1 flex-col mx-5 md:mx-20 pb-20">
         <div className="panel panel-default mb-3">

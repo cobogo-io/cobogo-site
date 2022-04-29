@@ -2,14 +2,14 @@ import Head from 'next/head';
 
 export default function Terms() {
   return (
-    <div className="flex flex-col min-h-screen h-full bg-primary">
+    <div className="flex flex-col h-full min-h-screen bg-primary">
       <Head>
-        <title>Cobogo - Condiciones de Uso</title>
+        <title>cobogo - condiciones de uso</title>
       </Head>
 
-      <div className="flex flex-1 flex-col mx-5 md:mx-20 pb-20">
-        <h1 className="bold-36 mb-5">Notas</h1>
-        <p className="regular-18 break-normal mb-5">
+      <div className="flex flex-col flex-1 pb-20 mx-5 md:mx-20">
+        <h1 className="mb-5 bold-36">Notas</h1>
+        <p className="mb-5 break-normal regular-18">
           Para Todos los Usuarios
           <br />
           No se permite el comportamiento grosero, irritante o poco ético hacia
@@ -18,10 +18,10 @@ export default function Terms() {
           los repositorios después de la integración serán castigadas como
           fraude. Utilice la dApp con buenos modales.
         </p>
-        <h1 className="bold-36 mb-5">Condiciones de Uso</h1>
+        <h1 className="mb-5 bold-36">Condiciones de Uso</h1>
 
-        <h2 className="bold-30 mb-2">Artículo 1 (Solicitud)</h2>
-        <p className="regular-18 break-normal mb-5">
+        <h2 className="mb-2 bold-30">Artículo 1 (Solicitud)</h2>
+        <p className="mb-5 break-normal regular-18">
           Estos Términos y Condiciones se aplican a todas las relaciones entre
           Cobogo (la Empresa) y el Usuario.
           <br />
@@ -38,11 +38,11 @@ export default function Terms() {
           período de tiempo designado, han aceptado los términos modificados del
           Acuerdo.
         </p>
-        <h2 className="bold-30 mb-2">Artículo 2 (Materias Prohibidas)</h2>
-        <p className="regular-18 break-normal mb-5">
+        <h2 className="mb-2 bold-30">Artículo 2 (Materias Prohibidas)</h2>
+        <p className="mb-5 break-normal regular-18">
           Los usuarios no deben participar en los siguientes actos
         </p>
-        <ul className="regular-16 list-decimal pl-20 mb-3">
+        <ul className="pl-20 mb-3 list-decimal regular-16">
           <li>
             Violar al Código de conducta de Cobogo (https://cobogo.social/code)
           </li>
@@ -59,20 +59,20 @@ export default function Terms() {
           <li>Encontrarse en alguno de los siguientes artículos</li>
         </ul>
 
-        <h2 className="bold-30 mb-2">Artículo 3 (Eliminación de la Cuenta)</h2>
-        <p className="regular-18 break-normal mb-5">
+        <h2 className="mb-2 bold-30">Artículo 3 (Eliminación de la Cuenta)</h2>
+        <p className="mb-5 break-normal regular-18">
           La Empresa puede suspender o eliminar inmediatamente la cuenta del
           Usuario en Cobogo si se determina que el Usuario ha cometido
           cualquiera de los actos prohibidos descritos en el Artículo 2.
         </p>
 
-        <h2 className="bold-30 mb-2">Artículo 4 (Suspensión del Servicio)</h2>
-        <p className="regular-18 break-normal mb-5">
+        <h2 className="mb-2 bold-30">Artículo 4 (Suspensión del Servicio)</h2>
+        <p className="mb-5 break-normal regular-18">
           Cobogo se reserva el derecho de suspender o discontinuar todo o parte
           del Servicio sin previo aviso al Usuario, si la Empresa considera que
           exista alguna de las siguientes razones.
         </p>
-        <ul className="regular-16 list-decimal pl-20 mb-3">
+        <ul className="pl-20 mb-3 list-decimal regular-16">
           <li>
             Cuando se vuelva extremadamente difícil continuar con el Servicio
             debido a desastres naturales como terremotos, tifones e incendios,
@@ -84,16 +84,16 @@ export default function Terms() {
             se desconecten debido a un accidente.
           </li>
         </ul>
-        <p className="regular-18 break-normal mb-5">
+        <p className="mb-5 break-normal regular-18">
           La Empresa no se hace responsable de cualquier perjuicio o daño
           sufrido por el Usuario o terceros por la suspensión o interrupción de
           la prestación del Servicio, independientemente del motivo.
         </p>
 
-        <h2 className="bold-30 mb-2">
+        <h2 className="mb-2 bold-30">
           Artículo 5 (Exención de Garantía y Exención de Responsabilidad)
         </h2>
-        <p className="regular-18 break-normal mb-5">
+        <p className="mb-5 break-normal regular-18">
           La Empresa no brindará ninguna garantía a los Usuarios más allá de lo
           estipulado en estos Términos de Uso.
           <br />
@@ -104,17 +104,17 @@ export default function Terms() {
           aplicables al Usuario.
         </p>
 
-        <h2 className="bold-30 mb-2">
+        <h2 className="mb-2 bold-30">
           Artículo 6 (Ley Aplicable y Jurisdicción Exclusiva)
         </h2>
-        <p className="regular-18 break-normal mb-10">
+        <p className="mb-10 break-normal regular-18">
           Este Acuerdo se regirá e interpretará de acuerdo con las leyes de
           Brasil, y todas las disputas que surjan de este Acuerdo estarán
           sujetas a la jurisdicción exclusiva del Tribunal de Distrito de Río de
           Janeiro como tribunal de primera instancia.
         </p>
 
-        <p className="regular-16 break-normal mb-20">
+        <p className="mb-20 break-normal regular-16">
           Fecha de vigencia: 5 de octubre de 2021
         </p>
       </div>
