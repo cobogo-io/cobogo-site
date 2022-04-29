@@ -16,10 +16,6 @@ export default function Index() {
 
   return (
     <div className="w-full overflow-hidden">
-      <Head>
-        <title>cobogo</title>
-      </Head>
-
       <LightOnTop />
 
       <Header />
@@ -37,13 +33,13 @@ export default function Index() {
       {showModal ? (
         <>
           <div
-            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-non"
+            className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-non"
             onClick={() => setShowModal(false)}
           >
-            <div className="relative w-auto my-6 mx-auto max-w-3xl">
-              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                <div className="relative p-6 flex-auto">
-                  <div className="w-96 h-96 relative">
+            <div className="relative w-auto max-w-3xl mx-auto my-6">
+              <div className="relative flex flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none">
+                <div className="relative flex-auto p-6">
+                  <div className="relative w-96 h-96">
                     <Image
                       layout="fill"
                       objectFit="contain"
@@ -51,7 +47,7 @@ export default function Index() {
                       alt="Coins icon"
                     />
                   </div>
-                  <p className="my-4 text-3xl text-center leading-relaxed">
+                  <p className="my-4 text-3xl leading-relaxed text-center">
                     coming soon
                   </p>
                 </div>

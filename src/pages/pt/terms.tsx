@@ -2,13 +2,13 @@ import Head from 'next/head';
 
 export default function Code() {
   return (
-    <div className="flex flex-col min-h-screen h-full bg-primary">
+    <div className="flex flex-col h-full min-h-screen bg-primary">
       <Head>
-        <title>Cobogo - Termos de Uso</title>
+        <title>cobogo - termos de uso</title>
       </Head>
-      <div className="flex flex-1 flex-col mx-5 md:mx-20 pb-20">
-        <h1 className="bold-36 mb-5">Nota</h1>
-        <p className="regular-18 break-normal mb-5">
+      <div className="flex flex-col flex-1 pb-20 mx-5 md:mx-20">
+        <h1 className="mb-5 bold-36">Nota</h1>
+        <p className="mb-5 break-normal regular-18">
           Para Todos os Usuários
           <br />
           Comportamento rude, irritante ou antiético em relação a outros
@@ -17,10 +17,10 @@ export default function Code() {
           de repositórios após a integração serão punidos como fraude. Por
           favor, use o dApp com boas maneiras.
         </p>
-        <h1 className="bold-36 mb-5">Termos de Uso</h1>
+        <h1 className="mb-5 bold-36">Termos de Uso</h1>
 
-        <h2 className="bold-30 mb-2">Artigo 1 (Aplicação)</h2>
-        <p className="regular-18 break-normal mb-5">
+        <h2 className="mb-2 bold-30">Artigo 1 (Aplicação)</h2>
+        <p className="mb-5 break-normal regular-18">
           Estes Termos e Condições aplicam-se a todas as relações entre a Cobogo
           (a Empresa) e o Usuário.
           <br />
@@ -35,11 +35,11 @@ export default function Code() {
           dentro do período de tempo designado, serão considerados como tendo
           concordado com os termos modificados do Acordo.
         </p>
-        <h2 className="bold-30 mb-2">Artigo 2 (Assuntos Proibidos)</h2>
-        <p className="regular-18 break-normal mb-5">
+        <h2 className="mb-2 bold-30">Artigo 2 (Assuntos Proibidos)</h2>
+        <p className="mb-5 break-normal regular-18">
           Os usuários não devem se envolver nos seguintes atos
         </p>
-        <ul className="regular-16 list-decimal pl-20 mb-3">
+        <ul className="pl-20 mb-3 list-decimal regular-16">
           <li>
             Violar o Código de Conduta do Cobogo (https://cobogo.social/code)
           </li>
@@ -50,20 +50,20 @@ export default function Code() {
           <li>Cair em qualquer um dos artigos a seguir</li>
         </ul>
 
-        <h2 className="bold-30 mb-2">Artigo 3 (Exclusão da Conta)</h2>
-        <p className="regular-18 break-normal mb-5">
+        <h2 className="mb-2 bold-30">Artigo 3 (Exclusão da Conta)</h2>
+        <p className="mb-5 break-normal regular-18">
           A Empresa pode suspender ou excluir imediatamente a conta do Usuário
           no Cobogo se for constatado que o Usuário cometeu qualquer um dos atos
           proibidos descritos no Artigo 2.
         </p>
 
-        <h2 className="bold-30 mb-2">Artigo 4 (Suspensão do Serviço)</h2>
-        <p className="regular-18 break-normal mb-5">
+        <h2 className="mb-2 bold-30">Artigo 4 (Suspensão do Serviço)</h2>
+        <p className="mb-5 break-normal regular-18">
           Cobogo reserva-se o direito de suspender ou descontinuar todo ou parte
           do Serviço sem aviso prévio ao Usuário, caso a Empresa considere que
           algum dos seguintes motivos existe
         </p>
-        <ul className="regular-16 list-decimal pl-20 mb-3">
+        <ul className="pl-20 mb-3 list-decimal regular-16">
           <li>
             Quando se torna extremamente difícil continuar o Serviço devido a
             desastres naturais como terremotos, tufões e incêndios, doenças
@@ -79,16 +79,16 @@ export default function Code() {
             Serviço.
           </li>
         </ul>
-        <p className="regular-18 break-normal mb-5">
+        <p className="mb-5 break-normal regular-18">
           A Empresa não se responsabiliza por qualquer desvantagem ou dano
           sofrido pelo Usuário ou terceiros devido à suspensão ou interrupção da
           prestação do Serviço, independentemente do motivo.
         </p>
 
-        <h2 className="bold-30 mb-2">
+        <h2 className="mb-2 bold-30">
           Artigo 5 (Isenção de Garantia e Isenção de Responsabilidade)
         </h2>
-        <p className="regular-18 break-normal mb-5">
+        <p className="mb-5 break-normal regular-18">
           A Empresa não fornecerá nenhuma garantia aos Usuários além do que está
           estipulado nestes Termos de Uso.
           <br />O Usuário deve investigar se o uso do Serviço viola ou não as
@@ -98,17 +98,17 @@ export default function Code() {
           aplicáveis ao Usuário.
         </p>
 
-        <h2 className="bold-30 mb-2">
+        <h2 className="mb-2 bold-30">
           Artigo 6 (Lei Aplicável e Jurisdição Exclusiva)
         </h2>
-        <p className="regular-18 break-normal mb-10">
+        <p className="mb-10 break-normal regular-18">
           Este Acordo será regido e interpretado de acordo com as leis do
           Brasil, e todas as disputas decorrentes deste Acordo estarão sujeitas
           à jurisdição exclusiva do Tribunal Distrital do Rio de Janeiro como o
           tribunal de primeira instância.
         </p>
 
-        <p className="regular-16 break-normal mb-20">
+        <p className="mb-20 break-normal regular-16">
           Data de vigência: 5 de outubro de 2021
         </p>
       </div>

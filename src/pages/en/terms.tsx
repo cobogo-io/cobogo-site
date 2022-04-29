@@ -2,13 +2,13 @@ import Head from 'next/head';
 
 export default function Terms() {
   return (
-    <div className="flex flex-col min-h-screen h-full bg-primary">
+    <div className="flex flex-col h-full min-h-screen bg-primary">
       <Head>
-        <title>Cobogo - Terms of Use</title>
+        <title>cobogo - terms of use</title>
       </Head>
-      <div className="flex flex-1 flex-col mx-5 md:mx-20 pb-20">
-        <h1 className="bold-36 mb-5">Notes</h1>
-        <p className="regular-18 break-normal mb-5">
+      <div className="flex flex-col flex-1 pb-20 mx-5 md:mx-20">
+        <h1 className="mb-5 bold-36">Notes</h1>
+        <p className="mb-5 break-normal regular-18">
           For All Users
           <br />
           Rude, annoying or unethical behavior towards other users is not
@@ -17,10 +17,10 @@ export default function Terms() {
           onboarding will be punished as fraud. Please use the dApp with good
           manners.
         </p>
-        <h1 className="bold-36 mb-5">Terms of Use</h1>
+        <h1 className="mb-5 bold-36">Terms of Use</h1>
 
-        <h2 className="bold-30 mb-2">Article 1 (Application)</h2>
-        <p className="regular-18 break-normal mb-5">
+        <h2 className="mb-2 bold-30">Article 1 (Application)</h2>
+        <p className="mb-5 break-normal regular-18">
           These Terms and Conditions shall apply to all relations between Cobogo
           (the Company) and the User.
           <br />
@@ -36,11 +36,11 @@ export default function Terms() {
           designated period of time shall be deemed to have agreed to the
           modified terms of the Agreement.
         </p>
-        <h2 className="bold-30 mb-2">Article 2 (Prohibited Matters)</h2>
-        <p className="regular-18 break-normal mb-5">
+        <h2 className="mb-2 bold-30">Article 2 (Prohibited Matters)</h2>
+        <p className="mb-5 break-normal regular-18">
           Users shall not engage in the following acts
         </p>
-        <ul className="regular-16 list-decimal pl-20 mb-3">
+        <ul className="pl-20 mb-3 list-decimal regular-16">
           <li>Violating of Cobogo&apos;s CoC (https://cobogo.social/code)</li>
           <li>Making the channel private or deleting it after onboarding</li>
           <li>
@@ -51,20 +51,20 @@ export default function Terms() {
           <li>Falling under any of the following articles</li>
         </ul>
 
-        <h2 className="bold-30 mb-2">Article 3 (Deletion of Account)</h2>
-        <p className="regular-18 break-normal mb-5">
+        <h2 className="mb-2 bold-30">Article 3 (Deletion of Account)</h2>
+        <p className="mb-5 break-normal regular-18">
           The Company may immediately suspend or delete the User&apos;s account
           on Cobogo if the User is found to have committed any of the prohibited
           acts described in Article 2.
         </p>
 
-        <h2 className="bold-30 mb-2">Article 4 (Suspension of the Service)</h2>
-        <p className="regular-18 break-normal mb-5">
+        <h2 className="mb-2 bold-30">Article 4 (Suspension of the Service)</h2>
+        <p className="mb-5 break-normal regular-18">
           Cobogo reserves the right to suspend or discontinue all or part of the
           Service without prior notice to the User in the event that Cobogo
           deems that any of the following reasons exist
         </p>
-        <ul className="regular-16 list-decimal pl-20 mb-3">
+        <ul className="pl-20 mb-3 list-decimal regular-16">
           <li>
             When it becomes extremely difficult to continue the Service due to
             natural disasters such as earthquakes, typhoons, and fires,
@@ -80,17 +80,17 @@ export default function Terms() {
             the Service.
           </li>
         </ul>
-        <p className="regular-18 break-normal mb-5">
+        <p className="mb-5 break-normal regular-18">
           The Company shall not be liable for any disadvantage or damage
           suffered by the User or any third party due to the suspension or
           interruption of the provision of the Service, regardless of the
           reason.
         </p>
 
-        <h2 className="bold-30 mb-2">
+        <h2 className="mb-2 bold-30">
           Article 5 (Disclaimer of Warranty and Disclaimer of Liability)
         </h2>
-        <p className="regular-18 break-normal mb-5">
+        <p className="mb-5 break-normal regular-18">
           The Company shall not provide any warranty to the Users beyond what is
           stipulated in these Terms of Use.
           <br />
@@ -101,17 +101,17 @@ export default function Terms() {
           applicable to the User.
         </p>
 
-        <h2 className="bold-30 mb-2">
+        <h2 className="mb-2 bold-30">
           Article 6 (Governing Law and Exclusive Jurisdiction)
         </h2>
-        <p className="regular-18 break-normal mb-10">
+        <p className="mb-10 break-normal regular-18">
           This Agreement shall be governed by and construed in accordance with
           the laws of Brazil, and all disputes arising out of this Agreement
           shall be subject to the exclusive jurisdiction of the Rio de Janeiro
           District Court as the court of first instance.
         </p>
 
-        <p className="regular-16 break-normal mb-20">
+        <p className="mb-20 break-normal regular-16">
           Effective date: October 5, 2021
         </p>
       </div>

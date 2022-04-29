@@ -2,9 +2,11 @@ import '../../styles/globals.css';
 
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import { appWithTranslation } from 'next-i18next';
+import { DefaultSeo } from 'next-seo';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
+import SEO from '../../next-seo-config';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 import Social from '../components/Social';
@@ -29,12 +31,16 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [router]);
 
   return (
-    <ApolloProvider client={client}>
-      <NavBar />
-      <Component {...pageProps} />
-      <Social />
-      <Footer />
-    </ApolloProvider>
+    <>
+      <DefaultSeo {...SEO} />
+
+      <ApolloProvider client={client}>
+        <NavBar />
+        <Component {...pageProps} />
+        <Social />
+        <Footer />
+      </ApolloProvider>
+    </>
   );
 }
 
