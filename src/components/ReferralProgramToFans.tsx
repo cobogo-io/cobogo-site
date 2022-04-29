@@ -8,7 +8,7 @@ export default function ReferralProgramToFans() {
 
   return (
     <section className="flex items-center justify-center w-full h-full px-5 py-24 md:px-20 bg-secondary">
-      <div className="flex flex-col items-center justify-center h-full w-[900px] md:justify-between md:flex-row bg-secondary">
+      <div className="flex flex-col items-center justify-center h-full w-[900px] md:justify-between md:flex-row">
         <div className="flex md:hidden mb-[65px]">
           <Image
             src="/images/referral-program-to-fans.svg"
