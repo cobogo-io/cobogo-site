@@ -8,6 +8,7 @@ import HowWorkContentCreator from '../components/HowWorkContentCreator';
 import HowWorkPatron from '../components/HowWorkPatron';
 import LightOnTop from '../components/LightOnTop';
 import PlannedIntegrations from '../components/PlannedIntegrations';
+import ReferralProgramToFans from '../components/ReferralProgramToFans';
 import Team from '../components/Team';
 import TechnicalViewpoint from '../components/TechnicalViewpoint';
 
@@ -27,6 +28,8 @@ export default function Index() {
       <TechnicalViewpoint />
 
       <Team />
+
+      <ReferralProgramToFans />
 
       <PlannedIntegrations />
 
@@ -72,7 +75,7 @@ export const getStaticProps = async ({ locale }: { locale: string }) => ({
       'team',
       'partners',
       'social',
+      'referral-program-to-fans',
     ])),
-    revalidate: 60 * 60,
   },
 });
