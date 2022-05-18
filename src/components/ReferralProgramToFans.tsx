@@ -23,7 +23,7 @@ export default function ReferralProgramToFans() {
             {t('do you know any YouTuber?')}
           </p>
 
-          <p className="text-2xl text-white max-w-[453px] mb-[70px]">
+          <p className="text-2xl text-white max-w-[453px] mb-[34px]">
             {t(
               'earn CBG tokens by inviting YouTube Content Creators to join cobogo! Just connect your wallet and get your referral link.'
             )}
