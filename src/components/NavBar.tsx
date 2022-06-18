@@ -5,7 +5,7 @@ import SelectLanguage from './SelectLanguage';
 
 export default function NavBar() {
   return (
-    <nav className="flex justify-between items-center flex-col sm:flex-row bg-primary text-white p-8">
+    <nav className="flex justify-between items-center flex-col sm:flex-row bg-primary text-white px-8 pt-8">
       <div className="mb-8 sm:mb-0">
         <Link href="/">
           <div className="relative z-10">
@@ -18,15 +18,26 @@ export default function NavBar() {
           </div>
         </Link>
       </div>
-      <div className="w-full sm:w-auto flex flex-row justify-around sm:justify-center items-center z-10">
+
+      <div className="w-full sm:w-auto flex flex-col sm:flex-row justify-around sm:justify-center items-center z-10">
         <a
-          href="https://docs.cobogo.social"
           target="_blank"
-          rel="noopener noreferrer"
-          className="sm:mr-8 font-bold"
+          href="https://app.cobogo.social/submit/"
+          className="px-[20px] py-[10px] font-bold border-[2px] border-violet hover:cursor-pointer"
+          rel="noreferrer"
         >
-          whitepaper
+          monetize your channel
         </a>
+
+        <a
+          target="_blank"
+          href="https://app.cobogo.social/"
+          className="px-[20px] py-[10px] font-bold border-[2px] border-violet2 hover:cursor-pointer mt-[15px] sm:mt-[0px] sm:ml-[30px]"
+          rel="noreferrer"
+        >
+          start supporting
+        </a>
+
         <SelectLanguage />
       </div>
     </nav>

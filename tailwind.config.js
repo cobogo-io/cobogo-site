@@ -17,6 +17,8 @@ module.exports = {
       primary: '#121212',
       secondary: '#1C1C1C',
       details: '#333333',
+      violet: '#6808CF',
+      violet2: '#B266FA',
     },
     extend: {},
   },

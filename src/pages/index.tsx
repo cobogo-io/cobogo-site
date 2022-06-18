@@ -1,12 +1,10 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
 
 import Header from '../components/Header';
 import HowWorkContentCreator from '../components/HowWorkContentCreator';
 import HowWorkPatron from '../components/HowWorkPatron';
-import LightOnTop from '../components/LightOnTop';
 import PlannedIntegrations from '../components/PlannedIntegrations';
 import ReferralProgramToFans from '../components/ReferralProgramToFans';
 import Team from '../components/Team';
@@ -17,8 +15,6 @@ export default function Index() {
 
   return (
     <div className="w-full overflow-hidden">
-      <LightOnTop />
-
       <Header />
 
       <HowWorkContentCreator setShowModal={setShowModal} />
