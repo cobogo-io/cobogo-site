@@ -21,7 +21,7 @@ export default function Team() {
           </h2>
         </div>
 
-        <div className="flex flex-col w-full px-5 lg:flex-row md:px-20 ">
+        <div className="flex flex-col w-full lg:flex-row">
           <div className="mb-10 md:mr-32 md:mb-0">
             <div className="mb-5 cursor-pointer" onClick={() => setSelected(0)}>
               <div
