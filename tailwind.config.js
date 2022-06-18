@@ -19,6 +19,7 @@ module.exports = {
       details: '#333333',
       violet: '#6808CF',
       violet2: '#B266FA',
+      violet3: '#D7ABFF',
     },
     extend: {},
   },
