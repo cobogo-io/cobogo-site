@@ -19,7 +19,7 @@ export default function Header(): JSX.Element {
 
         <a
           target="_blank"
-          href="https://app.cobogo.social/submit/"
+          href="https://app.cobogo.social/"
           className="px-[20px] py-[10px] font-bold border-[2px] border-violet2 hover:cursor-pointer h-[50px] text-[22px] flex justify-center items-center w-[205px] mb-8 sm:mb-0"
           rel="noreferrer"
         >
