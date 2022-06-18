@@ -9,7 +9,7 @@ export default function Header(): JSX.Element {
         shared creator monetization
       </h1>
 
-      <h2 className="sm:text-[24px] text-white max-w-[975px] text-center mb-[32px]">
+      <h2 className="text-[24px] text-white max-w-[975px] text-center mb-[32px]">
         cobogo allows fans to support their favorite Content Creators channels
         by splitting the rewards of their investment in an easy way.
       </h2>
