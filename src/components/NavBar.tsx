@@ -23,7 +23,7 @@ export default function NavBar() {
         <a
           target="_blank"
           href="https://app.cobogo.social/submit/"
-          className="px-[20px] py-[10px] font-bold border-[2px] border-violet hover:cursor-pointer"
+          className="px-[20px] py-[10px] font-bold border-[2px] border-violet hover:cursor-pointer flex justify-center items-center"
           rel="noreferrer"
         >
           monetize your channel
@@ -32,7 +32,7 @@ export default function NavBar() {
         <a
           target="_blank"
           href="https://app.cobogo.social/"
-          className="px-[20px] py-[10px] font-bold border-[2px] border-violet2 hover:cursor-pointer mt-[15px] sm:mt-[0px] sm:ml-[30px]"
+          className="px-[20px] py-[10px] font-bold border-[2px] border-violet2 hover:cursor-pointer mt-[15px] sm:mt-[0px] sm:ml-[30px] flex justify-center items-center"
           rel="noreferrer"
         >
           start supporting

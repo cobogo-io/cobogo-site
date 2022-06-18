@@ -19,7 +19,7 @@ export default function SelectLanguage() {
   return (
     <div className="relative inline-block">
       <div
-        className="mt-[30px] sm:mt-[0px] sm:ml-[30px] flex justify-center items-center cursor-pointer"
+        className="mt-[15px] sm:mt-[0px] sm:ml-[30px] flex justify-center items-center cursor-pointer"
         onClick={handleOpenModal}
       >
         <span className="font-bold">
