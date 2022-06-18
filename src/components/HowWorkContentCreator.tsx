@@ -27,7 +27,7 @@ export default function Header(): JSX.Element {
         </a>
       </div>
 
-      <div className="flex flex-col sm:flex-row justify-center items-center sm:justify-between w-full max-w-[1300px]">
+      <div className="flex flex-col sm:flex-row justify-center items-center sm:items-start sm:justify-between w-full max-w-[1300px]">
         <div className="flex flex-col w-[290px]">
           <div className="mb-[40px]">
             <Image src="/images/youtuber-1.png" width={290} height={290} />

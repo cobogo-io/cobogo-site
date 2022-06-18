@@ -5,23 +5,37 @@ export default function Partners() {
   const { t } = useTranslation('partners');
 
   return (
-    <section className="flex flex-col px-5 md:px-0 items-center h-full w-full py-24 bg-primary">
+    <section className="flex flex-col items-center h-full w-full py-[100px] px-[20px] bg-primary">
       <div className="flex flex-col items-center">
         <h1 className="bold-36 text-center pb-7">
           {t('planned integrations')}
         </h1>
 
-        <h2 className="light-24 text-center pb-20 w-full md:w-1/2">
+        <h2 className="light-24 text-center pb-20 max-w-[600px]">
           {t(
             'if you want to partner with us, or think your protocol would fit our ecosystem, get in touch.'
           )}
         </h2>
       </div>
 
-      <div className="flex">
+      <div className="flex flex-col sm:flex-row justify-center items-center">
         <a
           target="_blank"
-          className="mr-8"
+          className="flex sm:mr-8 mb-8 sm:mb-0"
+          href="https://docs.cobogo.social/overview/planned-features/manage-social-tokens"
+          rel="noopener noreferrer"
+        >
+          <Image
+            width={170}
+            height={24}
+            src="/logos/coinvise-logo.svg"
+            alt="coinvise logo"
+          />
+        </a>
+
+        <a
+          target="_blank"
+          className="flex sm:mr-8 mb-8 sm:mb-0"
           href="https://docs.cobogo.social/platform/protocols/drips-network"
           rel="noopener noreferrer"
         >
@@ -35,6 +49,7 @@ export default function Partners() {
 
         <a
           target="_blank"
+          className="flex"
           href="https://docs.cobogo.social/platform/protocols/unlock-protocol-+-mintgate"
           rel="noopener noreferrer"
         >
