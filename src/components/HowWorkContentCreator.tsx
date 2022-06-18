@@ -1,113 +1,74 @@
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 
-import CallToActionButton from './CallToActionButton';
-
-interface HowWorkContentCreatorProps {
-  setShowModal: (bool: boolean) => void;
-}
-
-export default function HowWorkContentCreator({
-  setShowModal,
-}: HowWorkContentCreatorProps) {
-  const { t } = useTranslation('how-work-content-creator');
+export default function Header(): JSX.Element {
+  const { t } = useTranslation('header');
 
   return (
-    <section
-      id="how-work-content-creator"
-      className="flex flex-col px-5 md:px-0 items-center h-full w-full py-24 bg-secondary"
-    >
-      <div>
-        <h1 className="bold-36 text-center pb-7">
-          {t('how it works for a Content Creator')}
-        </h1>
+    <section className="bg-primary flex flex-col justify-center items-center px-[20px] py-[100px] text-white">
+      <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between w-full max-w-[1300px]">
+        <div className="flex flex-col">
+          <p className="text-[36px] font-bold text-center sm:text-left">
+            how it works for a Content Creator
+          </p>
 
-        <h2 className="light-24 text-center pb-16 font-light">
-          {t('monetize and empower your fans and community with cobogo.')}
-        </h2>
+          <p className="text-[22px] mb-8 sm:mb-[100px] text-center sm:text-left">
+            monetize and empower your fans and community with cobogo.
+          </p>
+        </div>
+
+        <a
+          target="_blank"
+          href="https://app.cobogo.social/submit/"
+          className="px-[20px] py-[10px] font-bold border-[2px] border-violet hover:cursor-pointer h-[50px] text-[22px] flex justify-center items-center w-[275px] mb-8 sm:mb-0"
+          rel="noreferrer"
+        >
+          monetize your channel
+        </a>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-center items-start pb-5">
-        <div className="flex flex-col items-center px-5 md:px-20 w-full lg:w-1/3 min-w-full lg:min-w-0 pb-10">
-          <div className="w-16 h-11 relative">
-            <Image
-              layout="fill"
-              objectFit="contain"
-              src="/icons/youtube-icon.svg"
-              alt="YouTube icon"
-            />
+      <div className="flex flex-col sm:flex-row justify-center items-center sm:items-start sm:justify-between w-full max-w-[1300px]">
+        <div className="flex flex-col w-[290px]">
+          <div className="mb-[40px]">
+            <Image src="/images/youtuber-1.png" width={290} height={290} />
           </div>
 
-          <div className="h-5" />
+          <p className="font-bold text-[22px]">1 - submit your channel</p>
 
-          <div className="bold-24 text-center py-4">
-            1. {t('submit your channel')}
-          </div>
-
-          <div className="regular-18 text-center sm:px-20 md:px-0">
-            {t('to be able to receive rewards from your followers, you must')}{' '}
-            <span className="regular-18">{t('apply your channel')}</span>.{' '}
-            {t(
-              'the cobogo team will verify if it is a real channel with real followers, and approve it.'
-            )}
-          </div>
+          <p className="text-[18px] mb-[80px] sm:mb-0">
+            to be able to receive rewards from your followers, you must apply
+            your channel. the cobogo team will verify if it is a real channel
+            with real followers, and approve it.
+          </p>
         </div>
 
-        <div className="flex flex-col items-center px-5 md:px-20 w-full lg:w-1/3 min-w-full lg:min-w-0 pb-10">
-          <div className="w-10 h-16 relative">
-            <Image
-              layout="fill"
-              objectFit="contain"
-              src="/icons/mic-icon.svg"
-              alt="Microphone icon"
-            />
+        <div className="flex flex-col w-[290px]">
+          <div className="mb-[40px]">
+            <Image src="/images/youtuber-2.png" width={290} height={290} />
           </div>
 
-          <div className="bold-24 text-center py-4">
-            2. {t('spread the news')}
-          </div>
+          <p className="font-bold text-[22px]">2 - spread the news</p>
 
-          <div className="regular-18 text-center  sm:px-20 md:px-0">
-            {t(
-              'you have to publish at least one video explaining to your audience what cobogo is and how they can support you. It is important to keep the wheels turning.'
-            )}
-          </div>
+          <p className="text-[18px] mb-[80px] sm:mb-0">
+            let your fans know about cobogo so they can support and stake for
+            you! It is important to keep the wheels turning.
+          </p>
         </div>
 
-        <div className="flex flex-col items-center px-5 md:px-20 w-full lg:w-1/3 min-w-full lg:min-w-0 pb-10">
-          <div className="w-16 h-11 relative">
-            <Image
-              layout="fill"
-              objectFit="contain"
-              src="/icons/coin-icon.svg"
-              alt="Coins icon"
-            />
+        <div className="flex flex-col w-[290px]">
+          <div className="mb-[40px]">
+            <Image src="/images/fan-youtuber-3.png" width={290} height={290} />
           </div>
 
-          <div className="h-5" />
+          <p className="font-bold text-[22px]">3 - receive rewards</p>
 
-          <div className="bold-24 text-center py-4">
-            3. {t('receive rewards')}
-          </div>
-
-          <div className="regular-18 text-center  sm:px-20 md:px-0">
-            {t(
-              'continue your good work and wait for your followers to stake on your channel. You will receive the rewards on a block (minutes) basis and will be able to stake for other YouTubers as well.'
-            )}
-          </div>
+          <p className="text-[18px]">
+            continue your good work and wait for your followers to stake on your
+            channel. You will receive the rewards on a block (minutes) basis and
+            will be able to stake for other YouTubers as well.
+          </p>
         </div>
       </div>
-
-      <a
-        href="https://app.cobogo.social/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <CallToActionButton
-          color="purple"
-          placeholder={t('monetize your channel')}
-        />
-      </a>
     </section>
   );
 }
