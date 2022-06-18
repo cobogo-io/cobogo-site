@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next';
 
-export default function Header() {
+export default function Header(): JSX.Element {
   const { t } = useTranslation('header');
 
   return (

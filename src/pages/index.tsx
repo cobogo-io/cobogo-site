@@ -3,12 +3,12 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import Header from '../components/Header';
+import HeaderText from '../components/HeaderText';
 import HowWorkContentCreator from '../components/HowWorkContentCreator';
 import HowWorkPatron from '../components/HowWorkPatron';
 import PlannedIntegrations from '../components/PlannedIntegrations';
 import ReferralProgramToFans from '../components/ReferralProgramToFans';
 import Team from '../components/Team';
-import TechnicalViewpoint from '../components/TechnicalViewpoint';
 
 export default function Index() {
   const [showModal, setShowModal] = useState(false);
@@ -17,11 +17,11 @@ export default function Index() {
     <div className="w-full overflow-hidden">
       <Header />
 
+      <HeaderText />
+
       <HowWorkContentCreator setShowModal={setShowModal} />
 
       <HowWorkPatron setShowModal={setShowModal} />
-
-      <TechnicalViewpoint />
 
       <Team />
 
