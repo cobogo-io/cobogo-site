@@ -1,20 +1,10 @@
 {
-  "join our Telegram": "Bekleme listesi",
-  "before": "dolmadan",
-  "the waitlist is up to be": "Telegramımıza katılın ve olası",
-  "informed of future": "ödül ve airdroplardan",
-  "bounties and": "ilk siz haberdar",
-  "airdrops": "olun",
-  "before the waitlist is up to be": "dolmadan Telegramımıza katılın ve olası ödül ve airdroplardan",
-  "informed of future bounties and airdrops": " ilk siz haberdar olun",
-  "how it works for the Patron": "Patronlar için nasıl işler",
-  "support your favorite Content Creator while also earning money.": "En sevdiğiniz YouTube içerik üreticisine destek olurken para kazanın.",
-  "choose a channel": "Bir kanal seçin",
-  "choose your favorite channel": "Destek olmak istediğiniz favori kanalınızı seçin",
-  "to support and to stake on. Part of the rewards will go to the channel you chose, the other part for you. You can stake on multiple channels if you want to.": " ve stake etmeye başlayın. Ödüllerin bir kısmı seçtiğiniz kanala diğer kısmı size gelir. Birden fazla kanala stake etmekte serbestsiniz.",
-  "stake CBG tokens": "CBG tokeni stake edin.",
-  "first, you need to buy CBG tokens, which is the token used to stake and earn rewards.": "İlk olarak, stake edilen ve ödül kazandıran $CBG tokeni almalısınız. ",
-  "receive rewards": "Ödülleri kazanın",
-  "that’s it, you don’t need to do anything else, wait for your rewards and at any time you can withdraw them to your wallet.": "Bu kadar. Başka birşey yapmanıza gerek yok, ödüllerini bekleyin ve dilediğiniz zaman cüzdanınıza çekin.",
-  "become a patron": "Bir patron olun"
+  "how it works for the Fan": "Fan için nasıl çalışır",
+  "support your favorite Content Creator while also earning money.": "En sevdiğiniz İçerik Oluşturucuyu destekleyin ve aynı zamanda para kazanın.",
+  "1 - choose a channel": "1 - bir kanal seçin",
+  "choose your favorite channel to support and to stake on. Part of the rewards will go to the channel you choose, the other part for you. You can stake on multiple channels if you want to.": "desteklemek ve bahis oynamak için favori kanalınızı seçin. Ödüllerin bir kısmı seçtiğiniz kanala, bir kısmı da sizin için gidecek. İsterseniz birden fazla kanalda stake yapabilirsiniz.",
+  "2 - stake CBG tokens": "2 - hisse CBG belirteçleri",
+  "first, you need to buy CBG tokens, which is the token used to stake and earn rewards.": "İlk olarak, bahis yapmak ve ödül kazanmak için kullanılan jeton olan CBG jetonlarını satın almanız gerekir.",
+  "3 - receive rewards": "3 - ödül almak",
+  "that’s it, you don’t need to do anything else, wait for your rewards and at any time you can withdraw them to your wallet.": "bu kadar, başka bir şey yapmanıza gerek yok, ödüllerinizi bekleyin ve istediğiniz zaman cüzdanınıza çekebilirsiniz."
 }
