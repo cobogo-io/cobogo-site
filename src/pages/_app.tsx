@@ -9,7 +9,6 @@ import { useEffect } from 'react';
 import SEO from '../../next-seo-config';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
-import Social from '../components/Social';
 
 import type { AppProps } from 'next/app';
 const cache = new InMemoryCache();
@@ -69,8 +68,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <ApolloProvider client={client}>
         <NavBar />
+
         <Component {...pageProps} />
-        <Social />
+
         <Footer />
       </ApolloProvider>
     </>
