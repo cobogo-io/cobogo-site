@@ -5,7 +5,7 @@ import SelectLanguage from './SelectLanguage';
 
 export default function NavBar() {
   return (
-    <nav className="flex justify-between items-center flex-col sm:flex-row bg-primary text-white px-8 py-8 fixed z-20 w-screen">
+    <nav className="flex justify-between items-center flex-col sm:flex-row bg-primary text-white px-8 py-8 sm:fixed z-20 w-screen">
       <div className="mb-8 sm:mb-0">
         <Link href="/">
           <div className="relative z-10">
