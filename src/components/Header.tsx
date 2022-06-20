@@ -18,7 +18,7 @@ export default function Header(): JSX.Element {
         autoPlay
         preload="auto"
         loop
-        muted
+        playsInline
         className="w-[1269px] max-h-[734px]"
       >
         <source src="/videos/animation.mp4" type="video/mp4" />
