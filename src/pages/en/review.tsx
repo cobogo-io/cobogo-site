@@ -56,7 +56,6 @@ export default function Review() {
           </section>
         </div>
       </div>
-      <Social />
       <Footer />
     </div>
   );

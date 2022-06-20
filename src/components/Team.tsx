@@ -12,11 +12,13 @@ export default function Team() {
           <h1 className="text-center bold-36 mb-8">{t('meet the team')}</h1>
 
           <h2 className="text-[22px] max-w-[781px] text-center text-white mb-8">
-            our team works specifically on the dapp to make the best experience
-            for <span className="font-bold">Patrons</span> and{' '}
-            <span className="font-bold">Creators</span>. We have extensive
-            experience in software development,{' '}
-            <span className="font-bold">blockchain</span> and{' '}
+            {t(
+              'our team works specifically on the dapp to make the best experience for'
+            )}{' '}
+            <span className="font-bold">{t('Fans')}</span> {t('and')}{' '}
+            <span className="font-bold">{t('Creators')}</span>.{' '}
+            {t('We have extensive experience in software development')},{' '}
+            <span className="font-bold">blockchain</span> {t('and')}{' '}
             <span className="font-bold">tokenomics</span>.
           </h2>
         </div>

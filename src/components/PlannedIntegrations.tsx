@@ -1,8 +1,8 @@
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 
-export default function Partners() {
-  const { t } = useTranslation('partners');
+export default function PlannedIntegrations() {
+  const { t } = useTranslation('planned-integrations');
 
   return (
     <section className="flex flex-col items-center h-full w-full py-[100px] px-[20px] bg-primary">

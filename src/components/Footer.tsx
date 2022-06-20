@@ -5,7 +5,7 @@ import Link from './NextLink';
 import SocialLink from './SocialLink';
 
 export default function Header(): JSX.Element {
-  const { t } = useTranslation('header');
+  const { t } = useTranslation('footer');
 
   return (
     <section className="bg-primary flex flex-col justify-center items-center px-[20px] py-[100px] text-white w-full relative">
@@ -84,7 +84,7 @@ export default function Header(): JSX.Element {
       <Image src="/logos/cobogo-logo.svg" width={81} height={19} />
 
       <div className="absolute bottom-[20px] left-[20px] hidden sm:flex">
-        <Image src="/images/footer-1.svg" width={369} height={313} />
+        <Image src="/images/footer.svg" width={369} height={313} />
       </div>
 
       <div className="absolute bottom-[20px] right-[20px] hidden sm:flex">
