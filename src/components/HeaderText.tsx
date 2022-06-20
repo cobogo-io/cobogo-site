@@ -17,7 +17,7 @@ export default function HeaderText(): JSX.Element {
             cryptocurrency smart contracts system.
           </p>
 
-          <p className="mb-[40px]">
+          <p className="mb-[40px] sm:mb-0">
             <span className="font-bold">cobogo</span> leverages its unique split
             funding system to sustainably monetize{' '}
             <span className="font-bold">YouTube Creators</span>.{' '}
@@ -35,7 +35,7 @@ export default function HeaderText(): JSX.Element {
             this method of funding can receive benefits not found anywhere else.
           </p>
 
-          <p className="mb-[40px]">
+          <p>
             even small and niche YouTubers will be able to be properly monetized
             by their own community. Through cobogo, community building and
             monetization is taken to a new level not found in web2.
