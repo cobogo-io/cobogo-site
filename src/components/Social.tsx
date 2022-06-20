@@ -8,7 +8,6 @@ export default function Social() {
           <SocialLink
             href="https://discord.gg/FWh7cqUkDt"
             icon="/icons/discord-icon.svg"
-            placeholder="cobogo"
           />
         </div>
 
@@ -16,7 +15,6 @@ export default function Social() {
           <SocialLink
             href="https://twitter.com/cobogosocial"
             icon="/icons/twitter-icon.svg"
-            placeholder="@cobogosocial"
           />
         </div>
       </div>
@@ -26,7 +24,6 @@ export default function Social() {
           <SocialLink
             href="https://medium.com/@cobogosocial"
             icon="/icons/medium-icon.svg"
-            placeholder="@cobogosocial"
           />
         </div>
 
@@ -34,7 +31,6 @@ export default function Social() {
           <SocialLink
             href="https://github.com/cobogo-social"
             icon="/icons/github-icon.svg"
-            placeholder="/cobogo-social"
           />
         </div>
       </div>
@@ -44,14 +40,12 @@ export default function Social() {
           <SocialLink
             href="https://t.me/cobogosocial"
             icon="/icons/telegram-icon.svg"
-            placeholder="/cobogosocial"
           />
         </div>
 
         <SocialLink
           href="https://docs.cobogo.social"
           icon="/icons/gitbook-icon.svg"
-          placeholder="docs.cobogo.social"
         />
       </div>
     </section>
