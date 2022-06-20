@@ -20,7 +20,7 @@ export default function Header(): JSX.Element {
         <a
           target="_blank"
           href="https://app.cobogo.social/"
-          className="px-[20px] py-[10px] font-bold border-[2px] border-violet2 hover:cursor-pointer h-[50px] text-[22px] flex justify-center items-center w-[205px] mb-8 sm:mb-0"
+          className="px-[20px] py-[10px] font-bold border-[2px] border-violet2 hover:cursor-pointer h-[50px] text-[22px] hidden sm:flex justify-center items-center w-[205px] mb-8 sm:mb-0"
           rel="noreferrer"
         >
           start supporting
@@ -62,12 +62,21 @@ export default function Header(): JSX.Element {
 
           <p className="font-bold text-[22px]">3 - receive rewards</p>
 
-          <p className="text-[18px]">
+          <p className="text-[18px] mb-[80px] sm:mb-0">
             that’s it, you don’t need to do anything else, wait for your rewards
             and at any time you can withdraw them to your wallet.
           </p>
         </div>
       </div>
+
+      <a
+        target="_blank"
+        href="https://app.cobogo.social/"
+        className="px-[20px] py-[10px] font-bold border-[2px] border-violet2 hover:cursor-pointer h-[50px] text-[22px] flex sm:hidden justify-center items-center w-[205px]"
+        rel="noreferrer"
+      >
+        start supporting
+      </a>
     </section>
   );
 }

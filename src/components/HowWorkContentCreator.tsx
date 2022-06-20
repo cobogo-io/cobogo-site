@@ -20,7 +20,7 @@ export default function Header(): JSX.Element {
         <a
           target="_blank"
           href="https://app.cobogo.social/submit/"
-          className="px-[20px] py-[10px] font-bold border-[2px] border-violet hover:cursor-pointer h-[50px] text-[22px] flex justify-center items-center w-[275px] mb-8 sm:mb-0"
+          className="px-[20px] py-[10px] font-bold border-[2px] border-violet hover:cursor-pointer h-[50px] text-[22px] hidden sm:flex justify-center items-center w-[275px] mb-8 sm:mb-0"
           rel="noreferrer"
         >
           monetize your channel
@@ -62,13 +62,22 @@ export default function Header(): JSX.Element {
 
           <p className="font-bold text-[22px]">3 - receive rewards</p>
 
-          <p className="text-[18px]">
+          <p className="text-[18px] mb-[80px] sm:mb-0">
             continue your good work and wait for your followers to stake on your
             channel. You will receive the rewards on a block (minutes) basis and
             will be able to stake for other YouTubers as well.
           </p>
         </div>
       </div>
+
+      <a
+        target="_blank"
+        href="https://app.cobogo.social/submit/"
+        className="px-[20px] py-[10px] font-bold border-[2px] border-violet hover:cursor-pointer h-[50px] text-[22px] flex sm:hidden justify-center items-center w-[275px]"
+        rel="noreferrer"
+      >
+        monetize your channel
+      </a>
     </section>
   );
 }
