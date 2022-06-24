@@ -6,7 +6,6 @@ import HowWorkContentCreator from '../components/HowWorkContentCreator';
 import HowWorkFan from '../components/HowWorkFan';
 import PlannedIntegrations from '../components/PlannedIntegrations';
 import ReferralProgramToFans from '../components/ReferralProgramToFans';
-import Team from '../components/Team';
 
 export default function Index() {
   return (
@@ -18,8 +17,6 @@ export default function Index() {
       <HowWorkContentCreator />
 
       <HowWorkFan />
-
-      <Team />
 
       <ReferralProgramToFans />
 

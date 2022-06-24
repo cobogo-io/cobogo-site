@@ -5,7 +5,7 @@ export default function HowWorkFan(): JSX.Element {
   const { t } = useTranslation('how-work-fan');
 
   return (
-    <section className="bg-secondary flex flex-col justify-center items-center px-[20px] py-[100px] text-white">
+    <section className="bg-gray flex flex-col justify-center items-center px-[20px] py-[100px] text-white">
       <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between w-full max-w-[1300px]">
         <div className="flex flex-col">
           <p className="text-[36px] font-bold text-center sm:text-left">

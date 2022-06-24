@@ -16,6 +16,7 @@ module.exports = {
       white: '#FFFFFF',
       primary: '#121113',
       secondary: '#1D1D1B',
+      gray: '#181817',
       details: '#333333',
       violet: '#6808CF',
       violet2: '#B266FA',
