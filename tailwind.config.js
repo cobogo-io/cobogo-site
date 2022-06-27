@@ -14,7 +14,7 @@ module.exports = {
       purplelight: '#6C63FF',
       purplelighthover: '#4C46A1',
       white: '#FFFFFF',
-      primary: '#121113',
+      primary: '#111111',
       secondary: '#1D1D1B',
       gray: '#181817',
       details: '#333333',
