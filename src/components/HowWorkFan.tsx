@@ -19,14 +19,14 @@ export default function HowWorkFan(): JSX.Element {
           </p>
         </div>
 
-        <a
+        {/* <a
           target="_blank"
           href="https://app.cobogo.social/"
           className="px-[20px] py-[10px] font-bold border-[2px] border-violet2 hover:cursor-pointer h-[50px] text-[22px] hidden sm:flex justify-center items-center w-[205px] mb-8 sm:mb-0"
           rel="noreferrer"
         >
-          start supporting
-        </a>
+          find creators
+        </a> */}
       </div>
 
       <div className="flex flex-col sm:flex-row justify-center items-center sm:items-start sm:justify-between w-full max-w-[1300px]">
@@ -73,14 +73,14 @@ export default function HowWorkFan(): JSX.Element {
         </div>
       </div>
 
-      <a
+      {/* <a
         target="_blank"
         href="https://app.cobogo.social/"
         className="px-[20px] py-[10px] font-bold border-[2px] border-violet2 hover:cursor-pointer h-[50px] text-[22px] flex sm:hidden justify-center items-center w-[205px]"
         rel="noreferrer"
       >
-        start supporting
-      </a>
+        find creators
+      </a> */}
     </section>
   );
 }

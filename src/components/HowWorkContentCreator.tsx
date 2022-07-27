@@ -20,10 +20,10 @@ export default function Header(): JSX.Element {
         <a
           target="_blank"
           href="https://app.cobogo.social/submit/"
-          className="px-[20px] py-[10px] font-bold border-[2px] border-violet hover:cursor-pointer h-[50px] text-[22px] hidden sm:flex justify-center items-center w-[275px] mb-8 sm:mb-0"
+          className="px-[20px] py-[10px] font-bold border-[2px] border-violet hover:cursor-pointer text-[22px] hidden sm:flex justify-center items-center mb-8 sm:mb-0"
           rel="noreferrer"
         >
-          monetize your channel
+          create your profile
         </a>
       </div>
 
@@ -76,10 +76,10 @@ export default function Header(): JSX.Element {
       <a
         target="_blank"
         href="https://app.cobogo.social/submit/"
-        className="px-[20px] py-[10px] font-bold border-[2px] border-violet hover:cursor-pointer h-[50px] text-[22px] flex sm:hidden justify-center items-center w-[275px]"
+        className="px-[20px] py-[10px] font-bold border-[2px] border-violet hover:cursor-pointer text-[22px] flex sm:hidden justify-center items-center"
         rel="noreferrer"
       >
-        monetize your channel
+        create your profile
       </a>
     </section>
   );
