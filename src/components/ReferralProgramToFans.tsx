@@ -7,7 +7,7 @@ export default function Header(): JSX.Element {
   const { t } = useTranslation('referral-program-to-fans');
 
   return (
-    <section className="bg-secondary flex flex-col justify-center items-center px-[20px] py-[100px] text-white relative">
+    <section className="bg-secondary flex flex-col justify-center items-center px-[20px] py-[50px] sm:py-[100px] text-white relative">
       <div className="flex justify-between w-full max-w-[1300px] z-10">
         <div className="flex flex-col">
           <p className="text-[36px] font-bold">
@@ -43,6 +43,7 @@ export default function Header(): JSX.Element {
           src="/images/referral-program-to-fans.svg"
           objectFit="cover"
           layout="fill"
+          alt="referral program to fans"
         />
       </div>
     </section>

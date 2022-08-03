@@ -5,7 +5,7 @@ export default function HowWorkFan(): JSX.Element {
   const { t } = useTranslation('how-work-fan');
 
   return (
-    <section className="bg-gray flex flex-col justify-center items-center px-[20px] py-[100px] text-white">
+    <section className="bg-gray flex flex-col justify-center items-center px-[20px] py-[50px] sm:py-[100px] text-white">
       <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between w-full max-w-[1300px]">
         <div className="flex flex-col">
           <p className="text-[36px] font-bold text-center sm:text-left">
@@ -32,7 +32,12 @@ export default function HowWorkFan(): JSX.Element {
       <div className="flex flex-col sm:flex-row justify-center items-center sm:items-start sm:justify-between w-full max-w-[1300px]">
         <div className="flex flex-col w-[290px]">
           <div className="mb-[40px]">
-            <Image src="/images/fan-1.png" width={290} height={290} />
+            <Image
+              src="/images/fan-1.png"
+              width={290}
+              height={290}
+              alt="youtuber"
+            />
           </div>
 
           <p className="font-bold text-[22px]">{t('1 - choose a channel')}</p>
@@ -46,7 +51,12 @@ export default function HowWorkFan(): JSX.Element {
 
         <div className="flex flex-col w-[290px]">
           <div className="mb-[40px]">
-            <Image src="/images/fan-2.png" width={290} height={290} />
+            <Image
+              src="/images/fan-2.png"
+              width={290}
+              height={290}
+              alt="youtuber"
+            />
           </div>
 
           <p className="font-bold text-[22px]">{t('2 - stake CBG tokens')}</p>
@@ -60,7 +70,12 @@ export default function HowWorkFan(): JSX.Element {
 
         <div className="flex flex-col w-[290px]">
           <div className="mb-[40px]">
-            <Image src="/images/fan-youtuber-3.png" width={290} height={290} />
+            <Image
+              src="/images/fan-youtuber-3.png"
+              width={290}
+              height={290}
+              alt="youtuber"
+            />
           </div>
 
           <p className="font-bold text-[22px]">{t('3 - receive rewards')}</p>

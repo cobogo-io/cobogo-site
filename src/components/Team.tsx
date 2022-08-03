@@ -6,7 +6,7 @@ export default function Team() {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section className="flex flex-col justify-center items-center w-full h-full py-[100px] px-[20px] bg-primary">
+    <section className="flex flex-col justify-center items-center w-full h-full py-[50px] sm:py-[100px] px-[20px] bg-primary">
       <div className="flex flex-col w-full max-w-[1300px]">
         <div className="flex flex-col items-center">
           <h1 className="text-center bold-36 mb-8">{t('meet the team')}</h1>

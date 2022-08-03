@@ -4,7 +4,7 @@ export default function HeaderText(): JSX.Element {
   const { t } = useTranslation('header-text');
 
   return (
-    <section className="bg-gray flex justify-center items-center px-[20px] py-[100px] text-white text-[22px]">
+    <section className="bg-gray flex justify-center items-center px-[20px] py-[50px] sm:py-[100px] text-white text-[22px]">
       <div className="w-full max-w-[1300px] flex flex-col sm:flex-row justify-between">
         <div className="flex flex-col max-w-[530px]">
           <p className="mb-[40px]">

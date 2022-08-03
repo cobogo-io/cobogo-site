@@ -23,7 +23,7 @@ export default function NavBar() {
         <a
           target="_blank"
           href="https://app.cobogo.social/submit/"
-          className="px-[20px] py-[10px] font-bold border-[2px] border-violet hover:cursor-pointer flex justify-center items-center"
+          className="px-[20px] py-[10px] font-bold border-[2px] border-violet hover:cursor-pointer hidden sm:flex justify-center items-center"
           rel="noreferrer"
         >
           create your profile

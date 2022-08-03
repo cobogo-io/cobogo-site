@@ -8,7 +8,7 @@ export default function Header(): JSX.Element {
   const { t } = useTranslation('footer');
 
   return (
-    <section className="bg-primary flex flex-col justify-center items-center px-[20px] py-[100px] text-white w-full relative">
+    <section className="bg-primary flex flex-col justify-center items-center px-[20px] py-[50px] sm:py-[100px] text-white w-full relative">
       <div className="flex mb-[80px] sm:mb-[40px] flex-col sm:flex-row">
         <div className="mr-0 sm:mr-[40px] mb-8 sm:mb-0">
           <SocialLink
@@ -81,14 +81,24 @@ export default function Header(): JSX.Element {
         </Link>
       </div>
 
-      <Image src="/logos/cobogo-logo.svg" width={81} height={19} />
+      <Image
+        src="/logos/cobogo-logo.svg"
+        width={81}
+        height={19}
+        alt="cobogo logo"
+      />
 
       <div className="absolute bottom-[20px] left-[20px] hidden sm:flex">
-        <Image src="/images/footer.svg" width={369} height={313} />
+        <Image src="/images/footer.svg" width={369} height={313} alt="footer" />
       </div>
 
       <div className="absolute bottom-[20px] right-[20px] hidden sm:flex">
-        <Image src="/images/footer-2.svg" width={369} height={313} />
+        <Image
+          src="/images/footer-2.svg"
+          width={369}
+          height={313}
+          alt="footer"
+        />
       </div>
     </section>
   );

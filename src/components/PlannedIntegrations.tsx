@@ -5,7 +5,7 @@ export default function PlannedIntegrations() {
   const { t } = useTranslation('planned-integrations');
 
   return (
-    <section className="flex flex-col items-center h-full w-full py-[100px] px-[20px] bg-primary">
+    <section className="flex flex-col items-center h-full w-full py-[50px] sm:py-[100px] px-[20px] bg-primary">
       <div className="flex flex-col items-center">
         <h1 className="bold-36 text-center pb-7">
           {t('planned integrations')}
