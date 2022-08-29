@@ -6,12 +6,12 @@ export default function Header(): JSX.Element {
   return (
     <section className="bg-primary flex flex-col justify-center items-center px-[20px] py-[50px] sm:py-[100px]">
       <h1 className="font-bold text-[50px] sm:text-[65px] text-white text-center">
-        {t('shared creator monetization')}
+        {t('Business Infrastructure for Creators')}
       </h1>
 
       <h2 className="text-[24px] text-white max-w-[975px] text-center mb-3">
         {t(
-          'cobogo allows fans to support their favorite Content Creators channels by splitting the rewards of their investment in an easy way.'
+          'Cobogo allows Creators to become real businesses. We provide all the best tools for incorporating a US business, raising funds with whom matters the most and maximizing growth.'
         )}
       </h2>
 

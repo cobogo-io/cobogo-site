@@ -9,12 +9,12 @@ export default function HowWorkFan(): JSX.Element {
       <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between w-full max-w-[1300px]">
         <div className="flex flex-col">
           <p className="text-[36px] font-bold text-center sm:text-left">
-            {t('how it works for the Fan')}
+            {t('How it works for Investors or the Audience')}
           </p>
 
           <p className="text-[22px] mb-8 sm:mb-[100px] text-center sm:text-left">
             {t(
-              'support your favorite Content Creator while also earning money.'
+              'Invest in your favorite Creator, maximize their growth and receive part of their revenue.'
             )}
           </p>
         </div>
@@ -40,11 +40,11 @@ export default function HowWorkFan(): JSX.Element {
             />
           </div>
 
-          <p className="font-bold text-[22px]">{t('1 - choose a channel')}</p>
+          <p className="font-bold text-[22px]">{t('Find a Creator')}</p>
 
           <p className="text-[18px] mb-[80px] sm:mb-0">
             {t(
-              'choose your favorite channel to support and to stake on. Part of the rewards will go to the channel you choose, the other part for you. You can stake on multiple channels if you want to.'
+              'Browse Cobogo Social to find your favorite Creator to invest in. In their profile you will be able to check their analytics, business presentation and assess their potential.'
             )}
           </p>
         </div>
@@ -59,11 +59,11 @@ export default function HowWorkFan(): JSX.Element {
             />
           </div>
 
-          <p className="font-bold text-[22px]">{t('2 - stake CBG tokens')}</p>
+          <p className="font-bold text-[22px]">{t('Invest in Creators')}</p>
 
           <p className="text-[18px] mb-[80px] sm:mb-0">
             {t(
-              'first, you need to buy CBG tokens, which is the token used to stake and earn rewards.'
+              'Invest in Creators with a Rolling SAFE, which allows you to own a share of that Creator Business. First-movers are the most rewarded, this is the benefit of the Continuous Security Offering.'
             )}
           </p>
         </div>
@@ -78,11 +78,11 @@ export default function HowWorkFan(): JSX.Element {
             />
           </div>
 
-          <p className="font-bold text-[22px]">{t('3 - receive rewards')}</p>
+          <p className="font-bold text-[22px]">{t('Share their Success')}</p>
 
           <p className="text-[18px] mb-[80px] sm:mb-0">
             {t(
-              'that’s it, you don’t need to do anything else, wait for your rewards and at any time you can withdraw them to your wallet.'
+              'You will own a part of a Creator Business and share their success! All in an SEC-compliant Token.'
             )}
           </p>
         </div>

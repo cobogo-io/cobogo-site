@@ -9,11 +9,11 @@ export default function Header(): JSX.Element {
       <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between w-full max-w-[1300px]">
         <div className="flex flex-col">
           <p className="text-[36px] font-bold text-center sm:text-left">
-            {t('how it works for a Content Creator')}
+            {t('How it works for a Content Creator')}
           </p>
 
           <p className="text-[22px] mb-8 sm:mb-[100px] text-center sm:text-left">
-            {t('monetize and empower your fans and community with cobogo.')}
+            {t('Transform yourself into a business and maximize your growth.')}
           </p>
         </div>
 
@@ -38,13 +38,11 @@ export default function Header(): JSX.Element {
             />
           </div>
 
-          <p className="font-bold text-[22px]">
-            {t('1 - submit your channel')}
-          </p>
+          <p className="font-bold text-[22px]">{t('Create Your Profile')}</p>
 
           <p className="text-[18px] mb-[80px] sm:mb-0">
             {t(
-              'to be able to receive rewards from your followers, you must apply your channel. The cobogo team will verify if it is a real channel with real followers, and approve it.'
+              'Your Cobogo Social profile is the place to advertise your businesses to investors, brands and your own audience.'
             )}
           </p>
         </div>
@@ -59,11 +57,11 @@ export default function Header(): JSX.Element {
             />
           </div>
 
-          <p className="font-bold text-[22px]">{t('2 - spread the news')}</p>
+          <p className="font-bold text-[22px]">{t('Become a Business')}</p>
 
           <p className="text-[18px] mb-[80px] sm:mb-0">
             {t(
-              'let your fans know about cobogo so they can support and stake for you! It is important to keep the wheels turning.'
+              'Cobogo Start is the first step to bootstrap your work by providing the easiest way to incorporate Creators-as-a-business in Delaware.'
             )}
           </p>
         </div>
@@ -78,11 +76,11 @@ export default function Header(): JSX.Element {
             />
           </div>
 
-          <p className="font-bold text-[22px]">{t('3 - receive rewards')}</p>
+          <p className="font-bold text-[22px]">{t('Raise Funds')}</p>
 
           <p className="text-[18px] mb-[80px] sm:mb-0">
             {t(
-              'continue your good work and wait for your followers to stake on your channel. You will receive the rewards on a block (minutes) basis and will be able to stake for other YouTubers as well.'
+              'Cobogo Fundraise allows Creators to tokenize equity as a SEC-compliant token and apply Rolling SAFE, for a Continuous Securities Offering, instead of doing static fundraising rounds.'
             )}
           </p>
         </div>

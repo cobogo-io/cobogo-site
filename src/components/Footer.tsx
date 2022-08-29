@@ -60,24 +60,24 @@ export default function Header(): JSX.Element {
 
         <div className="mr-0 sm:mr-8 mb-8 sm:mb-0">
           <Link href="/code" className="bold-18">
-            {t('code of conduct')}
+            {t('Code of conduct')}
           </Link>
         </div>
 
         <div className="mr-0 sm:mr-8 mb-8 sm:mb-0">
           <Link href="/privacy" className="bold-18">
-            {t('privacy policy')}
+            {t('Privacy policy')}
           </Link>
         </div>
 
         <div className="mr-0 sm:mr-8 mb-8 sm:mb-0">
           <Link href="/terms" className="bold-18">
-            {t('terms of use')}
+            {t('Terms of use')}
           </Link>
         </div>
 
         <Link href="mailto:hi@cobogo.social" className="bold-18">
-          {t('email')}
+          {t('Email')}
         </Link>
       </div>
 

@@ -11,11 +11,11 @@ export default function Header(): JSX.Element {
       <div className="flex justify-between w-full max-w-[1300px] z-10">
         <div className="flex flex-col">
           <p className="text-[36px] font-bold">
-            {t('do you know any YouTuber?')}
+            {t('Do you know any YouTuber?')}
           </p>
 
           <p className="text-[22px] mb-[60px] max-w-[453px]">
-            {t('earn')} <span className="font-bold">{t('CBG tokens')}</span>{' '}
+            {t('Earn')} <span className="font-bold">{t('CBG tokens')}</span>{' '}
             {t('by inviting')}{' '}
             <span className="font-bold">{t('Content Creators')}</span>{' '}
             {t('to join cobogo! Just connect your wallet and get your')}{' '}

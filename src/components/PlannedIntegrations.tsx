@@ -8,12 +8,12 @@ export default function PlannedIntegrations() {
     <section className="flex flex-col items-center h-full w-full py-[50px] sm:py-[100px] px-[20px] bg-primary">
       <div className="flex flex-col items-center">
         <h1 className="bold-36 text-center pb-7">
-          {t('planned integrations')}
+          {t('Planned Integrations')}
         </h1>
 
         <h2 className="light-24 text-center pb-20 max-w-[600px]">
           {t(
-            'if you want to partner with us, or think your protocol would fit our ecosystem, get in touch.'
+            'If you want to partner with us, or think your protocol would fit our ecosystem, get in touch.'
           )}
         </h2>
       </div>
