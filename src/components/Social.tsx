@@ -4,16 +4,9 @@ export default function Social() {
   return (
     <section className="flex flex-col items-center justify-around w-full p-10 md:flex-row md:p-20 bg-secondary">
       <div className="flex flex-col justify-center items-start w-[225px]">
-        <div className="mb-10">
-          <SocialLink
-            href="https://discord.gg/FWh7cqUkDt"
-            icon="/icons/discord-icon.svg"
-          />
-        </div>
-
         <div className="mb-10 md:mb-0">
           <SocialLink
-            href="https://twitter.com/cobogosocial"
+            href="https://twitter.com/cobogo_io"
             icon="/icons/twitter-icon.svg"
           />
         </div>
@@ -22,14 +15,14 @@ export default function Social() {
       <div className="flex flex-col justify-center items-start w-[225px]">
         <div className="mb-10">
           <SocialLink
-            href="https://medium.com/@cobogosocial"
+            href="https://medium.com/@cobogo_io"
             icon="/icons/medium-icon.svg"
           />
         </div>
 
         <div className="mb-10 md:mb-0">
           <SocialLink
-            href="https://github.com/cobogo-social"
+            href="https://github.com/cobogo-io"
             icon="/icons/github-icon.svg"
           />
         </div>
@@ -38,7 +31,7 @@ export default function Social() {
       <div className="flex flex-col justify-center items-start w-[225px]">
         <div className="mb-10">
           <SocialLink
-            href="https://t.me/cobogosocial"
+            href="https://t.me/cobogo_io"
             icon="/icons/telegram-icon.svg"
           />
         </div>

@@ -12,36 +12,29 @@ export default function Header(): JSX.Element {
       <div className="flex mb-[80px] sm:mb-[40px] flex-col sm:flex-row">
         <div className="mr-0 sm:mr-[40px] mb-8 sm:mb-0">
           <SocialLink
-            href="https://t.me/cobogosocial/"
+            href="https://t.me/cobogo_io/"
             icon="/icons/telegram-icon.svg"
           />
         </div>
 
         <div className="mr-0 sm:mr-[40px] mb-8 sm:mb-0">
           <SocialLink
-            href="https://medium.com/@cobogosocial/"
+            href="https://medium.com/@cobogo_io/"
             icon="/icons/medium-icon.svg"
           />
         </div>
 
         <div className="mr-0 sm:mr-[40px] mb-8 sm:mb-0">
           <SocialLink
-            href="https://twitter.com/cobogosocial/"
+            href="https://twitter.com/cobogo_io/"
             icon="/icons/twitter-icon.svg"
           />
         </div>
 
         <div className="mr-0 sm:mr-[40px] mb-8 sm:mb-0">
           <SocialLink
-            href="https://github.com/cobogo-social/"
+            href="https://github.com/cobogo-io/"
             icon="/icons/github-icon.svg"
-          />
-        </div>
-
-        <div className="mr-0 sm:mr-[40px] mb-8 sm:mb-0">
-          <SocialLink
-            href="https://discord.cobogo.social/"
-            icon="/icons/discord-icon.svg"
           />
         </div>
 
