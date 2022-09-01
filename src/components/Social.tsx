@@ -6,7 +6,7 @@ export default function Social() {
       <div className="flex flex-col justify-center items-start w-[225px]">
         <div className="mb-10 md:mb-0">
           <SocialLink
-            href="https://twitter.com/cobogo_io"
+            href="https://l.cobogo.io/twitter"
             icon="/icons/twitter-icon.svg"
           />
         </div>
@@ -15,14 +15,14 @@ export default function Social() {
       <div className="flex flex-col justify-center items-start w-[225px]">
         <div className="mb-10">
           <SocialLink
-            href="https://medium.com/@cobogo_io"
+            href="https://l.cobogo.io/medium"
             icon="/icons/medium-icon.svg"
           />
         </div>
 
         <div className="mb-10 md:mb-0">
           <SocialLink
-            href="https://github.com/cobogo-io"
+            href="https://l.cobogo.io/github"
             icon="/icons/github-icon.svg"
           />
         </div>
@@ -31,7 +31,7 @@ export default function Social() {
       <div className="flex flex-col justify-center items-start w-[225px]">
         <div className="mb-10">
           <SocialLink
-            href="https://t.me/cobogo_io"
+            href="https://l.cobogo.io/telegram"
             icon="/icons/telegram-icon.svg"
           />
         </div>
