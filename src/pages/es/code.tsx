@@ -85,7 +85,7 @@ export default function Code() {
         <p className="regular-18 break-normal mb-5">
           Los casos de comportamiento abusivo, de acoso o inaceptable de
           cualquier otro modo se pueden informar comunicándose con el equipo del
-          proyecto en hi@devtoken.rocks. Todas las quejas serán revisadas e
+          proyecto en hi@cobogo.io. Todas las quejas serán revisadas e
           investigadas y resultarán en una respuesta que se considere necesaria
           y apropiada bajo las circunstancias. El equipo del proyecto debe
           mantener la confidencialidad en relación con el informante de un

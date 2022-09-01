@@ -79,8 +79,8 @@ export default function Code() {
         <h2 className="bold-30 mb-2">Enforcement</h2>
         <p className="regular-18 break-normal mb-5">
           Instances of abusive, harassing, or otherwise unacceptable behavior
-          may be reported by contacting the project team at hi@devtoken.rocks.
-          All complaints will be reviewed and investigated and will result in a
+          may be reported by contacting the project team at hi@cobogo.io. All
+          complaints will be reviewed and investigated and will result in a
           response that is deemed necessary and appropriate to the
           circumstances. The project team is obligated to maintain
           confidentiality with regard to the reporter of an incident. Further
