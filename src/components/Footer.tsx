@@ -69,7 +69,7 @@ export default function Header(): JSX.Element {
           </Link>
         </div>
 
-        <Link href="mailto:hi@cobogo.social" className="bold-18">
+        <Link href="mailto:hi@cobogo.io" className="bold-18">
           {t('Email')}
         </Link>
       </div>
