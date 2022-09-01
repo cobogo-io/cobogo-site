@@ -41,11 +41,11 @@ function MyApp({ Component, pageProps }: AppProps) {
           {
             property: 'twitter:description',
             content:
-              'cobogo is an aggregator of protocols that has the goal of funding Content Creators sustainably through their own community, using DeFi. It is a platform that leverages Web 3.0 to monetize Creators while maximizing their growth and community building abilities.',
+              'Cobogo is a Business Infrastructure for Creators. We provide the tools you will need to become a business and start raising funds to quickstart it.',
           },
           {
             property: 'twitter:title',
-            content: 'cobogo',
+            content: 'Cobogo',
           },
           {
             property: 'twitter:image',
@@ -53,15 +53,15 @@ function MyApp({ Component, pageProps }: AppProps) {
           },
           {
             property: 'twitter:url',
-            content: 'https://cobogo.social/',
+            content: 'https://cobogo.io/',
           },
           {
             property: 'twitter:domain',
-            content: 'cobogo.social',
+            content: 'cobogo.io',
           },
           {
             property: 'twitter:image:alt',
-            content: 'cobogo logo',
+            content: 'Cobogo logo',
           },
         ]}
       />
