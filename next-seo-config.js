@@ -1,13 +1,13 @@
 const title = 'Cobogo';
 const description =
-  'Cobogo is an aggregator of protocols that has the goal of funding Content Creators sustainably through their own community, using DeFi. It is a platform that leverages Web 3.0 to monetize Creators while maximizing their growth and community building abilities.';
+  'Cobogo is a Business Infrastructure for Creators. We provide the tools you will need to become a business and start raising funds to quickstart it.';
 
 const SEO = {
   title,
   description,
   openGraph: {
     type: 'website',
-    url: 'https://cobogo.social/',
+    url: 'https://cobogo.io/',
     title,
     description,
     images: [

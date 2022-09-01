@@ -37,7 +37,7 @@ export default function Social() {
         </div>
 
         <SocialLink
-          href="https://docs.cobogo.social"
+          href="https://l.cobogo.io/docs"
           icon="/icons/gitbook-icon.svg"
         />
       </div>

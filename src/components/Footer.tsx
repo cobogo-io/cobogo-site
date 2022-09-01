@@ -39,7 +39,7 @@ export default function Header(): JSX.Element {
         </div>
 
         <SocialLink
-          href="https://docs.cobogo.social/"
+          href="https://l.cobogo.io/docs"
           icon="/icons/gitbook-icon.svg"
         />
       </div>
