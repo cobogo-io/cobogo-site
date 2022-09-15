@@ -1,156 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  overflow-x: none;
-}
-
-html body {
+html,
+body {
   padding: 0;
   margin: 0;
-  overflow-y: inherit;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-@font-face {
-  font-family: 'ProximaNova';
-  src: url('/fonts/ProximaNova/ProximaNova-Light.ttf');
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'ProximaNova';
-  src: url('/fonts/ProximaNova/ProximaNova-Regular.ttf');
-  font-style: medium;
-  font-weight: 500;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'ProximaNova';
-  src: url('/fonts/ProximaNova/ProximaNova-Semibold.ttf');
-  font-style: medium;
-  font-weight: 600;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'ProximaNova';
-  src: url('/fonts/ProximaNova/ProximaNova-Bold.ttf');
-  font-style: medium;
-  font-weight: 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'ProximaNova';
-  src: url('/fonts/ProximaNova/ProximaNova-Extrabld.ttf');
-  font-style: medium;
-  font-weight: 800;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'ProximaNova';
-  src: url('/fonts/ProximaNova/ProximaNova-Black.ttf');
-  font-style: medium;
-  font-weight: 900;
-  font-display: swap;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 * {
-  font-family: 'ProximaNova';
+  box-sizing: border-box;
 }
 
-.bold-50 {
-  @apply text-5xl text-white font-bold;
-}
-
-.bold-40 {
-  @apply text-4xl text-white font-bold;
-}
-
-.bold-36 {
-  @apply text-4xl text-white font-bold;
-}
-
-.bold-30 {
-  @apply text-3xl text-white font-bold;
-}
-
-.bold-cobogo-30 {
-  @apply text-3xl text-blue font-bold;
-}
-
-.bold-24 {
-  @apply text-2xl text-white font-bold;
-}
-
-.bold-cobogo-24 {
-  @apply text-2xl text-blue font-bold;
-}
-
-.bold-18 {
-  @apply text-lg text-white font-bold;
-}
-
-.bold-cobogo-16 {
-  @apply text-base text-blue font-bold;
-}
-
-.regular-50 {
-  @apply text-4xl text-white;
-}
-
-.regular-40 {
-  @apply text-4xl text-white;
-}
-
-.regular-30 {
-  @apply text-3xl text-white;
-}
-
-.regular-24 {
-  @apply text-2xl text-white;
-}
-
-.regular-cobogo-24 {
-  @apply text-2xl text-blue;
-}
-
-.regular-18 {
-  @apply text-lg text-white;
-}
-
-.regular-cobogo-18 {
-  @apply text-lg text-blue;
-}
-
-.regular-16 {
-  @apply text-base text-white;
-}
-
-.light-24 {
-  @apply text-2xl text-white font-light;
-}
-
-.light-50 {
-  @apply text-5xl text-white font-light;
-}
-
-.light-40 {
-  @apply text-4xl text-white font-light;
-}
-
-.light-16 {
-  @apply text-base text-white font-light;
-}
-
-.image {
-  height: 70vh;
-  width: 100vw;
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
 }
