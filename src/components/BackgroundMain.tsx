@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export const BackgroundOne = (): JSX.Element => {
+export const BackgroundMain = (): JSX.Element => {
   return (
     <div className="absolute w-screen h-screen z-0">
       <Image
