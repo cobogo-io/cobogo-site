@@ -7,8 +7,9 @@ export const Social = (): JSX.Element => {
       <div className="flex max-w-[917px] w-full justify-between items-center z-50">
         <div className="w-[447px] gap-10 flex flex-col">
           <div className="flex flex-col gap-9">
-            <h1 className="text-5xl">
+            <h1 className="text-5xl relative">
               Showcase your business with <strong>Cobogo Social</strong>
+              <div className="w-[294px] h-[14px] bg-blue-100/30 absolute bottom-1" />
             </h1>
             <h2 className="text-xl">
               To investors, brands and your audience by adding your metrics and

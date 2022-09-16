@@ -11,7 +11,7 @@ export const Main = (): JSX.Element => {
           Get <strong>incorporated</strong>, <strong>funded</strong>,{' '}
           <strong>recognized</strong>, and <strong>skyrocket</strong> your{' '}
           <strong>Creator career</strong>
-          <div className="w-[470px] h-[19px] bg-white-100/20 absolute bottom-1 left-1/2 -translate-x-1/2"></div>
+          <div className="w-[470px] h-[19px] bg-white-100/20 absolute bottom-1 left-1/2 -translate-x-1/2" />
         </h1>
         <Button />
       </div>
