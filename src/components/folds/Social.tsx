@@ -1,4 +1,4 @@
-import { BackgroundSocial } from '../BackgroundSocial'
+import { BackgroundSocial } from '../backgrounds/BackgroundSocial'
 import { SocialImage } from '../images/SocialImage'
 
 export const Social = (): JSX.Element => {

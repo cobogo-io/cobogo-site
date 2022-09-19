@@ -5,10 +5,9 @@ import {
   MoveOut,
   ScrollContainer,
   ScrollPage,
-  Sticky,
-  ZoomIn,
 } from 'react-scroll-motion'
 
+import { Fundraise } from '../src/components/folds/Fundraise'
 import { Main } from '../src/components/folds/Main'
 import { Social } from '../src/components/folds/Social'
 import { Start } from '../src/components/folds/Start'
@@ -37,6 +36,11 @@ const Home: NextPage = () => {
       <ScrollPage>
         <Animator animation={batch(Fade(), MoveOut(0, -200))}>
           <Start />
+        </Animator>
+      </ScrollPage>
+      <ScrollPage>
+        <Animator animation={batch(Fade(), MoveOut(0, -200))}>
+          <Fundraise />
         </Animator>
       </ScrollPage>
     </ScrollContainer>

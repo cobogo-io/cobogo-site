@@ -1,4 +1,4 @@
-import { BackgroundSocial } from '../BackgroundSocial'
+import { BackgroundStart } from '../backgrounds/BackgroundStart'
 import { StartImage } from '../images/StartImage'
 
 export const Start = (): JSX.Element => {
@@ -47,7 +47,7 @@ export const Start = (): JSX.Element => {
         </div>
       </div>
       <StartImage />
-      <BackgroundSocial />
+      <BackgroundStart />
     </div>
   )
 }

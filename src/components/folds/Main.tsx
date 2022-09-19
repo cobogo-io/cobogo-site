@@ -1,4 +1,4 @@
-import { BackgroundMain } from '../BackgroundMain'
+import { BackgroundMain } from '../backgrounds/BackgroundMain'
 import { Button } from '../Button'
 import { Bullets } from '../images/Bullets'
 import { TweetProfile } from '../images/TweetProfile'

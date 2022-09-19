@@ -1,4 +1,4 @@
-import { BackgroundMain } from '../BackgroundMain'
+import { BackgroundMain } from '../backgrounds/BackgroundMain'
 import { BulletsTwo } from '../images/BulletsTwo'
 
 export const Text = (): JSX.Element => {
