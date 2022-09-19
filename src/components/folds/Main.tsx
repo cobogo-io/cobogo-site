@@ -13,7 +13,7 @@ export const Main = (): JSX.Element => {
           <strong>Creator career</strong>
           <div className="w-[470px] h-[19px] bg-white-100/20 absolute bottom-1 left-1/2 -translate-x-1/2" />
         </h1>
-        <Button />
+        <Button text="Tell me more" />
       </div>
       <div className="flex items-center gap-4 absolute bottom-14 left-16 z-50">
         <TweetProfile />
