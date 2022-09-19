@@ -20,22 +20,22 @@ const Home: NextPage = () => {
   return (
     <ScrollContainer>
       <ScrollPage>
-        <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -200))}>
+        <Animator animation={batch(Fade(), MoveOut(0, -200))}>
           <Main />
         </Animator>
       </ScrollPage>
       <ScrollPage>
-        <Animator animation={ZoomIn()}>
+        <Animator animation={batch(Fade(), MoveOut(0, -200))}>
           <Text />
         </Animator>
       </ScrollPage>
       <ScrollPage>
-        <Animator animation={ZoomIn()}>
+        <Animator animation={batch(Fade(), MoveOut(0, -200))}>
           <Social />
         </Animator>
       </ScrollPage>
       <ScrollPage>
-        <Animator animation={ZoomIn()}>
+        <Animator animation={batch(Fade(), MoveOut(0, -200))}>
           <Start />
         </Animator>
       </ScrollPage>
