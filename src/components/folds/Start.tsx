@@ -9,7 +9,7 @@ export const Start = (): JSX.Element => {
           <div className="flex flex-col gap-9">
             <h1 className="text-5xl relative">
               Incorporate a Business with <strong>Cobogo Start</strong>
-              <div className="w-[294px] h-[14px] bg-pink-100/30 absolute bottom-1" />
+              <div className="w-[290px] h-[14px] bg-pink-100/30 absolute bottom-1" />
             </h1>
             <h2 className="text-xl">
               We provide Creators with the easiest way to incorporate a Business

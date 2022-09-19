@@ -1,5 +1,5 @@
 import { BackgroundFundraise } from '../backgrounds/BackgroundFundraise'
-import { StartImage } from '../images/StartImage'
+import { FundraiseImage } from '../images/FundraiseImage'
 
 export const Fundraise = (): JSX.Element => {
   return (
@@ -10,7 +10,7 @@ export const Fundraise = (): JSX.Element => {
             <h1 className="text-5xl relative">
               Fund your passion and share your success with{' '}
               <strong>Cobogo Fundraise</strong>
-              <div className="w-[294px] h-[14px] bg-green-100/30 absolute bottom-1" />
+              <div className="w-[400px] h-[14px] bg-green-100/30 absolute bottom-1" />
             </h1>
             <h2 className="text-xl">
               Cobogo Fundraise allows Creators to tokenize equity and use a
@@ -48,7 +48,7 @@ export const Fundraise = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <StartImage />
+      <FundraiseImage />
       <BackgroundFundraise />
     </div>
   )
