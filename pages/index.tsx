@@ -9,6 +9,7 @@ import {
 
 import { Fundraise } from '../src/components/folds/Fundraise'
 import { Main } from '../src/components/folds/Main'
+import { RelatedContent } from '../src/components/folds/RelatedContent'
 import { Social } from '../src/components/folds/Social'
 import { Start } from '../src/components/folds/Start'
 import { Telegram } from '../src/components/folds/Telegram'
@@ -53,6 +54,11 @@ const Home: NextPage = () => {
       <ScrollPage>
         <Animator animation={batch(Fade(), MoveOut(0, -200))}>
           <Telegram />
+        </Animator>
+      </ScrollPage>
+      <ScrollPage>
+        <Animator animation={batch(Fade(), MoveOut(0, -200))}>
+          <RelatedContent />
         </Animator>
       </ScrollPage>
     </ScrollContainer>
