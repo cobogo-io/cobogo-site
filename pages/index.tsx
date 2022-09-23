@@ -8,6 +8,7 @@ import {
 } from 'react-scroll-motion'
 
 import { Flywheel } from '../src/components/folds/Flywheel'
+import { Footer } from '../src/components/folds/Footer'
 import { Fundraise } from '../src/components/folds/Fundraise'
 import { Main } from '../src/components/folds/Main'
 import { RelatedContent } from '../src/components/folds/RelatedContent'
@@ -18,6 +19,7 @@ import { Text } from '../src/components/folds/Text'
 import { Ventures } from '../src/components/folds/Ventures'
 
 import type { NextPage } from 'next'
+
 const Home: NextPage = () => {
   return (
     <ScrollContainer>
@@ -64,6 +66,11 @@ const Home: NextPage = () => {
       <ScrollPage>
         <Animator animation={batch(Fade(), MoveOut(0, -200))}>
           <RelatedContent />
+        </Animator>
+      </ScrollPage>
+      <ScrollPage>
+        <Animator animation={batch(Fade(), MoveOut(0, -200))}>
+          <Footer />
         </Animator>
       </ScrollPage>
     </ScrollContainer>
