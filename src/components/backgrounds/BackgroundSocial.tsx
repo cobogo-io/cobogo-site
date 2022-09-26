@@ -6,7 +6,7 @@ export const BackgroundSocial = (): JSX.Element => {
       height="836"
       fill="none"
       viewBox="0 0 1096 836"
-      className="absolute w-screen h-screen z-0"
+      className="absolute w-screen min-h-screen h-full z-0"
     >
       <g opacity="0.35">
         <g

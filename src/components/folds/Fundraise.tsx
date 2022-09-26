@@ -3,9 +3,9 @@ import { FundraiseImage } from '../images/FundraiseImage'
 
 export const Fundraise = (): JSX.Element => {
   return (
-    <div className="relative flex flex-col justify-center items-center h-screen px-7 w-full">
-      <div className="flex flex-col justify-start md:justify-center items-center h-screen py-24 w-full">
-        <div className="flex flex-col md:flex-row md:max-w-[917px] w-full justify-between items-center z-50 gap-20">
+    <div className="relative flex flex-col justify-center items-center min-h-screen h-full px-7 w-full">
+      <div className="flex flex-col justify-start md:justify-center items-center min-h-screen h-full py-24 w-full">
+        <div className="flex flex-col md:flex-row md:max-w-[917px] w-full justify-between items-center z-40 gap-20">
           <div className="md:w-[447px] gap-10 flex flex-col">
             <div className="flex flex-col gap-5 md:gap-9">
               <h1 className="text-2xl md:text-5xl relative">

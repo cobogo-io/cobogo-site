@@ -4,7 +4,7 @@ import { DropdownIcon } from './icons/DropdownIcon'
 
 export const Header = (): JSX.Element => {
   return (
-    <div className="fixed px-12 py-9 hidden md:flex w-full gap-14 z-50">
+    <div className="fixed px-12 py-9 hidden md:flex w-full gap-14 z-40">
       <Image
         src="/images/cobogo-logo.svg"
         width={120}

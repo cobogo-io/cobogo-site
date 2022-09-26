@@ -6,7 +6,7 @@ export const BackgroundFundraise = (): JSX.Element => {
       height="452"
       fill="none"
       viewBox="0 0 272 452"
-      className="absolute w-screen h-screen z-0"
+      className="absolute w-screen min-h-screen h-full z-0"
     >
       <defs>
         <filter

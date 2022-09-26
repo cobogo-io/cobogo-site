@@ -6,7 +6,7 @@ export const BackgroundVentures = (): JSX.Element => {
       height="835"
       fill="none"
       viewBox="0 0 1096 835"
-      className="absolute w-screen h-screen z-0"
+      className="absolute w-screen min-h-screen h-full z-0"
     >
       <g opacity="0.4">
         <g

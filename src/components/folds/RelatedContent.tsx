@@ -5,8 +5,8 @@ import { Button } from '../Button'
 
 export const RelatedContent = (): JSX.Element => {
   return (
-    <div className="relative flex flex-col justify-center items-center h-screen">
-      <div className="w-full flex items-center justify-between max-w-[917px] z-50">
+    <div className="relative flex flex-col justify-center items-center min-h-screen h-full">
+      <div className="w-full flex items-center justify-between max-w-[917px] z-40">
         <div className="flex flex-col gap-10 max-w-[447px]">
           <h1 className="text-5xl">
             Related <strong>content</strong>

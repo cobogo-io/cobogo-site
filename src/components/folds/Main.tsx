@@ -7,9 +7,9 @@ import { TweetProfile } from '../images/TweetProfile'
 
 export const Main = (): JSX.Element => {
   return (
-    <div className="relative flex flex-col justify-center items-center h-screen px-7">
-      <div className="flex flex-col justify-start md:justify-center items-center h-screen py-24">
-        <div className="flex flex-col items-start md:items-center gap-16 z-50">
+    <div className="relative flex flex-col justify-center items-center min-h-screen h-full px-7">
+      <div className="flex flex-col justify-start md:justify-center items-center min-h-screen h-full py-24">
+        <div className="flex flex-col items-start md:items-center gap-16 z-40">
           <div className="flex md:hidden">
             <Image
               src="/images/cobogo-logo.svg"
@@ -26,7 +26,7 @@ export const Main = (): JSX.Element => {
           </h1>
           <Button text="Tell me more" />
         </div>
-        <div className="hidden md:flex items-center gap-4 absolute bottom-14 left-16 z-50">
+        <div className="hidden md:flex items-center gap-4 absolute bottom-14 left-16 z-40">
           <TweetProfile />
           <p className="max-w-[377px] text-lg">
             “I wish there was a way to invest in social media influencers! Idk

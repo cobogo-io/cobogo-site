@@ -5,9 +5,9 @@ import { BulletsTwo } from '../images/BulletsTwo'
 
 export const Text = (): JSX.Element => {
   return (
-    <div className="relative flex flex-col justify-center items-center h-screen px-7">
-      <div className="flex flex-col justify-start md:justify-center items-center h-screen py-24">
-        <div className="flex flex-col items-center gap-24 z-50">
+    <div className="relative flex flex-col justify-center items-center min-h-screen h-full px-7">
+      <div className="flex flex-col justify-start md:justify-center items-center min-h-screen h-full py-24">
+        <div className="flex flex-col items-center gap-24 z-40">
           <h1 className="hidden md:block text-4xl max-w-[1030px] text-center relative">
             <strong>Cobogo allows Creators</strong> to become{' '}
             <strong>real businesses</strong>. We provide{' '}
