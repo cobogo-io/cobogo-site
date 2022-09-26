@@ -19,7 +19,7 @@ export const Flywheel = (): JSX.Element => {
   const [elementOpened, setElementOpened] = useState<Element>(null)
 
   return (
-    <div className="relative flex flex-col justify-center items-center h-screen">
+    <div className="relative hidden md:flex flex-col justify-center items-center h-screen">
       <div className="flex flex-col items-center gap-24 z-50">
         <div className="relative">
           <Image

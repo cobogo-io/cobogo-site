@@ -6,7 +6,7 @@ export const SocialImage = (): JSX.Element => {
       height="65"
       fill="none"
       viewBox="0 0 483 65"
-      className="absolute bottom-0 left-0 z-10"
+      className="absolute bottom-0 left-0 z-10 w-[241px] md:w-[483px] h-[41px] md:h-[65px]"
     >
       <path
         fill="#00B9E9"

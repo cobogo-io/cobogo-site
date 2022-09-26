@@ -6,7 +6,7 @@ export const Bullets = (): JSX.Element => {
       height="504"
       fill="none"
       viewBox="0 0 851 504"
-      className="absolute z-10"
+      className="absolute z-10 hidden md:flex"
     >
       <circle cx="6" cy="85" r="6" fill="#00B9E9"></circle>
       <circle cx="712" cy="6" r="6" fill="#BA68C8"></circle>
