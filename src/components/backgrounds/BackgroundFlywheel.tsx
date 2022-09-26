@@ -6,7 +6,7 @@ export const BackgroundFlywheel = (): JSX.Element => {
       viewBox="0 0 1300 836"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute w-screen min-h-screen h-full z-10"
+      className="absolute w-full min-h-screen h-full z-10"
     >
       <g clip-path="url(#clip0_4491_2562)">
         <g opacity="0.3" filter="url(#filter0_f_4491_2562)">

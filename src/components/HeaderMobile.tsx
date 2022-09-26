@@ -8,7 +8,7 @@ export const HeaderMobile = (): JSX.Element => {
   const [menuOpened, setMenuOpened] = useState(false)
 
   return !menuOpened ? (
-    <div className="fixed w-full flex md:hidden items-center gap-4 p-7 z-50">
+    <div className="fixed w-full flex md:hidden items-center gap-4 p-7 z-50 transition-all">
       <div onClick={() => setMenuOpened(true)}>
         <MenuIcon />
       </div>
@@ -20,7 +20,7 @@ export const HeaderMobile = (): JSX.Element => {
       />
     </div>
   ) : (
-    <div className="min-h-screen h-full w-screen fixed flex flex-col md:hidden gap-4 z-50 bg-black-900 overflow-y-auto">
+    <div className="min-h-screen h-full w-screen fixed flex flex-col md:hidden gap-4 z-50 bg-black-900 overflow-y-auto transition-all">
       <div onClick={() => setMenuOpened(false)}>
         <CloseIcon />
       </div>
@@ -43,11 +43,41 @@ export const HeaderMobile = (): JSX.Element => {
         </a>
       </div>
       <div className="bg-white-100/5 w-full px-7 py-16 flex flex-col gap-4">
-        <a className="text-4xl font-bold">Resources</a>
-        <a className="text-4xl font-bold">Telegram</a>
-        <a className="text-4xl font-bold">Medium</a>
-        <a className="text-4xl font-bold">Github</a>
-        <a className="text-4xl font-bold">Docs</a>
+        <a target="_blank" href="#" className="text-4xl font-bold">
+          Resources
+        </a>
+        <a
+          target="_blank"
+          href="https://l.cobogo.io/telegram/"
+          className="text-4xl font-bold"
+          rel="noreferrer"
+        >
+          Telegram
+        </a>
+        <a
+          target="_blank"
+          href="https://l.cobogo.io/medium/"
+          className="text-4xl font-bold"
+          rel="noreferrer"
+        >
+          Medium
+        </a>
+        <a
+          target="_blank"
+          href="https://l.cobogo.io/github/"
+          className="text-4xl font-bold"
+          rel="noreferrer"
+        >
+          Github
+        </a>
+        <a
+          target="_blank"
+          href="https://l.cobogo.io/docs/"
+          className="text-4xl font-bold"
+          rel="noreferrer"
+        >
+          Docs
+        </a>
       </div>
     </div>
   )

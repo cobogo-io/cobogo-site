@@ -18,9 +18,14 @@ export const Footer = (): JSX.Element => {
             <h2 className="text-2xl md:text-3xl text-center">
               Showcase your business with <strong>Cobogo Social</strong>
             </h2>
-            <button className="px-5 py-1 md:py-2 border-2 border-blue-100 font-bold text-base md:text-xl w-max">
+            <a
+              target="_blank"
+              href="https://app.cobogo.social/"
+              className="px-5 py-1 md:py-2 border-2 border-blue-100 font-bold text-base md:text-xl w-max"
+              rel="noreferrer"
+            >
               Create your profile
-            </button>
+            </a>
           </div>
           <div className="flex flex-col items-center w-[348px] gap-4">
             <h2 className="text-2xl md:text-3xl text-center">
@@ -44,17 +49,67 @@ export const Footer = (): JSX.Element => {
         <CobogosOnLeft />
         <div className="flex flex-col items-center gap-11">
           <div className="flex gap-11 flex-wrap justify-center">
-            <EmailIcon />
-            <TelegramIcon />
-            <MediumIcon />
-            <TwitterIcon />
-            <GitHubIcon />
+            <a target="_blank" href="mailto:hi@cobogo.io" rel="noreferrer">
+              <EmailIcon />
+            </a>
+            <a
+              target="_blank"
+              href="https://l.cobogo.io/telegram"
+              rel="noreferrer"
+            >
+              <TelegramIcon />
+            </a>
+            <a
+              target="_blank"
+              href="https://l.cobogo.io/medium"
+              rel="noreferrer"
+            >
+              <MediumIcon />
+            </a>
+            <a
+              target="_blank"
+              href="https://l.cobogo.io/twitter"
+              rel="noreferrer"
+            >
+              <TwitterIcon />
+            </a>
+            <a
+              target="_blank"
+              href="https://l.cobogo.io/github"
+              rel="noreferrer"
+            >
+              <GitHubIcon />
+            </a>
           </div>
           <div className="flex flex-col md:flex-row items-center gap-8 font-bold mb-auto">
-            <a>FAQ</a>
-            <a>Code of conduct</a>
-            <a>Privacy policy</a>
-            <a>Terms of use</a>
+            <a
+              target="_blank"
+              href="https://www.cobogo.io/faq"
+              rel="noreferrer"
+            >
+              FAQ
+            </a>
+            <a
+              target="_blank"
+              href="https://www.cobogo.io/code"
+              rel="noreferrer"
+            >
+              Code of conduct
+            </a>
+            <a
+              target="_blank"
+              href="https://www.cobogo.io/privacy"
+              rel="noreferrer"
+            >
+              Privacy policy
+            </a>
+            <a
+              target="_blank"
+              href="https://www.cobogo.io/terms"
+              rel="noreferrer"
+            >
+              Terms of use
+            </a>
           </div>
           <Image
             src="/images/cobogo-logo.svg"

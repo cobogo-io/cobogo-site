@@ -3,10 +3,10 @@ import { VenturesImage } from '../images/VenturesImage'
 
 export const Ventures = (): JSX.Element => {
   return (
-    <div className="relative flex flex-col justify-center items-center min-h-screen h-full px-7 w-full">
+    <div className="relative flex flex-col justify-center items-center min-h-screen h-full w-full">
       <div className="flex flex-col justify-start md:justify-center items-center min-h-screen h-full py-24 w-full">
         <div className="flex flex-col md:flex-row md:max-w-[917px] w-full justify-between items-center z-40 gap-20">
-          <div className="md:w-[447px] gap-10 flex flex-col items-center">
+          <div className="md:w-[447px] gap-10 flex flex-col px-7">
             <div className="flex flex-col gap-5 md:gap-9">
               <h1 className="text-2xl md:text-5xl relative">
                 We invest in the future of Creators with

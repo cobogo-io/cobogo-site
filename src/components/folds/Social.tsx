@@ -3,10 +3,10 @@ import { SocialImage } from '../images/SocialImage'
 
 export const Social = (): JSX.Element => {
   return (
-    <div className="relative flex flex-col justify-center items-center min-h-screen h-full px-7 w-full">
+    <div className="relative flex flex-col justify-center items-center min-h-screen h-full w-full">
       <div className="flex flex-col justify-start md:justify-center items-center min-h-screen h-full py-24 w-full">
         <div className="flex flex-col md:flex-row md:max-w-[917px] w-full justify-between items-center z-40 gap-20">
-          <div className="md:w-[447px] gap-10 flex flex-col">
+          <div className="md:w-[447px] gap-10 flex flex-col px-7">
             <div className="flex flex-col gap-5 md:gap-9">
               <h1 className="text-2xl md:text-5xl relative">
                 Showcase your business with <strong>Cobogo Social</strong>
@@ -17,9 +17,14 @@ export const Social = (): JSX.Element => {
                 and services to your own profile. Get your valuation estimated.
               </h2>
             </div>
-            <button className="px-5 py-1 md:py-2 border-2 border-blue-100 font-bold text-base md:text-xl w-max text-blue-100 md:text-white-100">
+            <a
+              target="_blank"
+              href="https://app.cobogo.social/"
+              className="px-5 py-1 md:py-2 border-2 border-blue-100 font-bold text-base md:text-xl w-max text-blue-100 md:text-white-100"
+              rel="noreferrer"
+            >
               Create your profile
-            </button>
+            </a>
           </div>
           <div className="flex flex-row md:flex-col gap-12 overflow-x-auto w-full md:w-auto">
             <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px]">

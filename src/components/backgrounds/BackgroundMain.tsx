@@ -7,7 +7,7 @@ interface BackgroundMainProps {
 export const BackgroundMain = (props: BackgroundMainProps): JSX.Element => {
   return !props.dark ? (
     <>
-      <div className="absolute w-screen min-h-screen h-full z-0 flex md:hidden">
+      <div className="absolute w-full min-h-screen h-full z-0 flex md:hidden">
         <Image
           src="/images/background-1-mobile.svg"
           objectFit="cover"
@@ -15,7 +15,7 @@ export const BackgroundMain = (props: BackgroundMainProps): JSX.Element => {
           alt="Background"
         />
       </div>
-      <div className="absolute w-screen min-h-screen h-full z-0 hidden md:flex">
+      <div className="absolute w-full min-h-screen h-full z-0 hidden md:flex">
         <Image
           src="/images/background-1.svg"
           objectFit="cover"
@@ -26,7 +26,7 @@ export const BackgroundMain = (props: BackgroundMainProps): JSX.Element => {
     </>
   ) : (
     <>
-      <div className="absolute w-screen min-h-screen h-full z-0 flex md:hidden">
+      <div className="absolute w-full min-h-screen h-full z-0 flex md:hidden">
         <Image
           src="/images/background-2-mobile.svg"
           objectFit="cover"
@@ -34,7 +34,7 @@ export const BackgroundMain = (props: BackgroundMainProps): JSX.Element => {
           alt="Background"
         />
       </div>
-      <div className="absolute w-screen min-h-screen h-full z-0 hidden md:flex">
+      <div className="absolute w-full min-h-screen h-full z-0 hidden md:flex">
         <Image
           src="/images/background-2.svg"
           objectFit="cover"
