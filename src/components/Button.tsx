@@ -1,31 +1,12 @@
 interface ButtonProps {
-  text: string;
-  color: string;
-  hoverColor: string;
-  width: string;
-  height: string;
-  fontSize?: string;
-  onClick?: (event: unknown) => void;
-  onKeyDown?: (event: unknown) => void;
+  text: string
 }
 
-export default function Button({
-  text,
-  color,
-  hoverColor,
-  width,
-  height,
-  fontSize,
-  onClick,
-  onKeyDown,
-}: ButtonProps) {
+export const Button = (props: ButtonProps): JSX.Element => {
   return (
-    <button
-      className={`${width} ${height} ${color} hover:${hoverColor} font-bold ${fontSize} text-white`}
-      onClick={onClick}
-      onKeyDown={onKeyDown}
-    >
-      {text}
+    <button className="px-5 py-2 text-xl bg-gradient-to-r from-blue-100 via-green-100 to-pink-200 relative z-0 w-max">
+      <div className="bg-blue-200 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[151px] h-[40px] z-10"></div>
+      <strong className="z-20 relative">{props.text}</strong>
     </button>
-  );
+  )
 }

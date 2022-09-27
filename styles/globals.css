@@ -2,21 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  overflow-x: none;
-}
-
-html body {
+html,
+body {
   padding: 0;
   margin: 0;
-  overflow-y: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  @apply bg-black-900 text-white-100;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
 }
 
 @font-face {
@@ -64,93 +71,5 @@ html body {
 
 * {
   font-family: 'ProximaNova';
-}
-
-.bold-50 {
-  @apply text-5xl text-white font-bold;
-}
-
-.bold-40 {
-  @apply text-4xl text-white font-bold;
-}
-
-.bold-36 {
-  @apply text-4xl text-white font-bold;
-}
-
-.bold-30 {
-  @apply text-3xl text-white font-bold;
-}
-
-.bold-cobogo-30 {
-  @apply text-3xl text-blue font-bold;
-}
-
-.bold-24 {
-  @apply text-2xl text-white font-bold;
-}
-
-.bold-cobogo-24 {
-  @apply text-2xl text-blue font-bold;
-}
-
-.bold-18 {
-  @apply text-lg text-white font-bold;
-}
-
-.bold-cobogo-16 {
-  @apply text-base text-blue font-bold;
-}
-
-.regular-50 {
-  @apply text-4xl text-white;
-}
-
-.regular-40 {
-  @apply text-4xl text-white;
-}
-
-.regular-30 {
-  @apply text-3xl text-white;
-}
-
-.regular-24 {
-  @apply text-2xl text-white;
-}
-
-.regular-cobogo-24 {
-  @apply text-2xl text-blue;
-}
-
-.regular-18 {
-  @apply text-lg text-white;
-}
-
-.regular-cobogo-18 {
-  @apply text-lg text-blue;
-}
-
-.regular-16 {
-  @apply text-base text-white;
-}
-
-.light-24 {
-  @apply text-2xl text-white font-light;
-}
-
-.light-50 {
-  @apply text-5xl text-white font-light;
-}
-
-.light-40 {
-  @apply text-4xl text-white font-light;
-}
-
-.light-16 {
-  @apply text-base text-white font-light;
-}
-
-.image {
-  height: 70vh;
-  width: 100vw;
+  box-sizing: border-box;
 }

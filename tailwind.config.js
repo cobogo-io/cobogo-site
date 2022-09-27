@@ -1,31 +1,33 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: 'jit',
-  purge: [
-    './src/pages/**/*.{js,ts,jsx,tsx}',
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
   ],
-  darkMode: false,
   theme: {
-    colors: {
-      blue: '#4FB9E3',
-      bluehover: '#2E6C85',
-      purple: '#514E7F',
-      purplehover: '#373556',
-      purplelight: '#6C63FF',
-      purplelighthover: '#4C46A1',
-      white: '#FFFFFF',
-      primary: '#111111',
-      secondary: '#1D1D1B',
-      gray: '#181817',
-      details: '#333333',
-      violet: '#6808CF',
-      violet2: '#B266FA',
-      violet3: '#D7ABFF',
+    extend: {
+      colors: {
+        white: {
+          100: '#FFFFFF',
+        },
+        black: {
+          900: '#000000',
+        },
+        blue: {
+          100: '#00B9E9',
+          200: '#16212E',
+        },
+        green: {
+          100: '#67A747',
+        },
+        pink: {
+          200: '#BA68C8',
+        },
+        gray: {
+          200: '#5C8295',
+        },
+      },
     },
-    extend: {},
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
-};
+}
