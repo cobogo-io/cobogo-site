@@ -1,6 +1,5 @@
 import Image from 'next/image'
 
-import { BackgroundMain } from '../backgrounds/BackgroundMain'
 import { BulletsTwo } from '../images/BulletsTwo'
 
 export const Text = (): JSX.Element => {
@@ -38,7 +37,7 @@ export const Text = (): JSX.Element => {
           <BulletsTwo />
         </div>
       </div>
-      <BackgroundMain />
+      {/* <BackgroundMain /> */}
     </div>
   )
 }
