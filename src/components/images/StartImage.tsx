@@ -5,7 +5,7 @@ export const StartImage = (): JSX.Element => {
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 1300 77"
-        className="absolute z-10 bottom-0 hidden md:flex"
+        className="absolute z-10 bottom-0 hidden md:flex w-screen"
       >
         <path
           fill="url(#paint0_linear_4453_2318)"

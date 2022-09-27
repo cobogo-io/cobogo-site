@@ -1,6 +1,5 @@
 import Image from 'next/image'
 
-import { BackgroundMain } from '../backgrounds/BackgroundMain'
 import { Button } from '../Button'
 import { Bullets } from '../images/Bullets'
 
@@ -29,7 +28,7 @@ export const Main = (): JSX.Element => {
         </div>
       </div>
       <Bullets />
-      <BackgroundMain />
+      {/* <BackgroundMain /> */}
     </div>
   )
 }

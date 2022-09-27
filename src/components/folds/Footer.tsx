@@ -1,6 +1,5 @@
 import Image from 'next/image'
 
-import { BackgroundMain } from '../backgrounds/BackgroundMain'
 import { EmailIcon } from '../icons/EmailIcon'
 import { GitHubIcon } from '../icons/GitHubIcon'
 import { MediumIcon } from '../icons/MediumIcon'
@@ -120,7 +119,7 @@ export const Footer = (): JSX.Element => {
         </div>
         <CobogosOnRight />
       </div>
-      <BackgroundMain />
+      {/* <BackgroundMain /> */}
     </div>
   )
 }

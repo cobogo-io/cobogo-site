@@ -1,7 +1,5 @@
 import Image from 'next/image'
 
-import { BackgroundMain } from '../backgrounds/BackgroundMain'
-
 export const Telegram = (): JSX.Element => {
   return (
     <div className="relative flex flex-col justify-center items-center min-h-screen h-full px-7">
@@ -43,7 +41,7 @@ export const Telegram = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <BackgroundMain />
+      {/* <BackgroundMain /> */}
     </div>
   )
 }

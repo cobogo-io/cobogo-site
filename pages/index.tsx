@@ -1,6 +1,6 @@
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
-import { Flywheel } from '../src/components/folds/Flywheel'
 import { Footer } from '../src/components/folds/Footer'
 import { Fundraise } from '../src/components/folds/Fundraise'
 import { Main } from '../src/components/folds/Main'
@@ -13,6 +13,7 @@ import { Header } from '../src/components/Header'
 import { HeaderMobile } from '../src/components/HeaderMobile'
 
 import type { NextPage } from 'next'
+
 const Home: NextPage = () => {
   const [isMainFold, setIsMainFold] = useState(true)
 
@@ -35,7 +36,7 @@ const Home: NextPage = () => {
       <Main />
       <Text />
       <div id="sentinel" />
-      <Flywheel />
+      {/* <Flywheel /> */}
       <Social />
       <Start />
       <Fundraise />
