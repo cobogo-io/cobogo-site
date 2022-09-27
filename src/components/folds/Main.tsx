@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { BackgroundMain } from '../backgrounds/BackgroundMain'
 import { Button } from '../Button'
 import { Bullets } from '../images/Bullets'
-import { TweetProfile } from '../images/TweetProfile'
 
 export const Main = (): JSX.Element => {
   return (
@@ -24,15 +23,9 @@ export const Main = (): JSX.Element => {
             <strong>Creator career</strong>
             <div className="w-[240px] md:w-[470px] h-3 md:h-[19px] bg-white-100/20 absolute bottom-1 left-0 md:left-1/2 md:-translate-x-1/2" />
           </h1>
-          <Button text="Tell me more" />
-        </div>
-        <div className="hidden md:flex items-center gap-4 absolute bottom-14 left-16 z-40">
-          <TweetProfile />
-          <p className="max-w-[377px] text-lg">
-            “I wish there was a way to invest in social media influencers! Idk
-            anything about the stock market and I find it boring.”{' '}
-            <strong>- @MrBeast</strong>
-          </p>
+          <a href="#text">
+            <Button text="Tell me more" />
+          </a>
         </div>
       </div>
       <Bullets />

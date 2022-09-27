@@ -31,7 +31,7 @@ export const Footer = (): JSX.Element => {
             <h2 className="text-2xl md:text-3xl text-center">
               Incorporate a business with <strong>Cobogo Start</strong>
             </h2>
-            <button className="px-5 py-1 md:py-2 border-2 border-pink-100 font-bold text-base md:text-xl w-max">
+            <button className="px-5 py-1 md:py-2 border-2 border-pink-200 font-bold text-base md:text-xl w-max">
               Start your business
             </button>
           </div>

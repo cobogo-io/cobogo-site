@@ -54,14 +54,14 @@ export const Flywheel = (): JSX.Element => {
           <div className="flex justify-between absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[500px] z-20">
             <FlywheelElement
               text="Ventures"
-              color="bg-gray-100"
+              color="bg-gray-200"
               inRow
               elementOpened={elementOpened}
               setElementOpened={setElementOpened}
             />
             <FlywheelElement
               text="Start"
-              color="bg-pink-100"
+              color="bg-pink-200"
               inRow
               inverted
               elementOpened={elementOpened}
