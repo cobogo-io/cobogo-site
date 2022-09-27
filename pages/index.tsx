@@ -23,7 +23,7 @@ const Home: NextPage = () => {
       }
     })
 
-    intersectionObserver.observe(document.querySelector('#sentinel'))
+    intersectionObserver.observe(document.querySelector('#sentinel') as Element)
 
     return () => intersectionObserver.disconnect()
   }, [])
