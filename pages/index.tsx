@@ -44,24 +44,6 @@ const Home: NextPage = () => {
       <Telegram />
       {/* <RelatedContent /> */}
       <Footer />
-      <>
-        <div className="fixed w-full min-h-screen h-full z-50 flex md:hidden">
-          <Image
-            src="/images/background-1-mobile.svg"
-            objectFit="cover"
-            layout="fill"
-            alt="Background"
-          />
-        </div>
-        <div className="fixed w-full min-h-screen h-full z-50 hidden md:flex">
-          <Image
-            src="/images/background-1.svg"
-            objectFit="cover"
-            layout="fill"
-            alt="Background"
-          />
-        </div>
-      </>
     </>
   )
 }
