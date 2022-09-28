@@ -1,5 +1,3 @@
-import { VenturesImage } from '../images/VenturesImage'
-
 export const Ventures = (): JSX.Element => {
   return (
     <div
@@ -65,7 +63,7 @@ export const Ventures = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <VenturesImage />
+      {/* <VenturesImage /> */}
       {/* <BackgroundVentures /> */}
     </div>
   )

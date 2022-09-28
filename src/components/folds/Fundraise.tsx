@@ -1,5 +1,3 @@
-import { FundraiseImage } from '../images/FundraiseImage'
-
 export const Fundraise = (): JSX.Element => {
   return (
     <div
@@ -58,7 +56,7 @@ export const Fundraise = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <FundraiseImage />
+      {/* <FundraiseImage /> */}
       {/* <BackgroundFundraise /> */}
     </div>
   )

@@ -15,7 +15,7 @@ export const Header = (): JSX.Element => {
         height={27}
         alt="cobogo logo"
       />
-      <div className="flex gap-7 relative">
+      <div className="flex gap-7 relative items-center">
         <button
           onClick={() => setProductsDropdownOpened(true)}
           className="font-bold flex items-center gap-2"
@@ -45,7 +45,7 @@ export const Header = (): JSX.Element => {
           Community <DropdownIcon />
         </button>
         {communityDropdownOpened ? (
-          <div className="bg-gradient-to-r from-blue-100 via-green-100 to-pink-200 flex absolute p-1 top-[-22px] left-[187.5px] font-bold">
+          <div className="bg-gradient-to-r from-blue-100 via-green-100 to-pink-200 flex absolute p-1 top-[-22px] left-[84.5px] font-bold">
             <div className="flex flex-col items-start bg-blue-200 p-5 gap-1">
               <button
                 onClick={() => setCommunityDropdownOpened(false)}
@@ -80,7 +80,7 @@ export const Header = (): JSX.Element => {
         <a
           target="_blank"
           href="https://l.cobogo.io/docs/"
-          className="font-bold"
+          className="flex font-bold"
           rel="noreferrer"
         >
           Docs

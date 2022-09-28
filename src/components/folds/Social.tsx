@@ -1,5 +1,3 @@
-import { SocialImage } from '../images/SocialImage'
-
 export const Social = (): JSX.Element => {
   return (
     <div
@@ -66,7 +64,7 @@ export const Social = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <SocialImage />
+      {/* <SocialImage /> */}
       {/* <BackgroundSocial /> */}
     </div>
   )
