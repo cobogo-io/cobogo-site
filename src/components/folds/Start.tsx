@@ -1,10 +1,16 @@
+import { motion, MotionValue } from 'framer-motion'
+
 import { StartImage } from '../images/StartImage'
 
-export const Start = (): JSX.Element => {
+interface StartProps {
+  opacity: MotionValue<string>
+}
+
+export const Start = (props: StartProps): JSX.Element => {
   return (
-    <div
-      id="start"
-      className="relative flex flex-col justify-center items-center min-h-screen h-full w-full"
+    <motion.div
+      style={{ opacity: props.opacity }}
+      className="flex flex-col justify-center items-center min-h-screen h-full w-full sticky top-0"
     >
       <div className="flex flex-col justify-start md:justify-center items-center min-h-screen h-full py-24 w-full">
         <div className="flex flex-col md:flex-row md:max-w-[1000px] w-full justify-between items-center z-40 gap-20 relative">
@@ -56,6 +62,6 @@ export const Start = (): JSX.Element => {
       </div>
       <StartImage />
       {/* <BackgroundStart /> */}
-    </div>
+    </motion.div>
   )
 }

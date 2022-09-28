@@ -1,8 +1,16 @@
+import { motion, MotionValue } from 'framer-motion'
 import Image from 'next/image'
 
-export const Telegram = (): JSX.Element => {
+interface TelegramProps {
+  opacity: MotionValue<string>
+}
+
+export const Telegram = (props: TelegramProps): JSX.Element => {
   return (
-    <div className="relative flex flex-col justify-center items-center min-h-screen h-full px-7">
+    <motion.div
+      style={{ opacity: props.opacity }}
+      className="flex flex-col justify-center items-center min-h-screen h-full px-7 sticky top-0"
+    >
       <div className="flex flex-col justify-start md:justify-center items-center min-h-screen h-full w-full">
         <div className="w-full flex items-center justify-between max-w-[1000px] py-24 md:py-0">
           <div className="flex flex-col gap-6 md:gap-10 z-40 max-w-[447px] items-center md:items-start">
@@ -42,6 +50,6 @@ export const Telegram = (): JSX.Element => {
         </div>
       </div>
       {/* <BackgroundMain /> */}
-    </div>
+    </motion.div>
   )
 }

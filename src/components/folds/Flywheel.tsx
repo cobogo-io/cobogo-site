@@ -1,9 +1,8 @@
+import { motion, MotionValue } from 'framer-motion'
 import Image from 'next/image'
 import { useState } from 'react'
 
-import { BackgroundFlywheel } from '../backgrounds/BackgroundFlywheel'
 import { BackgroundFundraise } from '../backgrounds/BackgroundFundraise'
-import { BackgroundMain } from '../backgrounds/BackgroundMain'
 import { BackgroundSocial } from '../backgrounds/BackgroundSocial'
 import { BackgroundStart } from '../backgrounds/BackgroundStart'
 import { BackgroundVentures } from '../backgrounds/BackgroundVentures'
@@ -15,11 +14,18 @@ import { VenturesImage } from '../images/VenturesImage'
 
 type Element = null | 'Social' | 'Start' | 'Fundraise' | 'Ventures'
 
-export const Flywheel = (): JSX.Element => {
+interface FlywheelProps {
+  opacity: MotionValue<string>
+}
+
+export const Flywheel = (props: FlywheelProps): JSX.Element => {
   const [elementOpened, setElementOpened] = useState<Element>(null)
 
   return (
-    <div className="relative hidden md:flex flex-col justify-center items-center min-h-screen h-full">
+    <motion.div
+      style={{ opacity: props.opacity }}
+      className="hidden md:flex flex-col justify-center items-center min-h-screen h-full sticky top-0"
+    >
       <div className="flex flex-col items-center gap-24 z-40">
         <div className="relative">
           <Image
@@ -72,19 +78,19 @@ export const Flywheel = (): JSX.Element => {
       </div>
       {elementOpened === null && (
         <>
-          <BackgroundFlywheel />
-          <BackgroundMain dark />
+          {/* <BackgroundFlywheel /> */}
+          {/* <BackgroundMain dark /> */}
         </>
       )}
       {elementOpened === 'Social' && (
-        <>
+        <div>
           <p className="absolute top-24 left-12 max-w-[270px]">
             Cobogo <strong>Social</strong> lets Creators present their business,
             metrics and services to investors, brands, and their own audience.
           </p>
           <SocialImage />
           <BackgroundSocial />
-        </>
+        </div>
       )}
       {elementOpened === 'Start' && (
         <>
@@ -117,6 +123,6 @@ export const Flywheel = (): JSX.Element => {
           <BackgroundVentures />
         </>
       )}
-    </div>
+    </motion.div>
   )
 }

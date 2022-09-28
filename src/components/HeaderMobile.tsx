@@ -4,11 +4,7 @@ import { useState } from 'react'
 import { CloseIcon } from './icons/CloseIcon'
 import { MenuIcon } from './icons/MenuIcon'
 
-interface HeaderMobileProps {
-  isMainFold: boolean
-}
-
-export const HeaderMobile = (props: HeaderMobileProps): JSX.Element => {
+export const HeaderMobile = (): JSX.Element => {
   const [menuOpened, setMenuOpened] = useState(false)
 
   return !menuOpened ? (
@@ -16,7 +12,7 @@ export const HeaderMobile = (props: HeaderMobileProps): JSX.Element => {
       <div onClick={() => setMenuOpened(true)}>
         <MenuIcon />
       </div>
-      {props.isMainFold ? (
+      {false ? (
         <Image
           src="/images/cobogo-logo.svg"
           width={88}

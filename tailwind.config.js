@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        1: "url('/images/background-1.svg')",
+        2: "url('/images/background-2.svg')",
+      },
       colors: {
         white: {
           100: '#FFFFFF',

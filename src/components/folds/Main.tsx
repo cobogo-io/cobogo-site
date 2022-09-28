@@ -1,9 +1,16 @@
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
-import { Dispatch, SetStateAction, useRef, useState } from 'react'
+import { Dispatch, SetStateAction, useState } from 'react'
 
 import { Bullets } from '../images/Bullets'
 import { BulletsTwo } from '../images/BulletsTwo'
+import { Flywheel } from './Flywheel'
+import { Footer } from './Footer'
+import { Fundraise } from './Fundraise'
+import { Social } from './Social'
+import { Start } from './Start'
+import { Telegram } from './Telegram'
+import { Ventures } from './Ventures'
 
 interface FirstSectionProps {
   setSection: Dispatch<SetStateAction<number>>
@@ -106,17 +113,68 @@ const SecondSection = (): JSX.Element => {
 export const Main = (): JSX.Element => {
   const [section, setSection] = useState(1)
 
-  return (
-    <div className="relative flex flex-col justify-center items-center min-h-screen h-full px-7">
-      <div className="flex flex-col justify-start md:justify-center items-center min-h-screen h-full py-24">
-        {section === 1 ? (
+  const [background, setBackground] = useState('bg-1')
+
+  const { scrollYProgress } = useScroll()
+  const secondSectionOpacity = useTransform(
+    scrollYProgress,
+    [0, 0.2],
+    ['100%', '0%']
+  )
+  const flywheelOpacity = useTransform(
+    scrollYProgress,
+    [0.2, 0.4],
+    ['100%', '0%']
+  )
+  const socialOpacity = useTransform(
+    scrollYProgress,
+    [0.4, 0.6],
+    ['100%', '0%']
+  )
+  const startOpacity = useTransform(scrollYProgress, [0.6, 0.8], ['100%', '0%'])
+  const fundraiseOpacity = useTransform(
+    scrollYProgress,
+    [0.71, 852],
+    ['100%', '0%']
+  )
+  const venturesOpacity = useTransform(
+    scrollYProgress,
+    [0.852, 1],
+    ['100%', '0%']
+  )
+  const telegramOpacity = useTransform(
+    scrollYProgress,
+    [0.852, 1],
+    ['100%', '0%']
+  )
+
+  return section === 1 ? (
+    <div className="bg-[url('/images/background-1.svg')] bg-cover bg-fixed">
+      <div className="relative flex flex-col justify-center items-center min-h-screen h-full px-7">
+        <div className="flex flex-col justify-start md:justify-center items-center min-h-screen h-full py-24">
           <FirstSection setSection={setSection} />
-        ) : (
-          <SecondSection />
-        )}
+        </div>
+        <Bullets />
       </div>
-      {section === 1 && <Bullets />}
-      {/* <BackgroundMain /> */}
+    </div>
+  ) : (
+    <div className={`${background} bg-cover bg-fixed transition-all`}>
+      <motion.div
+        style={{ opacity: secondSectionOpacity }}
+        className="flex flex-col justify-center items-center min-h-screen h-full px-7 sticky top-0"
+      >
+        <div className="flex flex-col justify-start md:justify-center items-center min-h-screen h-full py-24">
+          <SecondSection />
+        </div>
+      </motion.div>
+      <Flywheel opacity={flywheelOpacity} />
+      <Social opacity={socialOpacity} />
+      <Start opacity={startOpacity} />
+      <Fundraise opacity={fundraiseOpacity} />
+      <Ventures opacity={venturesOpacity} />
+      <Telegram opacity={telegramOpacity} />
+      {/* <RelatedContent /> */}
+      <Footer />
     </div>
   )
 }

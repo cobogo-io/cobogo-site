@@ -1,8 +1,14 @@
-export const Ventures = (): JSX.Element => {
+import { motion, MotionValue } from 'framer-motion'
+
+interface VenturesProps {
+  opacity: MotionValue<string>
+}
+
+export const Ventures = (props: VenturesProps): JSX.Element => {
   return (
-    <div
-      id="ventures"
-      className="relative flex flex-col justify-center items-center min-h-screen h-full w-full"
+    <motion.div
+      style={{ opacity: props.opacity }}
+      className="flex flex-col justify-center items-center min-h-screen h-full w-full sticky top-0"
     >
       <div className="flex flex-col justify-start md:justify-center items-center min-h-screen h-full py-24 w-full">
         <div className="flex flex-col md:flex-row md:max-w-[1000px] w-full justify-between items-center z-40 gap-20 relative">
@@ -65,6 +71,6 @@ export const Ventures = (): JSX.Element => {
       </div>
       {/* <VenturesImage /> */}
       {/* <BackgroundVentures /> */}
-    </div>
+    </motion.div>
   )
 }

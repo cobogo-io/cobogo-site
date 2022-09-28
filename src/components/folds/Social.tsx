@@ -1,8 +1,14 @@
-export const Social = (): JSX.Element => {
+import { motion, MotionValue } from 'framer-motion'
+
+interface SocialProps {
+  opacity: MotionValue<string>
+}
+
+export const Social = (props: SocialProps): JSX.Element => {
   return (
-    <div
-      id="social"
-      className="relative flex flex-col justify-center items-center min-h-screen h-full w-full"
+    <motion.div
+      style={{ opacity: props.opacity }}
+      className="flex flex-col justify-center items-center min-h-screen h-full w-full sticky top-0"
     >
       <div className="flex flex-col justify-start md:justify-center items-center min-h-screen h-full py-24 w-full">
         <div className="flex flex-col md:flex-row md:max-w-[1000px] w-full justify-between items-center z-40 gap-20 relative">
@@ -66,6 +72,6 @@ export const Social = (): JSX.Element => {
       </div>
       {/* <SocialImage /> */}
       {/* <BackgroundSocial /> */}
-    </div>
+    </motion.div>
   )
 }
