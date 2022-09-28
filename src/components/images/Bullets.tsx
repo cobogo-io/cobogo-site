@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+
 export const Bullets = (): JSX.Element => {
   return (
     <svg
@@ -8,10 +10,42 @@ export const Bullets = (): JSX.Element => {
       viewBox="0 0 851 504"
       className="absolute z-10 hidden md:flex"
     >
-      <circle cx="6" cy="85" r="6" fill="#00B9E9"></circle>
-      <circle cx="712" cy="6" r="6" fill="#BA68C8"></circle>
-      <circle cx="845" cy="384" r="6" fill="#6CB14B"></circle>
-      <circle cx="58" cy="498" r="6" fill="#5C8295"></circle>
+      <motion.circle
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2, delay: 0.5 }}
+        cx="6"
+        cy="85"
+        r="6"
+        fill="#00B9E9"
+      ></motion.circle>
+      <motion.circle
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2, delay: 1 }}
+        cx="712"
+        cy="6"
+        r="6"
+        fill="#BA68C8"
+      ></motion.circle>
+      <motion.circle
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2, delay: 1.5 }}
+        cx="845"
+        cy="384"
+        r="6"
+        fill="#6CB14B"
+      ></motion.circle>
+      <motion.circle
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2, delay: 2 }}
+        cx="58"
+        cy="498"
+        r="6"
+        fill="#5C8295"
+      ></motion.circle>
     </svg>
   )
 }

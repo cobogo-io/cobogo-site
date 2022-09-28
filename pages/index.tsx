@@ -1,14 +1,6 @@
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
-import { Footer } from '../src/components/folds/Footer'
-import { Fundraise } from '../src/components/folds/Fundraise'
 import { Main } from '../src/components/folds/Main'
-import { Social } from '../src/components/folds/Social'
-import { Start } from '../src/components/folds/Start'
-import { Telegram } from '../src/components/folds/Telegram'
-import { Text } from '../src/components/folds/Text'
-import { Ventures } from '../src/components/folds/Ventures'
 import { Header } from '../src/components/Header'
 import { HeaderMobile } from '../src/components/HeaderMobile'
 
@@ -30,21 +22,20 @@ const Home: NextPage = () => {
   }, [])
 
   return (
-    <>
+    <div className="bg-[url('/images/background-1.svg')] bg-cover bg-fixed">
       <Header />
       <HeaderMobile isMainFold={isMainFold} />
       <Main />
-      <Text />
       <div id="sentinel" />
       {/* <Flywheel /> */}
-      <Social />
+      {/* <Social />
       <Start />
       <Fundraise />
       <Ventures />
-      <Telegram />
+      <Telegram /> */}
       {/* <RelatedContent /> */}
-      <Footer />
-    </>
+      {/* <Footer /> */}
+    </div>
   )
 }
 
