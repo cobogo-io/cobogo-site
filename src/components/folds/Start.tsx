@@ -1,5 +1,3 @@
-import { StartImage } from '../images/StartImage'
-
 export const Start = (): JSX.Element => {
   return (
     <div
@@ -21,9 +19,9 @@ export const Start = (): JSX.Element => {
                 Business in Delaware.
               </h2>
             </div>
-            <button className="px-5 py-1 md:py-2 border-2 border-pink-200 font-bold text-base md:text-xl w-max text-pink-200 md:text-white-100">
+            {/* <button className="px-5 py-1 md:py-2 border-2 border-pink-200 font-bold text-base md:text-xl w-max text-pink-200 md:text-white-100">
               Start your business
-            </button>
+            </button> */}
           </div>
           <div className="bg-gradient-to-r from-black-900 to-black-900/0 absolute left-0 bottom-0 h-[212px] w-[10px] z-40 flex md:hidden" />
           <div className="bg-gradient-to-l from-black-900 to-black-900/0 absolute right-0 bottom-0 h-[212px] w-[10px] z-40 flex md:hidden" />
@@ -54,7 +52,7 @@ export const Start = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <StartImage />
+      {/* <StartImage /> */}
       {/* <BackgroundStart /> */}
     </div>
   )

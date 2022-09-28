@@ -38,19 +38,35 @@ export const HeaderMobile = (props: HeaderMobileProps): JSX.Element => {
         <CloseIcon />
       </div>
       <div className="flex flex-col gap-4 px-7 pt-20 pb-24">
-        <a className="text-4xl font-bold relative">
+        <a
+          href="#social"
+          onClick={() => setMenuOpened(false)}
+          className="text-4xl font-bold relative"
+        >
           <div className="rounded-full w-8 h-8 absolute bg-blue-100 left-[-55px]" />
           Social
         </a>
-        <a className="text-4xl font-bold relative">
+        <a
+          href="#start"
+          onClick={() => setMenuOpened(false)}
+          className="text-4xl font-bold relative"
+        >
           <div className="rounded-full w-8 h-8 absolute bg-pink-200 left-[-55px]" />
           Start
         </a>
-        <a className="text-4xl font-bold relative">
+        <a
+          href="#fundraise"
+          onClick={() => setMenuOpened(false)}
+          className="text-4xl font-bold relative"
+        >
           <div className="rounded-full w-8 h-8 absolute bg-green-100 left-[-55px]" />
           Fundraise
         </a>
-        <a className="text-4xl font-bold relative">
+        <a
+          href="#ventures"
+          onClick={() => setMenuOpened(false)}
+          className="text-4xl font-bold relative"
+        >
           <div className="rounded-full w-8 h-8 absolute bg-gray-200 left-[-55px]" />
           Ventures
         </a>

@@ -20,9 +20,14 @@ export const Ventures = (): JSX.Element => {
                 potential with profiles on Cobogo Social.
               </h2>
             </div>
-            <button className="px-5 py-1 md:py-2 border-2 border-gray-200 font-bold text-base md:text-xl w-max text-gray-200 md:text-white-100">
+            <a
+              target="_blank"
+              href="https://airtable.com/shrAV2HZB9la3Dq61"
+              className="px-5 py-1 md:py-2 border-2 border-gray-200 font-bold text-base md:text-xl w-max text-gray-200 md:text-white-100"
+              rel="noreferrer"
+            >
               Apply for funding
-            </button>
+            </a>
           </div>
           <div className="bg-gradient-to-r from-black-900 to-black-900/0 absolute left-0 bottom-0 h-[212px] w-[10px] z-40 flex md:hidden" />
           <div className="bg-gradient-to-l from-black-900 to-black-900/0 absolute right-0 bottom-0 h-[212px] w-[10px] z-40 flex md:hidden" />

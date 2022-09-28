@@ -30,24 +30,24 @@ export const Footer = (): JSX.Element => {
             <h2 className="text-2xl md:text-3xl text-center">
               Incorporate a business with <strong>Cobogo Start</strong>
             </h2>
-            <button className="px-5 py-1 md:py-2 border-2 border-pink-200 font-bold text-base md:text-xl w-max">
+            {/* <button className="px-5 py-1 md:py-2 border-2 border-pink-200 font-bold text-base md:text-xl w-max">
               Start your business
-            </button>
+            </button> */}
           </div>
           <div className="flex flex-col items-center w-[348px] gap-4">
             <h2 className="text-2xl md:text-3xl text-center">
               Fund your passion with <strong>Cobogo Fundraise</strong>
             </h2>
-            <button className="px-5 py-1 md:py-2 border-2 border-green-100 font-bold text-base md:text-xl w-max">
+            {/* <button className="px-5 py-1 md:py-2 border-2 border-green-100 font-bold text-base md:text-xl w-max">
               Raise funds now
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
       <div className="flex justify-between z-40 w-full px-12 pb-12">
         <CobogosOnLeft />
         <div className="flex flex-col items-center gap-11">
-          <div className="flex gap-11 flex-wrap justify-center">
+          <div className="flex gap-11 flex-wrap justify-center mb-auto">
             <a target="_blank" href="mailto:hi@cobogo.io" rel="noreferrer">
               <EmailIcon />
             </a>
@@ -80,7 +80,7 @@ export const Footer = (): JSX.Element => {
               <GitHubIcon />
             </a>
           </div>
-          <div className="flex flex-col md:flex-row items-center gap-8 font-bold mb-auto">
+          {/* <div className="flex flex-col md:flex-row items-center gap-8 font-bold mb-auto">
             <a
               target="_blank"
               href="https://www.cobogo.io/faq"
@@ -109,7 +109,7 @@ export const Footer = (): JSX.Element => {
             >
               Terms of use
             </a>
-          </div>
+          </div> */}
           <Image
             src="/images/cobogo-logo.svg"
             width={81}

@@ -17,7 +17,10 @@ export const Header = (): JSX.Element => {
       />
       <div className="flex gap-7 relative items-center">
         <button
-          onClick={() => setProductsDropdownOpened(true)}
+          onClick={() => {
+            setCommunityDropdownOpened(false)
+            setProductsDropdownOpened(true)
+          }}
           className="font-bold flex items-center gap-2"
         >
           Products <DropdownIcon />
@@ -39,7 +42,10 @@ export const Header = (): JSX.Element => {
           </div>
         ) : null}
         <button
-          onClick={() => setCommunityDropdownOpened(true)}
+          onClick={() => {
+            setProductsDropdownOpened(false)
+            setCommunityDropdownOpened(true)
+          }}
           className="font-bold flex items-center gap-2"
         >
           Community <DropdownIcon />
