@@ -29,7 +29,7 @@ export const Start = (): JSX.Element => {
             <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px]">
               <strong className="text-lg md:text-2xl">Company Formation</strong>
               <p className="text-lg md:text-xl">
-                We’ll prepare your legal documents, file your paperwork, and
+                {`We'll`} prepare your legal documents, file your paperwork, and
                 create all the essential post-incorporation documents. Manage
                 all your documentation in one easily accessible dashboard.
               </p>

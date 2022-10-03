@@ -15,8 +15,8 @@ export const Fundraise = (): JSX.Element => {
               </h1>
               <h2 className="text-lg md:text-xl max-w-[447px]">
                 Cobogo Fundraise allows Creators to tokenize equity and use a
-                Rolling SAFE for Continuous Securities Offering, instead of
-                doing static fundraising rounds.
+                Rolling SAFE for Continuous Securities Offering instead of doing
+                static fundraising rounds.
               </h2>
             </div>
             {/* <button className="px-5 py-1 md:py-2 border-2 border-green-100 font-bold text-base md:text-xl w-max text-green-100 md:text-white-100">
@@ -41,16 +41,16 @@ export const Fundraise = (): JSX.Element => {
                 Raise funds continuously
               </strong>
               <p className="text-lg md:text-xl">
-                With an SEC-compliant technology Creators are able to run a
-                fundraise that is always open for investors, your own audience,
-                without the need of doing static rounds.
+                With an SEC-compliant technology, Creators can raise funds in
+                rounds that are always open for investors, and their audience,
+                without the need to do static rounds.
               </p>
             </div>
             <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px]">
               <strong className="text-lg md:text-2xl">Share your growth</strong>
               <p className="text-lg md:text-xl">
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur. Ut enim
-                ad minim veniam, quis nostrud exer.
+                Share your growth with your investors, partners, contractors and
+                anyone that helps you grow your business.
               </p>
             </div>
           </div>

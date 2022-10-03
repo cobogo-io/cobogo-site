@@ -15,8 +15,8 @@ export const Social = (): JSX.Element => {
                 <div className="w-[160px] md:w-[315px] h-3 md:h-[14px] bg-blue-100/30 absolute bottom-1" />
               </h1>
               <h2 className="text-lg md:text-xl max-w-[447px]">
-                To investors, brands and your audience by adding your metrics
-                and services to your own profile. Get your valuation estimated.
+                To investors, brands, and your audience by adding your metrics
+                and services to your profile. Get your valuation estimated.
               </h2>
             </div>
             <a
@@ -36,9 +36,9 @@ export const Social = (): JSX.Element => {
                 Create your profile
               </strong>
               <p className="text-lg md:text-xl">
-                To be able to your create your profile and prove that you are
-                yourself, connect your social media and Cobogo Social will
-                automatically generate a profile for you.
+                To create your profile and prove that you are yourself, connect
+                your social media, and Cobogo Social will automatically generate
+                a profile for you.
               </p>
             </div>
             <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px]">
@@ -46,7 +46,7 @@ export const Social = (): JSX.Element => {
                 Enrich your profile
               </strong>
               <p className="text-lg md:text-xl">
-                We recommend connecting as many of your social media and adding
+                We recommend connecting as much of your social media and adding
                 as much information as you can. It will make it more trustworthy
                 to investors and allow our algorithm to assess your valuation.
               </p>
@@ -57,7 +57,7 @@ export const Social = (): JSX.Element => {
               </strong>
               <p className="text-lg md:text-xl">
                 We have optimized the Creator Profile so it can be used as an
-                interactive media kit, a business presentation and an excellent
+                interactive media kit, a business presentation, and an excellent
                 way to share all of your verified links!
               </p>
             </div>
