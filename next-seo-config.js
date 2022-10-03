@@ -1,6 +1,6 @@
-const title = 'Cobogo';
+const title = 'Cobogo'
 const description =
-  'Cobogo is a Business Infrastructure for Creators. We provide the tools you will need to become a business and start raising funds to quickstart it.';
+  'Cobogo allows Creators to become real businesses. We provide all the best tools for incorporating a US business, raising funds with whom matters the most and maximizing growth.'
 
 const SEO = {
   title,
@@ -16,6 +16,6 @@ const SEO = {
       },
     ],
   },
-};
+}
 
-export default SEO;
+export default SEO

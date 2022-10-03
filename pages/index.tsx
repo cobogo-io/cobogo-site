@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
 import { Footer } from '../src/components/folds/Footer'
@@ -11,11 +10,13 @@ import { Text } from '../src/components/folds/Text'
 import { Ventures } from '../src/components/folds/Ventures'
 import { Header } from '../src/components/Header'
 import { HeaderMobile } from '../src/components/HeaderMobile'
+import { ArrowDownIcon } from '../src/components/icons/ArrowDownIcon'
 
 import type { NextPage } from 'next'
-
 const Home: NextPage = () => {
   const [isMainFold, setIsMainFold] = useState(true)
+
+  const [haveScroll, setHaveScroll] = useState(true)
 
   useEffect(() => {
     const intersectionObserver = new IntersectionObserver(async entries => {
@@ -29,8 +30,27 @@ const Home: NextPage = () => {
     return () => intersectionObserver.disconnect()
   }, [])
 
+  useEffect(() => {
+    const intersectionObserver = new IntersectionObserver(async entries => {
+      if (entries.some(entry => entry.isIntersecting)) {
+        setHaveScroll(false)
+      }
+    })
+
+    intersectionObserver.observe(
+      document.querySelector('#sentinel-2') as Element
+    )
+
+    return () => intersectionObserver.disconnect()
+  }, [])
+
   return (
     <>
+      {haveScroll && (
+        <div className="fixed border-2 border-blue-100 right-[50px] bottom-[50px] p-3 animate-bounce">
+          <ArrowDownIcon />
+        </div>
+      )}
       <Header />
       <HeaderMobile isMainFold={isMainFold} />
       <Main />
@@ -44,6 +64,7 @@ const Home: NextPage = () => {
       <Telegram />
       {/* <RelatedContent /> */}
       <Footer />
+      <div id="sentinel-2" />
     </>
   )
 }
