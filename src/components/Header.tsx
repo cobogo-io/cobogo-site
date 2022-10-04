@@ -1,25 +1,27 @@
-import Image from 'next/image'
-import { useState } from 'react'
+import Image from "next/image";
+import { useState } from "react";
 
-import { DropdownIcon } from './icons/DropdownIcon'
+import { DropdownIcon } from "./icons/DropdownIcon";
 
 export const Header = (): JSX.Element => {
-  const [productsDropdownOpened, setProductsDropdownOpened] = useState(false)
-  const [communityDropdownOpened, setCommunityDropdownOpened] = useState(false)
+  const [productsDropdownOpened, setProductsDropdownOpened] = useState(false);
+  const [communityDropdownOpened, setCommunityDropdownOpened] = useState(false);
 
   return (
     <div className="fixed px-12 py-9 hidden md:flex w-full gap-14 z-50 bg-gradient-to-b from-black-900 to-black-900/0">
-      <Image
-        src="/images/cobogo-logo.svg"
-        width={120}
-        height={27}
-        alt="cobogo logo"
-      />
+      <a href="#">
+        <Image
+          src="/images/cobogo-logo.svg"
+          width={120}
+          height={27}
+          alt="cobogo logo"
+        />
+      </a>
       <div className="flex gap-7 relative items-center">
         <button
           onClick={() => {
-            setCommunityDropdownOpened(false)
-            setProductsDropdownOpened(true)
+            setCommunityDropdownOpened(false);
+            setProductsDropdownOpened(true);
           }}
           className="font-bold flex items-center gap-2"
         >
@@ -43,8 +45,8 @@ export const Header = (): JSX.Element => {
         ) : null}
         <button
           onClick={() => {
-            setProductsDropdownOpened(false)
-            setCommunityDropdownOpened(true)
+            setProductsDropdownOpened(false);
+            setCommunityDropdownOpened(true);
           }}
           className="font-bold flex items-center gap-2"
         >
@@ -93,5 +95,5 @@ export const Header = (): JSX.Element => {
         </a>
       </div>
     </div>
-  )
-}
+  );
+};
