@@ -1,3 +1,5 @@
+import { NextPage } from 'next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useEffect, useState } from 'react'
 
 import { Footer } from '../src/components/folds/Footer'
@@ -7,12 +9,10 @@ import { Social } from '../src/components/folds/Social'
 import { Start } from '../src/components/folds/Start'
 import { Telegram } from '../src/components/folds/Telegram'
 import { Text } from '../src/components/folds/Text'
-import { Ventures } from '../src/components/folds/Ventures'
 import { Header } from '../src/components/Header'
 import { HeaderMobile } from '../src/components/HeaderMobile'
 import { ArrowDownIcon } from '../src/components/icons/ArrowDownIcon'
 
-import type { NextPage } from 'next'
 const Home: NextPage = () => {
   const [isMainFold, setIsMainFold] = useState(true)
 
@@ -56,13 +56,11 @@ const Home: NextPage = () => {
       <Main />
       <Text />
       <div id="sentinel" />
-      {/* <Flywheel /> */}
       <Social />
       <Start />
       <Fundraise />
-      <Ventures />
+      {/* <Ventures /> */}
       <Telegram />
-      {/* <RelatedContent /> */}
       <Footer />
       <div id="sentinel-2" />
     </>
@@ -70,3 +68,11 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  }
+}

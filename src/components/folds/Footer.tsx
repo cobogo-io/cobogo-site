@@ -1,3 +1,4 @@
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 
 import { EmailIcon } from '../icons/EmailIcon'
@@ -9,13 +10,15 @@ import { CobogosOnLeft } from '../images/CobogosOnLeft'
 import { CobogosOnRight } from '../images/CobogosOnRight'
 
 export const Footer = (): JSX.Element => {
+  const { t } = useTranslation('common')
+
   return (
     <div className="relative flex flex-col justify-center items-center min-h-screen h-full">
       <div className="flex flex-col z-40 mb-52 pt-52">
         <div className="flex flex-col md:flex-row gap-10">
           <div className="flex flex-col items-center w-[348px] gap-4">
             <h2 className="text-2xl md:text-3xl text-center">
-              Showcase your business with <strong>Cobogo Social</strong>
+              {t('Showcase your business with')} <strong>Cobogo Social</strong>
             </h2>
             <a
               target="_blank"
@@ -23,24 +26,18 @@ export const Footer = (): JSX.Element => {
               className="px-5 py-1 md:py-2 border-2 border-blue-100 font-bold text-base md:text-xl w-max"
               rel="noreferrer"
             >
-              Create your profile
+              {t('Create your profile')}
             </a>
           </div>
           <div className="flex flex-col items-center w-[348px] gap-4">
             <h2 className="text-2xl md:text-3xl text-center">
-              Incorporate a business with <strong>Cobogo Start</strong>
+              {t('Incorporate a business with')} <strong>Cobogo Start</strong>
             </h2>
-            {/* <button className="px-5 py-1 md:py-2 border-2 border-pink-200 font-bold text-base md:text-xl w-max">
-              Start your business
-            </button> */}
           </div>
           <div className="flex flex-col items-center w-[348px] gap-4">
             <h2 className="text-2xl md:text-3xl text-center">
-              Fund your passion with <strong>Cobogo Fundraise</strong>
+              {t('Fund your passion with')} <strong>Cobogo Fundraise</strong>
             </h2>
-            {/* <button className="px-5 py-1 md:py-2 border-2 border-green-100 font-bold text-base md:text-xl w-max">
-              Raise funds now
-            </button> */}
           </div>
         </div>
       </div>
@@ -80,36 +77,6 @@ export const Footer = (): JSX.Element => {
               <GitHubIcon />
             </a>
           </div>
-          {/* <div className="flex flex-col md:flex-row items-center gap-8 font-bold mb-auto">
-            <a
-              target="_blank"
-              href="https://www.cobogo.io/faq"
-              rel="noreferrer"
-            >
-              FAQ
-            </a>
-            <a
-              target="_blank"
-              href="https://www.cobogo.io/code"
-              rel="noreferrer"
-            >
-              Code of conduct
-            </a>
-            <a
-              target="_blank"
-              href="https://www.cobogo.io/privacy"
-              rel="noreferrer"
-            >
-              Privacy policy
-            </a>
-            <a
-              target="_blank"
-              href="https://www.cobogo.io/terms"
-              rel="noreferrer"
-            >
-              Terms of use
-            </a>
-          </div> */}
           <Image
             src="/images/cobogo-logo.svg"
             width={81}
@@ -119,7 +86,6 @@ export const Footer = (): JSX.Element => {
         </div>
         <CobogosOnRight />
       </div>
-      {/* <BackgroundMain /> */}
     </div>
   )
 }

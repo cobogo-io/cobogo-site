@@ -1,7 +1,9 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import { useState } from 'react'
 
 import { CloseIcon } from './icons/CloseIcon'
+import { DropdownIcon } from './icons/DropdownIcon'
 import { MenuIcon } from './icons/MenuIcon'
 
 interface HeaderMobileProps {
@@ -11,26 +13,54 @@ interface HeaderMobileProps {
 export const HeaderMobile = (props: HeaderMobileProps): JSX.Element => {
   const [menuOpened, setMenuOpened] = useState(false)
 
+  const [languagesDropdownOpened, setLanguagesDropdownOpened] = useState(false)
+
+  const { locale } = useRouter()
+
   return !menuOpened ? (
-    <div className="fixed w-full flex md:hidden items-center gap-4 p-7 z-50 transition-all bg-gradient-to-b from-black-900 to-black-900/0">
-      <div onClick={() => setMenuOpened(true)}>
-        <MenuIcon />
+    <div className="fixed w-full flex md:hidden items-center justify-between p-7 z-50 transition-all bg-gradient-to-b from-black-900 to-black-900/0">
+      <div className="flex items-center gap-4">
+        <div onClick={() => setMenuOpened(true)}>
+          <MenuIcon />
+        </div>
+        {props.isMainFold ? (
+          <Image
+            src="/images/cobogo-logo.svg"
+            width={88}
+            height={20}
+            alt="Cobogo logo"
+          />
+        ) : (
+          <>
+            <div className="w-[8px] h-[8px] bg-blue-100 rounded-full" />
+            <div className="w-[8px] h-[8px] bg-pink-200 rounded-full" />
+            <div className="w-[8px] h-[8px] bg-green-100 rounded-full" />
+            <div className="w-[8px] h-[8px] bg-gray-200 rounded-full" />
+          </>
+        )}
       </div>
-      {props.isMainFold ? (
-        <Image
-          src="/images/cobogo-logo.svg"
-          width={88}
-          height={20}
-          alt="Cobogo logo"
-        />
-      ) : (
-        <>
-          <div className="w-[8px] h-[8px] bg-blue-100 rounded-full" />
-          <div className="w-[8px] h-[8px] bg-pink-200 rounded-full" />
-          <div className="w-[8px] h-[8px] bg-green-100 rounded-full" />
-          <div className="w-[8px] h-[8px] bg-gray-200 rounded-full" />
-        </>
-      )}
+      <button
+        onClick={() => {
+          setLanguagesDropdownOpened(true)
+        }}
+        className="font-bold flex items-center gap-2"
+      >
+        {`${locale === 'pt' ? 'Portuguese' : 'English'}`} <DropdownIcon />
+      </button>
+      {languagesDropdownOpened ? (
+        <div className="bg-gradient-to-r from-blue-100 via-green-100 to-pink-200 flex absolute p-1 top-[6px] right-[4px] font-bold">
+          <div className="flex flex-col items-start bg-blue-200 p-5 gap-1">
+            <button
+              onClick={() => setLanguagesDropdownOpened(false)}
+              className="flex items-center gap-2 mb-2"
+            >
+              {`${locale === 'pt' ? 'Portuguese' : 'English'}`} <DropdownIcon />
+            </button>
+            {locale !== 'en' && <a href="/en">English</a>}
+            {locale !== 'pt' && <a href="/pt">Portuguese</a>}
+          </div>
+        </div>
+      ) : null}
     </div>
   ) : (
     <div className="min-h-screen h-full w-screen fixed flex flex-col md:hidden gap-4 z-50 bg-black-900 overflow-y-auto transition-all">
