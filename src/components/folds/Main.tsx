@@ -1,11 +1,14 @@
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 import { Button } from '../Button'
 import { Bullets } from '../images/Bullets'
 
 export const Main = (): JSX.Element => {
   const { t } = useTranslation('common')
+
+  const { locale } = useRouter()
 
   return (
     <div className="relative flex flex-col justify-center items-center min-h-screen h-full px-7">
@@ -24,8 +27,18 @@ export const Main = (): JSX.Element => {
             <strong>{t('creative capital')}</strong>{' '}
             {t('continuously, and skyrocket your')}{' '}
             <strong>{t('Creator career')}</strong>
-            <div className="w-[240px] md:w-[460px] h-3 md:h-[19px] bg-white-100/20 absolute bottom-1 right-0 md:-translate-x-16 hidden md:flex" />
-            <div className="w-[240px] md:w-[460px] h-3 md:h-[19px] bg-white-100/20 absolute bottom-1 left-0 md:-translate-x-16 flex md:hidden" />
+            <div
+              className={`${
+                locale !== 'pt'
+                  ? 'w-[460px] -translate-x-20'
+                  : 'w-[610px] -translate-x-1'
+              } h-[19px] bg-white-100/20 absolute bottom-1 right-0  hidden md:flex`}
+            />
+            <div
+              className={`${
+                locale !== 'pt' ? 'w-[240px]' : 'w-[305px]'
+              } h-3 bg-white-100/20 absolute bottom-1 left-0 flex md:hidden`}
+            />
           </h1>
           <a href="#text">
             <Button text={t('Tell me more')} />
