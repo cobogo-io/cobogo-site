@@ -9,6 +9,7 @@ import { Social } from '../src/components/folds/Social'
 import { Start } from '../src/components/folds/Start'
 import { Telegram } from '../src/components/folds/Telegram'
 import { Text } from '../src/components/folds/Text'
+import { Ventures } from '../src/components/folds/Ventures'
 import { Header } from '../src/components/Header'
 import { HeaderMobile } from '../src/components/HeaderMobile'
 import { ArrowDownIcon } from '../src/components/icons/ArrowDownIcon'
@@ -59,7 +60,7 @@ const Home: NextPage = () => {
       <Social />
       <Start />
       <Fundraise />
-      {/* <Ventures /> */}
+      <Ventures />
       <Telegram />
       <Footer />
       <div id="sentinel-2" />
