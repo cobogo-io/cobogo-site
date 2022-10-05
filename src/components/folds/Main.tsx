@@ -24,14 +24,14 @@ export const Main = (): JSX.Element => {
           </div>
           <h1 className="text-4xl md:text-7xl max-w-[1090px] text-left md:text-center relative">
             {t('Become a')} <strong>{t('business')}</strong>, {t('raise')}{' '}
-            <strong>{t('creative capital')}</strong>{' '}
-            {t('continuously, and skyrocket your')}{' '}
-            <strong>{t('Creator career')}</strong>
+            <br />
+            <strong>{t('creative capital')}</strong> {t('continuously, and')}
+            <br />
+            {t('skyrocket your')}
+            {} <strong>{t('Creator career')}</strong>
             <div
               className={`${
-                locale !== 'pt'
-                  ? 'w-[460px] -translate-x-20'
-                  : 'w-[610px] -translate-x-1'
+                locale !== 'pt' ? 'w-[460px] -translate-x-14' : 'w-[610px]'
               } h-[19px] bg-white-100/20 absolute bottom-1 right-0  hidden md:flex`}
             />
             <div
