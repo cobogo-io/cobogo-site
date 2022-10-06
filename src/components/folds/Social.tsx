@@ -1,10 +1,7 @@
 import { useTranslation } from 'next-i18next'
-import { useRouter } from 'next/router'
 
 export const Social = (): JSX.Element => {
   const { t } = useTranslation('common')
-
-  const { locale } = useRouter()
 
   return (
     <div
@@ -39,16 +36,13 @@ export const Social = (): JSX.Element => {
           <div className="bg-gradient-to-r from-black-900 to-black-900/0 absolute left-0 bottom-0 h-[212px] w-[10px] z-40 flex md:hidden" />
           <div className="bg-gradient-to-l from-black-900 to-black-900/0 absolute right-0 bottom-0 h-[212px] w-[10px] z-40 flex md:hidden" />
           <div className="flex flex-row md:flex-col gap-12 overflow-x-auto w-full md:w-auto">
-            <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px]">
+            <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px] ml-7">
               <strong className="text-lg md:text-2xl">
                 {t('Create your profile')}
               </strong>
               <p className="text-lg md:text-xl">
                 {t(
-                  'To create your profile and prove that you are yourself, connect your social media, and Cobogo Social will automatically generate a profile for you.',
-                  {
-                    locale,
-                  }
+                  'To create your profile and prove that you are yourself, connect your social media, and Cobogo Social will automatically generate a profile for you.'
                 )}
               </p>
             </div>
@@ -62,7 +56,7 @@ export const Social = (): JSX.Element => {
                 )}
               </p>
             </div>
-            <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px]">
+            <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px] mr-7">
               <strong className="text-lg md:text-2xl">
                 {t('Share your Profile')}
               </strong>
