@@ -36,7 +36,7 @@ export const Social = (): JSX.Element => {
           <div className="bg-gradient-to-r from-black-900 to-black-900/0 absolute left-0 bottom-0 h-[212px] w-[10px] z-40 flex md:hidden" />
           <div className="bg-gradient-to-l from-black-900 to-black-900/0 absolute right-0 bottom-0 h-[212px] w-[10px] z-40 flex md:hidden" />
           <div className="flex flex-row md:flex-col gap-12 overflow-x-auto w-full md:w-auto">
-            <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px] ml-7">
+            <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px] ml-7 md:ml-0">
               <strong className="text-lg md:text-2xl">
                 {t('Create your profile')}
               </strong>
@@ -56,7 +56,7 @@ export const Social = (): JSX.Element => {
                 )}
               </p>
             </div>
-            <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px] mr-7">
+            <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px] mr-7 md:mr-0">
               <strong className="text-lg md:text-2xl">
                 {t('Share your Profile')}
               </strong>
