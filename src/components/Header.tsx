@@ -34,7 +34,7 @@ export const Header = (): JSX.Element => {
             {t('Products')} <DropdownIcon />
           </button>
           {productsDropdownOpened ? (
-            <div className="bg-gradient-to-r from-blue-100 via-green-100 to-pink-200 flex absolute p-1 top-[-22px] left-[-24px] font-bold">
+            <div className="bg-gradient-to-r from-blue-100 via-green-100 to-pink-200 flex absolute p-1 top-[-24px] left-[-24px] font-bold">
               <div className="flex flex-col items-start bg-blue-200 p-5 gap-1">
                 <button
                   onClick={() => setProductsDropdownOpened(false)}
@@ -59,7 +59,13 @@ export const Header = (): JSX.Element => {
             {t('Community')} <DropdownIcon />
           </button>
           {communityDropdownOpened ? (
-            <div className="bg-gradient-to-r from-blue-100 via-green-100 to-pink-200 flex absolute p-1 top-[-22px] left-[84.5px] font-bold">
+            <div
+              className={`bg-gradient-to-r from-blue-100 via-green-100 to-pink-200 flex absolute p-1 ${
+                locale === 'pt'
+                  ? 'top-[-24px] left-[86px]'
+                  : 'top-[-24px] left-[84.5px]'
+              } font-bold`}
+            >
               <div className="flex flex-col items-start bg-blue-200 p-5 gap-1">
                 <button
                   onClick={() => setCommunityDropdownOpened(false)}
@@ -111,7 +117,13 @@ export const Header = (): JSX.Element => {
           {`${locale === 'pt' ? 'Portuguese' : 'English'}`} <DropdownIcon />
         </button>
         {languagesDropdownOpened ? (
-          <div className="bg-gradient-to-r from-blue-100 via-green-100 to-pink-200 flex absolute p-1 top-[12px] right-[24px] font-bold">
+          <div
+            className={`bg-gradient-to-r from-blue-100 via-green-100 to-pink-200 flex absolute p-1 ${
+              locale === 'pt'
+                ? 'top-[12px] right-[24px]'
+                : 'top-[12px] right-[10px]'
+            } font-bold`}
+          >
             <div className="flex flex-col items-start bg-blue-200 p-5 gap-1">
               <button
                 onClick={() => setLanguagesDropdownOpened(false)}
