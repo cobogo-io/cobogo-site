@@ -15,8 +15,9 @@ export const Ventures = (): JSX.Element => {
               <h1 className="text-2xl md:text-5xl relative">
                 {t('We invest in the')} <br /> {t('future of Creators with')}
                 <br />
-                <strong>Cobogo Ventures</strong>
-                <div className="w-[190px] md:w-[382px] h-3 md:h-[14px] bg-gray-200/30 absolute bottom-1" />
+                <strong className="underline decoration-[9px] md:decoration-[19px] underline-offset-[-4.5px] md:underline-offset-[-8px] decoration-gray-200/30">
+                  Cobogo Ventures
+                </strong>
               </h1>
               <h2 className="text-lg md:text-xl max-w-[447px]">
                 {t(

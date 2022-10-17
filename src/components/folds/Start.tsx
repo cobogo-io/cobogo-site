@@ -15,8 +15,9 @@ export const Start = (): JSX.Element => {
               <h1 className="text-2xl md:text-5xl relative">
                 {t('Incorporate a')} <br />
                 {t('business with')} <br />
-                <strong>Cobogo Start</strong>
-                <div className="w-[145px] md:w-[290px] h-3 md:h-[14px] bg-pink-200/30 absolute bottom-1" />
+                <strong className="underline decoration-[9px] md:decoration-[19px] underline-offset-[-4.5px] md:underline-offset-[-8px] decoration-pink-200/30">
+                  Cobogo Start
+                </strong>
               </h1>
               <h2 className="text-lg md:text-xl max-w-[367px]">
                 {t(

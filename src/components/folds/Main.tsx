@@ -1,14 +1,11 @@
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
 
 import { Button } from '../Button'
 import { Bullets } from '../images/Bullets'
 
 export const Main = (): JSX.Element => {
   const { t } = useTranslation('common')
-
-  const { locale } = useRouter()
 
   return (
     <div className="relative flex flex-col justify-center items-center min-h-screen h-full px-7">
@@ -22,24 +19,19 @@ export const Main = (): JSX.Element => {
               alt="Cobogo logo"
             />
           </div>
+
           <h1 className="text-4xl md:text-7xl max-w-[1090px] text-left md:text-center relative">
             {t('Become a')} <strong>{t('business')}</strong>, {t('raise')}{' '}
             <br />
             <strong>{t('creative capital')}</strong> {t('continuously, and')}
             <br />
             {t('skyrocket your')}
-            {} <strong>{t('Creator career')}</strong>
-            <div
-              className={`${
-                locale !== 'pt' ? 'w-[460px] -translate-x-14' : 'w-[610px]'
-              } h-[19px] bg-white-100/20 absolute bottom-1 right-0  hidden md:flex`}
-            />
-            <div
-              className={`${
-                locale !== 'pt' ? 'w-[240px]' : 'w-[305px]'
-              } h-3 bg-white-100/20 absolute bottom-1 left-0 flex md:hidden`}
-            />
+            {}{' '}
+            <strong className="underline decoration-[9px] md:decoration-[19px] underline-offset-[-4.5px] md:underline-offset-[-8px] decoration-white-100/30">
+              {t('Creator career')}
+            </strong>
           </h1>
+
           <a href="#text">
             <Button text={t('Tell me more')} />
           </a>

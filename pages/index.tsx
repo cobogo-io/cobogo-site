@@ -15,14 +15,14 @@ import { HeaderMobile } from '../src/components/HeaderMobile'
 import { ArrowDownIcon } from '../src/components/icons/ArrowDownIcon'
 
 const Home: NextPage = () => {
-  const [isMainFold, setIsMainFold] = useState(true)
+  const [isMainFold, setIsMainFold] = useState(false)
 
   const [haveScroll, setHaveScroll] = useState(true)
 
   useEffect(() => {
     const intersectionObserver = new IntersectionObserver(async entries => {
       if (entries.some(entry => entry.isIntersecting)) {
-        setIsMainFold(false)
+        setIsMainFold(true)
       }
     })
 
