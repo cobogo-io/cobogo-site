@@ -18,7 +18,7 @@ export const HeaderMobile = (props: HeaderMobileProps): JSX.Element => {
   const { locale } = useRouter()
 
   return !menuOpened ? (
-    <div className="fixed w-full flex md:hidden items-center justify-between p-7 z-50 transition-all bg-header-gradient">
+    <div className="fixed w-full flex md:hidden items-center justify-between p-7 z-50 bg-header-gradient">
       <div className="flex items-center gap-4">
         <div onClick={() => setMenuOpened(true)}>
           <MenuIcon />
@@ -63,7 +63,7 @@ export const HeaderMobile = (props: HeaderMobileProps): JSX.Element => {
       ) : null}
     </div>
   ) : (
-    <div className="min-h-screen h-full w-screen fixed flex flex-col md:hidden gap-4 z-50 bg-black-900 overflow-y-auto transition-all">
+    <div className="min-h-screen h-full w-screen fixed flex flex-col md:hidden gap-4 z-50 bg-black-900 overflow-y-auto">
       <div onClick={() => setMenuOpened(false)}>
         <CloseIcon />
       </div>
