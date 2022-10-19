@@ -52,17 +52,28 @@ const Home: NextPage = () => {
           <ArrowDownIcon />
         </div>
       )}
+
       <Header />
       <HeaderMobile isMainFold={isMainFold} />
+
       <Main />
+
       <Text />
+
       <div id="sentinel" />
+
       <Social />
+
       <Start />
+
       <Fundraise />
+
       <Ventures />
+
       <Telegram />
+
       <Footer />
+
       <div id="sentinel-2" />
     </>
   )

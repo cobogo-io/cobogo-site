@@ -15,7 +15,7 @@ export const Header = (): JSX.Element => {
   const { locale } = useRouter()
 
   return (
-    <div className="fixed px-12 py-9 hidden md:flex w-full gap-14 z-50 bg-gradient-to-b from-black-900 to-black-900/0">
+    <div className="fixed px-12 py-9 hidden md:flex w-full gap-14 z-50 bg-header-gradient">
       <Image
         src="/images/cobogo-logo.svg"
         width={120}

@@ -18,7 +18,7 @@ export const HeaderMobile = (props: HeaderMobileProps): JSX.Element => {
   const { locale } = useRouter()
 
   return !menuOpened ? (
-    <div className="fixed w-full flex md:hidden items-center justify-between p-7 z-50 transition-all bg-gradient-to-b from-black-900 to-black-900/0">
+    <div className="fixed w-full flex md:hidden items-center justify-between p-7 z-50 transition-all bg-header-gradient">
       <div className="flex items-center gap-4">
         <div onClick={() => setMenuOpened(true)}>
           <MenuIcon />

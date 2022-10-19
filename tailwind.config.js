@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'header-gradient':
+          'linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(0,212,255,0) 100%)',
+      },
       colors: {
         white: {
           100: '#FFFFFF',
