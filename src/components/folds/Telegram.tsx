@@ -36,12 +36,12 @@ export const Telegram = () => {
               <Button text={t('Join Telegram')} />
             </a>
           </div>
-          <div className="hidden md:flex min-h-screen h-full w-[375px] relative z-40">
+          <div className="hidden md:flex min-h-screen relative z-40">
             <Image
-              src="/images/telegram.svg"
-              objectFit="cover"
-              layout="fill"
-              alt="Telegram"
+              src="/images/telegram-logo.svg"
+              width={375}
+              height={311}
+              alt="Telegram logo"
             />
           </div>
         </div>
