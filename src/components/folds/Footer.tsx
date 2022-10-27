@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 import { EmailIcon } from '../icons/EmailIcon'
 import { GitHubIcon } from '../icons/GitHubIcon'
@@ -11,6 +12,7 @@ import { CobogosOnRight } from '../images/CobogosOnRight'
 
 export const Footer = () => {
   const { t } = useTranslation('common')
+  const router = useRouter()
 
   return (
     <div className="relative flex flex-col justify-center items-center min-h-screen h-full">
@@ -48,57 +50,71 @@ export const Footer = () => {
         <CobogosOnLeft />
 
         <div className="flex flex-col items-center gap-11">
-          <div className="flex gap-11 flex-wrap justify-center mb-auto">
-            <a target="_blank" href="mailto:hi@cobogo.io" rel="noreferrer">
-              <EmailIcon />
-            </a>
+          <div className="flex flex-col items-center gap-10 mb-auto">
+            <div className="flex gap-11 flex-wrap justify-center mb-auto">
+              <a target="_blank" href="mailto:hi@cobogo.io" rel="noreferrer">
+                <EmailIcon />
+              </a>
 
-            <a
-              target="_blank"
-              href="https://l.cobogo.io/telegram"
-              rel="noreferrer"
-            >
-              <TelegramIcon />
-            </a>
+              <a
+                target="_blank"
+                href="https://l.cobogo.io/telegram"
+                rel="noreferrer"
+              >
+                <TelegramIcon />
+              </a>
 
-            <a
-              target="_blank"
-              href="https://l.cobogo.io/medium"
-              rel="noreferrer"
-            >
-              <MediumIcon />
-            </a>
+              <a
+                target="_blank"
+                href="https://l.cobogo.io/medium"
+                rel="noreferrer"
+              >
+                <MediumIcon />
+              </a>
 
-            <a
-              target="_blank"
-              href="https://l.cobogo.io/twitter"
-              rel="noreferrer"
-            >
-              <TwitterIcon />
-            </a>
+              <a
+                target="_blank"
+                href="https://l.cobogo.io/twitter"
+                rel="noreferrer"
+              >
+                <TwitterIcon />
+              </a>
 
-            <a
-              target="_blank"
-              href="https://l.cobogo.io/github"
-              rel="noreferrer"
-            >
-              <GitHubIcon />
-            </a>
-          </div>
+              <a
+                target="_blank"
+                href="https://l.cobogo.io/github"
+                rel="noreferrer"
+              >
+                <GitHubIcon />
+              </a>
+            </div>
 
-          <div className="flex flex-col md:flex-row items-center gap-8 font-bold mb-auto">
-            <a target="_blank" href="/faq" rel="noreferrer">
-              FAQ
-            </a>
-            <a target="_blank" href="/code" rel="noreferrer">
-              Code of conduct
-            </a>
-            <a target="_blank" href="/privacy" rel="noreferrer">
-              Privacy policy
-            </a>
-            <a target="_blank" href="/terms" rel="noreferrer">
-              Terms of use
-            </a>
+            <div className="flex flex-col md:flex-row items-center gap-8 font-bold mb-auto">
+              <a target="_blank" href={`${router.locale}/faq`} rel="noreferrer">
+                FAQ
+              </a>
+              <a
+                target="_blank"
+                href={`${router.locale}/code`}
+                rel="noreferrer"
+              >
+                Code of conduct
+              </a>
+              <a
+                target="_blank"
+                href={`${router.locale}/privacy`}
+                rel="noreferrer"
+              >
+                Privacy policy
+              </a>
+              <a
+                target="_blank"
+                href={`${router.locale}/terms`}
+                rel="noreferrer"
+              >
+                Terms of use
+              </a>
+            </div>
           </div>
 
           <Image
