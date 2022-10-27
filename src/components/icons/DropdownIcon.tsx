@@ -1,4 +1,4 @@
-export const DropdownIcon = (): JSX.Element => {
+export const DropdownIcon = () => {
   return (
     <svg
       width="8"

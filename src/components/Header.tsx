@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 import { DropdownIcon } from './icons/DropdownIcon'
 
-export const Header = (): JSX.Element => {
+export const Header = () => {
   const { t } = useTranslation('common')
 
   const { locale } = useRouter()
@@ -27,7 +27,7 @@ export const Header = (): JSX.Element => {
                 {t('Products')} <DropdownIcon />
               </p>
             </Menu.Button>
-            <Menu.Items className="bg-gradient-to-r from-blue-100 via-green-100 to-pink-200 flex absolute p-1 top-[-24px] left-[-24px] font-bold">
+            <Menu.Items className="bg-gradient-to-r from-blue-100 via-green-100 to-pink-100 flex absolute p-1 top-[-24px] left-[-24px] font-bold">
               <div className="flex flex-col items-start bg-blue-200 p-5 gap-1">
                 <Menu.Button className="mb-2">
                   <p className="flex items-center gap-2 ">
@@ -57,7 +57,7 @@ export const Header = (): JSX.Element => {
               </p>
             </Menu.Button>
             <Menu.Items
-              className={`bg-gradient-to-r from-blue-100 via-green-100 to-pink-200 flex absolute p-1 ${
+              className={`bg-gradient-to-r from-blue-100 via-green-100 to-pink-100 flex absolute p-1 ${
                 locale === 'pt'
                   ? 'top-[-24px] left-[86px]'
                   : 'top-[-24px] left-[84.5px]'
@@ -117,7 +117,7 @@ export const Header = (): JSX.Element => {
             </p>
           </Menu.Button>
           <Menu.Items
-            className={`bg-gradient-to-r from-blue-100 via-green-100 to-pink-200 flex absolute p-1 ${
+            className={`bg-gradient-to-r from-blue-100 via-green-100 to-pink-100 flex absolute p-1 ${
               locale === 'pt'
                 ? 'top-[12px] right-[24px]'
                 : 'top-[12px] right-[10px]'

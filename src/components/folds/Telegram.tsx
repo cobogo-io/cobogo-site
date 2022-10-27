@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import { Button } from '../Button'
 
-export const Telegram = (): JSX.Element => {
+export const Telegram = () => {
   const { t } = useTranslation('common')
 
   return (

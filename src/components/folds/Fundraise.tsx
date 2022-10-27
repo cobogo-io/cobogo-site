@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next'
 
-export const Fundraise = (): JSX.Element => {
+export const Fundraise = () => {
   const { t } = useTranslation('common')
 
   return (

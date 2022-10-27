@@ -10,7 +10,7 @@ interface HeaderMobileProps {
   isMainFold: boolean
 }
 
-export const HeaderMobile = (props: HeaderMobileProps): JSX.Element => {
+export const HeaderMobile = (props: HeaderMobileProps) => {
   const [menuOpened, setMenuOpened] = useState(false)
 
   const [languagesDropdownOpened, setLanguagesDropdownOpened] = useState(false)
@@ -33,9 +33,9 @@ export const HeaderMobile = (props: HeaderMobileProps): JSX.Element => {
         ) : (
           <>
             <div className="w-[8px] h-[8px] bg-blue-100 rounded-full" />
-            <div className="w-[8px] h-[8px] bg-pink-200 rounded-full" />
+            <div className="w-[8px] h-[8px] bg-pink-100 rounded-full" />
             <div className="w-[8px] h-[8px] bg-green-100 rounded-full" />
-            <div className="w-[8px] h-[8px] bg-gray-200 rounded-full" />
+            <div className="w-[8px] h-[8px] bg-gray-100 rounded-full" />
           </>
         )}
       </div>
@@ -48,7 +48,7 @@ export const HeaderMobile = (props: HeaderMobileProps): JSX.Element => {
         {`${locale === 'pt' ? 'Portuguese' : 'English'}`} <DropdownIcon />
       </button>
       {languagesDropdownOpened ? (
-        <div className="bg-gradient-to-r from-blue-100 via-green-100 to-pink-200 flex absolute p-1 top-[6px] right-[4px] font-bold">
+        <div className="bg-gradient-to-r from-blue-100 via-green-100 to-pink-100 flex absolute p-1 top-[6px] right-[4px] font-bold">
           <div className="flex flex-col items-start bg-blue-200 p-5 gap-1">
             <button
               onClick={() => setLanguagesDropdownOpened(false)}
@@ -81,7 +81,7 @@ export const HeaderMobile = (props: HeaderMobileProps): JSX.Element => {
           onClick={() => setMenuOpened(false)}
           className="text-4xl font-bold relative"
         >
-          <div className="rounded-full w-8 h-8 absolute bg-pink-200 left-[-55px]" />
+          <div className="rounded-full w-8 h-8 absolute bg-pink-100 left-[-55px]" />
           Start
         </a>
         <a
@@ -97,7 +97,7 @@ export const HeaderMobile = (props: HeaderMobileProps): JSX.Element => {
           onClick={() => setMenuOpened(false)}
           className="text-4xl font-bold relative"
         >
-          <div className="rounded-full w-8 h-8 absolute bg-gray-200 left-[-55px]" />
+          <div className="rounded-full w-8 h-8 absolute bg-gray-100 left-[-55px]" />
           Ventures
         </a>
       </div>

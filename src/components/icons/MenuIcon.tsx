@@ -1,4 +1,4 @@
-export const MenuIcon = (): JSX.Element => {
+export const MenuIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

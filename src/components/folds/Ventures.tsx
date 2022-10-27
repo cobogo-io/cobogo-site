@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next'
 
-export const Ventures = (): JSX.Element => {
+export const Ventures = () => {
   const { t } = useTranslation('common')
 
   return (
@@ -15,7 +15,7 @@ export const Ventures = (): JSX.Element => {
               <h1 className="text-2xl md:text-5xl relative">
                 {t('We invest in the')} <br /> {t('future of Creators with')}
                 <br />
-                <strong className="underline decoration-[9px] md:decoration-[19px] underline-offset-[-4.5px] md:underline-offset-[-8px] decoration-gray-200/30">
+                <strong className="underline decoration-[9px] md:decoration-[19px] underline-offset-[-4.5px] md:underline-offset-[-8px] decoration-gray-100/30">
                   Cobogo Ventures
                 </strong>
               </h1>
@@ -28,7 +28,7 @@ export const Ventures = (): JSX.Element => {
             <a
               target="_blank"
               href="https://airtable.com/shrAV2HZB9la3Dq61"
-              className="px-5 py-1 md:py-2 border-2 border-gray-200 font-bold text-base md:text-xl w-max text-gray-200 md:text-white-100"
+              className="px-5 py-1 md:py-2 border-2 border-gray-100 font-bold text-base md:text-xl w-max text-gray-100 md:text-white-100"
               rel="noreferrer"
             >
               {t('Apply for funding')}

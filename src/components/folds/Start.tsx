@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next'
 
-export const Start = (): JSX.Element => {
+export const Start = () => {
   const { t } = useTranslation('common')
 
   return (
@@ -15,7 +15,7 @@ export const Start = (): JSX.Element => {
               <h1 className="text-2xl md:text-5xl relative">
                 {t('Incorporate a')} <br />
                 {t('business with')} <br />
-                <strong className="underline decoration-[9px] md:decoration-[19px] underline-offset-[-4.5px] md:underline-offset-[-8px] decoration-pink-200/30">
+                <strong className="underline decoration-[9px] md:decoration-[19px] underline-offset-[-4.5px] md:underline-offset-[-8px] decoration-pink-100/30">
                   Cobogo Start
                 </strong>
               </h1>

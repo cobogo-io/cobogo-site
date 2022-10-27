@@ -1,4 +1,4 @@
-export const TwitterIcon = (): JSX.Element => {
+export const TwitterIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

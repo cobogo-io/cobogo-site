@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import { BulletsTwo } from '../images/BulletsTwo'
 
-export const Text = (): JSX.Element => {
+export const Text = () => {
   const { t } = useTranslation('common')
 
   return (
@@ -42,7 +42,6 @@ export const Text = (): JSX.Element => {
           <BulletsTwo />
         </div>
       </div>
-      {/* <BackgroundMain /> */}
     </div>
   )
 }

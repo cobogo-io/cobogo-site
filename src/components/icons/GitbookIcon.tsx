@@ -1,4 +1,4 @@
-export const GitbookIcon = (): JSX.Element => {
+export const GitbookIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

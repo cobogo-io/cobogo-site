@@ -9,7 +9,7 @@ import { TwitterIcon } from '../icons/TwitterIcon'
 import { CobogosOnLeft } from '../images/CobogosOnLeft'
 import { CobogosOnRight } from '../images/CobogosOnRight'
 
-export const Footer = (): JSX.Element => {
+export const Footer = () => {
   const { t } = useTranslation('common')
 
   return (
@@ -20,6 +20,7 @@ export const Footer = (): JSX.Element => {
             <h2 className="text-2xl md:text-3xl text-center">
               {t('Showcase your business with')} <strong>Cobogo Social</strong>
             </h2>
+
             <a
               target="_blank"
               href="https://app.cobogo.social/"
@@ -29,11 +30,13 @@ export const Footer = (): JSX.Element => {
               {t('Create your profile')}
             </a>
           </div>
+
           <div className="flex flex-col items-center w-[348px] gap-4">
             <h2 className="text-2xl md:text-3xl text-center">
               {t('Incorporate a business with')} <strong>Cobogo Start</strong>
             </h2>
           </div>
+
           <div className="flex flex-col items-center w-[348px] gap-4">
             <h2 className="text-2xl md:text-3xl text-center">
               {t('Fund your passion with')} <strong>Cobogo Fundraise</strong>
@@ -43,11 +46,13 @@ export const Footer = (): JSX.Element => {
       </div>
       <div className="flex justify-between z-40 w-full px-12 pb-12">
         <CobogosOnLeft />
+
         <div className="flex flex-col items-center gap-11">
           <div className="flex gap-11 flex-wrap justify-center mb-auto">
             <a target="_blank" href="mailto:hi@cobogo.io" rel="noreferrer">
               <EmailIcon />
             </a>
+
             <a
               target="_blank"
               href="https://l.cobogo.io/telegram"
@@ -55,6 +60,7 @@ export const Footer = (): JSX.Element => {
             >
               <TelegramIcon />
             </a>
+
             <a
               target="_blank"
               href="https://l.cobogo.io/medium"
@@ -62,6 +68,7 @@ export const Footer = (): JSX.Element => {
             >
               <MediumIcon />
             </a>
+
             <a
               target="_blank"
               href="https://l.cobogo.io/twitter"
@@ -69,6 +76,7 @@ export const Footer = (): JSX.Element => {
             >
               <TwitterIcon />
             </a>
+
             <a
               target="_blank"
               href="https://l.cobogo.io/github"
@@ -77,6 +85,22 @@ export const Footer = (): JSX.Element => {
               <GitHubIcon />
             </a>
           </div>
+
+          <div className="flex flex-col md:flex-row items-center gap-8 font-bold mb-auto">
+            <a target="_blank" href="/faq" rel="noreferrer">
+              FAQ
+            </a>
+            <a target="_blank" href="/code" rel="noreferrer">
+              Code of conduct
+            </a>
+            <a target="_blank" href="/privacy" rel="noreferrer">
+              Privacy policy
+            </a>
+            <a target="_blank" href="/terms" rel="noreferrer">
+              Terms of use
+            </a>
+          </div>
+
           <Image
             src="/images/cobogo-logo.svg"
             width={81}

@@ -1,4 +1,4 @@
-export const CobogosOnLeft = (): JSX.Element => {
+export const CobogosOnLeft = () => {
   return (
     <svg
       width="370"

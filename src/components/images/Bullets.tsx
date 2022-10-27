@@ -1,4 +1,4 @@
-export const Bullets = (): JSX.Element => {
+export const Bullets = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

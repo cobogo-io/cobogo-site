@@ -1,4 +1,4 @@
-export const BulletsTwo = (): JSX.Element => {
+export const BulletsTwo = () => {
   return (
     <svg
       width="369"

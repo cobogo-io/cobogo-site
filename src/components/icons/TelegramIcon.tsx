@@ -1,4 +1,4 @@
-export const TelegramIcon = (): JSX.Element => {
+export const TelegramIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Button } from '../Button'
 import { Bullets } from '../images/Bullets'
 
-export const Main = (): JSX.Element => {
+export const Main = () => {
   const { t } = useTranslation('common')
 
   return (
