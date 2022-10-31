@@ -1,12 +1,6 @@
-import Head from 'next/head'
-
 const Privacy = () => {
   return (
     <div className="flex flex-col h-full min-h-screen ">
-      <Head>
-        <title>cobogo - política de privacidad</title>
-      </Head>
-
       <div className="flex flex-col flex-1 p-20 mx-5 md:mx-20">
         <h1 className="mb-5 font-bold text-4xl">Política de Privacidad</h1>
         <p className="mb-5 break-normal text-lg">
@@ -32,7 +26,9 @@ const Privacy = () => {
           se puede acceder en https://cobogo.social, a menos que se defina lo
           contrario en esta Política de privacidad.
         </p>
-        <h2 className="mb-2 font-bold text-3xl">Recopilación y Uso de Información</h2>
+        <h2 className="mb-2 font-bold text-3xl">
+          Recopilación y Uso de Información
+        </h2>
         <p className="mb-5 break-normal text-lg">
           Para una mejor experiencia al utilizar nuestro Servicio, es posible
           que le solicitemos que nos proporcione cierta información de
@@ -111,7 +107,9 @@ const Privacy = () => {
           comuníquese con nosotros para que podamos realizar las acciones
           necesarias.
         </p>
-        <h2 className="mb-2 font-bold text-3xl">Cambios a Esta Política de Privacidad</h2>
+        <h2 className="mb-2 font-bold text-3xl">
+          Cambios a Esta Política de Privacidad
+        </h2>
         <p className="mb-5 break-normal text-lg">
           Es posible que actualicemos nuestra Política de Privacidad de vez en
           cuando. Por lo tanto, le recomendamos que revise esta página

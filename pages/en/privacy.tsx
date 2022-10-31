@@ -1,11 +1,6 @@
-import Head from 'next/head';
-
 const Privacy = () => {
   return (
     <div className="flex flex-col h-full min-h-screen">
-      <Head>
-        <title>cobogo - privacy policy</title>
-      </Head>
       <div className="flex flex-col flex-1 p-20 mx-5 md:mx-20">
         <h1 className="mb-5 font-bold text-4xl">Privacy Policy</h1>
         <p className="mb-5 break-normal regular-18">
@@ -29,7 +24,9 @@ const Privacy = () => {
           Terms and Conditions, which are accessible at https://cobogo.social,
           unless otherwise defined in this Privacy Policy.
         </p>
-        <h2 className="mb-2 font-bold text-3xl">Information Collection and Use</h2>
+        <h2 className="mb-2 font-bold text-3xl">
+          Information Collection and Use
+        </h2>
         <p className="mb-5 break-normal regular-18">
           For a better experience while using our Service, we may require you to
           provide us with certain personally identifiable information, including
@@ -102,7 +99,9 @@ const Privacy = () => {
           child has provided us with personal information, please contact us so
           that we are able to do the necessary actions.
         </p>
-        <h2 className="mb-2 font-bold text-3xl">Changes to This Privacy Policy</h2>
+        <h2 className="mb-2 font-bold text-3xl">
+          Changes to This Privacy Policy
+        </h2>
         <p className="mb-5 break-normal regular-18">
           We may update our Privacy Policy from time to time. Thus, we advise
           you to review this page periodically for any changes. We will notify

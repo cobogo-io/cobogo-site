@@ -1,12 +1,6 @@
-import Head from 'next/head'
-
 const Terms = () => {
   return (
     <div className="flex flex-col h-full min-h-screen ">
-      <Head>
-        <title>cobogo - condiciones de uso</title>
-      </Head>
-
       <div className="flex flex-col flex-1 p-20 mx-5 md:mx-20">
         <h1 className="mb-5 font-bold text-4xl">Notas</h1>
         <p className="mb-5 break-normal text-lg">
@@ -38,7 +32,9 @@ const Terms = () => {
           período de tiempo designado, han aceptado los términos modificados del
           Acuerdo.
         </p>
-        <h2 className="mb-2 font-bold text-3xl">Artículo 2 (Materias Prohibidas)</h2>
+        <h2 className="mb-2 font-bold text-3xl">
+          Artículo 2 (Materias Prohibidas)
+        </h2>
         <p className="mb-5 break-normal text-lg">
           Los usuarios no deben participar en los siguientes actos
         </p>
@@ -59,14 +55,18 @@ const Terms = () => {
           <li>Encontrarse en alguno de los siguientes artículos</li>
         </ul>
 
-        <h2 className="mb-2 font-bold text-3xl">Artículo 3 (Eliminación de la Cuenta)</h2>
+        <h2 className="mb-2 font-bold text-3xl">
+          Artículo 3 (Eliminación de la Cuenta)
+        </h2>
         <p className="mb-5 break-normal text-lg">
           La Empresa puede suspender o eliminar inmediatamente la cuenta del
           Usuario en Cobogo si se determina que el Usuario ha cometido
           cualquiera de los actos prohibidos descritos en el Artículo 2.
         </p>
 
-        <h2 className="mb-2 font-bold text-3xl">Artículo 4 (Suspensión del Servicio)</h2>
+        <h2 className="mb-2 font-bold text-3xl">
+          Artículo 4 (Suspensión del Servicio)
+        </h2>
         <p className="mb-5 break-normal text-lg">
           Cobogo se reserva el derecho de suspender o discontinuar todo o parte
           del Servicio sin previo aviso al Usuario, si la Empresa considera que

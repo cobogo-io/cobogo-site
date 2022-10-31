@@ -98,21 +98,28 @@ export const Footer = () => {
                 href={`${router.locale}/code`}
                 rel="noreferrer"
               >
-                Code of conduct
+                {t('Code of conduct')}
               </a>
               <a
                 target="_blank"
                 href={`${router.locale}/privacy`}
                 rel="noreferrer"
               >
-                Privacy policy
+                {t('Privacy policy')}
               </a>
               <a
                 target="_blank"
                 href={`${router.locale}/terms`}
                 rel="noreferrer"
               >
-                Terms of use
+                {t('Terms of use')}
+              </a>
+              <a
+                target="_blank"
+                href="https://l.cobogo.io/personal-data-deletion"
+                rel="noreferrer"
+              >
+                {t('Data deletion')}
               </a>
             </div>
           </div>

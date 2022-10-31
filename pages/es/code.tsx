@@ -1,11 +1,6 @@
-import Head from 'next/head'
-
 const Code = () => {
   return (
     <div className="flex flex-col min-h-screen h-full">
-      <Head>
-        <title>cobogo - código de conducta</title>
-      </Head>
       <div className="flex flex-1 flex-col mx-5 md:mx-20 p-20">
         <h1 className="font-bold text-4xl mb-5">Código de Conducta</h1>
         <h2 className="font-bold text-3xl mb-2">Nuestro Compromiso</h2>

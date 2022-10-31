@@ -1,11 +1,6 @@
-import Head from 'next/head'
-
 const Privacy = () => {
   return (
     <div className="flex flex-col h-full min-h-screen">
-      <Head>
-        <title>cobogo - política de privacidade</title>
-      </Head>
       <div className="flex flex-col flex-1 p-20 mx-5 md:mx-20">
         <h1 className="mb-5 font-bold text-4xl">Política de Privacidade</h1>
         <p className="mb-5 break-normal text-lg">
@@ -109,7 +104,9 @@ const Privacy = () => {
           está ciente de que seu filho nos forneceu informações pessoais, entre
           em contato para que possamos tomar as medidas necessárias.
         </p>
-        <h2 className="mb-2 font-bold text-3xl">Mudanças nesta Política de Privacidade</h2>
+        <h2 className="mb-2 font-bold text-3xl">
+          Mudanças nesta Política de Privacidade
+        </h2>
         <p className="mb-5 break-normal text-lg">
           Podemos atualizar nossa Política de Privacidade de tempos em tempos.
           Assim, aconselhamos você a revisar esta página periodicamente para

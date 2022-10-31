@@ -1,14 +1,8 @@
-import Head from 'next/head'
-
 import { Accordion } from '../../src/components/Accordion'
 
 const Faq = () => {
   return (
     <div className="flex flex-col h-full min-h-screen">
-      <Head>
-        <title>cobogo - FAQ</title>
-      </Head>
-
       <div className="flex flex-col flex-1 p-20 mx-5 md:mx-20">
         <h1 className="mb-5 font-bold text-4xl">FAQ (Perguntas Frequentes)</h1>
 

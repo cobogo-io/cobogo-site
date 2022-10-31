@@ -1,11 +1,6 @@
-import Head from 'next/head'
-
 const Terms = () => {
   return (
     <div className="flex flex-col h-full min-h-screen">
-      <Head>
-        <title>cobogo - termos de uso</title>
-      </Head>
       <div className="flex flex-col flex-1 p-20 mx-5 md:mx-20">
         <h1 className="mb-5 font-bold text-4xl">Nota</h1>
         <p className="mb-5 break-normal text-lg">

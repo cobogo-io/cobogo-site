@@ -1,11 +1,6 @@
-import Head from 'next/head'
-
 const Terms = () => {
   return (
     <div className="flex flex-col h-full min-h-screen">
-      <Head>
-        <title>cobogo - terms of use</title>
-      </Head>
       <div className="flex flex-col flex-1 p-20 mx-5 md:mx-20">
         <h1 className="mb-5 font-bold text-4xl">Notes</h1>
         <p className="mb-5 break-normal text-lg">
@@ -36,7 +31,9 @@ const Terms = () => {
           designated period of time shall be deemed to have agreed to the
           modified terms of the Agreement.
         </p>
-        <h2 className="mb-2 font-bold text-3xl">Article 2 (Prohibited Matters)</h2>
+        <h2 className="mb-2 font-bold text-3xl">
+          Article 2 (Prohibited Matters)
+        </h2>
         <p className="mb-5 break-normal text-lg">
           Users shall not engage in the following acts
         </p>
@@ -51,14 +48,18 @@ const Terms = () => {
           <li>Falling under any of the following articles</li>
         </ul>
 
-        <h2 className="mb-2 font-bold text-3xl">Article 3 (Deletion of Account)</h2>
+        <h2 className="mb-2 font-bold text-3xl">
+          Article 3 (Deletion of Account)
+        </h2>
         <p className="mb-5 break-normal text-lg">
           The Company may immediately suspend or delete the User&apos;s account
           on Cobogo if the User is found to have committed any of the prohibited
           acts described in Article 2.
         </p>
 
-        <h2 className="mb-2 font-bold text-3xl">Article 4 (Suspension of the Service)</h2>
+        <h2 className="mb-2 font-bold text-3xl">
+          Article 4 (Suspension of the Service)
+        </h2>
         <p className="mb-5 break-normal text-lg">
           Cobogo reserves the right to suspend or discontinue all or part of the
           Service without prior notice to the User in the event that Cobogo
@@ -111,9 +112,7 @@ const Terms = () => {
           District Court as the court of first instance.
         </p>
 
-        <p className="mb-20 break-normal ">
-          Effective date: October 5, 2021
-        </p>
+        <p className="mb-20 break-normal ">Effective date: October 5, 2021</p>
       </div>
     </div>
   )
