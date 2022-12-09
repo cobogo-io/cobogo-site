@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           {
             property: 'twitter:description',
             content:
-              'Cobogo is a Business Infrastructure for Creators. We provide the tools you will need to become a business and start raising funds to quickstart it.',
+              'Cobogo is a Creator Investment Ecosystem. We provide the tools Creators need to become a business and start raising funds to grow their brands.',
           },
           {
             property: 'twitter:title',
