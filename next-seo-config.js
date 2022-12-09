@@ -1,6 +1,6 @@
 const title = 'Cobogo'
 const description =
-  'Cobogo allows Creators to become real businesses. We provide all the best tools for incorporating a US business, raising funds with whom matters the most and maximizing growth.'
+  'Cobogo is a Creator Investment Ecosystem. We provide the tools Creators need to become a business and start raising funds to grow their brands.'
 
 const SEO = {
   title,
