@@ -90,10 +90,28 @@ export const Header = () => {
                 <Menu.Item>
                   <a
                     target="_blank"
+                    href="https://l.cobogo.io/twitter/"
+                    rel="noreferrer"
+                  >
+                    Twitter
+                  </a>
+                </Menu.Item>
+                <Menu.Item>
+                  <a
+                    target="_blank"
                     href="https://l.cobogo.io/github/"
                     rel="noreferrer"
                   >
                     GitHub
+                  </a>
+                </Menu.Item>
+                <Menu.Item>
+                  <a
+                    target="_blank"
+                    href="https://discord.gg/rKVJzyNADx"
+                    rel="noreferrer"
+                  >
+                    Discord
                   </a>
                 </Menu.Item>
               </div>

@@ -101,7 +101,7 @@ export const HeaderMobile = (props: HeaderMobileProps) => {
           Ventures
         </a>
       </div>
-      <div className="bg-white-100/5 w-full px-7 py-16 flex flex-col gap-4">
+      <div className="bg-white-100/5 w-full px-7 py-16 flex flex-col gap-4 h-full">
         <a
           target="_blank"
           href="https://l.cobogo.io/telegram/"
@@ -120,11 +120,27 @@ export const HeaderMobile = (props: HeaderMobileProps) => {
         </a>
         <a
           target="_blank"
+          href="https://l.cobogo.io/twitter/"
+          className="text-4xl font-bold"
+          rel="noreferrer"
+        >
+          Twitter
+        </a>
+        <a
+          target="_blank"
           href="https://l.cobogo.io/github/"
           className="text-4xl font-bold"
           rel="noreferrer"
         >
           Github
+        </a>
+        <a
+          target="_blank"
+          href="https://discord.gg/rKVJzyNADx"
+          className="text-4xl font-bold"
+          rel="noreferrer"
+        >
+          Discord
         </a>
         <a
           target="_blank"

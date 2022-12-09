@@ -1,9 +1,12 @@
-export const TwitterIcon = () => {
+interface TwitterIconProps {
+  size: number
+}
+
+export const TwitterIcon = (props: TwitterIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="45"
-      height="36"
+      width={props.size}
       fill="none"
       viewBox="0 0 45 36"
     >

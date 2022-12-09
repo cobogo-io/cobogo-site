@@ -1,9 +1,12 @@
-export const GitHubIcon = () => {
+interface GitHubIconProps {
+  size: number
+}
+
+export const GitHubIcon = (props: GitHubIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="42"
-      height="33"
+      width={props.size}
       fill="none"
       viewBox="0 0 42 33"
     >

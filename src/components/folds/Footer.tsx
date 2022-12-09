@@ -2,6 +2,7 @@ import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
+import { DiscordIcon } from '../icons/DiscordIcon'
 import { EmailIcon } from '../icons/EmailIcon'
 import { GitHubIcon } from '../icons/GitHubIcon'
 import { MediumIcon } from '../icons/MediumIcon'
@@ -53,7 +54,7 @@ export const Footer = () => {
           <div className="flex flex-col items-center gap-10 mb-auto">
             <div className="flex gap-11 flex-wrap justify-center mb-auto">
               <a target="_blank" href="mailto:hi@cobogo.io" rel="noreferrer">
-                <EmailIcon />
+                <EmailIcon size={42} />
               </a>
 
               <a
@@ -61,7 +62,7 @@ export const Footer = () => {
                 href="https://l.cobogo.io/telegram"
                 rel="noreferrer"
               >
-                <TelegramIcon />
+                <TelegramIcon size={42} />
               </a>
 
               <a
@@ -69,7 +70,7 @@ export const Footer = () => {
                 href="https://l.cobogo.io/medium"
                 rel="noreferrer"
               >
-                <MediumIcon />
+                <MediumIcon size={42} />
               </a>
 
               <a
@@ -77,7 +78,7 @@ export const Footer = () => {
                 href="https://l.cobogo.io/twitter"
                 rel="noreferrer"
               >
-                <TwitterIcon />
+                <TwitterIcon size={42} />
               </a>
 
               <a
@@ -85,7 +86,15 @@ export const Footer = () => {
                 href="https://l.cobogo.io/github"
                 rel="noreferrer"
               >
-                <GitHubIcon />
+                <GitHubIcon size={42} />
+              </a>
+
+              <a
+                target="_blank"
+                href="https://discord.gg/rKVJzyNADx"
+                rel="noreferrer"
+              >
+                <DiscordIcon size={42} />
               </a>
             </div>
 

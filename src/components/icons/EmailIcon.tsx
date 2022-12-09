@@ -1,9 +1,12 @@
-export const EmailIcon = () => {
+interface EmailIconProps {
+  size: number
+}
+
+export const EmailIcon = (props: EmailIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="41"
-      height="31"
+      width={props.size}
       fill="none"
       viewBox="0 0 41 31"
     >

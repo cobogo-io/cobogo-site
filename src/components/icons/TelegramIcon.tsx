@@ -1,9 +1,12 @@
-export const TelegramIcon = () => {
+interface TelegramIconProps {
+  size: number
+}
+
+export const TelegramIcon = (props: TelegramIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="41"
-      height="35"
+      width={props.size}
       fill="none"
       viewBox="0 0 41 35"
     >
