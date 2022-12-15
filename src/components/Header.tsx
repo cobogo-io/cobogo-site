@@ -34,17 +34,17 @@ export const Header = () => {
                     {t('Products')} <DropdownIcon />
                   </p>
                 </Menu.Button>
+
                 <Menu.Item>
                   <a href="#social">Social</a>
                 </Menu.Item>
+
                 <Menu.Item>
-                  <a href="#start">Start</a>
+                  <a href="#launchpad">Launchpad</a>
                 </Menu.Item>
+
                 <Menu.Item>
-                  <a href="#fundraise">Fundraise</a>
-                </Menu.Item>
-                <Menu.Item>
-                  <a href="#ventures">Ventures</a>
+                  <a href="#dao">DAO</a>
                 </Menu.Item>
               </div>
             </Menu.Items>

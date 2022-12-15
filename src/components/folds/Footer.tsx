@@ -21,12 +21,16 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row gap-10">
           <div className="flex flex-col items-center w-[348px] gap-4">
             <h2 className="text-2xl md:text-3xl text-center">
-              {t('Showcase your business with')} <strong>Cobogo Social</strong>
+              <strong>Cobogo Social</strong>
+
+              <br />
+
+              {t('Creator as a business platform')}
             </h2>
 
             <a
               target="_blank"
-              href="https://app.cobogo.social/"
+              href="https://cobogo.social/"
               className="px-5 py-1 md:py-2 border-2 border-blue-100 font-bold text-base md:text-xl w-max"
               rel="noreferrer"
             >
@@ -36,14 +40,36 @@ export const Footer = () => {
 
           <div className="flex flex-col items-center w-[348px] gap-4">
             <h2 className="text-2xl md:text-3xl text-center">
-              {t('Incorporate a business with')} <strong>Cobogo Start</strong>
+              <strong>Cobogo Launchpad</strong> <br />
+              {t('Getting Creators ready to fly')}
             </h2>
           </div>
 
           <div className="flex flex-col items-center w-[348px] gap-4">
             <h2 className="text-2xl md:text-3xl text-center">
-              {t('Fund your passion with')} <strong>Cobogo Fundraise</strong>
+              <strong>Cobogo DAO</strong> <br />
+              {t('The Creator Economy game changer')}
             </h2>
+
+            <div className="flex items-center gap-4">
+              <a
+                target="_blank"
+                href="https://chat.whatsapp.com/LPPlb8bWgw38p9uZjrvlt0"
+                className="px-5 py-1 md:py-2 border-2 border-gray-100 font-bold text-base md:text-xl w-max text-gray-100 md:text-white-100"
+                rel="noreferrer"
+              >
+                {t('Portuguese')}
+              </a>
+
+              <a
+                target="_blank"
+                href="https://chat.whatsapp.com/Er94zRD8OxF5aD6VC8HgD3"
+                className="px-5 py-1 md:py-2 border-2 border-gray-100 font-bold text-base md:text-xl w-max text-gray-100 md:text-white-100"
+                rel="noreferrer"
+              >
+                {t('English')}
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -20,20 +20,17 @@ export const Main = () => {
             />
           </div>
 
-          <h1 className="text-4xl md:text-7xl max-w-[1090px] text-left md:text-center relative">
-            {t('Become a')} <strong>{t('business')}</strong>, {t('raise')}{' '}
-            <br />
-            <strong>{t('creative capital')}</strong> {t('continuously, and')}
-            <br />
-            {t('skyrocket your')}
-            {}{' '}
+          <h1 className="text-4xl md:text-7xl max-w-[1130px] text-left md:text-center relative">
+            <strong>{t('Investment ecosystem')}</strong> {t('designed to')}{' '}
+            <br /> {t('support the')} <strong>{t('next generation')}</strong>{' '}
+            {t('of')} <br />
             <strong className="underline decoration-[9px] md:decoration-[19px] underline-offset-[-4.5px] md:underline-offset-[-8px] decoration-white-100/30">
-              {t('Creator career')}
+              Creators
             </strong>
           </h1>
 
           <a href="#text">
-            <Button text={t('Tell me more')} />
+            <Button text={t('Learn more')} />
           </a>
         </div>
       </div>

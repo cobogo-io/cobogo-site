@@ -1,11 +1,11 @@
 import { useTranslation } from 'next-i18next'
 
-export const Fundraise = () => {
+export const Launchpad = () => {
   const { t } = useTranslation('common')
 
   return (
     <div
-      id="fundraise"
+      id="launchpad"
       className="relative flex flex-col justify-center items-center min-h-screen h-full w-full"
     >
       <div className="flex flex-col justify-start md:justify-center items-center min-h-screen h-full py-24 w-full">
@@ -13,15 +13,15 @@ export const Fundraise = () => {
           <div className="md:w-[570px] gap-10 flex flex-col px-7">
             <div className="flex flex-col gap-5 md:gap-9">
               <h1 className="text-2xl md:text-5xl relative">
-                {t('Fund your passion and')} <br />{' '}
-                {t('share your success with')} <br />
-                <strong className="underline decoration-[9px] md:decoration-[19px] underline-offset-[-4.5px] md:underline-offset-[-8px] decoration-green-100/30">
-                  Cobogo Fundraise
+                <strong className="underline decoration-[9px] md:decoration-[19px] underline-offset-[-4.5px] md:underline-offset-[-8px] decoration-pink-100/30">
+                  Cobogo Launchpad
                 </strong>
+                <br />
+                {t('Getting Creators')} <br /> {t('ready to fly')}
               </h1>
-              <h2 className="text-lg md:text-xl max-w-[447px]">
+              <h2 className="text-lg md:text-xl max-w-[367px]">
                 {t(
-                  'Cobogo Fundraise allows Creators to tokenize equity and use a Rolling SAFE for Continuous Securities Offering instead of doing static fundraising rounds.'
+                  'A complete training and acceleration program for Creators who need to professionalize and grow their business, open a company in a legal framework and use tools to fundraise, in a global and scalable way. The program is divided into 3 phases for Creators in different stages.'
                 )}
               </h2>
             </div>
@@ -30,32 +30,26 @@ export const Fundraise = () => {
           <div className="bg-gradient-to-l from-black-900 to-black-900/0 absolute right-0 bottom-0 h-[212px] w-[10px] z-40 flex md:hidden" />
           <div className="flex flex-row md:flex-col gap-12 overflow-x-auto w-full md:w-auto">
             <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px] ml-7 md:ml-0">
-              <strong className="text-lg md:text-2xl">
-                {t('Apply with your business')}
-              </strong>
+              <strong className="text-lg md:text-2xl">Basic</strong>
               <p className="text-lg md:text-xl">
                 {t(
-                  'Apply to fundraise with your C-Corp, create your own custom investment portal, prepare all the legal documentation and design your equity offering the way you want to.'
+                  `For early stage Creators, searching for their place in the market, find their ideal niche, grow their audience, formalize their business and start making money with their work on the internet.`
                 )}
               </p>
             </div>
             <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px]">
-              <strong className="text-lg md:text-2xl">
-                {t('Raise funds continuously')}
-              </strong>
+              <strong className="text-lg md:text-2xl">Essencial</strong>
               <p className="text-lg md:text-xl">
                 {t(
-                  'With an SEC-compliant technology, Creators can raise funds in rounds that are always open for investors, and their audience, without the need to do static rounds.'
+                  `Focused on Creators who already have some revenue streams, lacking knowledge about how the advertising market works, how to negotiate with partners, team structuring and how the investments world works for startups and scalable businesses.`
                 )}
               </p>
             </div>
             <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px] mr-7 md:mr-0">
-              <strong className="text-lg md:text-2xl">
-                {t('Share your growth')}
-              </strong>
+              <strong className="text-lg md:text-2xl">Pro</strong>
               <p className="text-lg md:text-xl">
                 {t(
-                  'Share your growth with your investors, partners, contractors and anyone that helps you grow your business.'
+                  'The final phase of Cobogo Launchpad seeks to prepare Creators for their first investment round, with tools for opening a company in a legal framework, launching a public offering in order to sell their equity, in addition to monitoring fundraising and allocation of resources.'
                 )}
               </p>
             </div>

@@ -13,21 +13,22 @@ export const Social = () => {
           <div className="md:w-[570px] gap-10 flex flex-col px-7">
             <div className="flex flex-col gap-5 md:gap-9">
               <h1 className="text-2xl md:text-5xl relative">
-                {t('Showcase your')} <br />
-                {t('business with')} <br />
                 <strong className="underline decoration-[9px] md:decoration-[19px] underline-offset-[-4.5px] md:underline-offset-[-8px] decoration-blue-100/30">
                   Cobogo Social
                 </strong>
+                <br />
+                {t('Creator as a')} <br /> {t('business platform')}
               </h1>
+
               <h2 className="text-lg md:text-xl max-w-[447px]">
                 {t(
-                  'To investors, brands, and your audience by adding your metrics and services to your profile. Get your valuation estimated.'
+                  'A all in one tool to showcase a Creators work and engagement metrics to investors and partners in a professional and automated way. All data is verified and authenticated by the Creators social media.'
                 )}
               </h2>
             </div>
             <a
               target="_blank"
-              href="https://app.cobogo.social/"
+              href="https://cobogo.social/"
               className="px-5 py-1 md:py-2 border-2 border-blue-100 font-bold text-base md:text-xl w-max text-blue-100 md:text-white-100"
               rel="noreferrer"
             >
@@ -39,31 +40,31 @@ export const Social = () => {
           <div className="flex flex-row md:flex-col gap-12 overflow-x-auto w-full md:w-auto">
             <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px] ml-7 md:ml-0">
               <strong className="text-lg md:text-2xl">
-                {t('Create your profile')}
+                {t('For Creators')}
               </strong>
               <p className="text-lg md:text-xl">
                 {t(
-                  'To create your profile and prove that you are yourself, connect your social media, and Cobogo Social will automatically generate a profile for you.'
+                  'Connect your social media and create a successful profile showing the world who you are and all your potential to receive investments and scale your business. Your profile can also be used as an online and automated Media Kit for partners such as companies and advertising agencies.'
                 )}
               </p>
             </div>
             <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px]">
               <strong className="text-lg md:text-2xl">
-                {t('Enrich your profile')}
+                {t('For investors')}
               </strong>
               <p className="text-lg md:text-xl">
                 {t(
-                  'We recommend connecting as much of your social media and adding as much information as you can. It will make it more trustworthy to investors and allow our algorithm to assess your valuation.'
+                  'Browse, search and select Creators to be invested. With Cobogo Social it is possible to analyze metrics, meet new Creators and understand their potential for appreciation as an asset.'
                 )}
               </p>
             </div>
             <div className="flex flex-col gap-4 min-w-[310px] max-w-[375px] mr-7 md:mr-0">
               <strong className="text-lg md:text-2xl">
-                {t('Share your Profile')}
+                {t('For partners')}
               </strong>
               <p className="text-lg md:text-xl">
                 {t(
-                  'We have optimized the Creator Profile so it can be used as an interactive media kit, a business presentation, and an excellent way to share all of your verified links!'
+                  'A new tool to unify and facilitate the analysis and selection of Creators for advertising campaigns, where all relevant metrics and information will be found to define the best Creators based on data.'
                 )}
               </p>
             </div>

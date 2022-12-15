@@ -76,29 +76,23 @@ export const HeaderMobile = (props: HeaderMobileProps) => {
           <div className="rounded-full w-8 h-8 absolute bg-blue-100 left-[-55px]" />
           Social
         </a>
+
         <a
-          href="#start"
+          href="#launchpad"
           onClick={() => setMenuOpened(false)}
           className="text-4xl font-bold relative"
         >
           <div className="rounded-full w-8 h-8 absolute bg-pink-100 left-[-55px]" />
-          Start
+          Launchpad
         </a>
+
         <a
-          href="#fundraise"
-          onClick={() => setMenuOpened(false)}
-          className="text-4xl font-bold relative"
-        >
-          <div className="rounded-full w-8 h-8 absolute bg-green-100 left-[-55px]" />
-          Fundraise
-        </a>
-        <a
-          href="#ventures"
+          href="#dao"
           onClick={() => setMenuOpened(false)}
           className="text-4xl font-bold relative"
         >
           <div className="rounded-full w-8 h-8 absolute bg-gray-100 left-[-55px]" />
-          Ventures
+          DAO
         </a>
       </div>
       <div className="bg-white-100/5 w-full px-7 py-16 flex flex-col gap-4 h-full">

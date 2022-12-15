@@ -2,14 +2,13 @@ import { GetStaticProps, NextPage } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useEffect, useState } from 'react'
 
+import { DAO } from '../src/components/folds/DAO'
 import { Footer } from '../src/components/folds/Footer'
-import { Fundraise } from '../src/components/folds/Fundraise'
+import { Launchpad } from '../src/components/folds/Launchpad'
 import { Main } from '../src/components/folds/Main'
 import { Social } from '../src/components/folds/Social'
-import { Start } from '../src/components/folds/Start'
 import { Telegram } from '../src/components/folds/Telegram'
 import { Text } from '../src/components/folds/Text'
-import { Ventures } from '../src/components/folds/Ventures'
 import { Header } from '../src/components/Header'
 import { HeaderMobile } from '../src/components/HeaderMobile'
 import { ArrowDownIcon } from '../src/components/icons/ArrowDownIcon'
@@ -64,11 +63,9 @@ const Home: NextPage = () => {
 
       <Social />
 
-      <Start />
+      <Launchpad />
 
-      <Fundraise />
-
-      <Ventures />
+      <DAO />
 
       <Telegram />
 
