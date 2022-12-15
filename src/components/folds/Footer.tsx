@@ -31,7 +31,7 @@ export const Footer = () => {
             <a
               target="_blank"
               href="https://cobogo.social/"
-              className="px-5 py-1 md:py-2 border-2 border-blue-100 font-bold text-base md:text-xl w-max"
+              className="px-5 py-1 md:py-2 border-2 border-blue-100 font-bold text-base md:text-xl w-max text-blue-100 md:text-white-100"
               rel="noreferrer"
             >
               {t('Create your profile')}
