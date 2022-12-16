@@ -20,7 +20,7 @@ export const Main = () => {
             />
           </div>
 
-          <h1 className="text-4xl md:text-7xl max-w-[1130px] text-left md:text-center relative">
+          <h1 className="text-4xl md:text-6xl max-w-[1130px] text-left md:text-center relative">
             <strong>{t('Investment ecosystem')}</strong> {t('designed to')}{' '}
             <br /> {t('support the')} <strong>{t('next generation')}</strong>{' '}
             {t('of')} <br />
