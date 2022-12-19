@@ -27,6 +27,7 @@ export const Header = () => {
                 {t('Products')} <DropdownIcon />
               </p>
             </Menu.Button>
+
             <Menu.Items className="bg-gradient-to-r from-blue-100 via-green-100 to-pink-100 flex absolute p-1 top-[-24px] left-[-24px] font-bold">
               <div className="flex flex-col items-start bg-blue-200 p-5 gap-1">
                 <Menu.Button className="mb-2">
@@ -56,6 +57,7 @@ export const Header = () => {
                 {t('Community')} <DropdownIcon />
               </p>
             </Menu.Button>
+
             <Menu.Items
               className={`bg-gradient-to-r from-blue-100 via-green-100 to-pink-100 flex absolute p-1 ${
                 locale === 'pt'
@@ -69,6 +71,7 @@ export const Header = () => {
                     {t('Community')} <DropdownIcon />
                   </p>
                 </Menu.Button>
+
                 <Menu.Item>
                   <a
                     target="_blank"
@@ -78,6 +81,7 @@ export const Header = () => {
                     Telegram
                   </a>
                 </Menu.Item>
+
                 <Menu.Item>
                   <a
                     target="_blank"
@@ -87,6 +91,7 @@ export const Header = () => {
                     Medium
                   </a>
                 </Menu.Item>
+
                 <Menu.Item>
                   <a
                     target="_blank"
@@ -96,6 +101,7 @@ export const Header = () => {
                     Twitter
                   </a>
                 </Menu.Item>
+
                 <Menu.Item>
                   <a
                     target="_blank"
@@ -105,7 +111,7 @@ export const Header = () => {
                     GitHub
                   </a>
                 </Menu.Item>
-                <Menu.Item>
+                {/* <Menu.Item>
                   <a
                     target="_blank"
                     href="https://discord.gg/rKVJzyNADx"
@@ -113,7 +119,7 @@ export const Header = () => {
                   >
                     Discord
                   </a>
-                </Menu.Item>
+                </Menu.Item> */}
               </div>
             </Menu.Items>
           </Menu>

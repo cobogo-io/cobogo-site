@@ -2,7 +2,6 @@ import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
-import { DiscordIcon } from '../icons/DiscordIcon'
 import { EmailIcon } from '../icons/EmailIcon'
 import { GitHubIcon } from '../icons/GitHubIcon'
 import { MediumIcon } from '../icons/MediumIcon'
@@ -115,19 +114,20 @@ export const Footer = () => {
                 <GitHubIcon size={42} />
               </a>
 
-              <a
+              {/* <a
                 target="_blank"
                 href="https://discord.gg/rKVJzyNADx"
                 rel="noreferrer"
               >
                 <DiscordIcon size={42} />
-              </a>
+              </a> */}
             </div>
 
             <div className="flex flex-col md:flex-row items-center gap-8 font-bold mb-auto">
               <a target="_blank" href={`${router.locale}/faq`} rel="noreferrer">
                 FAQ
               </a>
+
               <a
                 target="_blank"
                 href={`${router.locale}/code`}
@@ -135,6 +135,7 @@ export const Footer = () => {
               >
                 {t('Code of conduct')}
               </a>
+
               <a
                 target="_blank"
                 href={`${router.locale}/privacy`}
@@ -142,6 +143,7 @@ export const Footer = () => {
               >
                 {t('Privacy policy')}
               </a>
+
               <a
                 target="_blank"
                 href={`${router.locale}/terms`}
@@ -149,6 +151,7 @@ export const Footer = () => {
               >
                 {t('Terms of use')}
               </a>
+
               <a
                 target="_blank"
                 href="https://l.cobogo.io/personal-data-deletion"
@@ -166,6 +169,7 @@ export const Footer = () => {
             alt="Cobogo logo"
           />
         </div>
+
         <CobogosOnRight />
       </div>
     </div>

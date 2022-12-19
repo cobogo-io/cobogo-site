@@ -7,7 +7,6 @@ import { Footer } from '../src/components/folds/Footer'
 import { Launchpad } from '../src/components/folds/Launchpad'
 import { Main } from '../src/components/folds/Main'
 import { Social } from '../src/components/folds/Social'
-import { Telegram } from '../src/components/folds/Telegram'
 import { Text } from '../src/components/folds/Text'
 import { Header } from '../src/components/Header'
 import { HeaderMobile } from '../src/components/HeaderMobile'
@@ -67,7 +66,7 @@ const Home: NextPage = () => {
 
       <DAO />
 
-      <Telegram />
+      {/* <Telegram /> */}
 
       <Footer />
 

@@ -23,6 +23,7 @@ export const HeaderMobile = (props: HeaderMobileProps) => {
         <div onClick={() => setMenuOpened(true)}>
           <MenuIcon />
         </div>
+
         {props.isMainFold ? (
           <Image
             src="/images/cobogo-logo.svg"
@@ -39,6 +40,7 @@ export const HeaderMobile = (props: HeaderMobileProps) => {
           </>
         )}
       </div>
+
       <button
         onClick={() => {
           setLanguagesDropdownOpened(true)
@@ -47,6 +49,7 @@ export const HeaderMobile = (props: HeaderMobileProps) => {
       >
         {`${locale === 'pt' ? 'Portuguese' : 'English'}`} <DropdownIcon />
       </button>
+
       {languagesDropdownOpened ? (
         <div className="bg-gradient-to-r from-blue-100 via-green-100 to-pink-100 flex absolute p-1 top-[6px] right-[4px] font-bold">
           <div className="flex flex-col items-start bg-blue-200 p-5 gap-1">
@@ -67,6 +70,7 @@ export const HeaderMobile = (props: HeaderMobileProps) => {
       <div onClick={() => setMenuOpened(false)}>
         <CloseIcon />
       </div>
+
       <div className="flex flex-col gap-4 px-7 pt-20 pb-24">
         <a
           href="#social"
@@ -95,6 +99,7 @@ export const HeaderMobile = (props: HeaderMobileProps) => {
           DAO
         </a>
       </div>
+
       <div className="bg-white-100/5 w-full px-7 py-16 flex flex-col gap-4 h-full">
         <a
           target="_blank"
@@ -104,6 +109,7 @@ export const HeaderMobile = (props: HeaderMobileProps) => {
         >
           Telegram
         </a>
+
         <a
           target="_blank"
           href="https://l.cobogo.io/medium/"
@@ -112,6 +118,7 @@ export const HeaderMobile = (props: HeaderMobileProps) => {
         >
           Medium
         </a>
+
         <a
           target="_blank"
           href="https://l.cobogo.io/twitter/"
@@ -120,6 +127,7 @@ export const HeaderMobile = (props: HeaderMobileProps) => {
         >
           Twitter
         </a>
+
         <a
           target="_blank"
           href="https://l.cobogo.io/github/"
@@ -128,14 +136,15 @@ export const HeaderMobile = (props: HeaderMobileProps) => {
         >
           Github
         </a>
-        <a
+
+        {/* <a
           target="_blank"
           href="https://discord.gg/rKVJzyNADx"
           className="text-4xl font-bold"
           rel="noreferrer"
         >
           Discord
-        </a>
+        </a> */}
         <a
           target="_blank"
           href="https://l.cobogo.io/docs/"
