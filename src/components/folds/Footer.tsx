@@ -5,7 +5,6 @@ import { useRouter } from 'next/router'
 import { EmailIcon } from '../icons/EmailIcon'
 import { GitHubIcon } from '../icons/GitHubIcon'
 import { MediumIcon } from '../icons/MediumIcon'
-import { TelegramIcon } from '../icons/TelegramIcon'
 import { TwitterIcon } from '../icons/TwitterIcon'
 import { CobogosOnLeft } from '../images/CobogosOnLeft'
 import { CobogosOnRight } from '../images/CobogosOnRight'
@@ -77,7 +76,7 @@ export const Footer = () => {
 
         <div className="flex flex-col items-center gap-11">
           <div className="flex flex-col items-center gap-10 mb-auto">
-            <div className="flex gap-11 flex-wrap justify-center mb-auto">
+            <div className="flex gap-11 flex-wrap items-center justify-center mb-auto">
               <a target="_blank" href="mailto:hi@cobogo.io" rel="noreferrer">
                 <EmailIcon size={42} />
               </a>
@@ -123,7 +122,7 @@ export const Footer = () => {
               </a> */}
             </div>
 
-            <div className="flex flex-col md:flex-row items-center gap-8 font-bold mb-auto">
+            <div className="flex flex-col md:flex-row items-center gap-5 font-bold mb-auto text-xs">
               <a target="_blank" href={`${router.locale}/faq`} rel="noreferrer">
                 FAQ
               </a>
