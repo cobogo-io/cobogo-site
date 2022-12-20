@@ -82,6 +82,14 @@ export const Footer = () => {
                 <EmailIcon size={42} />
               </a>
 
+              {/* <a
+                target="_blank"
+                href="https://l.cobogo.io/telegram"
+                rel="noreferrer"
+              >
+                <TelegramIcon size={42} />
+              </a> */}
+
               <a
                 target="_blank"
                 href="https://l.cobogo.io/telegram"
