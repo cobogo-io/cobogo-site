@@ -28,7 +28,7 @@ export const Header = () => {
               </p>
             </Menu.Button>
 
-            <Menu.Items className="bg-gradient-to-r from-blue-100 via-green-100 to-pink-100 flex absolute p-1 top-[-24px] left-[-24px] font-bold">
+            <Menu.Items className="bg-gradient-to-r from-blue-100 via-pink-100 to-gray-100 flex absolute p-1 top-[-16px] left-[-24px] font-bold">
               <div className="flex flex-col items-start bg-blue-200 p-5 gap-1">
                 <Menu.Button className="mb-2">
                   <p className="flex items-center gap-2 ">
@@ -59,10 +59,10 @@ export const Header = () => {
             </Menu.Button>
 
             <Menu.Items
-              className={`bg-gradient-to-r from-blue-100 via-green-100 to-pink-100 flex absolute p-1 ${
+              className={`bg-gradient-to-r from-blue-100 via-pink-100 to-gray-100 flex absolute p-1 ${
                 locale === 'pt'
-                  ? 'top-[-24px] left-[86px]'
-                  : 'top-[-24px] left-[84.5px]'
+                  ? 'top-[-16px] left-[86px]'
+                  : 'top-[-16px] left-[84.5px]'
               } font-bold`}
             >
               <div className="flex flex-col items-start bg-blue-200 p-5 gap-1">
@@ -72,7 +72,7 @@ export const Header = () => {
                   </p>
                 </Menu.Button>
 
-                <Menu.Item>
+                {/* <Menu.Item>
                   <a
                     target="_blank"
                     href="https://l.cobogo.io/telegram/"
@@ -80,7 +80,7 @@ export const Header = () => {
                   >
                     Telegram
                   </a>
-                </Menu.Item>
+                </Menu.Item> */}
 
                 <Menu.Item>
                   <a
@@ -132,6 +132,15 @@ export const Header = () => {
           >
             Docs
           </a>
+
+          <a
+            target="_blank"
+            href="https://chat.whatsapp.com/LPPlb8bWgw38p9uZjrvlt0"
+            className="bg-gradient-to-r from-blue-100 via-pink-100 to-gray-100 px-5 py-1 md:py-2 font-bold rounded-sm shadow-pink-100"
+            rel="noreferrer"
+          >
+            Participe da nossa comunidade
+          </a>
         </div>
 
         <Menu>
@@ -141,10 +150,10 @@ export const Header = () => {
             </p>
           </Menu.Button>
           <Menu.Items
-            className={`bg-gradient-to-r from-blue-100 via-green-100 to-pink-100 flex absolute p-1 ${
+            className={`bg-gradient-to-r from-blue-100 via-pink-100 to-gray-100 flex absolute p-1 ${
               locale === 'pt'
-                ? 'top-[12px] right-[24px]'
-                : 'top-[12px] right-[10px]'
+                ? 'top-[20px] right-[24px]'
+                : 'top-[20px] right-[10px]'
             } font-bold`}
           >
             <div className="flex flex-col items-start bg-blue-200 p-5 gap-1">

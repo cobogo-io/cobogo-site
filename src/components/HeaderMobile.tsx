@@ -51,7 +51,7 @@ export const HeaderMobile = (props: HeaderMobileProps) => {
       </button>
 
       {languagesDropdownOpened ? (
-        <div className="bg-gradient-to-r from-blue-100 via-green-100 to-pink-100 flex absolute p-1 top-[6px] right-[4px] font-bold">
+        <div className="bg-gradient-to-r from-blue-100 via-pink-100 to-gray-100 flex absolute p-1 top-[6px] right-[4px] font-bold">
           <div className="flex flex-col items-start bg-blue-200 p-5 gap-1">
             <button
               onClick={() => setLanguagesDropdownOpened(false)}
@@ -101,14 +101,14 @@ export const HeaderMobile = (props: HeaderMobileProps) => {
       </div>
 
       <div className="bg-white-100/5 w-full px-7 py-16 flex flex-col gap-4 h-full">
-        <a
+        {/* <a
           target="_blank"
           href="https://l.cobogo.io/telegram/"
           className="text-4xl font-bold"
           rel="noreferrer"
         >
           Telegram
-        </a>
+        </a> */}
 
         <a
           target="_blank"
