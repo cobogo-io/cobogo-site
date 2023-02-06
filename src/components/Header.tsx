@@ -138,7 +138,7 @@ export const Header = () => {
             href={
               locale === 'pt'
                 ? 'https://chat.whatsapp.com/LPPlb8bWgw38p9uZjrvlt0'
-                : 'https://chat.whatsapp.com/Er94zRD8OxF5aD6VC8HgD3'
+                : 'https://discord.gg/4UsDWrfrpW'
             }
             className="bg-gradient-to-r from-blue-100 via-pink-100 to-gray-100 px-5 py-1 md:py-2 font-bold rounded-sm shadow-pink-100"
             rel="noreferrer"
