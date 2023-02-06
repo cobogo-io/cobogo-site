@@ -61,7 +61,7 @@ export const Footer = () => {
 
               <a
                 target="_blank"
-                href="https://chat.whatsapp.com/Er94zRD8OxF5aD6VC8HgD3"
+                href="https://discord.gg/4UsDWrfrpW"
                 className="px-5 py-1 md:py-2 border-2 border-gray-100 font-bold text-base md:text-xl w-max text-gray-100 md:text-white-100 rounded-sm"
                 rel="noreferrer"
               >
