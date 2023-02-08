@@ -91,7 +91,11 @@ export const Footer = () => {
 
               <a
                 target="_blank"
-                href="https://l.cobogo.io/medium"
+                href={
+                  router.locale === 'pt'
+                    ? 'https://cobogobr.medium.com'
+                    : 'https://l.cobogo.io/medium'
+                }
                 rel="noreferrer"
               >
                 <MediumIcon size={42} />
