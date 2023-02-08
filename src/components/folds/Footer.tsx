@@ -123,10 +123,6 @@ export const Footer = () => {
             </div>
 
             <div className="flex flex-col md:flex-row items-center gap-5 font-bold mb-auto text-xs">
-              <a target="_blank" href={`${router.locale}/faq`} rel="noreferrer">
-                FAQ
-              </a>
-
               <a
                 target="_blank"
                 href={`${router.locale}/code`}
