@@ -11,7 +11,7 @@ import { CobogosOnRight } from '../images/CobogosOnRight'
 
 export const Footer = () => {
   const { t } = useTranslation('common')
-  const router = useRouter()
+  const { locale } = useRouter()
 
   return (
     <div className="relative flex flex-col justify-center items-center min-h-screen h-full">
@@ -92,7 +92,7 @@ export const Footer = () => {
               <a
                 target="_blank"
                 href={
-                  router.locale === 'pt'
+                  locale === 'pt'
                     ? 'https://cobogobr.medium.com'
                     : 'https://l.cobogo.io/medium'
                 }
@@ -127,27 +127,15 @@ export const Footer = () => {
             </div>
 
             <div className="flex flex-col md:flex-row items-center gap-5 font-bold mb-auto text-xs">
-              <a
-                target="_blank"
-                href={`${router.locale}/code`}
-                rel="noreferrer"
-              >
+              <a target="_blank" href={`${locale}/code`} rel="noreferrer">
                 {t('Code of conduct')}
               </a>
 
-              <a
-                target="_blank"
-                href={`${router.locale}/privacy`}
-                rel="noreferrer"
-              >
+              <a target="_blank" href={`${locale}/privacy`} rel="noreferrer">
                 {t('Privacy policy')}
               </a>
 
-              <a
-                target="_blank"
-                href={`${router.locale}/terms`}
-                rel="noreferrer"
-              >
+              <a target="_blank" href={`${locale}/terms`} rel="noreferrer">
                 {t('Terms of use')}
               </a>
 

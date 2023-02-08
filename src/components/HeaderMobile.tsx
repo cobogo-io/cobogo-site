@@ -112,7 +112,11 @@ export const HeaderMobile = (props: HeaderMobileProps) => {
 
         <a
           target="_blank"
-          href="https://l.cobogo.io/medium/"
+          href={
+            locale === 'pt'
+              ? 'https://cobogobr.medium.com'
+              : 'https://l.cobogo.io/medium'
+          }
           className="text-4xl font-bold"
           rel="noreferrer"
         >
