@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 
+import { Analytics } from '@vercel/analytics/react'
 import { appWithTranslation } from 'next-i18next'
 import { DefaultSeo } from 'next-seo'
 import { AppProps } from 'next/app'
@@ -45,6 +46,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       />
 
       <Component {...pageProps} />
+
+      <Analytics />
     </>
   )
 }
