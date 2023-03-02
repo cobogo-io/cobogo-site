@@ -1,8 +1,6 @@
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 
-import { BulletsTwo } from '../images/BulletsTwo'
-
 export const Text = () => {
   const { t } = useTranslation('common')
 
@@ -39,7 +37,6 @@ export const Text = () => {
               />
             </div>
           </div>
-          <BulletsTwo />
         </div>
       </div>
     </div>

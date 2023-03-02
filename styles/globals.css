@@ -8,7 +8,7 @@ body {
   margin: 0;
 
   -webkit-font-smoothing: antialiased;
-  @apply bg-black-900 text-white-100 bg-[url('/images/background-1.svg')] bg-cover bg-fixed scroll-smooth;
+  @apply bg-black-900 text-white-100 scroll-smooth;
 
   text-decoration-skip-ink: none;
 }
