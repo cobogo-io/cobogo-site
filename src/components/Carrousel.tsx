@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Dispatch, SetStateAction } from 'react'
 import Button from './Button'
 
-const sections = [
+const products = [
   {
     id: 'social',
     background: 'bg-home-carrousel-social-background',
@@ -61,127 +61,136 @@ const sections = [
 ]
 
 interface CarrouselProps {
-  selectedSection: 'social' | 'community' | 'launchpad'
-  setSelectedSection: Dispatch<
+  selectedProduct: 'social' | 'community' | 'launchpad'
+  setSelectedProduct: Dispatch<
     SetStateAction<'social' | 'community' | 'launchpad'>
   >
 }
 
 export default function Carrousel(props: CarrouselProps) {
   return (
-    <section
-      className={`${
-        sections.find(section => section.id === props.selectedSection)
-          ?.background
-      } bg-cover lg:rounded-[40px] w-full min-h-[840px] p-12 lg:p-24 flex flex-col items-center justify-center gap-16 relative`}
-    >
-      <div className="flex flex-col items-center absolute top-12 left-12 lg:left-24 gap-4">
-        <button
-          onClick={() => props.setSelectedSection('community')}
+    <section className="flex items-center justify-center w-full py-12 lg:py-20 min-h-screen">
+      <div className="w-full max-w-[1300px] flex flex-col lg:flex-row items-center justify-between">
+        <div
           className={`${
-            props.selectedSection === 'community'
-              ? `${
-                  sections.find(section => section.id === props.selectedSection)
-                    ?.backgroundColor
-                } h-8 w-4`
-              : 'bg-white/30 h-4 w-4'
-          } rounded-full`}
-        />
+            products.find(product => product.id === props.selectedProduct)
+              ?.background
+          } bg-cover lg:rounded-[40px] w-full min-h-[840px] p-12 lg:p-24 flex flex-col items-center justify-center gap-16 relative`}
+        >
+          <div className="flex flex-col items-center absolute top-12 left-12 lg:left-24 gap-4">
+            <button
+              onClick={() => props.setSelectedProduct('community')}
+              className={`${
+                props.selectedProduct === 'community'
+                  ? `${
+                      products.find(
+                        product => product.id === props.selectedProduct
+                      )?.backgroundColor
+                    } h-8 w-4`
+                  : 'bg-white/30 h-4 w-4'
+              } rounded-full`}
+            />
 
-        <button
-          onClick={() => props.setSelectedSection('social')}
-          className={`${
-            props.selectedSection === 'social'
-              ? `${
-                  sections.find(section => section.id === props.selectedSection)
-                    ?.backgroundColor
-                } h-8 w-4`
-              : 'bg-white/30 h-4 w-4'
-          } rounded-full`}
-        />
+            <button
+              onClick={() => props.setSelectedProduct('social')}
+              className={`${
+                props.selectedProduct === 'social'
+                  ? `${
+                      products.find(
+                        product => product.id === props.selectedProduct
+                      )?.backgroundColor
+                    } h-8 w-4`
+                  : 'bg-white/30 h-4 w-4'
+              } rounded-full`}
+            />
 
-        <button
-          onClick={() => props.setSelectedSection('launchpad')}
-          className={`${
-            props.selectedSection === 'launchpad'
-              ? `${
-                  sections.find(section => section.id === props.selectedSection)
-                    ?.backgroundColor
-                } h-8 w-4`
-              : 'bg-white/30 h-4 w-4'
-          } rounded-full`}
-        />
-      </div>
+            <button
+              onClick={() => props.setSelectedProduct('launchpad')}
+              className={`${
+                props.selectedProduct === 'launchpad'
+                  ? `${
+                      products.find(
+                        product => product.id === props.selectedProduct
+                      )?.backgroundColor
+                    } h-8 w-4`
+                  : 'bg-white/30 h-4 w-4'
+              } rounded-full`}
+            />
+          </div>
 
-      {sections.find(section => section.id === props.selectedSection)
-        ?.image && (
-        <Image
-          src={
-            sections.find(section => section.id === props.selectedSection)
-              ?.image as string
-          }
-          width={417}
-          height={149}
-          alt="Image"
-        />
-      )}
-
-      <div className="flex items-center justify-between w-full">
-        <div className="flex flex-col max-w-[510px] w-full gap-6 lg:gap-12">
-          <h2
-            className={`font-bold text-md lg:text-xl ${
-              sections.find(section => section.id === props.selectedSection)
-                ?.textColor
-            }`}
-          >
-            {
-              sections.find(section => section.id === props.selectedSection)
-                ?.title
-            }
-          </h2>
-
-          {
-            sections.find(section => section.id === props.selectedSection)
-              ?.subtitle
-          }
-
-          <p className="text-md lg:text-xl leading-[32px]">
-            {
-              sections.find(section => section.id === props.selectedSection)
-                ?.description
-            }
-          </p>
-
-          <div className="flex items-center gap-7">
-            <Link
-              href={
-                sections.find(section => section.id === props.selectedSection)
-                  ?.buttonHref as string
+          {products.find(product => product.id === props.selectedProduct)
+            ?.image && (
+            <Image
+              src={
+                products.find(product => product.id === props.selectedProduct)
+                  ?.image as string
               }
-            >
-              <Button
-                text="learn more"
-                borderColor={`${
-                  sections.find(section => section.id === props.selectedSection)
-                    ?.borderColor
+              width={417}
+              height={149}
+              alt="Image"
+            />
+          )}
+
+          <div className="flex items-center justify-between w-full">
+            <div className="flex flex-col max-w-[510px] w-full gap-6 lg:gap-12">
+              <h2
+                className={`font-bold text-md lg:text-xl ${
+                  products.find(product => product.id === props.selectedProduct)
+                    ?.textColor
                 }`}
+              >
+                {
+                  products.find(product => product.id === props.selectedProduct)
+                    ?.title
+                }
+              </h2>
+
+              {
+                products.find(product => product.id === props.selectedProduct)
+                  ?.subtitle
+              }
+
+              <p className="text-md lg:text-xl leading-[32px]">
+                {
+                  products.find(product => product.id === props.selectedProduct)
+                    ?.description
+                }
+              </p>
+
+              <div className="flex items-center gap-7">
+                <Link
+                  href={
+                    products.find(
+                      product => product.id === props.selectedProduct
+                    )?.buttonHref as string
+                  }
+                >
+                  <Button
+                    text="learn more"
+                    borderColor={`${
+                      products.find(
+                        product => product.id === props.selectedProduct
+                      )?.borderColor
+                    }`}
+                  />
+                </Link>
+              </div>
+            </div>
+
+            {products.find(product => product.id === props.selectedProduct)
+              ?.cube && (
+              <Image
+                src={
+                  products.find(product => product.id === props.selectedProduct)
+                    ?.cube as string
+                }
+                width={431}
+                height={439}
+                alt="Cube"
               />
-            </Link>
+            )}
           </div>
         </div>
-
-        {sections.find(section => section.id === props.selectedSection)
-          ?.cube && (
-          <Image
-            src={
-              sections.find(section => section.id === props.selectedSection)
-                ?.cube as string
-            }
-            width={431}
-            height={439}
-            alt="Cube"
-          />
-        )}
       </div>
     </section>
   )
