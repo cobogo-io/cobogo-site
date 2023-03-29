@@ -36,6 +36,7 @@ module.exports = {
           "url('/images/home-carrousel-social-background.svg')",
         'home-related-content-background':
           "url('/images/home-related-content-background.svg')",
+        'footer-background': "url('/images/footer-background.svg')",
         'text-gradient':
           'linear-gradient(92.3deg, #EFE750 -4.26%, #BA68C8 40.47%, #00B9E9 86.15%);',
       },
