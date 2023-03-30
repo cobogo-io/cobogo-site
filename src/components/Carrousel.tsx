@@ -7,7 +7,7 @@ const products = [
   {
     id: 'social',
     background: 'bg-home-carrousel-social-background',
-    image: '/images/productive-deal-flow-image.svg',
+    image: '/images/productive-deal-flow-social-image.svg',
     cube: '/images/cobogo-social-cube.svg',
     backgroundColor: 'bg-blue-social',
     borderColor: 'border-blue-social',
@@ -25,7 +25,7 @@ const products = [
   {
     id: 'community',
     background: 'bg-home-carrousel-community-background',
-    image: null,
+    image: '/images/productive-deal-flow-community-image.svg',
     cube: '/images/cobogo-community-cube.svg',
     backgroundColor: 'bg-yellow-community',
     borderColor: 'border-yellow-community',
@@ -43,7 +43,7 @@ const products = [
   {
     id: 'launchpad',
     background: 'bg-home-carrousel-launchpad-background',
-    image: null,
+    image: '/images/productive-deal-flow-launchpad-image.svg',
     cube: '/images/cobogo-launchpad-cube.svg',
     backgroundColor: 'bg-pink-launchpad',
     borderColor: 'border-pink-launchpad',
@@ -70,14 +70,11 @@ interface CarrouselProps {
 export default function Carrousel(props: CarrouselProps) {
   return (
     <section className="flex items-center justify-center w-full py-12 lg:py-20 min-h-screen">
-      <div className="w-full max-w-[1300px] flex flex-col lg:flex-row items-center justify-between">
-        <div
-          className={`${
-            products.find(product => product.id === props.selectedProduct)
-              ?.background
-          } bg-cover lg:rounded-[40px] w-full min-h-[840px] p-12 lg:p-24 flex flex-col items-center justify-center gap-16 relative`}
-        >
-          <div className="flex flex-col items-center absolute top-12 left-12 lg:left-24 gap-4">
+      <div className="w-full max-w-[1300px] flex flex-col">
+        <div className="flex items-center w-full justify-between px-24 py-12">
+          <h2 className="text-2xl font-medium">Productized deal-flow</h2>
+
+          <div className="flex items-center gap-4">
             <button
               onClick={() => props.setSelectedProduct('community')}
               className={`${
@@ -86,9 +83,9 @@ export default function Carrousel(props: CarrouselProps) {
                       products.find(
                         product => product.id === props.selectedProduct
                       )?.backgroundColor
-                    } h-8 w-4`
-                  : 'bg-white/30 h-4 w-4'
-              } rounded-full`}
+                    }`
+                  : 'bg-white/30'
+              } rounded-full h-4 w-4`}
             />
 
             <button
@@ -99,9 +96,9 @@ export default function Carrousel(props: CarrouselProps) {
                       products.find(
                         product => product.id === props.selectedProduct
                       )?.backgroundColor
-                    } h-8 w-4`
-                  : 'bg-white/30 h-4 w-4'
-              } rounded-full`}
+                    }`
+                  : 'bg-white/30'
+              } rounded-full h-4 w-4`}
             />
 
             <button
@@ -112,12 +109,19 @@ export default function Carrousel(props: CarrouselProps) {
                       products.find(
                         product => product.id === props.selectedProduct
                       )?.backgroundColor
-                    } h-8 w-4`
-                  : 'bg-white/30 h-4 w-4'
-              } rounded-full`}
+                    }`
+                  : 'bg-white/30'
+              } rounded-full h-4 w-4`}
             />
           </div>
+        </div>
 
+        <div
+          className={`${
+            products.find(product => product.id === props.selectedProduct)
+              ?.background
+          } bg-cover lg:rounded-[40px] w-full min-h-[952px] p-12 lg:p-24 flex flex-col items-center justify-center gap-16`}
+        >
           {products.find(product => product.id === props.selectedProduct)
             ?.image && (
             <Image
@@ -125,8 +129,8 @@ export default function Carrousel(props: CarrouselProps) {
                 products.find(product => product.id === props.selectedProduct)
                   ?.image as string
               }
-              width={417}
-              height={149}
+              width={257}
+              height={220}
               alt="Image"
             />
           )}
