@@ -33,7 +33,8 @@ const products = [
     title: 'Community',
     subtitle: (
       <h1 className="font-bold text-xl lg:text-[40px] leading-[55px]">
-        The creator economy game changer
+        The creator <br />
+        economy game <br /> changer
       </h1>
     ),
     description:
@@ -120,7 +121,7 @@ export default function Carrousel(props: CarrouselProps) {
           className={`${
             products.find(product => product.id === props.selectedProduct)
               ?.background
-          } bg-cover lg:rounded-[40px] w-full min-h-[952px] p-12 lg:p-24 flex flex-col items-center justify-center gap-16`}
+          } bg-cover lg:rounded-[40px] w-full min-h-[1005px] p-12 lg:p-24 flex flex-col items-center justify-start gap-16`}
         >
           {products.find(product => product.id === props.selectedProduct)
             ?.image && (
