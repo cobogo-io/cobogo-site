@@ -30,10 +30,10 @@ export default function Header() {
             }`}
           >
             <Image
-              src="/images/cobogo-community-icon.svg"
+              src="/images/cobogo-community-cube.svg"
               width={35}
               height={35}
-              alt="Cobogo Community icon"
+              alt="Cobogo Community cube"
             />
             Community
           </Link>
@@ -46,10 +46,10 @@ export default function Header() {
             }`}
           >
             <Image
-              src="/images/cobogo-social-icon.svg"
+              src="/images/cobogo-social-cube.svg"
               width={35}
               height={35}
-              alt="Cobogo Social icon"
+              alt="Cobogo Social cube"
             />
             Social
           </Link>
@@ -61,10 +61,10 @@ export default function Header() {
             }`}
           >
             <Image
-              src="/images/cobogo-launchpad-icon.svg"
+              src="/images/cobogo-launchpad-cube.svg"
               width={35}
               height={35}
-              alt="Cobogo Launchpad icon"
+              alt="Cobogo Launchpad cube"
             />
             Launchpad
           </Link>
