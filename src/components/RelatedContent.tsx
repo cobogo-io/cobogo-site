@@ -7,12 +7,12 @@ interface RelatedContentProps {
 
 export default function RelatedContent(props: RelatedContentProps) {
   return (
-    <section className="flex items-center justify-center w-full py-12 lg:py-20 min-h-screen">
-      <div className="w-full max-w-[1300px] flex flex-col lg:flex-row items-center justify-between">
+    <section className="flex items-center justify-center w-full py-20 lg:py-40">
+      <div className="w-full max-w-[1108px] flex flex-col lg:flex-row items-center justify-between">
         <div className="flex flex-col w-full gap-16">
           <div className="flex w-full justify-between items-start">
             <div className="flex flex-col gap-10">
-              <h2 className="text-[40px] text-transparent bg-clip-text bg-text-gradient">
+              <h2 className="text-[40px] text-transparent bg-clip-text bg-related-content-text-gradient">
                 Related <strong>content</strong>
               </h2>
 
@@ -45,7 +45,7 @@ export default function RelatedContent(props: RelatedContentProps) {
                 href={article.link}
                 target="_blank"
               >
-                <div className="w-[320px] h-[215px] rounded-[15px] bg-text-gradient p-[2px] flex items-center justify-center">
+                <div className="w-[340px] h-[215px] rounded-[15px] bg-related-content-text-gradient p-[2px] flex items-center justify-center">
                   <img
                     src={article.thumbnail}
                     className="bg-blue-social w-full h-full rounded-[15px]"
@@ -53,7 +53,7 @@ export default function RelatedContent(props: RelatedContentProps) {
                   />
                 </div>
 
-                <strong className="text-[22px] w-[320px]">
+                <strong className="text-[22px] w-[340px]">
                   {article.title}
                 </strong>
               </Link>

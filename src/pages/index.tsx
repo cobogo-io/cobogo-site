@@ -1,8 +1,9 @@
 import Carrousel from '@/components/Carrousel'
+import Mentions from '@/components/Mentions'
 import RelatedContent from '@/components/RelatedContent'
 import axios from 'axios'
 import { GetServerSideProps } from 'next'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 interface HomeProps {
   mostRecentArticles: any[]
@@ -13,6 +14,18 @@ export default function Home(props: HomeProps) {
     'social' | 'community' | 'launchpad'
   >('community')
 
+  useEffect(() => {
+    setTimeout(() => {
+      if (selectedProduct === 'community') {
+        setSelectedProduct('social')
+      } else if (selectedProduct === 'social') {
+        setSelectedProduct('launchpad')
+      } else if (selectedProduct === 'launchpad') {
+        setSelectedProduct('community')
+      }
+    }, 1000 * 8)
+  }, [selectedProduct])
+
   return (
     <div>
       <Carrousel
@@ -21,6 +34,8 @@ export default function Home(props: HomeProps) {
       />
 
       <RelatedContent mostRecentArticles={props.mostRecentArticles} />
+
+      <Mentions />
     </div>
   )
 }
