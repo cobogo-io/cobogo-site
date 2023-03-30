@@ -121,7 +121,7 @@ export default function Carrousel(props: CarrouselProps) {
           className={`${
             products.find(product => product.id === props.selectedProduct)
               ?.background
-          } bg-cover lg:rounded-[40px] w-full min-h-[1005px] p-12 lg:p-24 flex flex-col items-center justify-start gap-16`}
+          } bg-cover lg:rounded-[40px] w-full h-[833px] px-24 py-12 flex flex-col items-center justify-start gap-14`}
         >
           {products.find(product => product.id === props.selectedProduct)
             ?.image && (
@@ -137,7 +137,7 @@ export default function Carrousel(props: CarrouselProps) {
           )}
 
           <div className="flex items-center justify-between w-full">
-            <div className="flex flex-col max-w-[510px] w-full gap-6 lg:gap-12">
+            <div className="flex flex-col max-w-[510px] w-full gap-3 lg:gap-6">
               <h2
                 className={`font-bold text-md lg:text-xl ${
                   products.find(product => product.id === props.selectedProduct)
@@ -162,24 +162,21 @@ export default function Carrousel(props: CarrouselProps) {
                 }
               </p>
 
-              <div className="flex items-center gap-7">
-                <Link
-                  href={
+              <Link
+                href={
+                  products.find(product => product.id === props.selectedProduct)
+                    ?.buttonHref as string
+                }
+              >
+                <Button
+                  text="learn more"
+                  borderColor={`${
                     products.find(
                       product => product.id === props.selectedProduct
-                    )?.buttonHref as string
-                  }
-                >
-                  <Button
-                    text="learn more"
-                    borderColor={`${
-                      products.find(
-                        product => product.id === props.selectedProduct
-                      )?.borderColor
-                    }`}
-                  />
-                </Link>
-              </div>
+                    )?.borderColor
+                  }`}
+                />
+              </Link>
             </div>
 
             {products.find(product => product.id === props.selectedProduct)
