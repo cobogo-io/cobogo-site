@@ -70,9 +70,9 @@ interface CarrouselProps {
 
 export default function Carrousel(props: CarrouselProps) {
   return (
-    <section className="flex items-center justify-center w-full py-20 lg:py-40">
+    <section className="flex items-center justify-center w-full py-16 lg:py-32">
       <div className="w-full max-w-[1300px] flex flex-col">
-        <div className="flex items-center w-full justify-between px-24 py-12">
+        <div className="flex items-center w-full justify-between px-24 py-6">
           <h2 className="text-2xl font-medium">Productized deal-flow</h2>
 
           <div className="flex items-center gap-4">

@@ -7,7 +7,7 @@ interface RelatedContentProps {
 
 export default function RelatedContent(props: RelatedContentProps) {
   return (
-    <section className="flex items-center justify-center w-full py-20 lg:py-40">
+    <section className="flex items-center justify-center w-full py-16 lg:py-32">
       <div className="w-full max-w-[1108px] flex flex-col lg:flex-row items-center justify-between">
         <div className="flex flex-col w-full gap-16">
           <div className="flex w-full justify-between items-start">
