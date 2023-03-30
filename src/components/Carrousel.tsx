@@ -121,7 +121,7 @@ export default function Carrousel(props: CarrouselProps) {
           className={`${
             products.find(product => product.id === props.selectedProduct)
               ?.background
-          } bg-cover lg:rounded-[40px] w-full h-[833px] px-24 py-12 flex flex-col items-center justify-start gap-14`}
+          } bg-cover lg:rounded-[40px] w-full h-[833px] px-24 py-14 flex flex-col items-center justify-start gap-14`}
         >
           {products.find(product => product.id === props.selectedProduct)
             ?.image && (
