@@ -32,7 +32,7 @@ export default function Index() {
                 className="text-[36px] md:text-[51px] font-extrabold md:leading-[70px]"
               >
                 Getting Creators <br />
-                <span className="text-pink-launchpad">ready to fly</span>
+                <span className="text-pink">ready to fly</span>
               </motion.h1>
 
               <motion.p
