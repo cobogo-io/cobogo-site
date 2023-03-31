@@ -38,12 +38,11 @@ module.exports = {
           "url('/images/home-related-content-background.svg')",
         'footer-background': "url('/images/footer-background.svg')",
         'related-content-text-gradient':
-          'linear-gradient(92.3deg, #EFE750 -4.26%, #BA68C8 40.47%, #00B9E9 86.15%);',
+          'linear-gradient(92.91deg, #EFE750 -4%, #BA68C8 28%, #00B9E9 72%);',
         'mentions-text-gradient':
-          'linear-gradient(92.91deg, #EFE750 -4.71%, #BA68C8 23.45%, #00B9E9 52.2%);',
+          'linear-gradient(92.91deg, #EFE750 -2%, #BA68C8 8%, #00B9E9 24%);',
       },
     },
   },
   plugins: [],
 }
-

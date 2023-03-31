@@ -15,7 +15,7 @@ const products = [
     title: 'Social',
     subtitle: (
       <h1 className="font-bold text-xl lg:text-[40px] leading-[55px]">
-        Creator as <br /> <span className="text-blue">a business platform</span>
+        Creator as a<br /> <span className="text-blue">business platform</span>
       </h1>
     ),
     description:
@@ -33,8 +33,8 @@ const products = [
     title: 'Community',
     subtitle: (
       <h1 className="font-bold text-xl lg:text-[40px] leading-[55px]">
-        The creator <br />
-        economy game <br /> changer
+        The creator economy <br />
+        game changer
       </h1>
     ),
     description:

@@ -25,7 +25,7 @@ export default function RelatedContent(props: RelatedContentProps) {
             <Link
               href="https://cobogobr.medium.com/"
               target="_blank"
-              className="flex items-center gap-5 font-bold font-orbitron"
+              className="flex items-center gap-5 font-bold font-orbitron mt-3"
             >
               <Image
                 src="/images/medium-icon.svg"
