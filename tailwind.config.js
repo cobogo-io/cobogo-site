@@ -24,6 +24,7 @@ module.exports = {
         pink: '#FFCAFF',
         'blue-social': '#00B9E9',
         blue: '#9FE8FF',
+        'blue-2': '#DDFFFF',
       },
       backgroundImage: {
         'home-carrousel-social-background':
@@ -34,8 +35,6 @@ module.exports = {
           "url('/images/home-carrousel-launchpad-background.svg')",
         'home-carrousel-social-background':
           "url('/images/home-carrousel-social-background.svg')",
-        'home-related-content-background':
-          "url('/images/home-related-content-background.svg')",
         'footer-background': "url('/images/footer-background.svg')",
         'related-content-text-gradient':
           'linear-gradient(92.91deg, #EFE750 -4%, #BA68C8 28%, #00B9E9 72%);',

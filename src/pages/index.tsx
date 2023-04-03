@@ -1,4 +1,5 @@
 import Carrousel from '@/components/Carrousel'
+import Main from '@/components/Main'
 import Mentions from '@/components/Mentions'
 import RelatedContent from '@/components/RelatedContent'
 import axios from 'axios'
@@ -27,7 +28,9 @@ export default function Home(props: HomeProps) {
   }, [selectedProduct])
 
   return (
-    <div>
+    <>
+      <Main />
+
       <Carrousel
         selectedProduct={selectedProduct}
         setSelectedProduct={setSelectedProduct}
@@ -36,7 +39,7 @@ export default function Home(props: HomeProps) {
       <RelatedContent mostRecentArticles={props.mostRecentArticles} />
 
       <Mentions />
-    </div>
+    </>
   )
 }
 
