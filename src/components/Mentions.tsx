@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 export default function Mentions() {
   return (
-    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative">
-      <div className="absolute">
+    <section className="flex items-center justify-center w-full py-16 xl:py-32 relative">
+      <div className="absolute hidden xl:flex">
         <Image
           src="/images/home-related-content-background.svg"
           width={1052}
@@ -13,19 +13,19 @@ export default function Mentions() {
         />
       </div>
 
-      <div className="w-full max-w-[1108px] flex flex-col lg:flex-row items-center justify-between z-10 relative">
-        <div className="flex flex-col w-full gap-16">
-          <div className="flex flex-col gap-10">
-            <h2 className="text-[40px] text-transparent bg-clip-text bg-mentions-text-gradient font-bold">
+      <div className="w-full max-w-[1108px] flex flex-col xl:flex-row items-center justify-between z-10 relative">
+        <div className="flex flex-col w-full gap-8 xl:gap-16">
+          <div className="flex flex-col gap-5 xl:gap-10 px-7 xl:px-0">
+            <h2 className="text-[30px] xl:text-[40px] text-transparent bg-clip-text bg-mentions-text-gradient font-bold">
               Mentions
             </h2>
 
             {/* <p className="text-[22px] leading-[32px] w-full max-w-[660px]">-</p> */}
           </div>
 
-          <div className="flex justify-between">
+          <div className="flex justify-between overflow-auto gap-10 bg-gray xl:bg-transparent py-8 xl:py-0">
             <Link
-              className="flex flex-col gap-8"
+              className="flex flex-col gap-8 ml-7 xl:ml-0"
               href="https://cointelegraph.com.br/news/brazilian-startups-focused-on-web3-get-chosen-for-acceleration-program/"
               target="_blank"
             >
@@ -77,7 +77,7 @@ export default function Mentions() {
             </Link>
 
             <Link
-              className="flex flex-col gap-8"
+              className="flex flex-col gap-8 mr-7 xl:mr-0"
               href="https://www.abcdacomunicacao.com.br/cobogo-lanca-plataforma-de-investimentos-para-creators/"
               target="_blank"
             >

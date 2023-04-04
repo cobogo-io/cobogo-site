@@ -19,17 +19,17 @@ export default function Index() {
         />
       </div>
 
-      <div className="flex items-start md:items-center justify-center w-full py-20 md:py-36 px-7 md:px-36 relative z-10 min-h-screen">
+      <div className="flex items-start xl:items-center justify-center w-full py-20 xl:py-36 px-7 xl:px-36 relative z-10 min-h-screen">
         <div ref={homeHeaderRef} />
 
         {homeHeaderRefIsInView && (
           <div className="w-full max-w-[1400px] flex items-center justify-between">
-            <div className="flex flex-col max-w-[550px] w-full gap-10 md:gap-[70px]">
+            <div className="flex flex-col max-w-[550px] w-full gap-10 xl:gap-[70px]">
               <motion.h1
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.5, duration: 1 }}
-                className="text-[36px] md:text-[51px] font-extrabold md:leading-[70px]"
+                className="text-[36px] xl:text-[51px] font-extrabold xl:leading-[70px]"
               >
                 The creator <br /> economy game <br /> changer
               </motion.h1>
@@ -38,7 +38,7 @@ export default function Index() {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 1 }}
-                className="text-[24px] md:text-[30px] md:leading-[45px]"
+                className="text-[24px] xl:text-[30px] xl:leading-[45px]"
               >
                 A community formed by Creators, investors and enthusiasts of the
                 Creator Economy created to boost knowledge, research and

@@ -7,8 +7,8 @@ interface RelatedContentProps {
 
 export default function RelatedContent(props: RelatedContentProps) {
   return (
-    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative">
-      <div className="absolute">
+    <section className="flex items-center justify-center w-full py-16 xl:py-32 relative">
+      <div className="absolute hidden xl:flex">
         <Image
           src="/images/home-related-content-background.svg"
           width={1052}
@@ -17,15 +17,15 @@ export default function RelatedContent(props: RelatedContentProps) {
         />
       </div>
 
-      <div className="w-full max-w-[1108px] flex flex-col lg:flex-row items-center justify-between z-10 relative">
-        <div className="flex flex-col w-full gap-16">
-          <div className="flex w-full justify-between items-start">
-            <div className="flex flex-col gap-10">
-              <h2 className="text-[40px] text-transparent bg-clip-text bg-related-content-text-gradient">
+      <div className="w-full max-w-[1108px] flex flex-col xl:flex-row items-center justify-between z-10 relative">
+        <div className="flex flex-col w-full gap-8 xl:gap-16">
+          <div className="flex w-full justify-between items-start px-7 xl:px-0">
+            <div className="flex flex-col gap-5 xl:gap-10">
+              <h2 className="text-[30px] xl:text-[40px] text-transparent bg-clip-text bg-related-content-text-gradient">
                 Related <strong>content</strong>
               </h2>
 
-              <p className="text-[22px] leading-[32px] w-full max-w-[660px]">
+              <p className="xl:text-[22px] leading-[26px] xl:leading-[32px] w-full max-w-[660px]">
                 Learn more about the future of the Creator Economy being built
                 by Cobogo, with articles exposing our ideas.
               </p>
@@ -34,7 +34,7 @@ export default function RelatedContent(props: RelatedContentProps) {
             <Link
               href="https://cobogobr.medium.com/"
               target="_blank"
-              className="flex items-center gap-5 font-bold font-orbitron mt-3"
+              className="hidden xl:flex items-center gap-5 font-bold font-orbitron mt-3"
             >
               <Image
                 src="/images/medium-icon.svg"
@@ -46,11 +46,11 @@ export default function RelatedContent(props: RelatedContentProps) {
             </Link>
           </div>
 
-          <div className="flex justify-between">
+          <div className="flex justify-between overflow-auto gap-10 bg-gray xl:bg-transparent py-8 xl:py-0">
             {props.mostRecentArticles.map(article => (
               <Link
                 key={article.title}
-                className="flex flex-col gap-8"
+                className="flex flex-col gap-8 mx-7 xl:mx-0"
                 href={article.link}
                 target="_blank"
               >
@@ -68,6 +68,20 @@ export default function RelatedContent(props: RelatedContentProps) {
               </Link>
             ))}
           </div>
+
+          <Link
+            href="https://cobogobr.medium.com/"
+            target="_blank"
+            className="flex xl:hidden items-center gap-5 font-bold font-orbitron mt-3 px-7"
+          >
+            <Image
+              src="/images/medium-icon.svg"
+              width={34}
+              height={34}
+              alt="Medium icon"
+            />
+            Go to our Medium
+          </Link>
         </div>
       </div>
     </section>

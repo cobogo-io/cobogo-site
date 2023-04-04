@@ -8,14 +8,14 @@ export default function Header() {
 
   return (
     <div
-      className={`w-full flex items-center justify-between h-[76px] gap-2 lg:gap-0 px-7 lg:px-36 z-30 fixed bg-gradient-to-b from-black to-black/0`}
+      className={`w-full flex items-center justify-between h-[76px] gap-2 xl:gap-0 px-7 xl:px-36 z-30 fixed bg-gradient-to-b from-black to-black/0`}
     >
       <div className="flex items-center gap-5 font-orbitron">
         <Link href="/" className="flex">
           <Image src="/images/logo.png" width={120} height={27} alt="Logo" />
         </Link>
 
-        <div className="hidden lg:flex items-center gap-10 h-[50px] px-8">
+        <div className="hidden xl:flex items-center gap-10 h-[50px] px-8">
           {asPath === '/community' && (
             <div className="w-[150px] h-[5px] bg-yellow-community fixed top-0 left-[315px] shadow-[0_10px_40px_0px_rgba(239,231,80,1)]" />
           )}
