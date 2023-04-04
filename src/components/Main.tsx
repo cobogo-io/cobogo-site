@@ -2,8 +2,17 @@ import Image from 'next/image'
 
 export default function Main() {
   return (
-    <section className="flex items-center justify-center w-full py-16 lg:py-32">
-      <div className="w-full max-w-[1108px] flex flex-col gap-52">
+    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative">
+      <div className="absolute top-0 right-0">
+        <Image
+          src="/images/home-main-background.svg"
+          width={1763}
+          height={1083}
+          alt="Home main background"
+        />
+      </div>
+
+      <div className="w-full max-w-[1108px] flex flex-col gap-52 relative z-10">
         <div className="flex justify-between">
           <h1 className="leading-[85px] text-[32px] text-blue-2">
             We see <br />

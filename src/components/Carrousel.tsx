@@ -7,7 +7,7 @@ const products = [
   {
     id: 'social',
     background: 'bg-home-carrousel-social-background',
-    image: '/images/productive-deal-flow-social-image.svg',
+    image: '/images/home-productive-deal-flow-social-image.svg',
     cube: '/images/cobogo-social-cube.svg',
     backgroundColor: 'bg-blue-social',
     borderColor: 'border-blue-social',
@@ -25,7 +25,7 @@ const products = [
   {
     id: 'community',
     background: 'bg-home-carrousel-community-background',
-    image: '/images/productive-deal-flow-community-image.svg',
+    image: '/images/home-productive-deal-flow-community-image.svg',
     cube: '/images/cobogo-community-cube.svg',
     backgroundColor: 'bg-yellow-community',
     borderColor: 'border-yellow-community',
@@ -44,7 +44,7 @@ const products = [
   {
     id: 'launchpad',
     background: 'bg-home-carrousel-launchpad-background',
-    image: '/images/productive-deal-flow-launchpad-image.svg',
+    image: '/images/home-productive-deal-flow-launchpad-image.svg',
     cube: '/images/cobogo-launchpad-cube.svg',
     backgroundColor: 'bg-pink-launchpad',
     borderColor: 'border-pink-launchpad',

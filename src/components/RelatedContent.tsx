@@ -7,8 +7,17 @@ interface RelatedContentProps {
 
 export default function RelatedContent(props: RelatedContentProps) {
   return (
-    <section className="flex items-center justify-center w-full py-16 lg:py-32">
-      <div className="w-full max-w-[1108px] flex flex-col lg:flex-row items-center justify-between">
+    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative">
+      <div className="absolute">
+        <Image
+          src="/images/home-related-content-background.svg"
+          width={1052}
+          height={1044}
+          alt="Home related content background"
+        />
+      </div>
+
+      <div className="w-full max-w-[1108px] flex flex-col lg:flex-row items-center justify-between z-10 relative">
         <div className="flex flex-col w-full gap-16">
           <div className="flex w-full justify-between items-start">
             <div className="flex flex-col gap-10">
