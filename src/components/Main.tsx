@@ -100,9 +100,9 @@ export default function Main() {
         />
       </div>
 
-      <div className="w-full max-w-[1108px] flex flex-col gap-24 lg:gap-52 relative z-10">
+      <div className="w-full max-w-[1110px] flex flex-col gap-24 lg:gap-52 relative z-10">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between lg:items-center">
-          <div className="flex flex-col">
+          <div className="flex flex-col h-[333px]">
             <h1 className="leading-[55px] lg:leading-[110px] text-[22px] lg:text-[45px] text-blue-2 flex items-center">
               {!switchText ? weeSeeText : andTheirText}{' '}
               {line === 0 && <div className="border h-[80px] animate-pulse" />}

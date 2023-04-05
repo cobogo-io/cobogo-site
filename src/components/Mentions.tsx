@@ -13,7 +13,7 @@ export default function Mentions() {
         />
       </div>
 
-      <div className="w-full max-w-[1108px] flex flex-col lg:flex-row items-center justify-between z-10 relative">
+      <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-between z-10 relative">
         <div className="flex flex-col w-full gap-8 lg:gap-16">
           <div className="flex flex-col gap-5 lg:gap-10 px-7 lg:px-0">
             <h2 className="text-[30px] lg:text-[40px] text-transparent bg-clip-text bg-mentions-text-gradient font-bold">

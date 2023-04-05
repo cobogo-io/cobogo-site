@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <section className="flex items-center justify-center w-full pt-20 lg:pt-40 pb-[870px] bg-footer-background-mobile lg:bg-footer-background bg-cover">
-      <div className="w-full max-w-[1300px] flex flex-col lg:flex-row items-center justify-between">
+      <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-between">
         <div className="flex flex-col items-center gap-16 w-full">
           <div className="font-bold flex items-center gap-4 lg:gap-8">
             <Link href="https://www.instagram.com/cobogobr/" target="_blank">
