@@ -7,7 +7,7 @@ const products = [
   {
     id: 'social',
     background:
-      'bg-home-carrousel-social-background-mobile xl:bg-home-carrousel-social-background',
+      'bg-home-carrousel-social-background-mobile lg:bg-home-carrousel-social-background',
     image: '/images/home-productive-deal-flow-social-image.svg',
     cube: '/images/cobogo-social-cube.svg',
     backgroundColor: 'bg-blue-social',
@@ -15,7 +15,7 @@ const products = [
     textColor: 'text-blue-social',
     title: 'Social',
     subtitle: (
-      <h1 className="font-bold text-[27px] xl:text-[40px] leading-[37px] xl:leading-[55px]">
+      <h1 className="font-bold text-[27px] lg:text-[40px] leading-[37px] lg:leading-[55px]">
         Creator as a<br /> <span className="text-blue">business platform</span>
       </h1>
     ),
@@ -26,7 +26,7 @@ const products = [
   {
     id: 'community',
     background:
-      'bg-home-carrousel-community-background-mobile xl:bg-home-carrousel-community-background',
+      'bg-home-carrousel-community-background-mobile lg:bg-home-carrousel-community-background',
     image: '/images/home-productive-deal-flow-community-image.svg',
     cube: '/images/cobogo-community-cube.svg',
     backgroundColor: 'bg-yellow-community',
@@ -34,7 +34,7 @@ const products = [
     textColor: 'text-yellow-community',
     title: 'Community',
     subtitle: (
-      <h1 className="font-bold text-[27px] xl:text-[40px] leading-[37px] xl:leading-[55px]">
+      <h1 className="font-bold text-[27px] lg:text-[40px] leading-[37px] lg:leading-[55px]">
         The creator economy <br />
         game changer
       </h1>
@@ -46,7 +46,7 @@ const products = [
   {
     id: 'launchpad',
     background:
-      'bg-home-carrousel-launchpad-background-mobile xl:bg-home-carrousel-launchpad-background',
+      'bg-home-carrousel-launchpad-background-mobile lg:bg-home-carrousel-launchpad-background',
     image: '/images/home-productive-deal-flow-launchpad-image.svg',
     cube: '/images/cobogo-launchpad-cube.svg',
     backgroundColor: 'bg-pink-launchpad',
@@ -54,7 +54,7 @@ const products = [
     textColor: 'text-pink-launchpad',
     title: 'Launchpad',
     subtitle: (
-      <h1 className="font-bold text-[27px] xl:text-[40px] leading-[37px] xl:leading-[55px]">
+      <h1 className="font-bold text-[27px] lg:text-[40px] leading-[37px] lg:leading-[55px]">
         Getting Creators <br /> <span className="text-pink">ready to fly</span>
       </h1>
     ),
@@ -73,10 +73,10 @@ interface CarrouselProps {
 
 export default function Carrousel(props: CarrouselProps) {
   return (
-    <section className="flex items-center justify-center w-full py-16 xl:py-32">
+    <section className="flex items-center justify-center w-full py-16 lg:py-32">
       <div className="w-full max-w-[1300px] flex flex-col">
-        <div className="flex items-center w-full justify-between px-7 xl:px-24 py-6">
-          <h2 className="xl:text-2xl font-medium">Productized deal-flow</h2>
+        <div className="flex items-center w-full justify-between px-7 lg:px-24 py-6">
+          <h2 className="lg:text-2xl font-medium">Productized deal-flow</h2>
 
           <div className="flex items-center gap-4">
             <button
@@ -89,7 +89,7 @@ export default function Carrousel(props: CarrouselProps) {
                       )?.backgroundColor
                     }`
                   : 'bg-white/30'
-              } rounded-full h-3 xl:h-4 w-3 xl:w-4`}
+              } rounded-full h-3 lg:h-4 w-3 lg:w-4`}
             />
 
             <button
@@ -102,7 +102,7 @@ export default function Carrousel(props: CarrouselProps) {
                       )?.backgroundColor
                     }`
                   : 'bg-white/30'
-              } rounded-full h-3 xl:h-4 w-3 xl:w-4`}
+              } rounded-full h-3 lg:h-4 w-3 lg:w-4`}
             />
 
             <button
@@ -115,7 +115,7 @@ export default function Carrousel(props: CarrouselProps) {
                       )?.backgroundColor
                     }`
                   : 'bg-white/30'
-              } rounded-full h-3 xl:h-4 w-3 xl:w-4`}
+              } rounded-full h-3 lg:h-4 w-3 lg:w-4`}
             />
           </div>
         </div>
@@ -124,11 +124,11 @@ export default function Carrousel(props: CarrouselProps) {
           className={`${
             products.find(product => product.id === props.selectedProduct)
               ?.background
-          } bg-cover xl:rounded-[40px] w-full h-[892px] xl:h-[865px] px-7 xl:px-24 py-16 flex flex-col items-center justify-start gap-14`}
+          } bg-cover lg:rounded-[40px] w-full h-[892px] lg:h-[865px] px-7 lg:px-24 py-16 flex flex-col items-center justify-start gap-14`}
         >
           {products.find(product => product.id === props.selectedProduct)
             ?.image && (
-            <div className="relative min-w-[125px] xl:min-w-[257px] min-h-[107px] xl:min-h-[220px]">
+            <div className="relative min-w-[125px] lg:min-w-[257px] min-h-[107px] lg:min-h-[220px]">
               <Image
                 src={
                   products.find(product => product.id === props.selectedProduct)
@@ -142,7 +142,7 @@ export default function Carrousel(props: CarrouselProps) {
 
           {products.find(product => product.id === props.selectedProduct)
             ?.cube && (
-            <div className="flex xl:hidden">
+            <div className="flex lg:hidden">
               <Image
                 src={
                   products.find(product => product.id === props.selectedProduct)
@@ -174,7 +174,7 @@ export default function Carrousel(props: CarrouselProps) {
                   ?.subtitle
               }
 
-              <p className="xl:text-xl leading-[26px] xl:leading-[32px]">
+              <p className="lg:text-xl leading-[26px] lg:leading-[32px]">
                 {
                   products.find(product => product.id === props.selectedProduct)
                     ?.description
@@ -200,7 +200,7 @@ export default function Carrousel(props: CarrouselProps) {
 
             {products.find(product => product.id === props.selectedProduct)
               ?.cube && (
-              <div className="hidden xl:flex">
+              <div className="hidden lg:flex">
                 <Image
                   src={
                     products.find(

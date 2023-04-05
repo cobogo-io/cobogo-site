@@ -6,7 +6,7 @@ interface ButtonProps {
 export default function Button(props: ButtonProps) {
   return (
     <button
-      className={`${props.borderColor} text-lg xl:text-xl h-[50px] px-[20px] border-2 py-1 w-max rounded-md font-bold`}
+      className={`${props.borderColor} text-lg lg:text-xl h-[50px] px-[20px] border-2 py-1 w-max rounded-md font-bold`}
     >
       {props.text}
     </button>

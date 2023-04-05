@@ -1,8 +1,96 @@
 import Image from 'next/image'
+import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 
 export default function Main() {
+  const [weeSeeText, setWeeSeeText] = useState('')
+  const [creatorsText, setCreatorsText] = useState('')
+  const [asText, setAsText] = useState('')
+  const [foundersText, setFoundersText] = useState('')
+
+  const [line, setLine] = useState(0)
+
+  const [andTheirText, setAndTheirText] = useState('')
+  const [brandsText, setBrandsText] = useState('')
+  const [as2Text, setAs2Text] = useState('')
+  const [startupsText, setStartupsText] = useState('')
+
+  const [switchText, setSwitchText] = useState(false)
+
+  async function writeEffect(
+    setText: Dispatch<SetStateAction<string>>,
+    text: string,
+    internalSwitchText: boolean,
+    line: number
+  ) {
+    const arrayText = text.split('')
+    let element = ''
+
+    arrayText.forEach((letter, index) => {
+      setTimeout(() => {
+        const newText = (element += letter)
+        setText(newText)
+      }, 150 * index)
+    })
+
+    if (internalSwitchText) {
+      setTimeout(() => {
+        setSwitchText(!switchText)
+        setWeeSeeText('')
+        setCreatorsText('')
+        setAsText('')
+        setFoundersText('')
+        setAndTheirText('')
+        setBrandsText('')
+        setAs2Text('')
+        setStartupsText('')
+      }, 1000 * 2)
+    }
+
+    if (line === 0) {
+      setLine(0)
+    } else if (line === 1) {
+      setLine(1)
+    } else if (line === 2) {
+      setLine(2)
+    } else if (line === 3) {
+      setLine(3)
+    }
+  }
+
+  useEffect(() => {
+    if (!switchText) {
+      writeEffect(setWeeSeeText, 'Wee see', false, 0)
+
+      setTimeout(() => {
+        writeEffect(setCreatorsText, 'Creators', false, 1)
+      }, 1000 * 1.5)
+
+      setTimeout(() => {
+        writeEffect(setAsText, 'as', false, 2)
+      }, 1000 * 3)
+
+      setTimeout(() => {
+        writeEffect(setFoundersText, 'founders', true, 3)
+      }, 1000 * 3.5)
+    } else {
+      writeEffect(setAndTheirText, 'and their', false, 0)
+
+      setTimeout(() => {
+        writeEffect(setBrandsText, 'brands', false, 1)
+      }, 1000 * 1.5)
+
+      setTimeout(() => {
+        writeEffect(setAs2Text, 'as', false, 2)
+      }, 1000 * 3)
+
+      setTimeout(() => {
+        writeEffect(setStartupsText, 'startups', true, 3)
+      }, 1000 * 3.5)
+    }
+  }, [switchText])
+
   return (
-    <section className="flex items-center justify-center w-full py-16 xl:py-32 relative px-7">
+    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative px-7">
       <div className="absolute top-0 right-0">
         <Image
           src="/images/home-main-background.svg"
@@ -12,66 +100,51 @@ export default function Main() {
         />
       </div>
 
-      <div className="w-full max-w-[1108px] flex flex-col gap-24 xl:gap-52 relative z-10">
-        <div className="flex flex-col xl:flex-row gap-12 xl:gap-0 justify-between">
-          <h1 className="leading-[55px] xl:leading-[85px] text-[22px] xl:text-[32px] text-blue-2">
-            We see <br />
-            <strong className="text-[42px] xl:text-[65px] font-extrabold text-white">
-              Creators
-            </strong>{' '}
-            <br />{' '}
-            <span className="text-[42px] xl:text-[65px] text-white">as</span>{' '}
-            <strong className="text-[42px] xl:text-[65px] font-extrabold text-white">
-              founders
-            </strong>
-          </h1>
+      <div className="w-full max-w-[1108px] flex flex-col gap-24 lg:gap-52 relative z-10">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between lg:items-center">
+          <div className="flex flex-col">
+            <h1 className="leading-[55px] lg:leading-[110px] text-[22px] lg:text-[45px] text-blue-2 flex items-center">
+              {!switchText ? weeSeeText : andTheirText}{' '}
+              {line === 0 && <div className="border h-[80px] animate-pulse" />}
+            </h1>
 
-          <h1 className="leading-[55px] xl:leading-[85px] text-[22px] xl:text-[32px] text-blue-2">
-            and their <br />
-            <strong className="text-[42px] xl:text-[65px] font-extrabold text-white">
-              brands
-            </strong>{' '}
-            <br />{' '}
-            <span className="text-[42px] xl:text-[65px] text-white">as</span>{' '}
-            <strong className="text-[42px] xl:text-[65px] font-extrabold text-white">
-              startups
-            </strong>
-          </h1>
+            <h1 className="leading-[55px] lg:leading-[110px] text-[42px] lg:text-[75px] font-extrabold text-white flex items-center">
+              {!switchText ? creatorsText : brandsText}
+              {line === 1 && <div className="border h-[80px] animate-pulse" />}
+            </h1>
+
+            <div className="flex items-center gap-2">
+              <h1 className="text-[42px] lg:text-[75px] text-white mr-3 flex items-center">
+                {!switchText ? asText : as2Text}
+                {line === 2 && (
+                  <div className="border h-[80px] animate-pulse" />
+                )}
+              </h1>
+
+              <h1 className="text-[42px] lg:text-[75px] font-extrabold text-white flex items-center">
+                {!switchText ? foundersText : startupsText}
+                {line === 3 && (
+                  <div className="border h-[80px] animate-pulse" />
+                )}
+              </h1>
+            </div>
+          </div>
+
+          <Image
+            src="/images/home-main-cubes.svg"
+            width={460}
+            height={474}
+            alt="Home main cube"
+          />
         </div>
 
-        <div className="flex items-center justify-between">
-          <div className="relative w-[75px] xl:w-[270px] h-[75px] xl:h-[270px]">
-            <Image
-              src="/images/cobogo-community-cube.svg"
-              alt="Cobogo Community cube"
-              fill
-            />
-          </div>
-
-          <div className="relative w-[75px] xl:w-[270px] h-[75px] xl:h-[270px]">
-            <Image
-              src="/images/cobogo-social-cube.svg"
-              alt="Cobogo Social cube"
-              fill
-            />
-          </div>
-
-          <div className="relative w-[75px] xl:w-[270px] h-[75px] xl:h-[270px]">
-            <Image
-              src="/images/cobogo-launchpad-cube.svg"
-              alt="Cobogo Launchpad cube"
-              fill
-            />
-          </div>
-        </div>
-
-        <div className="flex flex-col xl:flex-row gap-12 xl:gap-0 justify-between">
-          <h2 className="leading-[45px] xl:leading-[70px] text-[30px] xl:text-[44px] bg-related-content-text-gradient bg-clip-text text-transparent">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between">
+          <h2 className="leading-[45px] lg:leading-[70px] text-[30px] lg:text-[44px] bg-related-content-text-gradient bg-clip-text text-transparent">
             Scaling up <br /> equity financing <br /> for{' '}
             <strong>Creators</strong>
           </h2>
 
-          <p className="leading-[32px] xl:leading-[40px] text-[20px] xl:text-[26px] max-w-[450px]">
+          <p className="leading-[32px] lg:leading-[40px] text-[20px] lg:text-[26px] max-w-[450px]">
             A fund manager with a technological and productized deal-flow that
             counts with a community of Creators acting as the Creator Economy
             market intelligence.

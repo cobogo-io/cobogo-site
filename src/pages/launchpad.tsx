@@ -10,26 +10,26 @@ export default function Index() {
 
   return (
     <div className="flex flex-col items-center relative">
-      <div className="absolute top-[120px] right-0 max-w-[250px] w-full h-full max-h-[250px] flex xl:hidden">
+      <div className="absolute top-[120px] right-0 max-w-[250px] w-full h-full max-h-[250px] flex lg:hidden">
         <Image
-          src="/images/cobogo-community-cube.svg"
+          src="/images/cobogo-launchpad-cube.svg"
           layout="fill"
           objectFit="cover"
-          alt="Cobogo Community cube"
+          alt="Cobogo Launchpad cube"
         />
       </div>
 
-      <div className="flex items-start xl:items-center justify-center w-full py-20 xl:py-36 px-7 xl:px-36 relative z-10 min-h-screen">
+      <div className="flex items-start lg:items-center justify-center w-full py-20 lg:py-36 px-7 lg:px-36 relative z-10 min-h-screen">
         <div ref={homeHeaderRef} />
 
         {homeHeaderRefIsInView && (
           <div className="w-full max-w-[1400px] flex items-center justify-between">
-            <div className="flex flex-col max-w-[550px] w-full gap-10 xl:gap-[70px]">
+            <div className="flex flex-col max-w-[550px] w-full gap-10 lg:gap-[70px]">
               <motion.h1
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.5, duration: 1 }}
-                className="text-[36px] xl:text-[51px] font-extrabold xl:leading-[70px]"
+                className="text-[36px] lg:text-[51px] font-extrabold lg:leading-[70px]"
               >
                 Getting Creators <br />
                 <span className="text-pink">ready to fly</span>
@@ -39,7 +39,7 @@ export default function Index() {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 1 }}
-                className="text-[24px] xl:text-[30px] xl:leading-[45px]"
+                className="text-[24px] lg:text-[30px] lg:leading-[45px]"
               >
                 A complete training and acceleration program for Creators who
                 need to professionalize and grow their businesses.
@@ -68,7 +68,7 @@ export default function Index() {
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.5, duration: 1 }}
-              className="hidden xl:flex"
+              className="hidden lg:flex"
             >
               <Image
                 src="/images/cobogo-launchpad-cube.svg"
