@@ -12,7 +12,7 @@ interface HomeProps {
 
 export default function Home(props: HomeProps) {
   const [selectedProduct, setSelectedProduct] = useState<
-    'social' | 'community' | 'launchpad'
+    'community' | 'social' | 'launchpad'
   >('community')
 
   useEffect(() => {

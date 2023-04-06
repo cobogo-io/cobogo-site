@@ -1,5 +1,6 @@
+import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
-import { Dispatch, SetStateAction, useEffect, useState } from 'react'
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
 
 export default function Main() {
   const [weeSeeText, setWeeSeeText] = useState('')
@@ -15,6 +16,9 @@ export default function Main() {
   const [startupsText, setStartupsText] = useState('')
 
   const [switchText, setSwitchText] = useState(false)
+
+  const mainRef = useRef(null)
+  const mainRefIsInView = useInView(mainRef, { once: true })
 
   async function writeEffect(
     setText: Dispatch<SetStateAction<string>>,
@@ -90,7 +94,7 @@ export default function Main() {
   }, [switchText])
 
   return (
-    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative px-7">
+    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative px-7 min-h-[892px]">
       <div className="absolute top-0 right-0">
         <Image
           src="/images/home-main-background.svg"
@@ -100,57 +104,86 @@ export default function Main() {
         />
       </div>
 
-      <div className="w-full max-w-[1110px] flex flex-col gap-24 lg:gap-52 relative z-10">
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between lg:items-center">
-          <div className="flex flex-col h-[333px]">
-            <h1 className="leading-[55px] lg:leading-[110px] text-[22px] lg:text-[45px] text-blue-2 flex items-center">
-              {!switchText ? weeSeeText : andTheirText}{' '}
-              {line === 0 && <div className="border h-[80px] animate-pulse" />}
-            </h1>
+      <div ref={mainRef} />
 
-            <h1 className="leading-[55px] lg:leading-[110px] text-[42px] lg:text-[75px] font-extrabold text-white flex items-center">
-              {!switchText ? creatorsText : brandsText}
-              {line === 1 && <div className="border h-[80px] animate-pulse" />}
-            </h1>
+      {mainRefIsInView && (
+        <div className="w-full max-w-[1110px] flex flex-col gap-24 lg:gap-52 relative z-10">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between lg:items-center">
+            <div className="flex flex-col h-[333px]">
+              <motion.h1
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.5, duration: 1 }}
+                className="leading-[55px] lg:leading-[110px] text-[22px] lg:text-[45px] text-blue-2 flex items-center"
+              >
+                {!switchText ? weeSeeText : andTheirText}{' '}
+                {line === 0 && (
+                  <div className="border h-[80px] animate-pulse" />
+                )}
+              </motion.h1>
 
-            <div className="flex items-center gap-2">
-              <h1 className="text-[42px] lg:text-[75px] text-white mr-3 flex items-center">
-                {!switchText ? asText : as2Text}
-                {line === 2 && (
+              <h1 className="leading-[55px] lg:leading-[110px] text-[42px] lg:text-[75px] font-extrabold text-white flex items-center">
+                {!switchText ? creatorsText : brandsText}
+                {line === 1 && (
                   <div className="border h-[80px] animate-pulse" />
                 )}
               </h1>
 
-              <h1 className="text-[42px] lg:text-[75px] font-extrabold text-white flex items-center">
-                {!switchText ? foundersText : startupsText}
-                {line === 3 && (
-                  <div className="border h-[80px] animate-pulse" />
-                )}
-              </h1>
+              <div className="flex items-center gap-2">
+                <h1 className="text-[42px] lg:text-[75px] text-white mr-3 flex items-center">
+                  {!switchText ? asText : as2Text}
+                  {line === 2 && (
+                    <div className="border h-[80px] animate-pulse" />
+                  )}
+                </h1>
+
+                <h1 className="text-[42px] lg:text-[75px] font-extrabold text-white flex items-center">
+                  {!switchText ? foundersText : startupsText}
+                  {line === 3 && (
+                    <div className="border h-[80px] animate-pulse" />
+                  )}
+                </h1>
+              </div>
             </div>
+
+            <motion.div
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 1, duration: 1 }}
+            >
+              <Image
+                src="/images/home-main-cubes.svg"
+                width={460}
+                height={474}
+                alt="Home main cube"
+              />
+            </motion.div>
           </div>
 
-          <Image
-            src="/images/home-main-cubes.svg"
-            width={460}
-            height={474}
-            alt="Home main cube"
-          />
-        </div>
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between">
+            <motion.h2
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.5, duration: 1 }}
+              className="leading-[45px] lg:leading-[70px] text-[30px] lg:text-[44px] bg-related-content-text-gradient bg-clip-text text-transparent"
+            >
+              Scaling up <br /> equity financing <br /> for{' '}
+              <strong>Creators</strong>
+            </motion.h2>
 
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between">
-          <h2 className="leading-[45px] lg:leading-[70px] text-[30px] lg:text-[44px] bg-related-content-text-gradient bg-clip-text text-transparent">
-            Scaling up <br /> equity financing <br /> for{' '}
-            <strong>Creators</strong>
-          </h2>
-
-          <p className="leading-[32px] lg:leading-[40px] text-[20px] lg:text-[26px] max-w-[450px]">
-            A fund manager with a technological and productized deal-flow that
-            counts with a community of Creators acting as the Creator Economy
-            market intelligence.
-          </p>
+            <motion.p
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 2, duration: 1 }}
+              className="leading-[32px] lg:leading-[40px] text-[20px] lg:text-[26px] max-w-[450px]"
+            >
+              A fund manager with a technological and productized deal-flow that
+              counts with a community of Creators acting as the Creator Economy
+              market intelligence.
+            </motion.p>
+          </div>
         </div>
-      </div>
+      )}
     </section>
   )
 }

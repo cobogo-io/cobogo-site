@@ -1,29 +1,53 @@
+import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRef } from 'react'
 
 export default function Mentions() {
+  const mentionsRef = useRef(null)
+  const mentionsRefIsInView = useInView(mentionsRef, { once: true })
+
   return (
     <section className="flex items-center justify-center w-full py-16 lg:py-32 relative">
-      <div className="absolute hidden lg:flex">
-        <Image
-          src="/images/home-related-content-background.svg"
-          width={1052}
-          height={1044}
-          alt="Home related content background"
-        />
-      </div>
+      {mentionsRefIsInView && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 1 }}
+          className="absolute hidden lg:flex"
+        >
+          <Image
+            src="/images/home-related-content-background.svg"
+            width={1052}
+            height={1044}
+            alt="Home related content background"
+          />
+        </motion.div>
+      )}
 
       <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-between z-10 relative">
+        <div ref={mentionsRef} />
+
         <div className="flex flex-col w-full gap-8 lg:gap-16">
           <div className="flex flex-col gap-5 lg:gap-10 px-7 lg:px-0">
-            <h2 className="text-[30px] lg:text-[40px] text-transparent bg-clip-text bg-mentions-text-gradient font-bold">
+            <motion.h2
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
+              className="text-[30px] lg:text-[40px] text-transparent bg-clip-text bg-mentions-text-gradient font-bold"
+            >
               Mentions
-            </h2>
+            </motion.h2>
 
             {/* <p className="text-[22px] leading-[32px] w-full max-w-[660px]">-</p> */}
           </div>
 
-          <div className="flex justify-between overflow-auto gap-10 bg-gray lg:bg-transparent py-8 lg:py-0">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 1 }}
+            className="flex justify-between overflow-auto gap-10 bg-gray lg:bg-transparent py-8 lg:py-0"
+          >
             <Link
               className="flex flex-col gap-8 ml-7 lg:ml-0"
               href="https://cointelegraph.com.br/news/brazilian-startups-focused-on-web3-get-chosen-for-acceleration-program/"
@@ -100,7 +124,7 @@ export default function Mentions() {
                 alt="ABC da comunicação logo"
               />
             </Link>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

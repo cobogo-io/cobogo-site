@@ -1,28 +1,10 @@
+import { AnimatePresence, motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Dispatch, SetStateAction } from 'react'
+import { Dispatch, SetStateAction, useRef } from 'react'
 import Button from './Button'
 
 const products = [
-  {
-    id: 'social',
-    background:
-      'bg-home-carrousel-social-background-mobile lg:bg-home-carrousel-social-background',
-    image: '/images/home-productive-deal-flow-social-image.svg',
-    cube: '/images/cobogo-social-cube.svg',
-    backgroundColor: 'bg-blue-social',
-    borderColor: 'border-blue-social',
-    textColor: 'text-blue-social',
-    title: 'Social',
-    subtitle: (
-      <h1 className="font-bold text-[27px] lg:text-[40px] leading-[37px] lg:leading-[55px]">
-        Creator as a<br /> <span className="text-blue">business platform</span>
-      </h1>
-    ),
-    description:
-      'A all in one tool to showcase a Creators work and engagement metrics to investors and partners in a professional and automated way. All data is verified and authenticated by the Creators social media.',
-    buttonHref: 'https://cobogo.social/',
-  },
   {
     id: 'community',
     background:
@@ -43,6 +25,26 @@ const products = [
       'A community formed by Creators, investors and enthusiasts of the Creator Economy created to boost knowledge, research and development of this market, discussing new movements, trends and selecting the next early stage Creators to be invested.',
     buttonHref: '/community',
   },
+  {
+    id: 'social',
+    background:
+      'bg-home-carrousel-social-background-mobile lg:bg-home-carrousel-social-background',
+    image: '/images/home-productive-deal-flow-social-image.svg',
+    cube: '/images/cobogo-social-cube.svg',
+    backgroundColor: 'bg-blue-social',
+    borderColor: 'border-blue-social',
+    textColor: 'text-blue-social',
+    title: 'Social',
+    subtitle: (
+      <h1 className="font-bold text-[27px] lg:text-[40px] leading-[37px] lg:leading-[55px]">
+        Creator as a<br /> <span className="text-blue">business platform</span>
+      </h1>
+    ),
+    description:
+      'A all in one tool to showcase a Creators work and engagement metrics to investors and partners in a professional and automated way. All data is verified and authenticated by the Creators social media.',
+    buttonHref: 'https://cobogo.social/',
+  },
+
   {
     id: 'launchpad',
     background:
@@ -72,150 +74,110 @@ interface CarrouselProps {
 }
 
 export default function Carrousel(props: CarrouselProps) {
+  const carrouselRef = useRef(null)
+  const carrouselRefIsInView = useInView(carrouselRef, { once: true })
+
   return (
-    <section className="flex items-center justify-center w-full py-16 lg:py-32">
-      <div className="w-full max-w-[1300px] flex flex-col">
-        <div className="flex items-center w-full justify-between px-7 lg:px-24 py-6">
-          <h2 className="lg:text-2xl font-medium">Productized deal-flow</h2>
+    <section className="flex items-center justify-center w-full py-16 lg:py-32 min-h-[945px]">
+      <div ref={carrouselRef} />
 
-          <div className="flex items-center gap-4">
-            <button
-              onClick={() => props.setSelectedProduct('community')}
-              className={`${
-                props.selectedProduct === 'community'
-                  ? `${
-                      products.find(
-                        product => product.id === props.selectedProduct
-                      )?.backgroundColor
-                    }`
-                  : 'bg-white/30'
-              } rounded-full h-3 lg:h-4 w-3 lg:w-4`}
-            />
+      {carrouselRefIsInView && (
+        <motion.div className="w-full max-w-[1300px] flex flex-col">
+          <div className="flex items-center w-full justify-between px-7 lg:px-24 py-6">
+            <h2 className="lg:text-2xl font-medium">Productized deal-flow</h2>
 
-            <button
-              onClick={() => props.setSelectedProduct('social')}
-              className={`${
-                props.selectedProduct === 'social'
-                  ? `${
-                      products.find(
-                        product => product.id === props.selectedProduct
-                      )?.backgroundColor
-                    }`
-                  : 'bg-white/30'
-              } rounded-full h-3 lg:h-4 w-3 lg:w-4`}
-            />
-
-            <button
-              onClick={() => props.setSelectedProduct('launchpad')}
-              className={`${
-                props.selectedProduct === 'launchpad'
-                  ? `${
-                      products.find(
-                        product => product.id === props.selectedProduct
-                      )?.backgroundColor
-                    }`
-                  : 'bg-white/30'
-              } rounded-full h-3 lg:h-4 w-3 lg:w-4`}
-            />
+            <div className="flex items-center gap-4 transition-colors">
+              {products.map(product => {
+                if (product.id === props.selectedProduct) {
+                  return (
+                    <button
+                      key={product.id}
+                      onClick={() => props.setSelectedProduct('community')}
+                      className={`${product.backgroundColor} rounded-full h-3 lg:h-4 w-3 lg:w-4`}
+                    />
+                  )
+                } else {
+                  return (
+                    <button
+                      key={product.id}
+                      onClick={() => props.setSelectedProduct('community')}
+                      className="bg-white/30 rounded-full h-3 lg:h-4 w-3 lg:w-4"
+                    />
+                  )
+                }
+              })}
+            </div>
           </div>
-        </div>
 
-        <div
-          className={`${
-            products.find(product => product.id === props.selectedProduct)
-              ?.background
-          } bg-cover lg:rounded-[40px] w-full h-[892px] lg:h-[865px] px-7 lg:px-24 py-16 flex flex-col items-center justify-start gap-14`}
-        >
-          {products.find(product => product.id === props.selectedProduct)
-            ?.image && (
-            <div className="relative min-w-[125px] lg:min-w-[257px] min-h-[107px] lg:min-h-[220px]">
-              <Image
-                src={
-                  products.find(product => product.id === props.selectedProduct)
-                    ?.image as string
-                }
-                fill
-                alt="Image"
-              />
-            </div>
-          )}
+          <AnimatePresence mode="wait">
+            {products.map(product => {
+              if (product.id === props.selectedProduct) {
+                return (
+                  <motion.div
+                    key={product.id}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0, transition: { duration: 0.5 } }}
+                    transition={{ delay: 0.5, duration: 1 }}
+                    className={`${product.background} bg-cover lg:rounded-[40px] w-full h-[892px] lg:h-[865px] px-7 lg:px-24 py-16 flex flex-col items-center justify-start gap-14`}
+                  >
+                    {product.image && (
+                      <div className="relative min-w-[125px] lg:min-w-[257px] min-h-[107px] lg:min-h-[220px]">
+                        <Image src={product.image as string} fill alt="Image" />
+                      </div>
+                    )}
 
-          {products.find(product => product.id === props.selectedProduct)
-            ?.cube && (
-            <div className="flex lg:hidden">
-              <Image
-                src={
-                  products.find(product => product.id === props.selectedProduct)
-                    ?.cube as string
-                }
-                width={120}
-                height={120}
-                alt="Cube"
-              />
-            </div>
-          )}
+                    {product.cube && (
+                      <div className="flex lg:hidden">
+                        <Image
+                          src={product.cube as string}
+                          width={120}
+                          height={120}
+                          alt="Cube"
+                        />
+                      </div>
+                    )}
 
-          <div className="flex items-center justify-between w-full">
-            <div className="flex flex-col max-w-[510px] w-full gap-6">
-              <h2
-                className={`font-bold text-xl ${
-                  products.find(product => product.id === props.selectedProduct)
-                    ?.textColor
-                }`}
-              >
-                {
-                  products.find(product => product.id === props.selectedProduct)
-                    ?.title
-                }
-              </h2>
+                    <div className="flex items-center justify-between w-full">
+                      <div className="flex flex-col max-w-[510px] w-full gap-6">
+                        <h2
+                          className={`font-bold text-xl ${product.textColor}`}
+                        >
+                          {product.title}
+                        </h2>
 
-              {
-                products.find(product => product.id === props.selectedProduct)
-                  ?.subtitle
+                        {product.subtitle}
+
+                        <p className="lg:text-xl leading-[26px] lg:leading-[32px]">
+                          {product.description}
+                        </p>
+
+                        <Link href={product.buttonHref as string}>
+                          <Button
+                            text="learn more"
+                            borderColor={`${product.borderColor}`}
+                          />
+                        </Link>
+                      </div>
+
+                      {product.cube && (
+                        <div className="hidden lg:flex">
+                          <Image
+                            src={product.cube as string}
+                            width={431}
+                            height={439}
+                            alt="Cube"
+                          />
+                        </div>
+                      )}
+                    </div>
+                  </motion.div>
+                )
               }
-
-              <p className="lg:text-xl leading-[26px] lg:leading-[32px]">
-                {
-                  products.find(product => product.id === props.selectedProduct)
-                    ?.description
-                }
-              </p>
-
-              <Link
-                href={
-                  products.find(product => product.id === props.selectedProduct)
-                    ?.buttonHref as string
-                }
-              >
-                <Button
-                  text="learn more"
-                  borderColor={`${
-                    products.find(
-                      product => product.id === props.selectedProduct
-                    )?.borderColor
-                  }`}
-                />
-              </Link>
-            </div>
-
-            {products.find(product => product.id === props.selectedProduct)
-              ?.cube && (
-              <div className="hidden lg:flex">
-                <Image
-                  src={
-                    products.find(
-                      product => product.id === props.selectedProduct
-                    )?.cube as string
-                  }
-                  width={431}
-                  height={439}
-                  alt="Cube"
-                />
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
+            })}
+          </AnimatePresence>
+        </motion.div>
+      )}
     </section>
   )
 }

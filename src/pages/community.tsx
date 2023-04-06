@@ -5,8 +5,8 @@ import Link from 'next/link'
 import { useRef } from 'react'
 
 export default function Index() {
-  const homeHeaderRef = useRef(null)
-  const homeHeaderRefIsInView = useInView(homeHeaderRef, { once: true })
+  const mainRef = useRef(null)
+  const mainRefIsInView = useInView(mainRef, { once: true })
 
   return (
     <div className="flex flex-col items-center relative">
@@ -21,10 +21,10 @@ export default function Index() {
 
       <div className="flex justify-center items-center w-full">
         <div className="w-full max-w-[1110px] flex items-start lg:items-center justify-center py-20 lg:py-36 px-7 lg:px-0 relative z-10 min-h-screen">
-          <div ref={homeHeaderRef} />
+          <div ref={mainRef} />
 
-          {homeHeaderRefIsInView && (
-            <div className="w-full max-w-[1400px] flex items-center justify-between">
+          {mainRefIsInView && (
+            <div className="w-full flex items-center justify-between">
               <div className="flex flex-col max-w-[550px] w-full gap-10 lg:gap-[70px]">
                 <motion.h1
                   initial={{ y: 100, opacity: 0 }}
