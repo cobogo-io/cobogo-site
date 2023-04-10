@@ -13,8 +13,7 @@ export default function Index() {
       <div className="absolute top-[120px] right-0 max-w-[250px] w-full h-full max-h-[250px] flex lg:hidden">
         <Image
           src="/images/cobogo-launchpad-cube.svg"
-          layout="fill"
-          objectFit="cover"
+          fill
           alt="Cobogo Launchpad cube"
         />
       </div>
