@@ -42,6 +42,8 @@ module.exports = {
           "url('/images/home-carrousel-launchpad-background-mobile.svg')",
         'home-carrousel-social-background':
           "url('/images/home-carrousel-social-background.svg')",
+        'launchpad-main-background':
+          "url('/images/launchpad-main-background.svg')",
         'footer-background': "url('/images/footer-background.svg')",
         'footer-background-mobile':
           "url('/images/footer-background-mobile.svg')",

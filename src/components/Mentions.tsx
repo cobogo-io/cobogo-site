@@ -55,9 +55,9 @@ export default function Mentions() {
             >
               <div className="w-[340px] h-[215px] rounded-[15px] bg-mentions-text-gradient p-[2px] flex items-center justify-center">
                 <img
-                  src="/images/mention-1-image.avif"
+                  src="/images/mention-1.avif"
                   className="bg-blue-social w-full h-full rounded-[15px]"
-                  alt="Mention 1 image"
+                  alt="Mention 1"
                 />
               </div>
 
@@ -81,9 +81,9 @@ export default function Mentions() {
             >
               <div className="w-[340px] h-[215px] rounded-[15px] bg-mentions-text-gradient p-[2px] flex items-center justify-center">
                 <img
-                  src="/images/mention-2-image.webp"
+                  src="/images/mention-2.webp"
                   className="bg-blue-social w-full h-full rounded-[15px]"
-                  alt="Mention 2 image"
+                  alt="Mention 2"
                 />
               </div>
 
@@ -107,9 +107,9 @@ export default function Mentions() {
             >
               <div className="w-[340px] h-[215px] rounded-[15px] bg-mentions-text-gradient p-[2px] flex items-center justify-center">
                 <img
-                  src="/images/mention-3-image.jpeg"
+                  src="/images/mention-3.jpeg"
                   className="bg-blue-social w-full h-full rounded-[15px]"
-                  alt="Mention 3 image"
+                  alt="Mention 3"
                 />
               </div>
 

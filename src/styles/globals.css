@@ -24,8 +24,11 @@ button {
 }
 
 a,
+button {
+  @apply rounded-md;
+}
+
 select,
-button,
 input,
 textarea {
   @apply rounded-sm;

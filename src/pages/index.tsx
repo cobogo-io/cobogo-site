@@ -1,4 +1,5 @@
 import Carrousel from '@/components/Carrousel'
+import Footer from '@/components/Footer'
 import Main from '@/components/Main'
 import Mentions from '@/components/Mentions'
 import RelatedContent from '@/components/RelatedContent'
@@ -39,6 +40,8 @@ export default function Home(props: HomeProps) {
       <RelatedContent mostRecentArticles={props.mostRecentArticles} />
 
       <Mentions />
+
+      <Footer />
     </>
   )
 }
