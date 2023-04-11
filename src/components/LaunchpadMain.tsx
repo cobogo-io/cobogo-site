@@ -13,17 +13,9 @@ export default function LaunchpadMain() {
       <div className="absolute top-0 right-0">
         <Image
           src="/images/launchpad-main-background.svg"
-          width="1300"
-          height="1269"
-          alt="Launchpad header background"
-        />
-      </div>
-
-      <div className="absolute top-[120px] right-0 max-w-[250px] w-full h-full max-h-[250px] flex lg:hidden">
-        <Image
-          src="/images/cobogo-launchpad-cube.svg"
-          fill
-          alt="Cobogo Launchpad cube"
+          width={1300}
+          height={1269}
+          alt="Launchpad main background"
         />
       </div>
 
@@ -71,6 +63,15 @@ export default function LaunchpadMain() {
                     />
                   </Link>
                 </motion.div>
+
+                <div className="flex lg:hidden w-full flex-col items-center">
+                  <Image
+                    src="/images/astronaut.svg"
+                    width={209}
+                    height={444}
+                    alt="Astronaut"
+                  />
+                </div>
               </div>
 
               <motion.div

@@ -4,248 +4,127 @@ import Button from './Button'
 export default function LaunchpadContent() {
   return (
     <section className="flex flex-col w-full relative">
-      <svg
-        viewBox="0 0 1300 582"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-full absolute top-[250px]"
-      >
-        <rect
-          width="2123"
-          height="448.675"
-          transform="matrix(-0.998027 -0.0627905 -0.0627905 0.998027 1582.34 133.391)"
-          fill="#F0E84F"
+      <div className="absolute bottom-0 w-full h-[775px] z-10 hidden lg:flex">
+        <Image
+          src="/images/launchpad-footer-background.svg"
+          fill
+          alt="Launchpad footer background"
         />
-        <rect
-          width="2123"
-          height="448.675"
-          transform="matrix(-0.998027 -0.0627905 -0.0627905 0.998027 1582.34 133.391)"
-          fill="#F0E84F"
-        />
-        <rect
-          width="2123"
-          height="448.675"
-          transform="matrix(-0.998027 -0.0627905 -0.0627905 0.998027 1582.34 133.391)"
-          fill="#F2A9EE"
-        />
-      </svg>
+      </div>
 
-      <svg
-        viewBox="0 0 1300 577"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-full absolute top-[1700px]"
-      >
-        <rect
-          width="1394.85"
-          height="490"
-          transform="matrix(-0.998027 0.0627905 0.0627905 0.998027 1378 0)"
-          fill="#F0E84F"
+      <div className="absolute bottom-[-250px] right-0 z-20 flex lg:hidden">
+        <Image
+          src="/images/launchpad-footer-background-mobile.svg"
+          width={341}
+          height={842}
+          alt="Launchpad footer background mobile"
         />
-        <rect
-          width="1394.85"
-          height="490"
-          transform="matrix(-0.998027 0.0627905 0.0627905 0.998027 1378 0)"
-          fill="#F0E84F"
-        />
-        <rect
-          width="1394.85"
-          height="490"
-          transform="matrix(-0.998027 0.0627905 0.0627905 0.998027 1378 0)"
-          fill="#FEE1FF"
-        />
-      </svg>
+      </div>
 
-      <svg
-        viewBox="0 0 1300 1527"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-full absolute bottom-0"
-      >
-        <g opacity="0.25" filter="url(#filter0_f_8250_4637)">
-          <path
-            d="M484.932 1240.61C728.614 1255.44 1157.72 1028.31 1172.99 1248.9C1188.26 1469.5 845.815 2010.51 602.133 1995.68C358.452 1980.86 148.533 1790.01 133.265 1569.41C117.997 1348.82 241.251 1225.78 484.932 1240.61Z"
-            fill="url(#paint0_angular_8250_4637)"
-          />
-        </g>
-        <path
-          d="M-169.595 859.284L-0.724245 1010.53L308.45 783.848L142.134 633.721L-169.595 859.284Z"
-          fill="#F095F9"
+      <div className="absolute bottom-[-250px] right-0 z-10 flex lg:hidden">
+        <Image
+          src="/images/launchpad-footer-background-mobile-2.svg"
+          width={1455}
+          height={1469}
+          alt="Launchpad footer background mobile 2"
         />
-        <path
-          d="M-192.727 584.275L-20.907 743.089L136.839 628.96L-38.4652 470.75L-192.727 584.275Z"
-          fill="#F5AEFF"
-        />
-        <path
-          d="M262.534 831.926L3.87443 1021.54L-32.5659 1137.87L232.968 945.266L304.734 801.664L262.534 831.926Z"
-          fill="#C37ACE"
-        />
-        <path
-          d="M-64.3149 1239.18L-61.6209 1237.51L38.8281 1166.51L75.6634 1073.7L-38.3724 1156.43L-64.3149 1239.18Z"
-          fill="#BF63C1"
-        />
-        <path
-          d="M-67.8451 1250.44L-73.1636 1267.42L-64.4774 1306.42L2.43442 1258.55L2.29508 1258.5L34.1136 1178.35L-67.8451 1250.44Z"
-          fill="#79407F"
-        />
-        <path
-          d="M51.4865 1166.09L19.668 1246.19L124.716 1171.06L170.028 1082.27L51.4865 1166.09Z"
-          fill="#8E4C93"
-        />
-        <path
-          d="M126.48 1036.84L93.2217 1060.97L56.2007 1154.22L173.674 1071.17L132.519 1033.1L126.48 1036.84Z"
-          fill="#F5AEFF"
-        />
-        <path
-          d="M325.753 785.569L326.821 784.779L-203.503 306.154L-549.025 519.524L-549.094 519.455L-549.118 519.571L-549.373 519.733L-549.187 520.035L-569.44 641.596L-679.434 597.073L-857.223 713.501L-857.386 713.548L-857.362 713.594L-857.595 713.757L-857.246 713.896L-820.643 828.907L-902.559 885.159L-903 885.298L-902.954 885.437L-902.977 885.461L-902.93 885.484L-849.234 1057.47L-849.35 1057.72L-718.383 1122.82L-667.241 1298.5L-214.141 1536.02L-211.005 1537.83L-38.9528 1421.15L-61.7599 1318.75L133.564 1179L133.657 1179.05L189.351 1069.92L189.281 1069.89L189.305 1069.87L141.67 1025.83L239.587 954.811H239.61C239.633 954.811 239.634 954.788 239.657 954.764C240.307 954.091 241.004 953.464 241.77 952.953C241.793 952.93 241.84 952.906 241.863 952.883C241.979 952.767 242.119 952.651 242.235 952.535C242.467 952.117 242.699 951.676 242.955 951.234L242.931 951.188L325.753 785.569ZM19.6675 1246.19L51.4862 1166.07L170.027 1082.27L124.715 1171.04L19.6675 1246.19ZM2.43449 1258.55L-64.4773 1306.42L-73.1635 1267.42L-67.845 1250.44L34.1137 1178.35L2.29514 1258.48L2.43449 1258.55ZM-51.9821 1415.95L-208.148 1521.88L-250.047 1347.18L-93.0908 1233.37L-92.6959 1233.1L-90.1644 1244.5L-51.9821 1415.95ZM-657.556 1290.65L-703.983 1129.95L-354.816 1303.49L-354.839 1303.4L-354.723 1303.33L-261.195 1350.52L-220.829 1518.79L-657.556 1290.65ZM-204.827 320.624L-43.7373 466.013L-197.929 579.492L-368.588 421.769L-204.827 320.624ZM56.2009 1154.22L93.2219 1060.97L126.48 1036.84L132.124 1032.75L132.496 1033.1L173.651 1071.17L56.2009 1154.22ZM38.8284 1166.51L-61.6207 1237.53L-64.4077 1239.51L-64.3147 1239.2L-38.3722 1156.43L75.6867 1073.7L38.8284 1166.51ZM-466.761 1069.82L-322.788 967.933L-258.826 984.307L-413.018 1094.12L-466.761 1069.82ZM-524.801 846.14L-368.495 735.31L-326.597 956.39L-467.713 1056.26L-524.801 846.14ZM-405.772 1103.2L-242.173 986.699L-206.546 1184.81L-354.305 1288.84L-357.905 1291.37L-358.044 1290.81L-405.772 1103.2ZM-200.902 1195.03L-98.5254 1222.97L-258.454 1338.91L-343.969 1295.76L-200.902 1195.03ZM-0.724038 1010.53L-169.595 859.286L142.134 633.723L308.473 783.827L-0.724038 1010.53ZM-20.9068 743.09L-192.727 584.276L-38.4651 470.751L136.839 628.961L-20.9068 743.09ZM-26.6667 747.271L-174.913 854.548L-540.013 527.607L-374.743 425.555L-26.6667 747.271ZM-381.432 730.223L-532.21 837.152L-832.953 711.48L-678.157 610.126L-381.432 730.223ZM-536.344 847.998L-477.352 1065.04L-776.469 929.89L-776.376 929.867L-843.218 719.772L-536.344 847.998ZM-817.02 840.473L-790.59 923.503L-879.45 883.347L-817.02 840.473ZM-481.625 1075.84L-478.885 1077.07L-417.315 1104.89L-372.304 1281.85L-839.549 1049.62L-888.809 891.871L-481.625 1075.84ZM-32.5659 1137.87L3.8745 1021.56L262.51 831.926L305.245 800.596L304.711 801.664L232.945 945.289L-32.5659 1137.87Z"
-          fill="#624466"
-        />
-        <path
-          d="M497.132 1387.24L449.822 1282.54L338.875 1258.83L374.874 1361.34L497.132 1387.24Z"
-          fill="#F095F9"
-        />
-        <path
-          d="M373.829 1368.4L305.616 1473.8L428.524 1499.19L493.508 1406.56L501.335 1395.42L500.754 1395.28L373.829 1368.4Z"
-          fill="#8E4C93"
-        />
-        <path
-          d="M331.629 1259.66L264.322 1370.75L300.67 1468.34L368.255 1363.94L331.629 1259.66Z"
-          fill="#BF63C1"
-        />
-        <path
-          d="M509.464 1396.21L508.767 1395.72L454.815 1276.34L329.468 1249.54L257.331 1368.54L256.448 1370.01L297.162 1479.31L431.659 1507.08L508.883 1397L509.394 1397.11L509.162 1396.6L509.464 1396.21ZM449.821 1282.54L497.154 1387.26L374.897 1361.37L338.898 1258.83L449.821 1282.54ZM264.322 1370.75L331.651 1259.67L368.254 1363.95L300.692 1468.34L264.322 1370.75ZM493.508 1406.56L428.524 1499.19L305.639 1473.8L373.852 1368.41L500.777 1395.3L501.335 1395.42L493.508 1406.56Z"
-          fill="#624466"
-        />
-        <path
-          d="M1334.71 1789.69L1292.83 1625.09L1235.55 1599.2L1232.7 1598.25L1233.01 1598.04L854.202 1426.89L900.029 1573.64L1334.71 1789.69Z"
-          fill="#8E4C93"
-        />
-        <path
-          d="M958.712 1462.26L1236.98 1587.99L1182.1 1386.08L896.593 1266.79L958.798 1462.24L958.712 1462.26Z"
-          fill="#BF63C1"
-        />
-        <path
-          d="M920.987 1379.08L862.909 1418.99L945.575 1456.32L920.987 1379.08Z"
-          fill="#C37ACE"
-        />
-        <path
-          d="M1518.34 1392.15L1656.25 1292.37L1332.44 993.061L1178.69 1088.02L1518.34 1392.15Z"
-          fill="#FFCAFF"
-        />
-        <path
-          d="M1185.95 1375.99L1326.21 1276.51L1050.15 1164.79L906.165 1259.08L1185.95 1375.99Z"
-          fill="#F095F9"
-        />
-        <path
-          d="M1377.23 1486.92L1338.25 1281.22L1192.84 1384.35L1245.95 1579.82L1377.23 1486.92Z"
-          fill="#FEE1FF"
-        />
-        <path
-          d="M1440.28 1512.89L1380.77 1497.65L1246.83 1592.44L1296.83 1615.02L1440.28 1512.89Z"
-          fill="#F5AEFF"
-        />
-        <path
-          d="M1984.11 1328L1985.1 1327.27L1491.74 882.002L1170.3 1080.5L1170.24 1080.44L1170.22 1080.54L1169.98 1080.69L1170.15 1080.98L1151.31 1194.06L1048.98 1152.64L883.586 1260.96L883.435 1261L883.457 1261.04L883.241 1261.19L883.565 1261.32L917.616 1368.32L841.411 1420.65L841 1420.78L841.043 1420.91L841.022 1420.93L841.065 1420.95L891.019 1580.95L890.911 1581.19L1012.75 1641.75L1060.33 1805.18L1481.85 2026.15L1484.76 2027.83L1644.82 1919.28L1623.61 1824.02L1805.32 1694.01L1805.4 1694.06L1857.21 1592.53L1857.15 1592.51L1857.17 1592.49L1812.86 1551.52L1903.95 1485.45H1903.97C1903.99 1485.45 1903.99 1485.43 1904.01 1485.4C1904.62 1484.78 1905.27 1484.19 1905.98 1483.72C1906 1483.7 1906.05 1483.68 1906.07 1483.65C1906.17 1483.55 1906.3 1483.44 1906.41 1483.33C1906.63 1482.94 1906.84 1482.53 1907.08 1482.12L1907.06 1482.08L1984.11 1328ZM1699.36 1756.52L1728.96 1681.98L1839.24 1604.02L1797.08 1686.6L1699.36 1756.52ZM1683.33 1768.02L1621.08 1812.55L1613 1776.27L1617.95 1760.48L1712.8 1693.41L1683.2 1767.95L1683.33 1768.02ZM1632.7 1914.44L1487.42 2012.99L1448.44 1850.47L1594.46 1744.59L1594.83 1744.34L1597.18 1754.94L1632.7 1914.44ZM1069.34 1797.88L1026.15 1648.38L1350.98 1809.82L1350.95 1809.74L1351.06 1809.67L1438.07 1853.58L1475.62 2010.12L1069.34 1797.88ZM1490.51 895.463L1640.37 1030.72L1496.93 1136.29L1338.16 989.559L1490.51 895.463ZM1733.35 1670.96L1767.79 1584.21L1798.73 1561.76L1803.98 1557.96L1804.32 1558.28L1842.61 1593.7L1733.35 1670.96ZM1717.18 1682.39L1623.74 1748.46L1621.14 1750.3L1621.23 1750.02L1645.36 1673.01L1751.47 1596.05L1717.18 1682.39ZM1246.83 1592.44L1380.77 1497.66L1440.28 1512.89L1296.83 1615.04L1246.83 1592.44ZM1192.84 1384.35L1338.25 1281.25L1377.23 1486.92L1245.95 1579.82L1192.84 1384.35ZM1303.57 1623.49L1455.77 1515.11L1488.91 1699.42L1351.45 1796.19L1348.1 1798.55L1347.97 1798.03L1303.57 1623.49ZM1494.16 1708.92L1589.4 1734.92L1440.62 1842.77L1361.07 1802.63L1494.16 1708.92ZM1680.39 1537.28L1523.29 1396.58L1813.29 1186.74L1968.03 1326.38L1680.39 1537.28ZM1661.61 1288.48L1501.77 1140.74L1645.28 1035.13L1808.36 1182.31L1661.61 1288.48ZM1656.25 1292.37L1518.34 1392.17L1178.69 1088.02L1332.44 993.081L1656.25 1292.37ZM1326.22 1276.51L1185.95 1375.99L906.165 1259.08L1050.17 1164.79L1326.22 1276.51ZM1182.1 1386.08L1236.98 1587.99L958.712 1462.26L958.798 1462.24L896.615 1266.79L1182.1 1386.08ZM920.987 1379.08L945.575 1456.32L862.909 1418.96L920.987 1379.08ZM1233.01 1598.04L1235.55 1599.18L1292.83 1625.07L1334.71 1789.69L900.029 1573.64L854.202 1426.89L1233.01 1598.04ZM1650.77 1655.75L1684.67 1547.54L1925.27 1371.13L1965.03 1341.98L1964.53 1342.97L1897.77 1476.59L1650.77 1655.75Z"
-          fill="#624466"
-        />
-        <defs>
-          <filter
-            id="filter0_f_8250_4637"
-            x="-268"
-            y="752"
-            width="1841.48"
-            height="1643.98"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feGaussianBlur
-              stdDeviation="200"
-              result="effect1_foregroundBlur_8250_4637"
-            />
-          </filter>
-          <radialGradient
-            id="paint0_angular_8250_4637"
-            cx="0"
-            cy="0"
-            r="1"
-            gradientUnits="userSpaceOnUse"
-            gradientTransform="translate(652.742 1573.99) rotate(90) scale(421.992 520.742)"
-          >
-            <stop stop-color="#6AE0FF" />
-            <stop offset="0.572917" stop-color="#BA68C8" />
-          </radialGradient>
-        </defs>
-      </svg>
+      </div>
 
-      <div className="absolute top-[900px]">
+      <div className="absolute bottom-0 left-0 z-10 hidden lg:flex">
+        <Image
+          src="/images/launchpad-footer-cubes.svg"
+          width={510}
+          height={1527}
+          alt="Launchpad footer cubes"
+        />
+      </div>
+
+      <div className="absolute bottom-0 right-0 z-10 hidden lg:flex">
+        <Image
+          src="/images/launchpad-footer-cubes-2.svg"
+          width={459}
+          height={871}
+          alt="Launchpad footer cubes 2"
+        />
+      </div>
+
+      <div className="absolute left-[150px] bottom-[950px] z-10 hidden lg:flex">
         <Image
           src="/images/astronaut.svg"
-          width={607}
-          height={1178}
+          width={494}
+          height={1056}
           alt="Astronaut"
         />
       </div>
 
-      <div className="flex items-center justify-center w-full py-16 lg:py-32 relative">
-        <div className="w-full max-w-[1110px] flex flex-col items-end z-10 relative gap-96">
-          <p className="text-[26px] w-full flex justify-center gap-2">
+      <div className="flex items-center justify-center w-full py-16 lg:py-32 lg:px-0 relative">
+        <div className="w-full flex flex-col items-end relative gap-14 lg:gap-20">
+          <p className="leading-[30px] text-[20px] lg:text-[26px] w-full text-center px-7">
             The program is divided into <strong>3 main phases</strong> for
             Creators in different stages.
           </p>
 
-          <div className="flex flex-col max-w-[375px] w-full gap-7">
-            <h2 className="text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]">
-              Product development
-            </h2>
+          <div className="bg-pink-2 w-full flex items-center justify-center py-32 px-7 clip-path-polygon-[0_0,_100%_10%,_100%_100%,_0_90%]">
+            <div className="w-full max-w-[1110px] flex items-center justify-center lg:justify-end">
+              <div className="flex flex-col max-w-[320px] lg:max-w-[375px] w-full gap-7">
+                <h2 className="text-[24px] lg:text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]">
+                  Product development
+                </h2>
 
-            <p className="text-[20px] leading-[32px] text-black">
-              First of all Creators need to understand how to create value based
-              on their knowledge, experience and influence power. In this phase
-              they can understand everything needed to develop from scratch a
-              good a profitable solution for their niche.
-            </p>
+                <p className="text-[20px] leading-[32px] text-black">
+                  First of all Creators need to understand how to create value
+                  based on their knowledge, experience and influence power. In
+                  this phase they can understand everything needed to develop
+                  from scratch a good a profitable solution for their niche.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div className="flex flex-col max-w-[375px] w-full gap-7">
-            <h2 className="text-[28px] font-bold drop-shadow-[3px_3px_0px_#00000047]">
-              Business management
-            </h2>
+          <div className="w-full flex items-center justify-center px-7">
+            <div className="w-full max-w-[1110px] flex items-center justify-center lg:justify-end">
+              <div className="flex flex-col max-w-[320px] lg:max-w-[375px] w-full gap-7">
+                <h2 className="text-[24px] lg:text-[28px] font-bold drop-shadow-[3px_3px_0px_#00000047]">
+                  Business management
+                </h2>
 
-            <p className="text-[20px] leading-[32px]">
-              As important as having a great product is to understand how real
-              businesses are managed and how the market works. Learning from
-              experts in different entrepreneurship and innovation fields
-              Creators start to see themselves as startups and put their skin in
-              the game to prove their value.
-            </p>
+                <p className="text-[20px] leading-[32px]">
+                  As important as having a great product is to understand how
+                  real businesses are managed and how the market works. Learning
+                  from experts in different entrepreneurship and innovation
+                  fields Creators start to see themselves as startups and put
+                  their skin in the game to prove their value.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div className="flex flex-col max-w-[375px] w-full gap-7">
-            <h2 className="text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]">
-              Fundraising strategies
-            </h2>
+          <div className="bg-pink-2 w-full flex items-center justify-center py-32 px-7 clip-path-polygon-[0_10%,_100%_0,_100%_90%,_0_100%]">
+            <div className="w-full max-w-[1110px] flex items-center justify-center lg:justify-end">
+              <div className="flex flex-col max-w-[320px] lg:max-w-[375px] w-full gap-7">
+                <h2 className="text-[24px] lg:text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]">
+                  Fundraising strategies
+                </h2>
 
-            <p className="text-[20px] leading-[32px] text-black">
-              The end-game for visionary Creators is to fund raise and scale
-              their busineses. In the last phase of our accelaration program
-              they learn how venture capital works, how to reach, approach and
-              conquer
-              {`investor's`} attention and interest to their projects.
-            </p>
+                <p className="text-[20px] leading-[32px] text-black">
+                  The end-game for visionary Creators is to fund raise and scale
+                  their busineses. In the last phase of our accelaration program
+                  they learn how venture capital works, how to reach, approach
+                  and conquer
+                  {`investor's`} attention and interest to their projects.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="flex items-center justify-center w-full py-12 lg:py-96">
-        <div className="w-full max-w-[1110px] flex flex-col items-center gap-12 relative z-10">
-          <h2 className="font-bold text-[34px]">Become a Creator 3.0</h2>
+      <div className="flex items-center justify-center w-full pb-96 lg:pb-[340px] pt-12 lg:pt-[115px] px-7 lg:px-0 z-20">
+        <div className="w-full max-w-[1110px] flex flex-col lg:items-center gap-12 relative">
+          <h2 className="font-bold leading-[50px] text-[30px] lg:text-[34px]">
+            Become a <br className="flex lg:hidden" />
+            Creator 3.0
+          </h2>
 
           <Button text="apply now" borderColor="border-pink-launchpad" />
         </div>

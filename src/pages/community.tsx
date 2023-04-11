@@ -10,14 +10,6 @@ export default function Index() {
 
   return (
     <div className="flex flex-col items-center relative">
-      <div className="absolute top-[120px] right-0 max-w-[250px] w-full h-full max-h-[250px] flex lg:hidden">
-        <Image
-          src="/images/cobogo-community-cube.svg"
-          fill
-          alt="Cobogo Community cube"
-        />
-      </div>
-
       <div className="flex justify-center items-center w-full">
         <div className="w-full max-w-[1110px] flex items-start lg:items-center justify-center py-20 lg:py-36 px-7 lg:px-0 relative z-10 min-h-screen">
           <div ref={mainRef} />

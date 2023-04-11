@@ -22,6 +22,8 @@ module.exports = {
         'yellow-community': '#EFE750',
         'pink-launchpad': '#F5AEFF',
         pink: '#FFCAFF',
+        'pink-2': '#F2A9EE',
+        'pink-3': '#FEE1FF',
         'blue-social': '#00B9E9',
         blue: '#9FE8FF',
         'blue-2': '#DDFFFF',
@@ -54,5 +56,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-clip-path')],
 }
