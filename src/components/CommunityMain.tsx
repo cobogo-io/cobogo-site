@@ -10,6 +10,15 @@ export default function CommunityMain() {
 
   return (
     <div className="flex flex-col items-center relative">
+      <div className="absolute top-0 right-0">
+        <Image
+          src="/images/community-main-background.svg"
+          width={1300}
+          height={1269}
+          alt="Community main background"
+        />
+      </div>
+
       <div className="flex justify-center items-center w-full">
         <div className="w-full max-w-[1110px] flex items-start lg:items-center justify-center py-20 lg:py-36 px-7 lg:px-0 relative z-10 min-h-screen">
           <div ref={mainRef} />
