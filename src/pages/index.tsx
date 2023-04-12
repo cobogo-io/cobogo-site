@@ -25,7 +25,7 @@ export default function Home(props: HomeProps) {
       } else if (selectedProduct === 'launchpad') {
         setSelectedProduct('community')
       }
-    }, 1000 * 8)
+    }, 1000 * 5)
   }, [selectedProduct])
 
   return (

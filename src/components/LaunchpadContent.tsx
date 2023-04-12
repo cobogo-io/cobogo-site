@@ -21,15 +21,6 @@ export default function LaunchpadContent() {
         />
       </div>
 
-      <div className="absolute bottom-[-250px] right-0 z-10 flex lg:hidden">
-        <Image
-          src="/images/launchpad-footer-background-mobile-2.svg"
-          width={1455}
-          height={1469}
-          alt="Launchpad footer background mobile 2"
-        />
-      </div>
-
       <div className="absolute bottom-0 left-0 z-10 hidden lg:flex">
         <Image
           src="/images/launchpad-footer-cubes.svg"
@@ -48,13 +39,15 @@ export default function LaunchpadContent() {
         />
       </div>
 
-      <div className="absolute left-[150px] bottom-[950px] z-10 hidden lg:flex">
-        <Image
-          src="/images/astronaut.svg"
-          width={494}
-          height={1056}
-          alt="Astronaut"
-        />
+      <div className="absolute left-0 w-full bottom-[950px] z-10 hidden lg:flex items-center justify-center">
+        <div className="w-full max-w-[1110px]">
+          <Image
+            src="/images/launchpad-hero.svg"
+            width={494}
+            height={1056}
+            alt="Launchpad hero"
+          />
+        </div>
       </div>
 
       <div className="flex items-center justify-center w-full py-16 lg:py-32 lg:px-0 relative">

@@ -64,12 +64,12 @@ export default function LaunchpadMain() {
                   </Link>
                 </motion.div>
 
-                <div className="flex lg:hidden w-full flex-col items-center">
+                <div className="flex lg:hidden w-full flex-col items-center mt-10">
                   <Image
-                    src="/images/astronaut.svg"
+                    src="/images/launchpad-hero.svg"
                     width={209}
                     height={444}
-                    alt="Astronaut"
+                    alt="Launchpad hero"
                   />
                 </div>
               </div>

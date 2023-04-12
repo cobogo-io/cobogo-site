@@ -20,6 +20,8 @@ module.exports = {
       colors: {
         background: '#121212',
         'yellow-community': '#EFE750',
+        yellow: '#FCF39E',
+        'yellow-2': '#F0E84F',
         'pink-launchpad': '#F5AEFF',
         pink: '#FFCAFF',
         'pink-2': '#F2A9EE',
