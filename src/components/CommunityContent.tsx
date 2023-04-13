@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Button from './Button'
 
 export default function CommunityContent() {
@@ -31,13 +32,15 @@ export default function CommunityContent() {
         />
       </div>
 
-      <div className="absolute left-0 bottom-[1450px] z-10 hidden lg:flex">
-        <Image
-          src="/images/community-hero.svg"
-          width={904}
-          height={1554}
-          alt="Community hero"
-        />
+      <div className="absolute left-0 w-full bottom-[1450px] z-10 hidden lg:flex items-center justify-center">
+        <div className="w-full max-w-[1110px]">
+          <Image
+            src="/images/community-hero.svg"
+            width={904}
+            height={1554}
+            alt="Community hero"
+          />
+        </div>
       </div>
 
       <div className="flex items-center justify-center w-full py-16 lg:py-32 lg:px-0 relative">
@@ -125,7 +128,7 @@ export default function CommunityContent() {
 
       <div className="flex items-center justify-center w-full pb-96 lg:pb-[340px] pt-12 lg:pt-[115px] px-7 lg:px-0 z-20">
         <div className="w-full max-w-[1110px] flex flex-col lg:items-center gap-12 relative">
-          <h2 className="font-bold leading-[50px] text-[30px] lg:text-[34px] lg:text-center">
+          <h2 className="font-bold leading-[50px] text-[30px] lg:text-[34px] lg:text-center w-full max-w-[810px]">
             Join the <br className="flex lg:hidden" /> community that is{' '}
             <br className="flex lg:hidden" />
             reshaping the <br className="flex lg:hidden" /> future of the{' '}
@@ -133,7 +136,16 @@ export default function CommunityContent() {
             Creator Economy
           </h2>
 
-          <Button text="join community" borderColor="border-yellow-community" />
+          <Link
+            href="https://chat.whatsapp.com/LPPlb8bWgw38p9uZjrvlt0"
+            className="flex"
+            target="_blank"
+          >
+            <Button
+              text="join community"
+              borderColor="border-yellow-community"
+            />
+          </Link>
         </div>
       </div>
     </section>

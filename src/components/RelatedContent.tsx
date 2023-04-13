@@ -16,7 +16,7 @@ export default function RelatedContent(props: RelatedContentProps) {
       {relatedContentRefIsInView && (
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          animate={{ opacity: 0.25 }}
           transition={{ delay: 0.5, duration: 1 }}
           className="absolute hidden lg:flex"
         >

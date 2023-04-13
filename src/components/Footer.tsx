@@ -69,6 +69,10 @@ export default function Footer() {
               Data deletion
             </Link>
           </div>
+
+          <div className="mt-16">
+            <Image src="/images/logo.png" width={120} height={27} alt="Logo" />
+          </div>
         </div>
       </div>
     </section>

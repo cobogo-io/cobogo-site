@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Button from './Button'
 
 export default function LaunchpadContent() {
@@ -119,7 +120,13 @@ export default function LaunchpadContent() {
             Creator 3.0
           </h2>
 
-          <Button text="apply now" borderColor="border-pink-launchpad" />
+          <Link
+            href="https://desafio.cobogo.io/"
+            className="flex"
+            target="_blank"
+          >
+            <Button text="apply now" borderColor="border-pink-launchpad" />
+          </Link>
         </div>
       </div>
     </section>

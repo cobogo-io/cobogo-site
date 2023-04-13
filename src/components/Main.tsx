@@ -147,8 +147,8 @@ export default function Main() {
             </div>
 
             <motion.div
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 1 }}
             >
               <Image
