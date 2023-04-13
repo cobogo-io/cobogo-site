@@ -167,10 +167,10 @@ export default function Footer() {
             />
           </span>
 
-          <span className="font-bold">Docs</span>
+          <span className="font-bold text-sm">Docs</span>
         </a>
 
-        <div className="mt-4">
+        <div className="mt-4 flex lg:hidden">
           <Image src="/images/logo.png" width={90} height={21} alt="Logo" />
         </div>
       </div>
