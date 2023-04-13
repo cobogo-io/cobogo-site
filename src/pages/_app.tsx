@@ -1,10 +1,11 @@
 import Header from '@/components/Header'
 import '@/styles/globals.css'
+import { appWithTranslation } from 'next-i18next'
 import { DefaultSeo } from 'next-seo'
 import type { AppProps } from 'next/app'
 import SEO from '../../next-seo.config'
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo {...SEO} />
@@ -16,3 +17,4 @@ export default function App({ Component, pageProps }: AppProps) {
   )
 }
 
+export default appWithTranslation(App)

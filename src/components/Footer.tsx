@@ -50,15 +50,15 @@ export default function Footer() {
           </div>
 
           <div className="font-bold flex flex-col lg:flex-row text-sm lg:text-base items-center gap-4 lg:gap-8 font-orbitron">
-            <Link href="/code" target="_blank">
+            <Link href="https://l.cobogo.io/code-of-conduct/" target="_blank">
               Code of conduct
             </Link>
 
-            <Link href="/privacy" target="_blank">
+            <Link href="https://l.cobogo.io/privacy-policy/" target="_blank">
               Privacy policy
             </Link>
 
-            <Link href="/terms" target="_blank">
+            <Link href="https://l.cobogo.io/term-of-use/" target="_blank">
               Terms of use
             </Link>
 
