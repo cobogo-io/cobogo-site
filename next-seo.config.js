@@ -10,14 +10,14 @@ const SEO = {
     url: 'https://cobogo.io/',
     title,
     description,
-    // images: [
-    //   {
-    //     url: 'https://cdn.discordapp.com/attachments/938245091548602390/1026491364256514078/unknown.png',
-    //     width: 800,
-    //     height: 600,
-    //     alt: 'Open Graph Image',
-    //   },
-    // ],
+    images: [
+      {
+        url: '/open-graph.png',
+        width: 1280,
+        height: 720,
+        alt: 'Open Graph Image',
+      },
+    ],
   },
 }
 
