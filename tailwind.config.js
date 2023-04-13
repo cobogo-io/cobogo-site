@@ -30,6 +30,8 @@ module.exports = {
         blue: '#9FE8FF',
         'blue-2': '#DDFFFF',
         gray: '#1C1C1C',
+        'gray-2': '#111111',
+        'gray-3': '#1D1D1D',
       },
       backgroundImage: {
         'home-carrousel-social-background':
