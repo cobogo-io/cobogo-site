@@ -67,10 +67,8 @@ const products = [
 ]
 
 interface CarrouselProps {
-  selectedProduct: 'social' | 'community' | 'launchpad'
-  setSelectedProduct: Dispatch<
-    SetStateAction<'social' | 'community' | 'launchpad'>
-  >
+  selectedProduct: string
+  setSelectedProduct: Dispatch<SetStateAction<string>>
 }
 
 export default function Carrousel(props: CarrouselProps) {
@@ -90,17 +88,15 @@ export default function Carrousel(props: CarrouselProps) {
               {products.map(product => {
                 if (product.id === props.selectedProduct) {
                   return (
-                    <button
+                    <div
                       key={product.id}
-                      onClick={() => props.setSelectedProduct('community')}
                       className={`${product.backgroundColor} rounded-full h-3 lg:h-4 w-3 lg:w-4`}
                     />
                   )
                 } else {
                   return (
-                    <button
+                    <div
                       key={product.id}
-                      onClick={() => props.setSelectedProduct('community')}
                       className="bg-white/30 rounded-full h-3 lg:h-4 w-3 lg:w-4"
                     />
                   )

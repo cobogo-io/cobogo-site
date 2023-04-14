@@ -11,9 +11,7 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
-  const [selectedProduct, setSelectedProduct] = useState<
-    'community' | 'social' | 'launchpad'
-  >('community')
+  const [selectedProduct, setSelectedProduct] = useState<string>('community')
 
   useEffect(() => {
     setTimeout(() => {

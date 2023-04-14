@@ -94,8 +94,8 @@ export default function Main() {
   }, [switchText])
 
   return (
-    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative px-7 min-h-[892px]">
-      <div className="absolute top-0 right-0">
+    <section className="flex items-center justify-center w-full py-32 relative px-7 min-h-[892px]">
+      <div className="absolute top-0 right-0 hidden lg:flex">
         <Image
           src="/images/home-main-background.svg"
           width={1763}
@@ -104,12 +104,21 @@ export default function Main() {
         />
       </div>
 
+      <div className="absolute top-0 right-0 flex lg:hidden">
+        <Image
+          src="/images/home-main-background-mobile.svg"
+          width={380}
+          height={951}
+          alt="Home main background"
+        />
+      </div>
+
       <div ref={mainRef} />
 
       {mainRefIsInView && (
         <div className="w-full max-w-[1110px] flex flex-col gap-24 lg:gap-52 relative z-10">
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between lg:items-center">
-            <div className="flex flex-col h-[333px]">
+          <div className="flex flex-col lg:flex-row gap-16 lg:gap-0 justify-between lg:items-center">
+            <div className="flex flex-col h-[190px] lg:h-[333px]">
               <motion.h1
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -150,11 +159,26 @@ export default function Main() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 1 }}
+              className="hidden lg:flex"
             >
               <Image
                 src="/images/home-main-cubes.svg"
                 width={460}
                 height={474}
+                alt="Home main cube"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1, duration: 1 }}
+              className="flex lg:hidden w-full justify-center"
+            >
+              <Image
+                src="/images/home-main-cubes.svg"
+                width={247}
+                height={255}
                 alt="Home main cube"
               />
             </motion.div>
