@@ -17,8 +17,8 @@ const products = [
     title: 'Community',
     subtitle: (
       <h1 className="font-bold text-[27px] lg:text-[40px] leading-[37px] lg:leading-[55px]">
-        The creator economy <br />
-        game changer
+        A game changer <br />
+        <span className="text-yellow">community</span>
       </h1>
     ),
     description:
