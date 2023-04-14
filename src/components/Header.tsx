@@ -50,8 +50,8 @@ export default function Header() {
               )}
               <Image
                 src="/images/cobogo-community-cube.svg"
-                width={35}
-                height={35}
+                width={32}
+                height={32}
                 alt="Cobogo Community cube"
               />
               Community
@@ -67,8 +67,8 @@ export default function Header() {
             >
               <Image
                 src="/images/cobogo-social-cube.svg"
-                width={35}
-                height={35}
+                width={32}
+                height={32}
                 alt="Cobogo Social cube"
               />
               Social
