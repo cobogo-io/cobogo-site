@@ -104,11 +104,10 @@ export default function Main() {
         />
       </div>
 
-      <div className="absolute top-0 right-0 flex lg:hidden">
+      <div className="absolute top-0 right-0 flex w-full h-[951px] lg:hidden">
         <Image
           src="/images/home-main-background-mobile.svg"
-          width={380}
-          height={951}
+          fill
           alt="Home main background"
         />
       </div>

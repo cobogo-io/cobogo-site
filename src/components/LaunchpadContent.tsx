@@ -152,7 +152,7 @@ export default function LaunchpadContent() {
             </div>
           </div>
 
-          <div className="bg-pink-2 w-full flex items-center justify-center py-32 px-7 clip-path-polygon-[0_10%,_100%_0,_100%_90%,_0_100%]">
+          <div className="bg-pink-3 w-full flex items-center justify-center py-32 px-7 clip-path-polygon-[0_10%,_100%_0,_100%_90%,_0_100%]">
             <div ref={section3Ref} />
 
             <div className="w-full max-w-[1110px] flex items-center justify-center lg:justify-end min-h-[262px]">

@@ -50,7 +50,7 @@ export default function CommunityContent() {
       </div>
 
       {section1RefIsInView && (
-        <div className="absolute left-0 w-full bottom-[1450px] z-10 hidden lg:flex items-center justify-center">
+        <div className="absolute left-0 w-full bottom-[1500px] z-10 hidden lg:flex items-center justify-center">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -59,8 +59,8 @@ export default function CommunityContent() {
           >
             <Image
               src="/images/community-hero.svg"
-              width={904}
-              height={1554}
+              width={714}
+              height={1302}
               alt="Community hero"
             />
           </motion.div>
