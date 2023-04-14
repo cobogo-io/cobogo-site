@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <div
       className={`flex justify-center items-center w-full ${
-        hasGradient && 'bg-gradient-to-b from-black to-black/0'
+        hasGradient && 'bg-black/50'
       } z-30 fixed`}
     >
       <div

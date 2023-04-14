@@ -25,27 +25,30 @@ export default function CommunityMain() {
 
           {mainRefIsInView && (
             <div className="w-full flex items-center justify-between">
-              <div className="flex flex-col max-w-[550px] w-full gap-10 lg:gap-[70px]">
-                <motion.h1
-                  initial={{ y: 100, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 0.5, duration: 1 }}
-                  className="text-[36px] lg:text-[51px] font-extrabold lg:leading-[70px]"
-                >
-                  The creator <br /> economy game <br /> changer
-                </motion.h1>
+              <div className="flex flex-col max-w-[550px] w-full gap-10 lg:gap-[50px]">
+                <div className="flex flex-col w-full gap-10 lg:gap-[45px]">
+                  <motion.h1
+                    initial={{ y: 100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 1 }}
+                    className="text-[36px] lg:text-[51px] font-extrabold lg:leading-[70px]"
+                  >
+                    A game changer <br />
+                    <span className="text-yellow">community</span>
+                  </motion.h1>
 
-                <motion.p
-                  initial={{ y: 100, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 1, duration: 1 }}
-                  className="text-[24px] lg:text-[30px] lg:leading-[45px]"
-                >
-                  A community formed by Creators, investors and enthusiasts of
-                  the Creator Economy created to boost knowledge, research and
-                  development of this market, discussing new movements, trends
-                  and selecting the next early stage Creators to be invested.
-                </motion.p>
+                  <motion.p
+                    initial={{ y: 100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 1, duration: 1 }}
+                    className="text-[24px] lg:text-[30px] lg:leading-[45px]"
+                  >
+                    Formed by Creators, investors and enthusiasts of the Creator
+                    Economy created boosting market knowledge, research and
+                    development to find the next early stage Creators to be
+                    invested.
+                  </motion.p>
+                </div>
 
                 <motion.div
                   initial={{ y: 100, opacity: 0 }}
@@ -83,8 +86,8 @@ export default function CommunityMain() {
               >
                 <Image
                   src="/images/cobogo-community-cube.svg"
-                  width={450}
-                  height={450}
+                  width={510}
+                  height={510}
                   alt="Cobogo Community cube"
                 />
               </motion.div>
