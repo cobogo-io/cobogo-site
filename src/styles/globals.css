@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  @apply bg-background text-white font-proxima-nova;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+  @apply font-orbitron;
+}
+
+a,
+button {
+  @apply rounded-md;
+}
+
+select,
+input,
+textarea {
+  @apply rounded-sm;
+}
+
+button,
+a {
+  @apply hover:brightness-75 disabled:cursor-not-allowed disabled:brightness-50 transition-all;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
