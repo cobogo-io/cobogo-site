@@ -90,10 +90,10 @@ export default function RelatedContent(props: RelatedContentProps) {
                   href={article.link}
                   target="_blank"
                 >
-                  <div className="w-[340px] h-[215px] rounded-[15px] bg-related-content-text-gradient p-[2px] flex items-center justify-center">
+                  <div className="w-[340px] h-[215px] rounded-[15px] bg-related-content-text-gradient flex items-center justify-center">
                     <img
                       src={article.thumbnail}
-                      className="bg-blue-social w-full h-full rounded-[15px]"
+                      className="w-full h-full rounded-[15px] p-[2px] object-cover"
                       alt="Article thumbnail"
                     />
                   </div>
@@ -105,25 +105,27 @@ export default function RelatedContent(props: RelatedContentProps) {
               ))}
             </motion.div>
 
-            <motion.div
-              initial={{ y: 100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 2.5, duration: 1 }}
-            >
-              <Link
-                href="https://cobogobr.medium.com/"
-                target="_blank"
-                className="flex lg:hidden items-center gap-5 font-bold font-orbitron mt-3 px-7"
+            <div className="flex lg:hidden">
+              <motion.div
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 2.5, duration: 1 }}
               >
-                <Image
-                  src="/images/medium-icon.svg"
-                  width={34}
-                  height={34}
-                  alt="Medium icon"
-                />
-                Go to our Medium
-              </Link>
-            </motion.div>
+                <Link
+                  href="https://cobogobr.medium.com/"
+                  target="_blank"
+                  className="flex items-center gap-5 font-bold font-orbitron mt-3 px-7"
+                >
+                  <Image
+                    src="/images/medium-icon.svg"
+                    width={34}
+                    height={34}
+                    alt="Medium icon"
+                  />
+                  Go to our Medium
+                </Link>
+              </motion.div>
+            </div>
           </div>
         )}
       </div>

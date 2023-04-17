@@ -54,11 +54,12 @@ export default function Mentions() {
                 href="https://cointelegraph.com.br/news/brazilian-startups-focused-on-web3-get-chosen-for-acceleration-program/"
                 target="_blank"
               >
-                <div className="w-[340px] h-[215px] rounded-[15px] bg-mentions-text-gradient p-[2px] flex items-center justify-center">
-                  <img
+                <div className="w-[340px] h-[215px] rounded-[15px] bg-mentions-text-gradient flex items-center justify-center relative">
+                  <Image
                     src="/images/mention-1.png"
-                    className="bg-blue-social w-full h-full rounded-[15px]"
+                    fill
                     alt="Mention 1"
+                    className="rounded-[15px] overflow-hidden p-[2px] object-cover"
                   />
                 </div>
 
@@ -80,11 +81,12 @@ export default function Mentions() {
                 href="https://www.moneytimes.com.br/investir-no-proximo-casimiro-ou-felipe-neto-pode-ser-possivel-entenda-sobre-os-influenciadores-digitais-na-web-3-0/"
                 target="_blank"
               >
-                <div className="w-[340px] h-[215px] rounded-[15px] bg-mentions-text-gradient p-[2px] flex items-center justify-center">
-                  <img
+                <div className="w-[340px] h-[215px] rounded-[15px] bg-mentions-text-gradient flex items-center justify-center relative">
+                  <Image
                     src="/images/mention-2.png"
-                    className="bg-blue-social w-full h-full rounded-[15px]"
+                    fill
                     alt="Mention 2"
+                    className="rounded-[15px] overflow-hidden p-[2px] object-cover"
                   />
                 </div>
 
@@ -106,11 +108,12 @@ export default function Mentions() {
                 href="https://www.abcdacomunicacao.com.br/cobogo-lanca-plataforma-de-investimentos-para-creators/"
                 target="_blank"
               >
-                <div className="w-[340px] h-[215px] rounded-[15px] bg-mentions-text-gradient p-[2px] flex items-center justify-center">
-                  <img
+                <div className="w-[340px] h-[215px] rounded-[15px] bg-mentions-text-gradient flex items-center justify-center relative">
+                  <Image
                     src="/images/mention-3.png"
-                    className="bg-blue-social w-full h-full rounded-[15px]"
+                    fill
                     alt="Mention 3"
+                    className="rounded-[15px] overflow-hidden p-[2px] object-cover"
                   />
                 </div>
 
