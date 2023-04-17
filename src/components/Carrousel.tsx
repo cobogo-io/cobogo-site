@@ -22,7 +22,7 @@ const products = [
       </h1>
     ),
     description:
-      'A community formed by Creators, investors and enthusiasts of the Creator Economy created to boost knowledge, research and development of this market, discussing new movements, trends and selecting the next early stage Creators to be invested.',
+      'Formed by Creators, investors and enthusiasts of the Creator Economy created boosting market knowledge, research and development to find the next early stage Creators to be invested.',
     buttonHref: '/community',
   },
   {

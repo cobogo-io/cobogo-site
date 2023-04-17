@@ -200,9 +200,9 @@ export default function Main() {
               transition={{ delay: 2, duration: 1 }}
               className="leading-[32px] lg:leading-[40px] text-[20px] lg:text-[26px] max-w-[450px]"
             >
-              A fund manager with a technological and productized deal-flow that
-              counts with a community of Creators acting as the Creator Economy
-              market intelligence.
+              Cobogo is a fund manager with a technological and productized
+              deal-flow that counts with a community of Creators acting as the
+              Creator Economy market intelligence.
             </motion.p>
           </div>
         </div>

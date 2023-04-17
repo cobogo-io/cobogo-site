@@ -175,9 +175,8 @@ export default function LaunchpadContent() {
                   >
                     The end-game for visionary Creators is to fund raise and
                     scale their busineses. In the last phase of our accelaration
-                    program they learn how venture capital works, how to reach,
-                    approach and conquer
-                    {`investor's`} attention and interest to their projects.
+                    program they learn how venture capital works, how to reach
+                    and conquer investor’s attention to their projects.
                   </motion.p>
                 </div>
               )}
