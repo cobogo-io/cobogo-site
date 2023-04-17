@@ -59,7 +59,6 @@ export default function Header() {
 
             <Link
               href="https://cobogo.social/"
-              target="_blank"
               className={`flex items-center gap-3 font-bold ${
                 (asPath === '/launchpad' || asPath === '/community') &&
                 'brightness-75 saturate-0'
