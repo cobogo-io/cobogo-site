@@ -15,7 +15,7 @@ export default function Footer() {
 
       <img
         src="/images/footer-background-mobile.svg"
-        alt="Footer background"
+        alt="Footer background mobile"
         className="absolute bottom-0 flex lg:hidden w-full"
       />
 
