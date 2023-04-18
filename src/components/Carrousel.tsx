@@ -114,7 +114,7 @@ export default function Carrousel(props: CarrouselProps) {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0, transition: { duration: 0.5 } }}
-                    transition={{ delay: 0.5, duration: 1 }}
+                    transition={{ delay: 0.25, duration: 1 }}
                     className={`${product.background} bg-cover lg:rounded-[40px] w-full h-[892px] lg:h-[865px] px-7 lg:px-24 py-16 flex flex-col items-center justify-start gap-14`}
                   >
                     {product.image && (

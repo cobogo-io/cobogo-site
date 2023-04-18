@@ -54,7 +54,7 @@ export default function CommunityContent() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 1 }}
+            transition={{ delay: 0.25, duration: 1 }}
             className="w-full max-w-[1110px]"
           >
             <Image
@@ -79,7 +79,7 @@ export default function CommunityContent() {
                     <motion.h2
                       initial={{ y: 100, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
-                      transition={{ delay: 0.5, duration: 1 }}
+                      transition={{ delay: 0.25, duration: 1 }}
                       className="text-[24px] lg:text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]"
                     >
                       Research
@@ -88,7 +88,7 @@ export default function CommunityContent() {
                     <motion.p
                       initial={{ y: 100, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
-                      transition={{ delay: 1, duration: 1 }}
+                      transition={{ delay: 0.5, duration: 1 }}
                       className="text-[20px] leading-[32px] text-black"
                     >
                       The community counts with an investment analysis
@@ -110,7 +110,7 @@ export default function CommunityContent() {
                     <motion.h2
                       initial={{ y: 100, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
-                      transition={{ delay: 0.5, duration: 1 }}
+                      transition={{ delay: 0.25, duration: 1 }}
                       className="text-[24px] lg:text-[28px] font-bold drop-shadow-[3px_3px_0px_#00000047]"
                     >
                       Creators Valuation
@@ -119,7 +119,7 @@ export default function CommunityContent() {
                     <motion.p
                       initial={{ y: 100, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
-                      transition={{ delay: 1, duration: 1 }}
+                      transition={{ delay: 0.5, duration: 1 }}
                       className="text-[20px] leading-[32px]"
                     >
                       One of the greatest values ​​created by the community will
@@ -142,7 +142,7 @@ export default function CommunityContent() {
                     <motion.h2
                       initial={{ y: 100, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
-                      transition={{ delay: 0.5, duration: 1 }}
+                      transition={{ delay: 0.25, duration: 1 }}
                       className="text-[24px] lg:text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]"
                     >
                       Creators Selection
@@ -151,7 +151,7 @@ export default function CommunityContent() {
                     <motion.p
                       initial={{ y: 100, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
-                      transition={{ delay: 1, duration: 1 }}
+                      transition={{ delay: 0.5, duration: 1 }}
                       className="text-[20px] leading-[32px] text-black"
                     >
                       Community members will be responsible for discovering,
@@ -174,7 +174,7 @@ export default function CommunityContent() {
                   <motion.h2
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.5, duration: 1 }}
+                    transition={{ delay: 0.25, duration: 1 }}
                     className="text-[24px] lg:text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]"
                   >
                     The power of community to boost invested creators
@@ -183,7 +183,7 @@ export default function CommunityContent() {
                   <motion.p
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 1, duration: 1 }}
+                    transition={{ delay: 0.5, duration: 1 }}
                     className="text-[20px] leading-[32px] text-black"
                   >
                     Since the Creators from our community are the ones selecting
@@ -200,7 +200,7 @@ export default function CommunityContent() {
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ delay: 0.5, duration: 1 }}
+                  transition={{ delay: 0.25, duration: 1 }}
                 >
                   <Image
                     src="/images/community-peoples.svg"
@@ -223,7 +223,7 @@ export default function CommunityContent() {
             <motion.h2
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.5, duration: 1 }}
+              transition={{ delay: 0.25, duration: 1 }}
               className="font-bold leading-[50px] text-[30px] lg:text-[34px] lg:text-center w-full max-w-[810px]"
             >
               Join the <br className="flex lg:hidden" /> community that is{' '}
@@ -238,7 +238,7 @@ export default function CommunityContent() {
             <motion.div
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 1, duration: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
             >
               <Link
                 href="https://chat.whatsapp.com/LPPlb8bWgw38p9uZjrvlt0"

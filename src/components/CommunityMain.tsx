@@ -30,7 +30,7 @@ export default function CommunityMain() {
                   <motion.h1
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.5, duration: 1 }}
+                    transition={{ delay: 0.25, duration: 1 }}
                     className="text-[36px] lg:text-[51px] font-extrabold lg:leading-[70px]"
                   >
                     A game changer <br />
@@ -40,7 +40,7 @@ export default function CommunityMain() {
                   <motion.p
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 1, duration: 1 }}
+                    transition={{ delay: 0.5, duration: 1 }}
                     className="text-[24px] lg:text-[30px] lg:leading-[45px]"
                   >
                     Formed by Creators, investors and enthusiasts of the Creator
@@ -53,7 +53,7 @@ export default function CommunityMain() {
                 <motion.div
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 1.5, duration: 1 }}
+                  transition={{ delay: 0.75, duration: 1 }}
                   className="flex items-center gap-7"
                 >
                   <Link
@@ -81,7 +81,7 @@ export default function CommunityMain() {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 0.5, duration: 1 }}
+                transition={{ delay: 0.25, duration: 1 }}
                 className="hidden lg:flex"
               >
                 <Image

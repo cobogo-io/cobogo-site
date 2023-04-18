@@ -17,7 +17,7 @@ export default function RelatedContent(props: RelatedContentProps) {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.25 }}
-          transition={{ delay: 0.5, duration: 1 }}
+          transition={{ delay: 0.25, duration: 1 }}
           className="absolute hidden lg:flex"
         >
           <Image
@@ -39,7 +39,7 @@ export default function RelatedContent(props: RelatedContentProps) {
                 <motion.h2
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 0.5, duration: 1 }}
+                  transition={{ delay: 0.25, duration: 1 }}
                   className="text-[30px] lg:text-[40px] text-transparent bg-clip-text bg-related-content-text-gradient"
                 >
                   Related <strong>content</strong>
@@ -48,7 +48,7 @@ export default function RelatedContent(props: RelatedContentProps) {
                 <motion.p
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 1, duration: 1 }}
+                  transition={{ delay: 0.5, duration: 1 }}
                   className="lg:text-[22px] leading-[26px] lg:leading-[32px] w-full max-w-[660px]"
                 >
                   Learn more about the future of the Creator Economy being built
@@ -59,7 +59,7 @@ export default function RelatedContent(props: RelatedContentProps) {
               <motion.div
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1.5, duration: 1 }}
+                transition={{ delay: 0.75, duration: 1 }}
               >
                 <Link
                   href="https://cobogobr.medium.com/"
@@ -80,7 +80,7 @@ export default function RelatedContent(props: RelatedContentProps) {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 2, duration: 1 }}
+              transition={{ delay: 1, duration: 1 }}
               className="flex justify-between overflow-auto gap-10 bg-gray lg:bg-transparent py-8 lg:py-0"
             >
               {props.mostRecentArticles.map(article => (
@@ -109,7 +109,7 @@ export default function RelatedContent(props: RelatedContentProps) {
               <motion.div
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 2.5, duration: 1 }}
+                transition={{ delay: 0.75, duration: 1 }}
               >
                 <Link
                   href="https://cobogobr.medium.com/"

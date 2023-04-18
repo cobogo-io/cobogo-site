@@ -13,7 +13,7 @@ export default function Mentions() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.25 }}
-          transition={{ delay: 0.5, duration: 1 }}
+          transition={{ delay: 0.25, duration: 1 }}
           className="absolute hidden lg:flex"
         >
           <Image
@@ -34,7 +34,7 @@ export default function Mentions() {
               <motion.h2
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.5, duration: 1 }}
+                transition={{ delay: 0.25, duration: 1 }}
                 className="text-[30px] lg:text-[40px] text-transparent bg-clip-text bg-mentions-text-gradient font-bold"
               >
                 Mentions
@@ -46,7 +46,7 @@ export default function Mentions() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 1, duration: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
               className="flex justify-between overflow-auto gap-10 bg-gray lg:bg-transparent py-8 lg:py-0"
             >
               <Link

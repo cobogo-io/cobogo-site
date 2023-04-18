@@ -121,7 +121,7 @@ export default function Main() {
               <motion.h1
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.5, duration: 1 }}
+                transition={{ delay: 0.25, duration: 1 }}
                 className="leading-[55px] lg:leading-[110px] text-[22px] lg:text-[45px] text-blue-2 flex items-center"
               >
                 {!switchText ? weeSeeText : andTheirText}{' '}
@@ -157,7 +157,7 @@ export default function Main() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 1, duration: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
               className="hidden lg:flex"
             >
               <Image
@@ -171,7 +171,7 @@ export default function Main() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 1, duration: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
               className="flex lg:hidden w-full justify-center"
             >
               <Image
@@ -187,7 +187,7 @@ export default function Main() {
             <motion.h2
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 1.5, duration: 1 }}
+              transition={{ delay: 0.75, duration: 1 }}
               className="leading-[45px] lg:leading-[70px] text-[30px] lg:text-[44px] bg-related-content-text-gradient bg-clip-text text-transparent"
             >
               Scaling up <br /> equity financing <br /> for{' '}
@@ -197,7 +197,7 @@ export default function Main() {
             <motion.p
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 2, duration: 1 }}
+              transition={{ delay: 1, duration: 1 }}
               className="leading-[32px] lg:leading-[40px] text-[20px] lg:text-[26px] max-w-[450px]"
             >
               Cobogo is a fund manager with a technological and productized

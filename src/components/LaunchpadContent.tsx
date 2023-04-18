@@ -59,7 +59,7 @@ export default function LaunchpadContent() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 1 }}
+            transition={{ delay: 0.25, duration: 1 }}
             className="w-full max-w-[1110px]"
           >
             <Image
@@ -79,7 +79,7 @@ export default function LaunchpadContent() {
               <motion.p
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.5, duration: 1 }}
+                transition={{ delay: 0.25, duration: 1 }}
                 className="leading-[30px] text-[20px] lg:text-[26px] w-full text-center px-7"
               >
                 The program is divided into <strong>3 main phases</strong> for
@@ -97,7 +97,7 @@ export default function LaunchpadContent() {
                   <motion.h2
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.5, duration: 1 }}
+                    transition={{ delay: 0.25, duration: 1 }}
                     className="text-[24px] lg:text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]"
                   >
                     Product development
@@ -106,7 +106,7 @@ export default function LaunchpadContent() {
                   <motion.p
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 1, duration: 1 }}
+                    transition={{ delay: 0.5, duration: 1 }}
                     className="text-[20px] leading-[32px] text-black"
                   >
                     First of all Creators need to understand how to create value
@@ -128,7 +128,7 @@ export default function LaunchpadContent() {
                   <motion.h2
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.5, duration: 1 }}
+                    transition={{ delay: 0.25, duration: 1 }}
                     className="text-[24px] lg:text-[28px] font-bold drop-shadow-[3px_3px_0px_#00000047]"
                   >
                     Business management
@@ -137,7 +137,7 @@ export default function LaunchpadContent() {
                   <motion.p
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 1, duration: 1 }}
+                    transition={{ delay: 0.5, duration: 1 }}
                     className="text-[20px] leading-[32px]"
                   >
                     As important as having a great product is to understand how
@@ -161,7 +161,7 @@ export default function LaunchpadContent() {
                   <motion.h2
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.5, duration: 1 }}
+                    transition={{ delay: 0.25, duration: 1 }}
                     className="text-[24px] lg:text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]"
                   >
                     Fundraising strategies
@@ -170,7 +170,7 @@ export default function LaunchpadContent() {
                   <motion.p
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 1, duration: 1 }}
+                    transition={{ delay: 0.5, duration: 1 }}
                     className="text-[20px] leading-[32px] text-black"
                   >
                     The end-game for visionary Creators is to fund raise and
@@ -193,7 +193,7 @@ export default function LaunchpadContent() {
             <motion.h2
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.5, duration: 1 }}
+              transition={{ delay: 0.25, duration: 1 }}
               className="font-bold leading-[50px] text-[30px] lg:text-[34px]"
             >
               Become a <br className="flex lg:hidden" />
@@ -205,7 +205,7 @@ export default function LaunchpadContent() {
             <motion.div
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 1, duration: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
             >
               <Link
                 href="https://desafio.cobogo.io/"
