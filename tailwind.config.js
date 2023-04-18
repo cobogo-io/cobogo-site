@@ -50,9 +50,6 @@ module.exports = {
           "url('/images/home-carrousel-social-background.svg')",
         'launchpad-main-background':
           "url('/images/launchpad-main-background.svg')",
-        'footer-background-mobile':
-          "url('/images/footer-background-mobile.svg')",
-        none: "url('/images/none.svg')",
         'related-content-text-gradient':
           'linear-gradient(92.91deg, #EFE750 -4%, #BA68C8 28%, #00B9E9 72%);',
         'mentions-text-gradient':

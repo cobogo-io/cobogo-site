@@ -6,14 +6,18 @@ export default function Footer() {
   const { asPath } = useRouter()
 
   return asPath === '/' ? (
-    <section className="flex items-center justify-center w-full pt-20 lg:pt-40 pb-[1100px] lg:pb-[870px] bg-footer-background-mobile lg:bg-none bg-no-repeat bg-bottom relative">
-      <div className="w-full h-full max-h-[1165px] absolute bottom-0 hidden lg:flex">
-        <Image
-          src="/images/footer-background.svg"
-          fill
-          alt="Footer background"
-        />
-      </div>
+    <section className="flex items-center justify-center w-full pt-20 lg:pt-40 pb-[470px] lg:pb-[870px] relative">
+      <img
+        src="/images/footer-background.svg"
+        alt="Footer background"
+        className="absolute bottom-0 hidden lg:flex w-full"
+      />
+
+      <img
+        src="/images/footer-background-mobile.svg"
+        alt="Footer background"
+        className="absolute bottom-0 flex lg:hidden w-full"
+      />
 
       <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-between relative z-10">
         <div className="flex flex-col items-center gap-16 w-full">
