@@ -42,7 +42,7 @@ export default function Header() {
             <Link
               href="/community"
               className={`flex items-center gap-3 font-bold relative ${
-                asPath === '/launchpad' && 'brightness-75 saturate-0'
+                asPath === '/launchpad' && 'brightness-50 saturate-0'
               }`}
             >
               {asPath === '/community' && (
@@ -61,7 +61,7 @@ export default function Header() {
               href="https://cobogo.social/"
               className={`flex items-center gap-3 font-bold ${
                 (asPath === '/launchpad' || asPath === '/community') &&
-                'brightness-75 saturate-0'
+                'brightness-50 saturate-0'
               }`}
             >
               <Image
@@ -76,7 +76,7 @@ export default function Header() {
             <Link
               href="/launchpad"
               className={`flex items-center gap-3 font-bold relative ${
-                asPath === '/community' && 'brightness-75 saturate-0'
+                asPath === '/community' && 'brightness-50 saturate-0'
               }`}
             >
               {asPath === '/launchpad' && (
