@@ -8,7 +8,7 @@ export default function Mentions() {
   const mentionsRefIsInView = useInView(mentionsRef, { once: true })
 
   return (
-    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative min-h-[548px]">
+    <section className="flex items-center justify-center w-full pt-16 pb-16 lg:pb-32 relative min-h-[548px]">
       {mentionsRefIsInView && (
         <motion.div
           initial={{ opacity: 0 }}
