@@ -6,8 +6,16 @@ export default function Footer() {
   const { asPath } = useRouter()
 
   return asPath === '/' ? (
-    <section className="flex items-center justify-center w-full pt-20 lg:pt-40 pb-[1100px] lg:pb-[870px] bg-footer-background-mobile lg:bg-footer-background bg-no-repeat bg-bottom">
-      <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-between">
+    <section className="flex items-center justify-center w-full pt-20 lg:pt-40 pb-[1100px] lg:pb-[870px] bg-footer-background-mobile lg:bg-none bg-no-repeat bg-bottom relative">
+      <div className="w-full h-full max-h-[1165px] absolute bottom-0 hidden lg:flex">
+        <Image
+          src="/images/footer-background.svg"
+          fill
+          alt="Footer background"
+        />
+      </div>
+
+      <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-between relative z-10">
         <div className="flex flex-col items-center gap-16 w-full">
           <div className="font-bold flex items-center gap-4 lg:gap-8">
             <Link href="https://www.instagram.com/cobogobr/" target="_blank">

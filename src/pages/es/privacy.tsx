@@ -1,7 +1,7 @@
 const Privacy = () => {
   return (
     <div className="flex flex-col h-full min-h-screen ">
-      <div className="flex flex-col flex-1 p-20 mx-5 md:mx-20">
+      <div className="flex flex-col flex-1 p-20 mx-5 lg:mx-20">
         <h1 className="mb-5 font-bold text-4xl">Política de Privacidad</h1>
         <p className="mb-5 break-normal text-lg">
           cobogo opera el sitio web https://cobogo.social, que proporciona el
