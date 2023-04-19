@@ -2,11 +2,14 @@ import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useRef } from 'react'
 import Button from './Button'
 
 export default function CommunityMain() {
   const { t } = useTranslation('common')
+
+  const { locale } = useRouter()
 
   const mainRef = useRef(null)
   const mainRefIsInView = useInView(mainRef, { once: true })
@@ -59,7 +62,11 @@ export default function CommunityMain() {
                   className="flex items-center gap-7"
                 >
                   <Link
-                    href="https://chat.whatsapp.com/LPPlb8bWgw38p9uZjrvlt0"
+                    href={
+                      locale === 'pt'
+                        ? 'https://chat.whatsapp.com/LPPlb8bWgw38p9uZjrvlt0/'
+                        : 'https://discord.gg/93kBxA5mbT/'
+                    }
                     className="flex"
                     target="_blank"
                   >

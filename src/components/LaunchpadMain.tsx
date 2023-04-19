@@ -1,10 +1,13 @@
 import { motion, useInView } from 'framer-motion'
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRef } from 'react'
 import Button from './Button'
 
 export default function LaunchpadMain() {
+  const { t } = useTranslation('common')
+
   const mainFoldRef = useRef(null)
   const mainFoldRefIsInView = useInView(mainFoldRef, { once: true })
 
@@ -33,8 +36,8 @@ export default function LaunchpadMain() {
                     transition={{ delay: 0.25, duration: 1 }}
                     className="text-[36px] lg:text-[51px] font-extrabold lg:leading-[70px]"
                   >
-                    Getting Creators <br />
-                    <span className="text-pink">ready to fly</span>
+                    {t('Getting Creators')} <br />
+                    <span className="text-pink">{t('ready to fly')}</span>
                   </motion.h1>
 
                   <motion.p
@@ -43,8 +46,9 @@ export default function LaunchpadMain() {
                     transition={{ delay: 0.5, duration: 1 }}
                     className="text-[24px] lg:text-[30px] lg:leading-[45px]"
                   >
-                    A complete training and acceleration program for Creators
-                    who need to professionalize and grow their businesses.
+                    {t(
+                      'A complete training and acceleration program for Creators who need to professionalize and grow their businesses.'
+                    )}
                   </motion.p>
                 </div>
 
@@ -60,7 +64,7 @@ export default function LaunchpadMain() {
                     target="_blank"
                   >
                     <Button
-                      text="apply now"
+                      text={t('apply now')}
                       borderColor="border-pink-launchpad"
                     />
                   </Link>

@@ -2,11 +2,14 @@ import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useRef } from 'react'
 import Button from './Button'
 
 export default function CommunityContent() {
   const { t } = useTranslation('common')
+
+  const { locale } = useRouter()
 
   const section1Ref = useRef(null)
   const section1RefIsInView = useInView(section1Ref, { once: true })
@@ -237,7 +240,11 @@ export default function CommunityContent() {
               transition={{ delay: 0.5, duration: 1 }}
             >
               <Link
-                href="https://chat.whatsapp.com/LPPlb8bWgw38p9uZjrvlt0"
+                href={
+                  locale === 'pt'
+                    ? 'https://chat.whatsapp.com/LPPlb8bWgw38p9uZjrvlt0/'
+                    : 'https://discord.gg/93kBxA5mbT/'
+                }
                 className="flex"
                 target="_blank"
               >

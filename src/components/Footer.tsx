@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 export default function Footer() {
   const { t } = useTranslation('common')
 
-  const { asPath } = useRouter()
+  const { asPath, locale } = useRouter()
 
   return asPath === '/' ? (
     <section className="flex items-center justify-center w-full pt-20 lg:pt-40 pb-[550px] lg:pb-[870px] relative">
@@ -36,7 +36,11 @@ export default function Footer() {
             </Link>
 
             <Link
-              href={`${t('https://twitter.com/cobogo_io/')}`}
+              href={
+                locale === 'pt'
+                  ? 'https://twitter.com/cobogobr/'
+                  : 'https://twitter.com/cobogo_io/'
+              }
               target="_blank"
             >
               <div className="relative w-[30px] lg:w-[65px] h-[30px] lg:h-[65px]">

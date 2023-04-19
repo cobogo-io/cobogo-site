@@ -2,6 +2,7 @@ import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useRef } from 'react'
 
 interface RelatedContentProps {
@@ -10,6 +11,8 @@ interface RelatedContentProps {
 
 export default function RelatedContent(props: RelatedContentProps) {
   const { t } = useTranslation('common')
+
+  const { locale } = useRouter()
 
   const relatedContentRef = useRef(null)
   const relatedContentRefIsInView = useInView(relatedContentRef, { once: true })
@@ -116,7 +119,11 @@ export default function RelatedContent(props: RelatedContentProps) {
                 transition={{ delay: 0.75, duration: 1 }}
               >
                 <Link
-                  href={`${t('https://medium.com/@cobogo_io/')}`}
+                  href={
+                    locale === 'pt'
+                      ? 'https://cobogobr.medium.com/'
+                      : 'https://medium.com/@cobogo_io/'
+                  }
                   target="_blank"
                   className="flex items-center gap-5 font-bold font-orbitron mt-3 px-7"
                 >

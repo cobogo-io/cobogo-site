@@ -1,10 +1,13 @@
 import { motion, useInView } from 'framer-motion'
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRef } from 'react'
 import Button from './Button'
 
 export default function LaunchpadContent() {
+  const { t } = useTranslation('common')
+
   const section1Ref = useRef(null)
   const section1RefIsInView = useInView(section1Ref, { once: true })
 
@@ -82,8 +85,9 @@ export default function LaunchpadContent() {
                 transition={{ delay: 0.25, duration: 1 }}
                 className="leading-[30px] text-[20px] lg:text-[26px] w-full text-center px-7"
               >
-                The program is divided into <strong>3 main phases</strong> for
-                Creators in different stages.
+                {t('The program is divided into')}{' '}
+                <strong>{t('3 main phases')}</strong>{' '}
+                {t('for Creators in different stages.')}
               </motion.p>
             )}
           </div>
@@ -100,7 +104,7 @@ export default function LaunchpadContent() {
                     transition={{ delay: 0.25, duration: 1 }}
                     className="text-[24px] lg:text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]"
                   >
-                    Product development
+                    {t('Product development')}
                   </motion.h2>
 
                   <motion.p
@@ -109,10 +113,9 @@ export default function LaunchpadContent() {
                     transition={{ delay: 0.5, duration: 1 }}
                     className="text-[20px] leading-[32px] text-black"
                   >
-                    First of all Creators need to understand how to create value
-                    based on their knowledge, experience and influence power. In
-                    this phase they can understand everything needed to develop
-                    from scratch a good a profitable solution for their niche.
+                    {t(
+                      'First of all Creators need to understand how to create value based on their knowledge, experience and influence power. In this phase they can understand everything needed to develop from scratch a good a profitable solution for their niche.'
+                    )}
                   </motion.p>
                 </div>
               )}
@@ -131,7 +134,7 @@ export default function LaunchpadContent() {
                     transition={{ delay: 0.25, duration: 1 }}
                     className="text-[24px] lg:text-[28px] font-bold drop-shadow-[3px_3px_0px_#00000047]"
                   >
-                    Business management
+                    {t('Business management')}
                   </motion.h2>
 
                   <motion.p
@@ -140,12 +143,9 @@ export default function LaunchpadContent() {
                     transition={{ delay: 0.5, duration: 1 }}
                     className="text-[20px] leading-[32px]"
                   >
-                    As important as having a great product is to understand how
-                    real businesses are managed and how the market works.
-                    Learning from experts in different entrepreneurship and
-                    innovation fields Creators start to see themselves as
-                    startups and put their skin in the game to prove their
-                    value.
+                    {t(
+                      'As important as having a great product is to understand how real businesses are managed and how the market works. Learning from experts in different entrepreneurship and innovation fields Creators start to see themselves as startups and put their skin in the game to prove their value.'
+                    )}
                   </motion.p>
                 </div>
               )}
@@ -164,7 +164,7 @@ export default function LaunchpadContent() {
                     transition={{ delay: 0.25, duration: 1 }}
                     className="text-[24px] lg:text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]"
                   >
-                    Fundraising strategies
+                    {t('Fundraising strategies')}
                   </motion.h2>
 
                   <motion.p
@@ -173,10 +173,9 @@ export default function LaunchpadContent() {
                     transition={{ delay: 0.5, duration: 1 }}
                     className="text-[20px] leading-[32px] text-black"
                   >
-                    The end-game for visionary Creators is to fund raise and
-                    scale their busineses. In the last phase of our accelaration
-                    program they learn how venture capital works, how to reach
-                    and conquer investor’s attention to their projects.
+                    {t(
+                      'The end-game for visionary Creators is to fund raise and scale their busineses. In the last phase of our accelaration program they learn how venture capital works, how to reach and conquer investor’s attention to their projects.'
+                    )}
                   </motion.p>
                 </div>
               )}
@@ -196,7 +195,7 @@ export default function LaunchpadContent() {
               transition={{ delay: 0.25, duration: 1 }}
               className="font-bold leading-[50px] text-[30px] lg:text-[34px]"
             >
-              Become a <br className="flex lg:hidden" />
+              {t('Become a')} <br className="flex lg:hidden" />
               Creator 3.0
             </motion.h2>
           )}
@@ -212,7 +211,10 @@ export default function LaunchpadContent() {
                 className="flex"
                 target="_blank"
               >
-                <Button text="apply now" borderColor="border-pink-launchpad" />
+                <Button
+                  text={t('apply now')}
+                  borderColor="border-pink-launchpad"
+                />
               </Link>
             </motion.div>
           )}
