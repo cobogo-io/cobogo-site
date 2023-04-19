@@ -8,8 +8,8 @@ import { useRouter } from 'next/router'
 import { useState } from 'react'
 
 const languages = [
-  { id: 1, name: 'English' },
-  { id: 2, name: 'Português' },
+  { id: '/', name: 'English' },
+  { id: '/pt', name: 'Português' },
 ]
 
 export default function Header() {
@@ -104,27 +104,34 @@ export default function Header() {
           </div>
         </div>
 
-        <Listbox value={selectedLanguage} onChange={setSelectedLanguage}>
-          <div className="hidden lg:flex flex-col relative">
-            <Listbox.Button className="font-proxima-nova font-bold text-xs">
-              {selectedLanguage.name}
-            </Listbox.Button>
+        {asPath === '/' && (
+          <Listbox value={selectedLanguage} onChange={setSelectedLanguage}>
+            <div className="hidden lg:flex flex-col relative">
+              <Listbox.Button className="font-proxima-nova font-bold text-xs flex gap-2 items-center">
+                {selectedLanguage.name}
 
-            <Listbox.Options className="absolute top-[30px] right-0 bg-related-content-text-gradient rounded-md p-[2px] font-bold text-xs drop-shadow-md">
-              <div className="bg-background rounded-md px-5 py-3 flex flex-col gap-2">
-                {languages.map(language => (
-                  <Listbox.Option
-                    key={language.id}
-                    value={language}
-                    className="hover:cursor-pointer hover:brightness-75"
-                  >
-                    {language.name}
-                  </Listbox.Option>
-                ))}
-              </div>
-            </Listbox.Options>
-          </div>
-        </Listbox>
+                <Image
+                  src="/images/listbox-icon.svg"
+                  width={8}
+                  height={4}
+                  alt="Listbox icon"
+                />
+              </Listbox.Button>
+
+              <Listbox.Options className="absolute top-[30px] right-0 bg-related-content-text-gradient rounded-md p-[2px] font-bold text-xs drop-shadow-md">
+                <div className="bg-background rounded-md px-5 py-3 flex flex-col gap-2">
+                  {languages.map(language => (
+                    <Link key={language.id} href={language.id}>
+                      <Listbox.Option value={language}>
+                        {language.name}
+                      </Listbox.Option>
+                    </Link>
+                  ))}
+                </div>
+              </Listbox.Options>
+            </div>
+          </Listbox>
+        )}
       </div>
     </div>
   )
