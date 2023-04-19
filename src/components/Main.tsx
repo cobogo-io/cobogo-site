@@ -186,7 +186,7 @@ export default function Main() {
             </motion.div>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 lg:items-center justify-between">
             <motion.h2
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -201,7 +201,7 @@ export default function Main() {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 1, duration: 1 }}
-              className="leading-[32px] lg:leading-[40px] text-[20px] lg:text-[26px] max-w-[450px]"
+              className="leading-[32px] lg:leading-[40px] text-[20px] lg:text-[24px] max-w-[450px]"
             >
               {t(
                 'Cobogo is a fund manager with a technological and productized deal-flow that counts with a community of Creators acting as the Creator Economy market intelligence.'
