@@ -1,10 +1,13 @@
 import { motion, useInView } from 'framer-motion'
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRef } from 'react'
 import Button from './Button'
 
 export default function CommunityMain() {
+  const { t } = useTranslation('common')
+
   const mainRef = useRef(null)
   const mainRefIsInView = useInView(mainRef, { once: true })
 
@@ -33,8 +36,8 @@ export default function CommunityMain() {
                     transition={{ delay: 0.25, duration: 1 }}
                     className="text-[36px] lg:text-[51px] font-extrabold lg:leading-[70px]"
                   >
-                    A game changer <br />
-                    <span className="text-yellow">community</span>
+                    {t('A game changer')} <br />
+                    <span className="text-yellow">{t('community')}</span>
                   </motion.h1>
 
                   <motion.p
@@ -43,10 +46,9 @@ export default function CommunityMain() {
                     transition={{ delay: 0.5, duration: 1 }}
                     className="text-[24px] lg:text-[30px] lg:leading-[45px]"
                   >
-                    Formed by Creators, investors and enthusiasts of the Creator
-                    Economy created boosting market knowledge, research and
-                    development to find the next early stage Creators to be
-                    invested.
+                    {t(
+                      'Formed by Creators, investors and enthusiasts of the Creator Economy created boosting market knowledge, research and development to find the next early stage Creators to be invested.'
+                    )}
                   </motion.p>
                 </div>
 
@@ -62,7 +64,7 @@ export default function CommunityMain() {
                     target="_blank"
                   >
                     <Button
-                      text="join community"
+                      text={t('join community')}
                       borderColor="border-yellow-community"
                     />
                   </Link>

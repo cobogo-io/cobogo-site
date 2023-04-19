@@ -1,10 +1,13 @@
 import { motion, useInView } from 'framer-motion'
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRef } from 'react'
 import Button from './Button'
 
 export default function CommunityContent() {
+  const { t } = useTranslation('common')
+
   const section1Ref = useRef(null)
   const section1RefIsInView = useInView(section1Ref, { once: true })
 
@@ -82,7 +85,7 @@ export default function CommunityContent() {
                       transition={{ delay: 0.25, duration: 1 }}
                       className="text-[24px] lg:text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]"
                     >
-                      Research
+                      {t('Research')}
                     </motion.h2>
 
                     <motion.p
@@ -91,10 +94,9 @@ export default function CommunityContent() {
                       transition={{ delay: 0.5, duration: 1 }}
                       className="text-[20px] leading-[32px] text-black"
                     >
-                      The community counts with an investment analysis
-                      specialized team capable of generating reports on Creators
-                      Economy trends and the future of Creators as investment
-                      assets.
+                      {t(
+                        'The community counts with an investment analysis specialized team capable of generating reports on Creators Economy trends and the future of Creators as investment assets.'
+                      )}
                     </motion.p>
                   </motion.div>
                 )}
@@ -113,7 +115,7 @@ export default function CommunityContent() {
                       transition={{ delay: 0.25, duration: 1 }}
                       className="text-[24px] lg:text-[28px] font-bold drop-shadow-[3px_3px_0px_#00000047]"
                     >
-                      Creators Valuation
+                      {t('Creators Valuation')}
                     </motion.h2>
 
                     <motion.p
@@ -122,11 +124,9 @@ export default function CommunityContent() {
                       transition={{ delay: 0.5, duration: 1 }}
                       className="text-[20px] leading-[32px]"
                     >
-                      One of the greatest values ​​created by the community will
-                      be the ability to assess and valuate Creators for the
-                      first time in the world. This will be the most important
-                      point for defining Creators valorization potential and
-                      will create a new universal relevance metric for Creators.
+                      {t(
+                        'One of the greatest values ​​created by the community will be the ability to assess and valuate Creators for the first time in the world. This will be the most important point for defining Creators valorization potential and will create a new universal relevance metric for Creators.'
+                      )}
                     </motion.p>
                   </div>
                 )}
@@ -145,7 +145,7 @@ export default function CommunityContent() {
                       transition={{ delay: 0.25, duration: 1 }}
                       className="text-[24px] lg:text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]"
                     >
-                      Creators Selection
+                      {t('Creators Selection')}
                     </motion.h2>
 
                     <motion.p
@@ -154,10 +154,9 @@ export default function CommunityContent() {
                       transition={{ delay: 0.5, duration: 1 }}
                       className="text-[20px] leading-[32px] text-black"
                     >
-                      Community members will be responsible for discovering,
-                      discussing and proposing the next Creators to be invested
-                      by our Pioneer Fund, {`Cobogo's`} Creator focused
-                      investment fund.
+                      {t(
+                        `Community members will be responsible for discovering, discussing and proposing the next Creators to be invested by our Pioneer Fund, Cobogo's Creator focused investment fund.`
+                      )}
                     </motion.p>
                   </div>
                 )}
@@ -177,7 +176,7 @@ export default function CommunityContent() {
                     transition={{ delay: 0.25, duration: 1 }}
                     className="text-[24px] lg:text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]"
                   >
-                    The power of community to boost invested creators
+                    {t('The power of community to boost invested creators')}
                   </motion.h2>
 
                   <motion.p
@@ -186,12 +185,9 @@ export default function CommunityContent() {
                     transition={{ delay: 0.5, duration: 1 }}
                     className="text-[20px] leading-[32px] text-black"
                   >
-                    Since the Creators from our community are the ones selecting
-                    and proposing early stage Creators to our fund, their rule
-                    afterall is to boost invested Creators digital reach and
-                    valuation after they receive the invesment. This is how our
-                    community can create value and push the creator economy
-                    foward.
+                    {t(
+                      'Since the Creators from our community are the ones selecting and proposing early stage Creators to our fund, their rule afterall is to boost invested Creators digital reach and valuation after they receive the invesment. This is how our community can create value and push the creator economy foward.'
+                    )}
                   </motion.p>
                 </div>
               )}
@@ -226,10 +222,10 @@ export default function CommunityContent() {
               transition={{ delay: 0.25, duration: 1 }}
               className="font-bold leading-[50px] text-[30px] lg:text-[34px] lg:text-center w-full max-w-[810px]"
             >
-              Join the <br className="flex lg:hidden" /> community that is{' '}
-              <br className="flex lg:hidden" />
-              reshaping the <br className="flex lg:hidden" /> future of the{' '}
-              <br className="flex lg:hidden" />
+              {t('Join the')} <br className="flex lg:hidden" />{' '}
+              {t('community that is')} <br className="flex lg:hidden" />
+              {t('reshaping the')} <br className="flex lg:hidden" />{' '}
+              {t('future of the')} <br className="flex lg:hidden" />
               Creator Economy
             </motion.h2>
           )}
@@ -246,7 +242,7 @@ export default function CommunityContent() {
                 target="_blank"
               >
                 <Button
-                  text="join community"
+                  text={t('join community')}
                   borderColor="border-yellow-community"
                 />
               </Link>
