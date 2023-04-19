@@ -52,7 +52,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
       mostRecentArticles: response.data.items.slice(0, 3),
-      ...(await serverSideTranslations(locale as string, ['common'])),
+      ...(await serverSideTranslations(locale ? locale : '', ['common'])),
     },
   }
 }
