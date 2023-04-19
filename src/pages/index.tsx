@@ -3,7 +3,7 @@ import Main from '@/components/Main'
 import Mentions from '@/components/Mentions'
 import RelatedContent from '@/components/RelatedContent'
 import axios from 'axios'
-import { GetServerSideProps, GetStaticProps } from 'next'
+import { GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useEffect, useState } from 'react'
 
@@ -52,7 +52,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
       mostRecentArticles: response.data.items.slice(0, 3),
-      ...(await serverSideTranslations(locale ? locale : '', ['common'])),
+      ...(await serverSideTranslations(locale as string, ['common'])),
     },
   }
 }
