@@ -1,8 +1,11 @@
 import { motion, useInView } from 'framer-motion'
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
 
 export default function Main() {
+  const { t } = useTranslation('common')
+
   const [weeSeeText, setWeeSeeText] = useState('')
   const [creatorsText, setCreatorsText] = useState('')
   const [asText, setAsText] = useState('')
@@ -63,28 +66,28 @@ export default function Main() {
 
   useEffect(() => {
     if (!switchText) {
-      writeEffect(setWeeSeeText, 'Wee see', false, 0)
+      writeEffect(setWeeSeeText, t('Wee see'), false, 0)
 
       setTimeout(() => {
         writeEffect(setCreatorsText, 'Creators', false, 1)
       }, 1000 * 1.5)
 
       setTimeout(() => {
-        writeEffect(setAsText, 'as', false, 2)
+        writeEffect(setAsText, t('as'), false, 2)
       }, 1000 * 3)
 
       setTimeout(() => {
-        writeEffect(setFoundersText, 'founders', true, 3)
+        writeEffect(setFoundersText, t('founders'), true, 3)
       }, 1000 * 3.5)
     } else {
-      writeEffect(setAndTheirText, 'and their', false, 0)
+      writeEffect(setAndTheirText, t('and their'), false, 0)
 
       setTimeout(() => {
-        writeEffect(setBrandsText, 'brands', false, 1)
+        writeEffect(setBrandsText, t('brands'), false, 1)
       }, 1000 * 1.5)
 
       setTimeout(() => {
-        writeEffect(setAs2Text, 'as', false, 2)
+        writeEffect(setAs2Text, t('as'), false, 2)
       }, 1000 * 3)
 
       setTimeout(() => {
@@ -130,7 +133,7 @@ export default function Main() {
                 )}
               </motion.h1>
 
-              <h1 className="leading-[55px] lg:leading-[110px] text-[42px] lg:text-[75px] font-extrabold text-white flex items-center">
+              <h1 className="leading-[55px] lg:leading-[110px] text-[30px] lg:text-[65px] font-extrabold text-white flex items-center">
                 {!switchText ? creatorsText : brandsText}
                 {line === 1 && (
                   <div className="border h-[80px] animate-pulse" />
@@ -138,14 +141,14 @@ export default function Main() {
               </h1>
 
               <div className="flex items-center gap-2">
-                <h1 className="text-[42px] lg:text-[75px] text-white mr-3 flex items-center">
+                <h1 className="text-[30px] lg:text-[65px] text-white mr-3 flex items-center">
                   {!switchText ? asText : as2Text}
                   {line === 2 && (
                     <div className="border h-[80px] animate-pulse" />
                   )}
                 </h1>
 
-                <h1 className="text-[42px] lg:text-[75px] font-extrabold text-white flex items-center">
+                <h1 className="text-[30px] lg:text-[65px] font-extrabold text-white flex items-center">
                   {!switchText ? foundersText : startupsText}
                   {line === 3 && (
                     <div className="border h-[80px] animate-pulse" />
@@ -188,9 +191,9 @@ export default function Main() {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.75, duration: 1 }}
-              className="leading-[45px] lg:leading-[70px] text-[30px] lg:text-[44px] bg-related-content-text-gradient bg-clip-text text-transparent"
+              className="leading-[45px] lg:leading-[70px] text-[30px] lg:text-[40px] bg-related-content-text-gradient bg-clip-text text-transparent"
             >
-              Scaling up <br /> equity financing <br /> for{' '}
+              {t('Scaling up')} <br /> {t('equity financing')} <br /> {'for'}{' '}
               <strong>Creators</strong>
             </motion.h2>
 
@@ -200,9 +203,9 @@ export default function Main() {
               transition={{ delay: 1, duration: 1 }}
               className="leading-[32px] lg:leading-[40px] text-[20px] lg:text-[26px] max-w-[450px]"
             >
-              Cobogo is a fund manager with a technological and productized
-              deal-flow that counts with a community of Creators acting as the
-              Creator Economy market intelligence.
+              {t(
+                'Cobogo is a fund manager with a technological and productized deal-flow that counts with a community of Creators acting as the Creator Economy market intelligence.'
+              )}
             </motion.p>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { motion, useInView } from 'framer-motion'
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRef } from 'react'
@@ -8,6 +9,8 @@ interface RelatedContentProps {
 }
 
 export default function RelatedContent(props: RelatedContentProps) {
+  const { t } = useTranslation('common')
+
   const relatedContentRef = useRef(null)
   const relatedContentRefIsInView = useInView(relatedContentRef, { once: true })
 
@@ -42,7 +45,7 @@ export default function RelatedContent(props: RelatedContentProps) {
                   transition={{ delay: 0.25, duration: 1 }}
                   className="text-[30px] lg:text-[40px] text-transparent bg-clip-text bg-related-content-text-gradient"
                 >
-                  Related <strong>content</strong>
+                  {t('Related')} <strong>{t('content')}</strong>
                 </motion.h2>
 
                 <motion.p
@@ -51,8 +54,9 @@ export default function RelatedContent(props: RelatedContentProps) {
                   transition={{ delay: 0.5, duration: 1 }}
                   className="lg:text-[22px] leading-[26px] lg:leading-[32px] w-full max-w-[660px]"
                 >
-                  Learn more about the future of the Creator Economy being built
-                  by Cobogo, with articles exposing our ideas.
+                  {t(
+                    'Learn more about the future of the Creator Economy being built by Cobogo, with articles exposing our ideas.'
+                  )}
                 </motion.p>
               </div>
 
@@ -72,7 +76,7 @@ export default function RelatedContent(props: RelatedContentProps) {
                     height={34}
                     alt="Medium icon"
                   />
-                  Go to our Medium
+                  {t('Go to our Medium')}
                 </Link>
               </motion.div>
             </div>
@@ -112,7 +116,7 @@ export default function RelatedContent(props: RelatedContentProps) {
                 transition={{ delay: 0.75, duration: 1 }}
               >
                 <Link
-                  href="https://cobogobr.medium.com/"
+                  href={`${t('https://medium.com/@cobogo_io/')}`}
                   target="_blank"
                   className="flex items-center gap-5 font-bold font-orbitron mt-3 px-7"
                 >
@@ -122,7 +126,7 @@ export default function RelatedContent(props: RelatedContentProps) {
                     height={34}
                     alt="Medium icon"
                   />
-                  Go to our Medium
+                  {t('Go to our Medium')}
                 </Link>
               </motion.div>
             </div>

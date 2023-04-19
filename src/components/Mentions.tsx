@@ -1,9 +1,12 @@
 import { motion, useInView } from 'framer-motion'
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRef } from 'react'
 
 export default function Mentions() {
+  const { t } = useTranslation('common')
+
   const mentionsRef = useRef(null)
   const mentionsRefIsInView = useInView(mentionsRef, { once: true })
 
@@ -37,10 +40,8 @@ export default function Mentions() {
                 transition={{ delay: 0.25, duration: 1 }}
                 className="text-[30px] lg:text-[40px] text-transparent bg-clip-text bg-mentions-text-gradient font-bold"
               >
-                Mentions
+                {t('Mentions')}
               </motion.h2>
-
-              {/* <p className="text-[22px] leading-[32px] w-full max-w-[660px]">-</p> */}
             </div>
 
             <motion.div

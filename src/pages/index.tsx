@@ -4,6 +4,7 @@ import Mentions from '@/components/Mentions'
 import RelatedContent from '@/components/RelatedContent'
 import axios from 'axios'
 import { GetServerSideProps } from 'next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useEffect, useState } from 'react'
 
 interface HomeProps {
@@ -41,14 +42,17 @@ export default function Home(props: HomeProps) {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async context => {
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   const response = await axios.get(
-    'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@cobogobr/'
+    `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${
+      locale === 'pt' ? 'cobogobr' : 'cobogo_io'
+    }/`
   )
 
   return {
     props: {
       mostRecentArticles: response.data.items.slice(0, 3),
+      ...(await serverSideTranslations(locale as string, ['common'])),
     },
   }
 }

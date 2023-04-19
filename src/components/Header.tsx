@@ -1,4 +1,5 @@
 import { useMotionValueEvent, useScroll } from 'framer-motion'
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 
 import Link from 'next/link'
@@ -6,6 +7,8 @@ import { useRouter } from 'next/router'
 import { useState } from 'react'
 
 export default function Header() {
+  const { t } = useTranslation('common')
+
   const { asPath } = useRouter()
 
   const [hasGradient, setHasGradient] = useState(false)
@@ -54,7 +57,7 @@ export default function Header() {
                 height={32}
                 alt="Cobogo Community cube"
               />
-              Community
+              {t('Community')}
             </Link>
 
             <Link

@@ -1,12 +1,15 @@
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 export default function Footer() {
+  const { t } = useTranslation('common')
+
   const { asPath } = useRouter()
 
   return asPath === '/' ? (
-    <section className="flex items-center justify-center w-full pt-20 lg:pt-40 pb-[470px] lg:pb-[870px] relative">
+    <section className="flex items-center justify-center w-full pt-20 lg:pt-40 pb-[550px] lg:pb-[870px] relative">
       <img
         src="/images/footer-background.svg"
         alt="Footer background"
@@ -32,7 +35,10 @@ export default function Footer() {
               </div>
             </Link>
 
-            <Link href="https://twitter.com/cobogobr/" target="_blank">
+            <Link
+              href={`${t('https://twitter.com/cobogo_io/')}`}
+              target="_blank"
+            >
               <div className="relative w-[30px] lg:w-[65px] h-[30px] lg:h-[65px]">
                 <Image src="/images/twitter-icon.svg" fill alt="Twitter icon" />
               </div>
@@ -66,22 +72,22 @@ export default function Footer() {
 
           <div className="font-bold flex flex-col lg:flex-row text-sm lg:text-base items-center gap-4 lg:gap-8 font-orbitron">
             <Link href="https://l.cobogo.io/code-of-conduct/" target="_blank">
-              Code of conduct
+              {t('Code of conduct')}
             </Link>
 
             <Link href="https://l.cobogo.io/privacy-policy/" target="_blank">
-              Privacy policy
+              {t('Privacy policy')}
             </Link>
 
             <Link href="https://l.cobogo.io/term-of-use/" target="_blank">
-              Terms of use
+              {t('Terms of use')}
             </Link>
 
             <Link
               href="https://l.cobogo.io/personal-data-deletion"
               target="_blank"
             >
-              Data deletion
+              {t('Data deletion')}
             </Link>
           </div>
 
@@ -134,7 +140,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Code of conduct
+          {t('Code of conduct')}
         </a>
 
         <a
@@ -143,7 +149,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Privacy policy
+          {t('Privacy policy')}
         </a>
 
         <a
@@ -152,7 +158,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Terms of use
+          {t('Terms of use')}
         </a>
 
         <a
@@ -161,7 +167,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Data deletion
+          {t('Data deletion')}
         </a>
 
         <a
