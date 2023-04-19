@@ -34,7 +34,7 @@ export default function Carrousel(props: CarrouselProps) {
         </h1>
       ),
       description:
-        'Formed by Creators, investors and enthusiasts of the Creator Economy created boosting market knowledge, research and development to find the next early stage Creators to be invested.',
+        'Formed by Creators, investors and enthusiasts of the Creator Economy boosting market knowledge, research and development to find the next early stage Creators to be invested.',
       buttonHref: '/community',
     },
     {

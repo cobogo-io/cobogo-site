@@ -8,16 +8,18 @@ import { useRouter } from 'next/router'
 import { useState } from 'react'
 
 const languages = [
-  { id: '/', name: 'English' },
-  { id: '/pt', name: 'Português' },
+  { id: 'en', name: 'English' },
+  { id: 'pt', name: 'Português' },
 ]
 
 export default function Header() {
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0])
+  const { asPath, locale } = useRouter()
+
+  const [selectedLanguage, setSelectedLanguage] = useState(
+    languages.find(language => language.id === locale) ?? languages[0]
+  )
 
   const { t } = useTranslation('common')
-
-  const { asPath } = useRouter()
 
   const [hasGradient, setHasGradient] = useState(false)
 
@@ -106,7 +108,7 @@ export default function Header() {
 
         {asPath === '/' && (
           <Listbox value={selectedLanguage} onChange={setSelectedLanguage}>
-            <div className="hidden lg:flex flex-col relative">
+            <div className="flex flex-col relative">
               <Listbox.Button className="font-proxima-nova font-bold text-xs flex gap-2 items-center">
                 {selectedLanguage.name}
 
@@ -118,14 +120,14 @@ export default function Header() {
                 />
               </Listbox.Button>
 
-              <Listbox.Options className="absolute top-[30px] right-0 bg-related-content-text-gradient rounded-md p-[2px] font-bold text-xs drop-shadow-md">
+              <Listbox.Options className="absolute top-[20px] right-0 bg-related-content-text-gradient rounded-md p-[2px] font-bold text-xs drop-shadow-md">
                 <div className="bg-background rounded-md px-5 py-3 flex flex-col gap-2">
                   {languages.map(language => (
-                    <Link key={language.id} href={language.id}>
+                    <a key={language.id} href={language.id}>
                       <Listbox.Option value={language}>
                         {language.name}
                       </Listbox.Option>
-                    </Link>
+                    </a>
                   ))}
                 </div>
               </Listbox.Options>

@@ -50,7 +50,7 @@ export default function CommunityMain() {
                     className="text-[24px] lg:text-[30px] lg:leading-[45px]"
                   >
                     {t(
-                      'Formed by Creators, investors and enthusiasts of the Creator Economy created boosting market knowledge, research and development to find the next early stage Creators to be invested.'
+                      'Formed by Creators, investors and enthusiasts of the Creator Economy boosting market knowledge, research and development to find the next early stage Creators to be invested.'
                     )}
                   </motion.p>
                 </div>
