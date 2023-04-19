@@ -193,7 +193,7 @@ export default function Main() {
               transition={{ delay: 0.75, duration: 1 }}
               className="leading-[45px] lg:leading-[70px] text-[30px] lg:text-[40px] bg-related-content-text-gradient bg-clip-text text-transparent"
             >
-              {t('Scaling up')} <br /> {t('equity financing')} <br /> {'for'}{' '}
+              {t('Scaling up')} <br /> {t('equity financing')} <br /> {t('for')}{' '}
               <strong>Creators</strong>
             </motion.h2>
 
