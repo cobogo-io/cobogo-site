@@ -116,7 +116,7 @@ export default function Carrousel(props: CarrouselProps) {
                 return (
                   <motion.div
                     key={product.id}
-                    className={`${product.background} bg-cover lg:rounded-[40px] w-full h-[892px] lg:h-[865px] px-7 lg:px-24 py-16 flex flex-col items-center justify-start gap-14`}
+                    className={`${product.background} bg-cover lg:rounded-[40px] w-full h-[892px] lg:h-[865px] px-7 lg:px-24 py-16 flex flex-col items-center justify-start gap-14 overflow-hidden`}
                   >
                     <ProductiveDealFlow
                       selectedProduct={props.selectedProduct}
