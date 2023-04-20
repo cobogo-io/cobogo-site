@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Dispatch, SetStateAction, useRef } from 'react'
 import Button from './Button'
+import ProductiveDealFlow from './ProductiveDealFlow'
 
 interface CarrouselProps {
   selectedProduct: string
@@ -21,7 +22,6 @@ export default function Carrousel(props: CarrouselProps) {
       id: 'community',
       background:
         'bg-home-carrousel-community-background-mobile lg:bg-home-carrousel-community-background',
-      image: '/images/home-productive-deal-flow-community.svg',
       cube: '/images/cobogo-community-cube.svg',
       backgroundColor: 'bg-yellow-community',
       borderColor: 'border-yellow-community',
@@ -41,7 +41,6 @@ export default function Carrousel(props: CarrouselProps) {
       id: 'social',
       background:
         'bg-home-carrousel-social-background-mobile lg:bg-home-carrousel-social-background',
-      image: '/images/home-productive-deal-flow-social.svg',
       cube: '/images/cobogo-social-cube.svg',
       backgroundColor: 'bg-blue-social',
       borderColor: 'border-blue-social',
@@ -62,7 +61,6 @@ export default function Carrousel(props: CarrouselProps) {
       id: 'launchpad',
       background:
         'bg-home-carrousel-launchpad-background-mobile lg:bg-home-carrousel-launchpad-background',
-      image: '/images/home-productive-deal-flow-launchpad.svg',
       cube: '/images/cobogo-launchpad-cube.svg',
       backgroundColor: 'bg-pink-launchpad',
       borderColor: 'border-pink-launchpad',
@@ -118,30 +116,45 @@ export default function Carrousel(props: CarrouselProps) {
                 return (
                   <motion.div
                     key={product.id}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0, transition: { duration: 0.5 } }}
-                    transition={{ delay: 0.25, duration: 1 }}
                     className={`${product.background} bg-cover lg:rounded-[40px] w-full h-[892px] lg:h-[865px] px-7 lg:px-24 py-16 flex flex-col items-center justify-start gap-14`}
                   >
-                    {product.image && (
-                      <div className="relative min-w-[125px] lg:min-w-[257px] min-h-[107px] lg:min-h-[220px]">
-                        <Image src={product.image as string} fill alt="Image" />
-                      </div>
-                    )}
+                    <ProductiveDealFlow
+                      selectedProduct={props.selectedProduct}
+                      setSelectedProduct={props.setSelectedProduct}
+                    />
 
                     {product.cube && (
-                      <div className="flex lg:hidden">
+                      <motion.div
+                        initial={{ x: 400, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        exit={{
+                          x: -400,
+                          opacity: 0,
+                          transition: { duration: 0.5 },
+                        }}
+                        transition={{ delay: 0.25, duration: 0.5 }}
+                        className="flex lg:hidden"
+                      >
                         <Image
                           src={product.cube as string}
                           width={120}
                           height={120}
                           alt="Cube"
                         />
-                      </div>
+                      </motion.div>
                     )}
 
-                    <div className="flex items-center justify-between w-full">
+                    <motion.div
+                      initial={{ x: 400, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      exit={{
+                        x: -400,
+                        opacity: 0,
+                        transition: { duration: 0.5 },
+                      }}
+                      transition={{ delay: 0.25, duration: 0.5 }}
+                      className="flex items-center justify-between w-full"
+                    >
                       <div className="flex flex-col max-w-[630px] w-full gap-6">
                         <h2
                           className={`font-bold text-xl ${product.textColor}`}
@@ -173,7 +186,7 @@ export default function Carrousel(props: CarrouselProps) {
                           />
                         </div>
                       )}
-                    </div>
+                    </motion.div>
                   </motion.div>
                 )
               }

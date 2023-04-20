@@ -5,7 +5,7 @@ import RelatedContent from '@/components/RelatedContent'
 import axios from 'axios'
 import { GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 interface HomeProps {
   mostRecentArticles: any[]
@@ -13,18 +13,6 @@ interface HomeProps {
 
 export default function Home(props: HomeProps) {
   const [selectedProduct, setSelectedProduct] = useState<string>('community')
-
-  useEffect(() => {
-    setTimeout(() => {
-      if (selectedProduct === 'community') {
-        setSelectedProduct('social')
-      } else if (selectedProduct === 'social') {
-        setSelectedProduct('launchpad')
-      } else if (selectedProduct === 'launchpad') {
-        setSelectedProduct('community')
-      }
-    }, 1000 * 5)
-  }, [selectedProduct])
 
   return (
     <>
