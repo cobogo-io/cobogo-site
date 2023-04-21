@@ -47,7 +47,7 @@ export default function ProductiveDealFlow(props: ProductiveDealFlowProps) {
   }
 
   return (
-    <div className="relative">
+    <div className="scale-50 lg:scale-100 relative">
       <div className="absolute top-0 right-0">
         <Image
           src="/images/home-productive-deal-flow.svg"
