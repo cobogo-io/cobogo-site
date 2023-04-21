@@ -93,16 +93,17 @@ export default function Carrousel(props: CarrouselProps) {
               {products.map(product => {
                 if (product.id === props.selectedProduct) {
                   return (
-                    <div
+                    <button
                       key={product.id}
                       className={`${product.backgroundColor} rounded-full h-3 lg:h-4 w-3 lg:w-4`}
                     />
                   )
                 } else {
                   return (
-                    <div
+                    <button
                       key={product.id}
                       className="bg-white/30 rounded-full h-3 lg:h-4 w-3 lg:w-4"
+                      onClick={() => props.setSelectedProduct(product.id)}
                     />
                   )
                 }
