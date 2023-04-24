@@ -70,16 +70,16 @@ export default function ProductiveDealFlow(props: ProductiveDealFlowProps) {
                 ? 'social'
                 : 'launchpad'
             }
-            transition={{ duration: 0.1 }}
+            transition={{ duration: 0.01 }}
             custom={props.selectedProduct}
             className="h-full rounded-none absolute flex"
-            onMouseEnter={() => props.setSelectedProduct(props.selectedProduct)}
+            onClick={() => props.setSelectedProduct(props.selectedProduct)}
           />
         </AnimatePresence>
 
         <button
           className="bg-white/10 w-[130px] h-full rounded-none"
-          onMouseEnter={() =>
+          onClick={() =>
             props.selectedProduct === 'launchpad' &&
             props.setSelectedProduct('community')
           }
@@ -87,7 +87,7 @@ export default function ProductiveDealFlow(props: ProductiveDealFlowProps) {
 
         <button
           className="bg-white/10 w-[60px] h-full rounded-none"
-          onMouseEnter={() =>
+          onClick={() =>
             props.selectedProduct === 'community' &&
             props.setSelectedProduct('social')
           }
@@ -95,7 +95,7 @@ export default function ProductiveDealFlow(props: ProductiveDealFlowProps) {
 
         <button
           className="bg-white/10 w-[70px] h-full rounded-none"
-          onMouseEnter={() =>
+          onClick={() =>
             props.selectedProduct === 'social' &&
             props.setSelectedProduct('launchpad')
           }

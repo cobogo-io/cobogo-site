@@ -133,7 +133,7 @@ export default function Carrousel(props: CarrouselProps) {
                           opacity: 0,
                           transition: { duration: 0.5 },
                         }}
-                        transition={{ delay: 0.25, duration: 0.5 }}
+                        transition={{ delay: 0.6, duration: 0.5 }}
                         className="flex lg:hidden"
                       >
                         <Image
@@ -153,7 +153,7 @@ export default function Carrousel(props: CarrouselProps) {
                         opacity: 0,
                         transition: { duration: 0.5 },
                       }}
-                      transition={{ delay: 0.25, duration: 0.5 }}
+                      transition={{ delay: 0.6, duration: 0.5 }}
                       className="flex items-center justify-between w-full"
                     >
                       <div className="flex flex-col max-w-[630px] w-full gap-6">
