@@ -1,6 +1,6 @@
 import { AnimatePresence, Variants, motion } from 'framer-motion'
 import Image from 'next/image'
-import { Dispatch, SetStateAction, useState } from 'react'
+import { Dispatch, SetStateAction } from 'react'
 
 interface ProductiveDealFlowProps {
   selectedProduct: string
@@ -70,7 +70,7 @@ export default function ProductiveDealFlow(props: ProductiveDealFlowProps) {
                 ? 'social'
                 : 'launchpad'
             }
-            transition={{ delay: 0.25, duration: 0.5 }}
+            transition={{ duration: 0.1 }}
             custom={props.selectedProduct}
             className="h-full rounded-none absolute flex"
             onMouseEnter={() => props.setSelectedProduct(props.selectedProduct)}
