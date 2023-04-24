@@ -66,7 +66,7 @@ export default function Main() {
 
   useEffect(() => {
     if (!switchText) {
-      writeEffect(setWeeSeeText, t('Wee see'), false, 0)
+      writeEffect(setWeeSeeText, t('We see'), false, 0)
 
       setTimeout(() => {
         writeEffect(setCreatorsText, 'Creators', false, 1)
