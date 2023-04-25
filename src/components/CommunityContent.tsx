@@ -214,7 +214,7 @@ export default function CommunityContent() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center w-full pb-96 lg:pb-[340px] pt-12 lg:pt-[115px] px-7 lg:px-0 z-20">
+      <div className="flex items-center justify-center w-full pb-96 lg:pb-[530px] pt-12 lg:pt-[115px] px-7 lg:px-0 z-20">
         <div ref={footerRef} />
 
         <div className="w-full max-w-[1110px] flex flex-col lg:items-center gap-12 relative min-h-[198px]">

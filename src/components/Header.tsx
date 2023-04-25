@@ -123,34 +123,32 @@ export default function Header() {
           </div>
         </div>
 
-        {asPath === '/' && (
-          <Listbox value={selectedLanguage} onChange={setSelectedLanguage}>
-            <div className="flex flex-col relative">
-              <Listbox.Button className="font-proxima-nova font-bold text-xs flex gap-2 items-center">
-                {selectedLanguage.name}
+        <Listbox value={selectedLanguage} onChange={setSelectedLanguage}>
+          <div className="flex flex-col relative">
+            <Listbox.Button className="font-proxima-nova font-bold text-xs flex gap-2 items-center">
+              {selectedLanguage.name}
 
-                <Image
-                  src="/images/listbox-icon.svg"
-                  width={8}
-                  height={4}
-                  alt="Listbox icon"
-                />
-              </Listbox.Button>
+              <Image
+                src="/images/listbox-icon.svg"
+                width={8}
+                height={4}
+                alt="Listbox icon"
+              />
+            </Listbox.Button>
 
-              <Listbox.Options className="absolute top-[20px] right-0 bg-related-content-text-gradient rounded-md p-[2px] font-bold text-xs drop-shadow-md">
-                <div className="bg-background rounded-md px-5 py-3 flex flex-col gap-2">
-                  {languages.map(language => (
-                    <a key={language.id} href={language.id}>
-                      <Listbox.Option value={language}>
-                        {language.name}
-                      </Listbox.Option>
-                    </a>
-                  ))}
-                </div>
-              </Listbox.Options>
-            </div>
-          </Listbox>
-        )}
+            <Listbox.Options className="absolute top-[20px] right-0 bg-related-content-text-gradient rounded-md p-[2px] font-bold text-xs drop-shadow-md">
+              <div className="bg-background rounded-md px-5 py-3 flex flex-col gap-2">
+                {languages.map(language => (
+                  <a key={language.id} href={language.id}>
+                    <Listbox.Option value={language}>
+                      {language.name}
+                    </Listbox.Option>
+                  </a>
+                ))}
+              </div>
+            </Listbox.Options>
+          </div>
+        </Listbox>
       </div>
     </div>
   )
