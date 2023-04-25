@@ -1,4 +1,4 @@
-import { useMotionValueEvent, useScroll } from 'framer-motion'
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 
@@ -125,11 +125,16 @@ export default function Header() {
       </div>
 
       {menuOpened && (
-        <div className="w-full h-screen flex flex-col items-center">
-          <div className="max-w-[620px] w-full flex flex-col gap-3 overflow-y-auto pt-12 pb-24 scrollbar">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.25, duration: 1 }}
+          className="w-full h-screen flex flex-col items-center"
+        >
+          <div className="max-w-[620px] w-full flex flex-col gap-3 overflow-y-auto px-7 pt-12 pb-24 scrollbar">
             <Link
               href="/community"
-              className={`px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
+              className={`px-6 lg:px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
                 asPath !== '/community' &&
                 asPath !== '/' &&
                 'brightness-50 saturate-0'
@@ -137,6 +142,14 @@ export default function Header() {
               onClick={() => setMenuOpened(false)}
             >
               <div className="flex flex-col gap-4 text-start">
+                <Image
+                  src="/images/cobogo-community-cube.svg"
+                  width={40}
+                  height={40}
+                  alt="Cobogo Community cube"
+                  className="flex lg:hidden"
+                />
+
                 <h1 className="text-2xl font-bold text-yellow-community">
                   {t('Community')}
                 </h1>
@@ -149,18 +162,27 @@ export default function Header() {
                 width={120}
                 height={120}
                 alt="Cobogo Community cube"
+                className="hidden lg:flex"
               />
             </Link>
 
             <Link
               href="https://cobogo.social/"
               target="_blank"
-              className={`px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
+              className={`px-6 lg:px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
                 asPath !== '/' && 'brightness-50 saturate-0'
               }`}
               onClick={() => setMenuOpened(false)}
             >
               <div className="flex flex-col gap-4 text-start">
+                <Image
+                  src="/images/cobogo-social-cube.svg"
+                  width={40}
+                  height={40}
+                  alt="Cobogo Social cube"
+                  className="flex lg:hidden"
+                />
+
                 <h1 className="text-2xl font-bold text-blue-social">Social</h1>
 
                 <p>{t('Creator as a business platform.')}</p>
@@ -171,12 +193,13 @@ export default function Header() {
                 width={125}
                 height={125}
                 alt="Cobogo Social cube"
+                className="hidden lg:flex"
               />
             </Link>
 
             <Link
               href="/launchpad"
-              className={`px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
+              className={`px-6 lg:px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
                 asPath !== '/launchpad' &&
                 asPath !== '/' &&
                 'brightness-50 saturate-0'
@@ -184,6 +207,14 @@ export default function Header() {
               onClick={() => setMenuOpened(false)}
             >
               <div className="flex flex-col gap-4 text-start">
+                <Image
+                  src="/images/cobogo-launchpad-cube.svg"
+                  width={40}
+                  height={40}
+                  alt="Cobogo Launchpad cube"
+                  className="flex lg:hidden"
+                />
+
                 <h1 className="text-2xl font-bold text-pink-launchpad">
                   Launchpad
                 </h1>
@@ -196,10 +227,11 @@ export default function Header() {
                 width={125}
                 height={125}
                 alt="Cobogo Launchpad cube"
+                className="hidden lg:flex"
               />
             </Link>
           </div>
-        </div>
+        </motion.div>
       )}
     </div>
   )
