@@ -56,6 +56,14 @@ export default function Header() {
         menuOpened ? 'bg-black/95' : hasGradient ? 'bg-black/50' : ''
       } z-30 fixed`}
     >
+      {/* <Image
+        src="/images/menu-background.svg"
+        width={1300}
+        height={1021}
+        alt="Menu background"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+      /> */}
+
       <div
         className={`w-full max-w-[1110px] flex items-center justify-between h-[76px] gap-2 lg:gap-0 px-7 lg:px-0`}
       >
@@ -109,11 +117,16 @@ export default function Header() {
       </div>
 
       {menuOpened && (
-        <div className="w-full h-full flex flex-col items-center">
-          <div className="max-w-[620px] w-full flex flex-col gap-3">
+        <div className="w-full h-screen flex flex-col items-center">
+          <div className="max-w-[620px] w-full flex flex-col gap-3 overflow-y-auto pt-12 pb-24 scrollbar">
             <Link
               href="/community"
-              className="px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl"
+              className={`px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
+                asPath !== '/community' &&
+                asPath !== '/' &&
+                'brightness-50 saturate-0'
+              }`}
+              onClick={() => setMenuOpened(false)}
             >
               <div className="flex flex-col gap-4 text-start">
                 <h1 className="text-2xl font-bold text-yellow-community">
@@ -133,7 +146,11 @@ export default function Header() {
 
             <Link
               href="https://cobogo.social/"
-              className="px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl"
+              target="_blank"
+              className={`px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
+                asPath !== '/' && 'brightness-50 saturate-0'
+              }`}
+              onClick={() => setMenuOpened(false)}
             >
               <div className="flex flex-col gap-4 text-start">
                 <h1 className="text-2xl font-bold text-blue-social">Social</h1>
@@ -151,7 +168,12 @@ export default function Header() {
 
             <Link
               href="/launchpad"
-              className="px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl"
+              className={`px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
+                asPath !== '/launchpad' &&
+                asPath !== '/' &&
+                'brightness-50 saturate-0'
+              }`}
+              onClick={() => setMenuOpened(false)}
             >
               <div className="flex flex-col gap-4 text-start">
                 <h1 className="text-2xl font-bold text-pink-launchpad">
