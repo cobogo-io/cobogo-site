@@ -7,16 +7,33 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 
-const languages = [
-  { id: 'en', name: 'English' },
-  { id: 'pt', name: 'Português' },
-]
-
 export default function Header() {
   const { asPath, locale } = useRouter()
 
+  const languages = [
+    {
+      id:
+        asPath === '/'
+          ? '/en'
+          : asPath.includes('community')
+          ? '/en/community'
+          : '/en/launchpad',
+      name: 'English',
+    },
+    {
+      id:
+        asPath === '/'
+          ? '/pt'
+          : asPath.includes('community')
+          ? '/pt/community'
+          : '/pt/launchpad',
+      name: 'Português',
+    },
+  ]
+
   const [selectedLanguage, setSelectedLanguage] = useState(
-    languages.find(language => language.id === locale) ?? languages[0]
+    languages.find(language => language.id.includes(locale as string)) ??
+      languages[0]
   )
 
   const { t } = useTranslation('common')
