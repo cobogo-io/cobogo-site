@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Listbox } from '@headlessui/react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function Header() {
   const { asPath, locale } = useRouter()
@@ -49,6 +49,14 @@ export default function Header() {
       setHasGradient(false)
     }
   })
+
+  useEffect(() => {
+    if (menuOpened) {
+      document.body.classList.add('active-modal')
+    } else {
+      document.body.classList.remove('active-modal')
+    }
+  }, [menuOpened])
 
   return (
     <div
