@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Listbox } from '@headlessui/react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 export default function Header() {
   const { asPath, locale } = useRouter()
@@ -50,14 +50,6 @@ export default function Header() {
     }
   })
 
-  useEffect(() => {
-    if (menuOpened) {
-      document.body.classList.add('active-modal')
-    } else {
-      document.body.classList.remove('active-modal')
-    }
-  }, [menuOpened])
-
   return (
     <div
       className={`flex flex-col justify-center items-center w-full ${
@@ -78,6 +70,7 @@ export default function Header() {
         <div className="flex items-center gap-4 lg:gap-8 font-orbitron">
           <button
             onClick={() => setMenuOpened(previousState => !previousState)}
+            className="flex"
           >
             <Image
               src="/images/menu-icon.svg"
@@ -168,7 +161,6 @@ export default function Header() {
 
             <Link
               href="https://cobogo.social/"
-              target="_blank"
               className={`px-6 lg:px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
                 asPath !== '/' && 'brightness-50 saturate-0'
               }`}
