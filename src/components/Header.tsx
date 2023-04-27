@@ -53,8 +53,9 @@ export default function Header() {
   return (
     <div
       className={`flex flex-col justify-center items-center w-full ${
-        menuOpened ? 'bg-black/95' : hasGradient ? 'bg-black/50' : ''
+        menuOpened ? 'bg-black/[99%]' : hasGradient ? 'bg-black/50' : ''
       } z-30 fixed`}
+      onClick={() => menuOpened && setMenuOpened(false)}
     >
       {/* <Image
         src="/images/menu-background.svg"
@@ -182,8 +183,8 @@ export default function Header() {
 
               <Image
                 src="/images/cobogo-social-cube.svg"
-                width={125}
-                height={125}
+                width={115}
+                height={115}
                 alt="Cobogo Social cube"
                 className="hidden lg:flex"
               />
