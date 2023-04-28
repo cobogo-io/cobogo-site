@@ -242,7 +242,7 @@ export default function CommunityContent() {
               <Link
                 href={
                   locale === 'pt'
-                    ? 'https://docs.google.com/forms/d/e/1FAIpQLSdFwCXoiGKWTrgY1FgKYnPMB3ft0Aox7pZ_30tUU4qBJWoctQ/viewform?usp=share_link'
+                    ? 'https://docs.google.com/forms/d/e/1FAIpQLSdFwCXoiGKWTrgY1FgKYnPMB3ft0Aox7pZ_30tUU4qBJWoctQ/viewform?usp=share_link/'
                     : 'https://discord.gg/93kBxA5mbT/'
                 }
                 className="flex"
