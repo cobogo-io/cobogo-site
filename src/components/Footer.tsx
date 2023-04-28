@@ -48,12 +48,6 @@ export default function Footer() {
               </div>
             </Link>
 
-            <Link href="https://github.com/cobogo-io/" target="_blank">
-              <div className="relative w-[30px] lg:w-[65px] h-[30px] lg:h-[65px]">
-                <Image src="/images/github-icon.svg" fill alt="GitHub icon" />
-              </div>
-            </Link>
-
             <Link
               href="https://www.linkedin.com/company/cobogopt/"
               target="_blank"
@@ -115,12 +109,6 @@ export default function Footer() {
         <Link href="https://twitter.com/cobogobr/" target="_blank">
           <div className="relative w-[30px] lg:w-[32px] h-[30px] lg:h-[32px]">
             <Image src="/images/twitter-icon.svg" fill alt="Twitter icon" />
-          </div>
-        </Link>
-
-        <Link href="https://github.com/cobogo-io/" target="_blank">
-          <div className="relative w-[30px] lg:w-[32px] h-[30px] lg:h-[32px]">
-            <Image src="/images/github-icon.svg" fill alt="GitHub icon" />
           </div>
         </Link>
 
