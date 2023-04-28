@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Listbox } from '@headlessui/react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function Header() {
   const { asPath, locale } = useRouter()
@@ -50,9 +50,17 @@ export default function Header() {
     }
   })
 
+  useEffect(() => {
+    if (menuOpened) {
+      document.body.classList.add('active-modal')
+    } else {
+      document.body.classList.remove('active-modal')
+    }
+  }, [menuOpened])
+
   return (
     <div
-      className={`flex flex-col justify-center items-center w-full ${
+      className={`flex flex-col justify-center items-center w-screen ${
         menuOpened ? 'bg-black/[99%]' : hasGradient ? 'bg-black/50' : ''
       } z-30 fixed`}
       onClick={() => menuOpened && setMenuOpened(false)}
