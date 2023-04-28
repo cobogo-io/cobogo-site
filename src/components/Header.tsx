@@ -43,7 +43,7 @@ export default function Header() {
   const { scrollY } = useScroll()
 
   useMotionValueEvent(scrollY, 'change', latest => {
-    if (latest > 800) {
+    if (latest > 50) {
       setHasGradient(true)
     } else {
       setHasGradient(false)
