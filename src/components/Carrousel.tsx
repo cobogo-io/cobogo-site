@@ -209,7 +209,7 @@ export default function Carrousel(props: CarrouselProps) {
                   return (
                     <motion.div
                       key={product.id}
-                      className={`z-10 relative bg-cover w-[100%] h-[961px] lg:h-[847px] px-7 lg:px-24 pb-8 lg:pb-16 pt-[198px] lg:pt-[340px] flex flex-col items-center justify-start gap-14 overflow-hidden`}
+                      className={`z-10 relative bg-cover w-[100%] h-[961px] lg:h-[847px] px-7 lg:px-24 pb-8 lg:pb-16 pt-[308px] lg:pt-[340px] flex flex-col items-center justify-start gap-14 overflow-hidden`}
                     >
                       <div className="w-full h-[142px] lg:h-[175px] absolute top-0 bg-white/5" />
 
