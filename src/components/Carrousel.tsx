@@ -20,8 +20,7 @@ export default function Carrousel(props: CarrouselProps) {
   const products = [
     {
       id: 'community',
-      background:
-        'bg-home-carrousel-community-background-mobile lg:bg-home-carrousel-community-background',
+
       cube: '/images/cobogo-community-cube.svg',
       backgroundColor: 'bg-yellow-community',
       borderColor: 'border-yellow-community',
@@ -39,8 +38,6 @@ export default function Carrousel(props: CarrouselProps) {
     },
     {
       id: 'social',
-      background:
-        'bg-home-carrousel-social-background-mobile lg:bg-home-carrousel-social-background',
       cube: '/images/cobogo-social-cube.svg',
       backgroundColor: 'bg-blue-social',
       borderColor: 'border-blue-social',
@@ -59,8 +56,6 @@ export default function Carrousel(props: CarrouselProps) {
 
     {
       id: 'launchpad',
-      background:
-        'bg-home-carrousel-launchpad-background-mobile lg:bg-home-carrousel-launchpad-background',
       cube: '/images/cobogo-launchpad-cube.svg',
       backgroundColor: 'bg-pink-launchpad',
       borderColor: 'border-pink-launchpad',
@@ -87,6 +82,18 @@ export default function Carrousel(props: CarrouselProps) {
     },
     launchpad: {
       transform: 'translateX(-66.66%)',
+    },
+  }
+
+  const backgroundVariants: Variants = {
+    community: {
+      stopColor: '#E7E04F',
+    },
+    social: {
+      stopColor: '#00B9E9',
+    },
+    launchpad: {
+      stopColor: '#BA68C8',
     },
   }
 
@@ -125,6 +132,69 @@ export default function Carrousel(props: CarrouselProps) {
 
           <AnimatePresence mode="wait">
             <div className="overflow-hidden lg:rounded-[40px] relative">
+              <svg
+                viewBox="0 0 1299 844"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-full h-full absolute"
+              >
+                <g opacity="0.2" filter="url(#filter0_f_8054_4164)">
+                  <path
+                    d="M481.932 88.6105C725.614 103.439 1154.72 -123.693 1169.99 96.9022C1185.26 317.498 842.815 858.511 599.133 843.684C355.452 828.856 145.533 638.007 130.265 417.412C114.997 196.816 238.251 73.784 481.932 88.6105Z"
+                    fill="url(#paint0_angular_8054_4164)"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_f_8054_4164"
+                    x="-271"
+                    y="-400"
+                    width="1841.48"
+                    height="1643.98"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="BackgroundImageFix"
+                      result="shape"
+                    />
+                    <feGaussianBlur
+                      stdDeviation="200"
+                      result="effect1_foregroundBlur_8054_4164"
+                    />
+                  </filter>
+                  <radialGradient
+                    id="paint0_angular_8054_4164"
+                    cx="0"
+                    cy="0"
+                    r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(649.742 421.992) rotate(90) scale(421.992 520.742)"
+                  >
+                    <stop stop-color="#B3EFFF" />
+                    <motion.stop
+                      animate={props.selectedProduct}
+                      variants={backgroundVariants}
+                      offset="0.572917"
+                    />
+                  </radialGradient>
+                  <linearGradient
+                    id="paint1_linear_8054_4164"
+                    x1="971"
+                    y1="170"
+                    x2="971"
+                    y2="-7.17299"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="white" />
+                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+
               <ProductiveDealFlow
                 selectedProduct={props.selectedProduct}
                 setSelectedProduct={props.setSelectedProduct}
@@ -139,7 +209,7 @@ export default function Carrousel(props: CarrouselProps) {
                   return (
                     <motion.div
                       key={product.id}
-                      className={`${product.background} relative bg-cover w-[100%] h-[961px] lg:h-[847px] px-7 lg:px-24 pb-8 lg:pb-16 pt-[198px] lg:pt-[340px] flex flex-col items-center justify-start gap-14 overflow-hidden`}
+                      className={`z-10 relative bg-cover w-[100%] h-[961px] lg:h-[847px] px-7 lg:px-24 pb-8 lg:pb-16 pt-[198px] lg:pt-[340px] flex flex-col items-center justify-start gap-14 overflow-hidden`}
                     >
                       <div className="w-full h-[142px] lg:h-[175px] absolute top-0 bg-white/5" />
 
