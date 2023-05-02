@@ -106,12 +106,12 @@ export default function Mentions() {
 
               <Link
                 className="flex flex-col gap-8 mr-7 lg:mr-0"
-                href="https://www.abcdacomunicacao.com.br/cobogo-lanca-plataforma-de-investimentos-para-creators/"
+                href="https://www.abcdacomunicacao.com.br/creators-3-0-raul-aragao-e-o-primeiro-creator-a-se-tornar-escalavel-pela-cobogo/"
                 target="_blank"
               >
                 <div className="w-[340px] h-[215px] rounded-[15px] bg-mentions-text-gradient flex items-center justify-center relative">
                   <Image
-                    src="/images/mention-3.png"
+                    src="/images/mention-3.jpg"
                     fill
                     alt="Mention 3"
                     className="rounded-[15px] overflow-hidden p-[2px] object-cover"
@@ -119,7 +119,7 @@ export default function Mentions() {
                 </div>
 
                 <strong className="text-[22px] w-[340px]">
-                  Cobogo lança plataforma de investimentos para creators
+                Creators 3.0: Raul Aragão é o primeiro creator a se tornar escalável pela Cobogo
                 </strong>
 
                 <Image
