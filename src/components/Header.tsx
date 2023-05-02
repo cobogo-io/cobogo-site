@@ -74,7 +74,7 @@ export default function Header() {
       /> */}
 
       <div
-        className={`w-full max-w-[1110px] flex items-center justify-between h-[76px] gap-2 lg:gap-0 px-7 lg:px-0`}
+        className={`w-full mr-[25px] max-w-[1110px] flex items-center justify-between h-[76px] gap-2 lg:gap-0 px-7 lg:px-0`}
       >
         <div className="flex items-center gap-4 lg:gap-8 font-orbitron">
           <button
