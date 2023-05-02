@@ -97,7 +97,7 @@ export default function Footer() {
     </section>
   ) : (
     <div
-      className={`items-center justify-between flex flex-col lg:flex-row w-full lg:h-[70px] col-span-2 pl-7 bg-gray-2 py-8 lg:py-0 gap-14 lg:gap-0 relative z-30 font-orbitron`}
+      className={`items-center justify-between flex flex-col lg:flex-row w-full lg:h-[70px] col-span-2 px-7 lg:px-0 lg:pl-7 bg-gray-2 py-8 lg:py-0 gap-14 lg:gap-0 relative z-30 font-orbitron`}
     >
       <div className="flex items-center justify-center h-full gap-5">
         <Link href="https://www.instagram.com/cobogobr/" target="_blank">
