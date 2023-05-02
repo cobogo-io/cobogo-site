@@ -28,14 +28,11 @@ export default function CommunityContent() {
 
   return (
     <section className="flex flex-col w-full relative">
-      <div className="absolute bottom-[-250px] right-0 z-20 flex lg:hidden">
-        <Image
-          src="/images/community-footer-background-mobile.svg"
-          width="380"
-          height="565"
-          alt="Community footer background mobile"
-        />
-      </div>
+      <img
+        src="/images/community-footer-background-mobile.svg"
+        alt="Community footer background mobile"
+        className="absolute bottom-0 flex lg:hidden w-full"
+      />
 
       <div className="absolute bottom-0 left-0 z-10 hidden lg:flex">
         <Image
@@ -214,7 +211,7 @@ export default function CommunityContent() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center w-full pb-96 lg:pb-[530px] pt-12 lg:pt-[115px] px-7 lg:px-0 z-20">
+      <div className="flex items-center justify-center w-full pb-[650px] lg:pb-[530px] pt-12 lg:pt-[115px] px-7 lg:px-0 z-20">
         <div ref={footerRef} />
 
         <div className="w-full max-w-[1110px] flex flex-col lg:items-center gap-12 relative min-h-[198px]">

@@ -30,14 +30,11 @@ export default function LaunchpadContent() {
         />
       </div>
 
-      <div className="absolute bottom-[-250px] right-0 z-20 flex lg:hidden">
-        <Image
-          src="/images/launchpad-footer-background-mobile.svg"
-          width={341}
-          height={842}
-          alt="Launchpad footer background mobile"
-        />
-      </div>
+      <img
+        src="/images/launchpad-footer-background-mobile.svg"
+        alt="Launchpad footer background mobile"
+        className="absolute bottom-0 flex lg:hidden w-full"
+      />
 
       <div className="absolute bottom-0 left-0 z-10 hidden lg:flex">
         <Image
@@ -184,7 +181,7 @@ export default function LaunchpadContent() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center w-full pb-96 lg:pb-[340px] pt-12 lg:pt-[115px] px-7 lg:px-0 z-20">
+      <div className="flex items-center justify-center w-full pb-[800px] lg:pb-[340px] pt-12 lg:pt-[115px] px-7 lg:px-0 z-20">
         <div ref={footerRef} />
 
         <div className="w-full max-w-[1110px] flex flex-col lg:items-center gap-12 relative min-h-[148px]">
