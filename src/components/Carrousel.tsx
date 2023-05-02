@@ -1,4 +1,4 @@
-import { AnimatePresence, motion, useInView } from 'framer-motion'
+import { AnimatePresence, Variants, motion, useInView } from 'framer-motion'
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -78,6 +78,18 @@ export default function Carrousel(props: CarrouselProps) {
     },
   ]
 
+  const carrouselVariants: Variants = {
+    community: {
+      transform: 'translateX(-0%)',
+    },
+    social: {
+      transform: 'translateX(-33.33%)',
+    },
+    launchpad: {
+      transform: 'translateX(-66.66%)',
+    },
+  }
+
   return (
     <section className="flex items-center justify-center w-full py-16 lg:py-32 min-h-[945px]">
       <div ref={carrouselRef} />
@@ -112,21 +124,45 @@ export default function Carrousel(props: CarrouselProps) {
           </div>
 
           <AnimatePresence mode="wait">
-            {products.map(product => {
-              if (product.id === props.selectedProduct) {
-                return (
-                  <motion.div
-                    key={product.id}
-                    className={`${product.background} relative bg-cover lg:rounded-[40px] w-full h-[961px] lg:h-[847px] px-7 lg:px-24 py-8 lg:py-16 flex flex-col items-center justify-start gap-14 overflow-hidden`}
-                  >
-                    <div className="bg-red-50 w-full h-[142px] lg:h-[175px] absolute top-0 bg-white/5" />
+            <div className="overflow-hidden lg:rounded-[40px] relative">
+              <ProductiveDealFlow
+                selectedProduct={props.selectedProduct}
+                setSelectedProduct={props.setSelectedProduct}
+              />
 
-                    <ProductiveDealFlow
-                      selectedProduct={props.selectedProduct}
-                      setSelectedProduct={props.setSelectedProduct}
-                    />
+              <motion.div
+                animate={props.selectedProduct}
+                variants={carrouselVariants}
+                className="flex w-[300%]"
+              >
+                {products.map(product => {
+                  return (
+                    <motion.div
+                      key={product.id}
+                      className={`${product.background} relative bg-cover w-[100%] h-[961px] lg:h-[847px] px-7 lg:px-24 pb-8 lg:pb-16 pt-[198px] lg:pt-[340px] flex flex-col items-center justify-start gap-14 overflow-hidden`}
+                    >
+                      <div className="w-full h-[142px] lg:h-[175px] absolute top-0 bg-white/5" />
 
-                    {product.cube && (
+                      {product.cube && (
+                        <motion.div
+                          initial={{ x: 400, opacity: 0 }}
+                          animate={{ x: 0, opacity: 1 }}
+                          exit={{
+                            x: -400,
+                            opacity: 0,
+                            transition: { duration: 0.5 },
+                          }}
+                          className="flex lg:hidden"
+                        >
+                          <Image
+                            src={product.cube as string}
+                            width={120}
+                            height={120}
+                            alt="Cube"
+                          />
+                        </motion.div>
+                      )}
+
                       <motion.div
                         initial={{ x: 400, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
@@ -135,65 +171,45 @@ export default function Carrousel(props: CarrouselProps) {
                           opacity: 0,
                           transition: { duration: 0.5 },
                         }}
-                        transition={{ delay: 0.6, duration: 0.5 }}
-                        className="flex lg:hidden"
+                        className="flex items-center justify-between w-full"
                       >
-                        <Image
-                          src={product.cube as string}
-                          width={120}
-                          height={120}
-                          alt="Cube"
-                        />
-                      </motion.div>
-                    )}
+                        <div className="flex flex-col max-w-[630px] w-full gap-6">
+                          <h2
+                            className={`font-bold text-xl ${product.textColor}`}
+                          >
+                            {product.title}
+                          </h2>
 
-                    <motion.div
-                      initial={{ x: 400, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      exit={{
-                        x: -400,
-                        opacity: 0,
-                        transition: { duration: 0.5 },
-                      }}
-                      transition={{ delay: 0.6, duration: 0.5 }}
-                      className="flex items-center justify-between w-full"
-                    >
-                      <div className="flex flex-col max-w-[630px] w-full gap-6">
-                        <h2
-                          className={`font-bold text-xl ${product.textColor}`}
-                        >
-                          {product.title}
-                        </h2>
+                          {product.subtitle}
 
-                        {product.subtitle}
+                          <p className="lg:text-xl leading-[26px] lg:leading-[32px]">
+                            {t(product.description)}
+                          </p>
 
-                        <p className="lg:text-xl leading-[26px] lg:leading-[32px]">
-                          {t(product.description)}
-                        </p>
-
-                        <Link href={product.buttonHref as string}>
-                          <Button
-                            text={t('learn more')}
-                            borderColor={`${product.borderColor}`}
-                          />
-                        </Link>
-                      </div>
-
-                      {product.cube && (
-                        <div className="hidden lg:flex">
-                          <Image
-                            src={product.cube as string}
-                            width={431}
-                            height={439}
-                            alt="Cube"
-                          />
+                          <Link href={product.buttonHref as string}>
+                            <Button
+                              text={t('learn more')}
+                              borderColor={`${product.borderColor}`}
+                            />
+                          </Link>
                         </div>
-                      )}
+
+                        {product.cube && (
+                          <div className="hidden lg:flex">
+                            <Image
+                              src={product.cube as string}
+                              width={431}
+                              height={439}
+                              alt="Cube"
+                            />
+                          </div>
+                        )}
+                      </motion.div>
                     </motion.div>
-                  </motion.div>
-                )
-              }
-            })}
+                  )
+                })}
+              </motion.div>
+            </div>
           </AnimatePresence>
         </motion.div>
       )}
