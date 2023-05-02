@@ -40,7 +40,7 @@ export default function Mentions() {
                 transition={{ delay: 0.25, duration: 1 }}
                 className="text-[30px] lg:text-[40px] text-transparent bg-clip-text bg-mentions-text-gradient font-bold"
               >
-                {t('Mentions')}
+                {t('Cobogo on the news')}
               </motion.h2>
             </div>
 
@@ -119,7 +119,8 @@ export default function Mentions() {
                 </div>
 
                 <strong className="text-[22px] w-[340px]">
-                Creators 3.0: Raul Aragão é o primeiro creator a se tornar escalável pela Cobogo
+                  Creators 3.0: Raul Aragão é o primeiro creator a se tornar
+                  escalável pela Cobogo
                 </strong>
 
                 <Image
