@@ -158,7 +158,7 @@ export default function Header() {
                   {t('Community')}
                 </h1>
 
-                <p>{t('A game changer community.')}</p>
+                <p>{t('The creator economy game changer.')}</p>
               </div>
 
               <Image
