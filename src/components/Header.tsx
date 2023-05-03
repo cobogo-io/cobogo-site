@@ -60,7 +60,7 @@ export default function Header() {
 
   return (
     <div
-      className={`flex flex-col justify-center items-center w-screen ${
+      className={`flex flex-col justify-center items-center w-full ${
         menuOpened ? 'bg-black/[99%]' : hasGradient ? 'bg-black/50' : ''
       } z-30 fixed`}
       onClick={() => menuOpened && setMenuOpened(false)}
@@ -74,7 +74,9 @@ export default function Header() {
       /> */}
 
       <div
-        className={`w-full mr-[25px] max-w-[1110px] flex items-center justify-between h-[76px] gap-2 lg:gap-0 px-7 lg:px-0`}
+        className={`w-full ${
+          menuOpened && 'lg:mr-[17px]'
+        } max-w-[1110px] flex items-center justify-between h-[76px] gap-2 lg:gap-0 px-7 lg:px-0`}
       >
         <div className="flex items-center gap-4 lg:gap-8 font-orbitron">
           <button
@@ -133,7 +135,7 @@ export default function Header() {
           transition={{ delay: 0.25, duration: 1 }}
           className="w-full h-screen flex flex-col items-center"
         >
-          <div className="max-w-[620px] w-full flex flex-col gap-3 overflow-y-auto px-7 pt-12 pb-24 scrollbar">
+          <div className="max-w-[620px] w-full flex flex-col gap-3 overflow-y-auto px-7 pt-12 pb-24 lg:scrollbar">
             <Link
               href="/community"
               className={`px-6 lg:px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
