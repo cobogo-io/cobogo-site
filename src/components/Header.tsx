@@ -170,6 +170,7 @@ export default function Header() {
 
             <Link
               href="https://cobogo.social/"
+              target="_blank"
               className={`px-6 lg:px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
                 asPath !== '/' && 'brightness-50 saturate-0'
               }`}
