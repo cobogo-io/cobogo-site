@@ -1,11 +1,11 @@
-import { useMotionValueEvent, useScroll } from 'framer-motion'
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 
 import { Listbox } from '@headlessui/react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function Header() {
   const { asPath, locale } = useRouter()
@@ -35,31 +35,60 @@ export default function Header() {
     languages.find(language => language.id.includes(locale as string)) ??
       languages[0]
   )
+  const [hasGradient, setHasGradient] = useState(false)
+  const [menuOpened, setMenuOpened] = useState(false)
 
   const { t } = useTranslation('common')
-
-  const [hasGradient, setHasGradient] = useState(false)
 
   const { scrollY } = useScroll()
 
   useMotionValueEvent(scrollY, 'change', latest => {
-    if (latest > 800) {
+    if (latest > 50) {
       setHasGradient(true)
     } else {
       setHasGradient(false)
     }
   })
 
+  useEffect(() => {
+    if (menuOpened) {
+      document.body.classList.add('active-modal')
+    } else {
+      document.body.classList.remove('active-modal')
+    }
+  }, [menuOpened])
+
   return (
     <div
-      className={`flex justify-center items-center w-full ${
-        hasGradient && 'bg-black/50'
+      className={`flex flex-col justify-center items-center w-screen ${
+        menuOpened ? 'bg-black/[99%]' : hasGradient ? 'bg-black/50' : ''
       } z-30 fixed`}
+      onClick={() => menuOpened && setMenuOpened(false)}
     >
+      {/* <Image
+        src="/images/menu-background.svg"
+        width={1300}
+        height={1021}
+        alt="Menu background"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+      /> */}
+
       <div
-        className={`w-full max-w-[1110px] flex items-center justify-between h-[76px] gap-2 lg:gap-0 px-7 lg:px-0`}
+        className={`w-full mr-[25px] max-w-[1110px] flex items-center justify-between h-[76px] gap-2 lg:gap-0 px-7 lg:px-0`}
       >
-        <div className="flex items-center gap-[52px] font-orbitron">
+        <div className="flex items-center gap-4 lg:gap-8 font-orbitron">
+          <button
+            onClick={() => setMenuOpened(previousState => !previousState)}
+            className="flex"
+          >
+            <Image
+              src="/images/menu-icon.svg"
+              width={28}
+              height={28}
+              alt="Menu icon"
+            />
+          </button>
+
           <Link href="/" className="hidden lg:flex">
             <Image src="/images/logo.png" width={120} height={27} alt="Logo" />
           </Link>
@@ -67,60 +96,6 @@ export default function Header() {
           <Link href="/" className="flex lg:hidden">
             <Image src="/images/logo.png" width={70} height={16} alt="Logo" />
           </Link>
-
-          <div className="hidden lg:flex items-center gap-[52px] h-[50px]">
-            <Link
-              href="/community"
-              className={`flex items-center gap-3 font-bold relative ${
-                asPath === '/launchpad' && 'brightness-50 saturate-0'
-              }`}
-            >
-              {asPath === '/community' && (
-                <div className="w-full h-[5px] bg-yellow-community absolute top-[-20px] shadow-[0_10px_40px_0px_rgba(239,231,80,1)]" />
-              )}
-              <Image
-                src="/images/cobogo-community-cube.svg"
-                width={32}
-                height={32}
-                alt="Cobogo Community cube"
-              />
-              {t('Community')}
-            </Link>
-
-            <Link
-              href="https://cobogo.social/"
-              className={`flex items-center gap-3 font-bold ${
-                (asPath === '/launchpad' || asPath === '/community') &&
-                'brightness-50 saturate-0'
-              }`}
-            >
-              <Image
-                src="/images/cobogo-social-cube.svg"
-                width={32}
-                height={32}
-                alt="Cobogo Social cube"
-              />
-              Social
-            </Link>
-
-            <Link
-              href="/launchpad"
-              className={`flex items-center gap-3 font-bold relative ${
-                asPath === '/community' && 'brightness-50 saturate-0'
-              }`}
-            >
-              {asPath === '/launchpad' && (
-                <div className="w-full h-[5px] bg-pink-launchpad absolute top-[-20px] shadow-[0_10px_40px_0px_rgba(245,174,255,1)]" />
-              )}
-              <Image
-                src="/images/cobogo-launchpad-cube.svg"
-                width={35}
-                height={35}
-                alt="Cobogo Launchpad cube"
-              />
-              Launchpad
-            </Link>
-          </div>
         </div>
 
         <Listbox value={selectedLanguage} onChange={setSelectedLanguage}>
@@ -150,6 +125,115 @@ export default function Header() {
           </div>
         </Listbox>
       </div>
+
+      {menuOpened && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.25, duration: 1 }}
+          className="w-full h-screen flex flex-col items-center"
+        >
+          <div className="max-w-[620px] w-full flex flex-col gap-3 overflow-y-auto px-7 pt-12 pb-24 scrollbar">
+            <Link
+              href="/community"
+              className={`px-6 lg:px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
+                asPath !== '/community' &&
+                asPath !== '/' &&
+                'brightness-50 saturate-0'
+              }`}
+              onClick={() => setMenuOpened(false)}
+            >
+              <div className="flex flex-col gap-4 text-start">
+                <Image
+                  src="/images/cobogo-community-cube.svg"
+                  width={40}
+                  height={40}
+                  alt="Cobogo Community cube"
+                  className="flex lg:hidden"
+                />
+
+                <h1 className="text-2xl font-bold text-yellow-community">
+                  {t('Community')}
+                </h1>
+
+                <p>{t('A game changer community.')}</p>
+              </div>
+
+              <Image
+                src="/images/cobogo-community-cube.svg"
+                width={120}
+                height={120}
+                alt="Cobogo Community cube"
+                className="hidden lg:flex"
+              />
+            </Link>
+
+            <Link
+              href="https://cobogo.social/"
+              className={`px-6 lg:px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
+                asPath !== '/' && 'brightness-50 saturate-0'
+              }`}
+              onClick={() => setMenuOpened(false)}
+            >
+              <div className="flex flex-col gap-4 text-start">
+                <Image
+                  src="/images/cobogo-social-cube.svg"
+                  width={40}
+                  height={40}
+                  alt="Cobogo Social cube"
+                  className="flex lg:hidden"
+                />
+
+                <h1 className="text-2xl font-bold text-blue-social">Social</h1>
+
+                <p>{t('Creator as a business platform.')}</p>
+              </div>
+
+              <Image
+                src="/images/cobogo-social-cube.svg"
+                width={115}
+                height={115}
+                alt="Cobogo Social cube"
+                className="hidden lg:flex"
+              />
+            </Link>
+
+            <Link
+              href="/launchpad"
+              className={`px-6 lg:px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
+                asPath !== '/launchpad' &&
+                asPath !== '/' &&
+                'brightness-50 saturate-0'
+              }`}
+              onClick={() => setMenuOpened(false)}
+            >
+              <div className="flex flex-col gap-4 text-start">
+                <Image
+                  src="/images/cobogo-launchpad-cube.svg"
+                  width={40}
+                  height={40}
+                  alt="Cobogo Launchpad cube"
+                  className="flex lg:hidden"
+                />
+
+                <h1 className="text-2xl font-bold text-pink-launchpad">
+                  Launchpad
+                </h1>
+
+                <p>{t('Getting Creators ready to fly.')}</p>
+              </div>
+
+              <Image
+                src="/images/cobogo-launchpad-cube.svg"
+                width={125}
+                height={125}
+                alt="Cobogo Launchpad cube"
+                className="hidden lg:flex"
+              />
+            </Link>
+          </div>
+        </motion.div>
+      )}
     </div>
   )
 }
