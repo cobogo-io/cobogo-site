@@ -62,7 +62,7 @@ export default function Header() {
     <div
       className={`flex flex-col justify-center items-center w-full ${
         menuOpened ? 'bg-black/[99%]' : hasGradient ? 'bg-black/50' : ''
-      } z-30 fixed`}
+      } z-40 fixed`}
       onClick={() => menuOpened && setMenuOpened(false)}
     >
       {/* <Image
