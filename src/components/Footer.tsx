@@ -97,7 +97,7 @@ export default function Footer() {
     </section>
   ) : (
     <div
-      className={`items-center justify-between flex flex-col lg:flex-row w-full lg:h-[70px] col-span-2 px-7 lg:px-0 lg:pl-7 bg-gray-2 py-8 lg:py-0 gap-14 lg:gap-0 relative z-30 font-orbitron`}
+      className={`items-center justify-between flex flex-col lg:flex-row w-full lg:h-[70px] col-span-2 px-7 bg-gray-2 py-8 lg:py-0 gap-14 lg:gap-0 relative z-30`}
     >
       <div className="flex items-center justify-center h-full gap-5">
         <Link href="https://www.instagram.com/cobogobr/" target="_blank">
@@ -128,7 +128,7 @@ export default function Footer() {
       <div className="flex flex-col lg:flex-row items-center justify-center h-full w-full lg:w-auto gap-4 lg:gap-6">
         <a
           href="https://l.cobogo.io/code-of-conduct"
-          className="font-bold text-xs"
+          className="font-bold text-sm"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -137,7 +137,7 @@ export default function Footer() {
 
         <a
           href="https://l.cobogo.io/privacy-policy"
-          className="font-bold text-xs"
+          className="font-bold text-sm"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -146,7 +146,7 @@ export default function Footer() {
 
         <a
           href="https://l.cobogo.io/term-of-use"
-          className="font-bold text-xs"
+          className="font-bold text-sm"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -155,7 +155,7 @@ export default function Footer() {
 
         <a
           href="https://l.cobogo.io/personal-data-deletion"
-          className="font-bold mb-6 lg:mb-0 text-xs"
+          className="font-bold mb-6 lg:mb-0 text-sm"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -164,20 +164,11 @@ export default function Footer() {
 
         <a
           href="https://l.cobogo.io/docs"
-          className="hidden lg:flex justify-center items-center h-full lg:bg-gray-3 w-full lg:w-[148px] py-3 lg:py-0"
+          className="font-bold mb-6 lg:mb-0 text-sm"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="flex items-center justify-center mr-3">
-            <Image
-              src="/images/gitbook-icon.svg"
-              width={30}
-              height={21}
-              alt="gitbook icon"
-            />
-          </span>
-
-          <span className="font-bold text-sm">Docs</span>
+          Docs
         </a>
 
         <div className="mt-4 flex lg:hidden">
