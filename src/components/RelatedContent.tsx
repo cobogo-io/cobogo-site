@@ -46,7 +46,7 @@ export default function RelatedContent(props: RelatedContentProps) {
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.25, duration: 1 }}
-                  className="text-[30px] lg:text-[40px] text-transparent bg-clip-text bg-related-content-text-gradient font-bold"
+                  className="text-[30px] lg:text-[40px] text-transparent bg-clip-text bg-related-content-text-gradient"
                 >
                   {t('Stay tuned')}
                 </motion.h2>
