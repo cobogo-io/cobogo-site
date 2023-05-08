@@ -197,7 +197,7 @@ export default function Main() {
               className={`leading-[45px] lg:leading-[70px] text-[30px] lg:text-[40px] ${
                 locale === 'pt'
                   ? 'bg-related-content-text-gradient-pt'
-                  : 'bg-related-content-text-gradient'
+                  : 'bg-related-content-text-gradient-en'
               } bg-clip-text text-transparent`}
             >
               {t('Scaling up')} <br /> {t('equity financing')} <br /> {t('for')}{' '}
