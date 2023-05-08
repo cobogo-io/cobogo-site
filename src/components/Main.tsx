@@ -1,10 +1,13 @@
 import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
 
 export default function Main() {
   const { t } = useTranslation('common')
+
+  const { locale } = useRouter()
 
   const [weeSeeText, setWeeSeeText] = useState('')
   const [creatorsText, setCreatorsText] = useState('')
@@ -191,7 +194,11 @@ export default function Main() {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.75, duration: 1 }}
-              className="leading-[45px] lg:leading-[70px] text-[30px] lg:text-[40px] bg-related-content-text-gradient bg-clip-text text-transparent"
+              className={`leading-[45px] lg:leading-[70px] text-[30px] lg:text-[40px] ${
+                locale === 'pt'
+                  ? 'bg-related-content-text-gradient-pt'
+                  : 'bg-related-content-text-gradient'
+              } bg-clip-text text-transparent`}
             >
               {t('Scaling up')} <br /> {t('equity financing')} <br /> {t('for')}{' '}
               <strong>Creators</strong>

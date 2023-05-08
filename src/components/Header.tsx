@@ -65,14 +65,6 @@ export default function Header() {
       } z-40 fixed`}
       onClick={() => menuOpened && setMenuOpened(false)}
     >
-      {/* <Image
-        src="/images/menu-background.svg"
-        width={1300}
-        height={1021}
-        alt="Menu background"
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-      /> */}
-
       <div
         className={`w-full ${
           menuOpened && 'lg:mr-[17px]'

@@ -52,6 +52,8 @@ module.exports = {
           "url('/images/launchpad-main-background.svg')",
         'related-content-text-gradient':
           'linear-gradient(92.91deg, #EFE750 -4%, #BA68C8 18%, #00B9E9 38%);',
+        'related-content-text-gradient-pt':
+          'linear-gradient(92.91deg, #EFE750 -4%, #BA68C8 58%, #00B9E9 78%);',
         'mentions-text-gradient':
           'linear-gradient(92.91deg, #EFE750 -2%, #BA68C8 18%, #00B9E9 38%);',
       },
