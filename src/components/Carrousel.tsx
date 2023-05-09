@@ -174,7 +174,7 @@ export default function Carrousel(props: CarrouselProps) {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(649.742 421.992) rotate(90) scale(421.992 520.742)"
                   >
-                    <stop stop-color="#B3EFFF" />
+                    <stop stop-color="#B3EFFF" className="hidden lg:flex" />
                     <motion.stop
                       animate={props.selectedProduct}
                       variants={backgroundVariants}
