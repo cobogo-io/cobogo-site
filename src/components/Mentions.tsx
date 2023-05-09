@@ -65,8 +65,9 @@ export default function Mentions() {
                 </div>
 
                 <strong className="text-[22px] w-[340px]">
-                  Startups brasileiras voltadas à Web3 são escolhidas para
-                  programa de aceleração
+                  {t(
+                    'Brazilian startups focused on Web3 are chosen for the acceleration program'
+                  )}
                 </strong>
 
                 <Image
@@ -92,8 +93,9 @@ export default function Mentions() {
                 </div>
 
                 <strong className="text-[22px] w-[340px]">
-                  Investir no próximo Casimiro ou Felipe Neto pode ser possível;
-                  entenda sobre os influenciadores digitais na Web 3.0
+                  {t(
+                    'Investing in the next Casimiro and Felipe Neto may be possible understand about digital influencers in Web 3.0'
+                  )}
                 </strong>
 
                 <Image
@@ -119,8 +121,9 @@ export default function Mentions() {
                 </div>
 
                 <strong className="text-[22px] w-[340px]">
-                  Creators 3.0: Raul Aragão é o primeiro creator a se tornar
-                  escalável pela Cobogo
+                  {t(
+                    'Creators 3.0: Raul Aragão is the first creator to become scalable by Cobogo'
+                  )}
                 </strong>
 
                 <Image
