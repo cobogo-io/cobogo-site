@@ -30,7 +30,7 @@ export default function ProductiveDealFlow(props: ProductiveDealFlowProps) {
 
         <button
           className={`w-[60px] h-full rounded-none ${
-            props.selectedProduct === 'community'
+            props.selectedProduct === 'social'
               ? 'bg-blue-social'
               : 'bg-white/10'
           } transition-colors`}
@@ -39,7 +39,7 @@ export default function ProductiveDealFlow(props: ProductiveDealFlowProps) {
 
         <button
           className={`w-[70px] h-full rounded-none ${
-            props.selectedProduct === 'community'
+            props.selectedProduct === 'launchpad'
               ? 'bg-pink-launchpad'
               : 'bg-white/10'
           } transition-colors`}
