@@ -18,13 +18,13 @@ export default function ProductiveDealFlow(props: ProductiveDealFlowProps) {
         />
       </div>
 
-      <div className="h-[220px] w-[260px] flex items-center justify-between clip-path-polygon-[0_0,_100%_45%,_100%_55%,_0_100%] relative">
+      <div className="h-[220px] w-[260px] flex items-center justify-between clip-path-polygon-[0_0,_100%_45%,_100%_55%,_0_100%] relative transition-all">
         <button
           className={`w-[130px] h-full rounded-none ${
             props.selectedProduct === 'community'
               ? 'bg-yellow-community'
               : 'bg-white/10'
-          } transition-colors`}
+          } transition-all`}
           onClick={() => props.setSelectedProduct('community')}
         />
 
@@ -33,7 +33,7 @@ export default function ProductiveDealFlow(props: ProductiveDealFlowProps) {
             props.selectedProduct === 'social'
               ? 'bg-blue-social'
               : 'bg-white/10'
-          } transition-colors`}
+          } transition-all`}
           onClick={() => props.setSelectedProduct('social')}
         />
 
@@ -42,7 +42,7 @@ export default function ProductiveDealFlow(props: ProductiveDealFlowProps) {
             props.selectedProduct === 'launchpad'
               ? 'bg-pink-launchpad'
               : 'bg-white/10'
-          } transition-colors`}
+          } transition-all`}
           onClick={() => props.setSelectedProduct('launchpad')}
         />
       </div>
