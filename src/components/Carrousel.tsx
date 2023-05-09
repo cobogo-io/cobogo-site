@@ -132,6 +132,42 @@ export default function Carrousel(props: CarrouselProps) {
 
           <AnimatePresence mode="wait">
             <div className="overflow-hidden lg:rounded-[40px] relative">
+              <button
+                className="absolute left-2 lg:left-7 top-[350px] lg:top-1/2 z-10 flex"
+                onClick={() => {
+                  props.selectedProduct === 'social' &&
+                    props.setSelectedProduct('community')
+                  props.selectedProduct === 'launchpad' &&
+                    props.setSelectedProduct('social')
+                }}
+                disabled={props.selectedProduct === 'community'}
+              >
+                <Image
+                  src="/images/back-icon.svg"
+                  width={48}
+                  height={48}
+                  alt="Back icon"
+                />
+              </button>
+
+              <button
+                className="absolute right-2 lg:right-7 top-[350px] lg:top-1/2 z-10 flex"
+                onClick={() => {
+                  props.selectedProduct === 'community' &&
+                    props.setSelectedProduct('social')
+                  props.selectedProduct === 'social' &&
+                    props.setSelectedProduct('launchpad')
+                }}
+                disabled={props.selectedProduct === 'launchpad'}
+              >
+                <Image
+                  src="/images/skip-icon.svg"
+                  width={48}
+                  height={48}
+                  alt="Back icon"
+                />
+              </button>
+
               <svg
                 viewBox="0 0 1299 844"
                 fill="none"
