@@ -20,17 +20,29 @@ export default function ProductiveDealFlow(props: ProductiveDealFlowProps) {
 
       <div className="h-[220px] w-[260px] flex items-center justify-between clip-path-polygon-[0_0,_100%_45%,_100%_55%,_0_100%] relative">
         <button
-          className="w-[130px] h-full rounded-none bg-white/10 focus:bg-yellow-community active:bg-yellow-community transition-colors"
+          className={`w-[130px] h-full rounded-none ${
+            props.selectedProduct === 'community'
+              ? 'bg-white/10'
+              : 'bg-yellow-community'
+          } transition-colors`}
           onClick={() => props.setSelectedProduct('community')}
         />
 
         <button
-          className="w-[60px] h-full rounded-none bg-white/10 focus:bg-blue-social active:bg-blue-social transition-colors"
+          className={`w-[60px] h-full rounded-none ${
+            props.selectedProduct === 'community'
+              ? 'bg-white/10'
+              : 'bg-blue-social'
+          } transition-colors`}
           onClick={() => props.setSelectedProduct('social')}
         />
 
         <button
-          className="w-[70px] h-full rounded-none bg-white/10 focus:bg-pink-launchpad active:bg-blue-social transition-colors"
+          className={`w-[70px] h-full rounded-none ${
+            props.selectedProduct === 'community'
+              ? 'bg-white/10'
+              : 'bg-pink-launchpad'
+          } transition-colors`}
           onClick={() => props.setSelectedProduct('launchpad')}
         />
       </div>
