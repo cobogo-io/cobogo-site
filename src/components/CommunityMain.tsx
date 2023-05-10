@@ -31,13 +31,13 @@ export default function CommunityMain() {
 
           {mainRefIsInView && (
             <div className="w-full flex items-center justify-between">
-              <div className="flex flex-col max-w-[550px] w-full gap-10 lg:gap-[50px]">
-                <div className="flex flex-col w-full gap-10 lg:gap-[45px]">
+              <div className="flex flex-col max-w-[500px] w-full gap-10 lg:gap-[50px]">
+                <div className="flex flex-col w-full gap-10 lg:gap-[30px]">
                   <motion.h1
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.25, duration: 1 }}
-                    className="text-[36px] lg:text-[51px] font-extrabold lg:leading-[70px]"
+                    className="text-[36px] lg:text-[48px] font-extrabold lg:leading-[68px]"
                   >
                     {t('A game changer')} <br />
                     <span className="text-yellow">{t('community')}</span>
@@ -47,7 +47,7 @@ export default function CommunityMain() {
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.5, duration: 1 }}
-                    className="text-[24px] lg:text-[30px] lg:leading-[45px]"
+                    className="text-[24px] lg:text-[20px] lg:leading-[32px]"
                   >
                     {t(
                       'Formed by Creators, investors and enthusiasts of the Creator Economy boosting market knowledge, research and development to find the next early stage Creators to be invested.'
