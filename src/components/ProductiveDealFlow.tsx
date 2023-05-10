@@ -8,17 +8,17 @@ interface ProductiveDealFlowProps {
 
 export default function ProductiveDealFlow(props: ProductiveDealFlowProps) {
   return (
-    <div className="scale-50 lg:scale-100 absolute top-8 lg:top-16 left-1/2 -translate-x-1/2 z-10">
+    <div className="scale-50 lg:scale-100 absolute top-4 lg:top-8 left-1/2 -translate-x-1/2 z-10">
       <div className="absolute top-0 right-0">
         <Image
           src="/images/home-productive-deal-flow.svg"
-          width={186}
-          height={193}
+          width={153}
+          height={158}
           alt="Home productive deal flow"
         />
       </div>
 
-      <div className="h-[220px] w-[260px] flex items-center justify-between clip-path-polygon-[0_0,_100%_45%,_100%_55%,_0_100%] relative transition-all">
+      <div className="h-[180px] w-[210px] flex items-center justify-between clip-path-polygon-[0_0,_100%_45%,_100%_55%,_0_100%] relative transition-all">
         <button
           className={`w-[130px] h-full rounded-none ${
             props.selectedProduct === 'community'
