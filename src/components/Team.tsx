@@ -158,6 +158,51 @@ export default function Team() {
                       </svg>
                     ),
                   },
+                  {
+                    href: 'https://www.linkedin.com/in/pedro-alves-2313a51b2/',
+                    icon: (
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 28 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M23.1875 3.9375H4.8125C4.32925 3.9375 3.9375 4.32925 3.9375 4.8125V23.1875C3.9375 23.6707 4.32925 24.0625 4.8125 24.0625H23.1875C23.6707 24.0625 24.0625 23.6707 24.0625 23.1875V4.8125C24.0625 4.32925 23.6707 3.9375 23.1875 3.9375Z"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.125 12.25V19.25"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.625 12.25V19.25"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.125 15.3125C13.125 14.5003 13.4477 13.7213 14.022 13.147C14.5963 12.5727 15.3753 12.25 16.1875 12.25C16.9997 12.25 17.7787 12.5727 18.353 13.147C18.9273 13.7213 19.25 14.5003 19.25 15.3125V19.25"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.625 10.0625C10.3499 10.0625 10.9375 9.47487 10.9375 8.75C10.9375 8.02513 10.3499 7.4375 9.625 7.4375C8.90013 7.4375 8.3125 8.02513 8.3125 8.75C8.3125 9.47487 8.90013 10.0625 9.625 10.0625Z"
+                          fill="white"
+                        />
+                      </svg>
+                    ),
+                  },
                 ]}
               />
 
@@ -399,12 +444,136 @@ export default function Team() {
                 imageSrc="/images/mike-henrique-profile-image.svg"
                 name="Mike Henrique"
                 position="Community Manager"
+                socials={[
+                  {
+                    href: 'https://www.instagram.com/m.ikemikemike/',
+                    icon: (
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 28 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14 18.375C16.4162 18.375 18.375 16.4162 18.375 14C18.375 11.5838 16.4162 9.625 14 9.625C11.5838 9.625 9.625 11.5838 9.625 14C9.625 16.4162 11.5838 18.375 14 18.375Z"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-miterlimit="10"
+                        />
+                        <path
+                          d="M18.8125 3.9375H9.1875C6.28801 3.9375 3.9375 6.28801 3.9375 9.1875V18.8125C3.9375 21.712 6.28801 24.0625 9.1875 24.0625H18.8125C21.712 24.0625 24.0625 21.712 24.0625 18.8125V9.1875C24.0625 6.28801 21.712 3.9375 18.8125 3.9375Z"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M19.6875 9.625C20.4124 9.625 21 9.03737 21 8.3125C21 7.58763 20.4124 7 19.6875 7C18.9626 7 18.375 7.58763 18.375 8.3125C18.375 9.03737 18.9626 9.625 19.6875 9.625Z"
+                          fill="black"
+                        />
+                      </svg>
+                    ),
+                  },
+                  {
+                    href: 'https://www.linkedin.com/in/mike-henrique-4b7168166/',
+                    icon: (
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 28 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M23.1875 3.9375H4.8125C4.32925 3.9375 3.9375 4.32925 3.9375 4.8125V23.1875C3.9375 23.6707 4.32925 24.0625 4.8125 24.0625H23.1875C23.6707 24.0625 24.0625 23.6707 24.0625 23.1875V4.8125C24.0625 4.32925 23.6707 3.9375 23.1875 3.9375Z"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.125 12.25V19.25"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.625 12.25V19.25"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.125 15.3125C13.125 14.5003 13.4477 13.7213 14.022 13.147C14.5963 12.5727 15.3753 12.25 16.1875 12.25C16.9997 12.25 17.7787 12.5727 18.353 13.147C18.9273 13.7213 19.25 14.5003 19.25 15.3125V19.25"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.625 10.0625C10.3499 10.0625 10.9375 9.47487 10.9375 8.75C10.9375 8.02513 10.3499 7.4375 9.625 7.4375C8.90013 7.4375 8.3125 8.02513 8.3125 8.75C8.3125 9.47487 8.90013 10.0625 9.625 10.0625Z"
+                          fill="black"
+                        />
+                      </svg>
+                    ),
+                  },
+                ]}
               />
 
               <Profile
                 imageSrc="/images/rafael-peres-profile-image.svg"
                 name="Rafael Peres"
                 position="Research"
+                socials={[
+                  {
+                    href: 'https://www.linkedin.com/in/blockperes/',
+                    icon: (
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 28 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M23.1875 3.9375H4.8125C4.32925 3.9375 3.9375 4.32925 3.9375 4.8125V23.1875C3.9375 23.6707 4.32925 24.0625 4.8125 24.0625H23.1875C23.6707 24.0625 24.0625 23.6707 24.0625 23.1875V4.8125C24.0625 4.32925 23.6707 3.9375 23.1875 3.9375Z"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.125 12.25V19.25"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.625 12.25V19.25"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.125 15.3125C13.125 14.5003 13.4477 13.7213 14.022 13.147C14.5963 12.5727 15.3753 12.25 16.1875 12.25C16.9997 12.25 17.7787 12.5727 18.353 13.147C18.9273 13.7213 19.25 14.5003 19.25 15.3125V19.25"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.625 10.0625C10.3499 10.0625 10.9375 9.47487 10.9375 8.75C10.9375 8.02513 10.3499 7.4375 9.625 7.4375C8.90013 7.4375 8.3125 8.02513 8.3125 8.75C8.3125 9.47487 8.90013 10.0625 9.625 10.0625Z"
+                          fill="black"
+                        />
+                      </svg>
+                    ),
+                  },
+                ]}
               />
             </motion.div>
           </div>
