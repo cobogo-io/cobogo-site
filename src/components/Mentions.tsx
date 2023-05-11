@@ -11,7 +11,7 @@ export default function Mentions() {
   const mentionsRefIsInView = useInView(mentionsRef, { once: true })
 
   return (
-    <section className="flex items-center justify-center w-full pt-16 pb-16 lg:pb-32 relative min-h-[548px]">
+    <section className="flex items-center justify-center w-full pt-16 pb-16 lg:pb-32 relative min-h-[540px]">
       {mentionsRefIsInView && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -51,7 +51,7 @@ export default function Mentions() {
               className="flex justify-between overflow-auto gap-10 bg-gray lg:bg-transparent py-8 lg:py-0"
             >
               <Link
-                className="flex flex-col gap-8 ml-7 lg:ml-0"
+                className="flex flex-col gap-6 ml-7 lg:ml-0"
                 href="https://cointelegraph.com.br/news/brazilian-startups-focused-on-web3-get-chosen-for-acceleration-program/"
                 target="_blank"
               >
@@ -79,7 +79,7 @@ export default function Mentions() {
               </Link>
 
               <Link
-                className="flex flex-col gap-8"
+                className="flex flex-col gap-6"
                 href="https://www.moneytimes.com.br/investir-no-proximo-casimiro-ou-felipe-neto-pode-ser-possivel-entenda-sobre-os-influenciadores-digitais-na-web-3-0/"
                 target="_blank"
               >
@@ -107,7 +107,7 @@ export default function Mentions() {
               </Link>
 
               <Link
-                className="flex flex-col gap-8 mr-7 lg:mr-0"
+                className="flex flex-col gap-6 mr-7 lg:mr-0"
                 href="https://www.abcdacomunicacao.com.br/creators-3-0-raul-aragao-e-o-primeiro-creator-a-se-tornar-escalavel-pela-cobogo/"
                 target="_blank"
               >
