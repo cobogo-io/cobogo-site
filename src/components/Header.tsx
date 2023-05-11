@@ -137,7 +137,7 @@ export default function Header() {
               }`}
               onClick={() => setMenuOpened(false)}
             >
-              <div className="flex flex-col gap-4 text-start">
+              <div className="flex flex-col gap-2 lg:gap-4 text-start">
                 <Image
                   src="/images/cobogo-community-cube.svg"
                   width={40}
@@ -146,11 +146,13 @@ export default function Header() {
                   className="flex lg:hidden"
                 />
 
-                <h1 className="text-2xl font-bold text-yellow-community">
+                <h1 className="text-xl lg:text-2xl font-bold text-yellow-community">
                   {t('Community')}
                 </h1>
 
-                <p>{t('The creator economy game changer.')}</p>
+                <p className="text-sm lg:text-base">
+                  {t('The creator economy game changer.')}
+                </p>
               </div>
 
               <Image
@@ -170,7 +172,7 @@ export default function Header() {
               }`}
               onClick={() => setMenuOpened(false)}
             >
-              <div className="flex flex-col gap-4 text-start">
+              <div className="flex flex-col gap-2 lg:gap-4 text-start">
                 <Image
                   src="/images/cobogo-social-cube.svg"
                   width={40}
@@ -179,9 +181,13 @@ export default function Header() {
                   className="flex lg:hidden"
                 />
 
-                <h1 className="text-2xl font-bold text-blue-social">Social</h1>
+                <h1 className="text-xl lg:text-2xl font-bold text-blue-social">
+                  Social
+                </h1>
 
-                <p>{t('Creator as a business platform.')}</p>
+                <p className="text-sm lg:text-base">
+                  {t('Creator as a business platform.')}
+                </p>
               </div>
 
               <Image
@@ -202,7 +208,7 @@ export default function Header() {
               }`}
               onClick={() => setMenuOpened(false)}
             >
-              <div className="flex flex-col gap-4 text-start">
+              <div className="flex flex-col gap-2 lg:gap-4 text-start">
                 <Image
                   src="/images/cobogo-launchpad-cube.svg"
                   width={40}
@@ -211,11 +217,13 @@ export default function Header() {
                   className="flex lg:hidden"
                 />
 
-                <h1 className="text-2xl font-bold text-pink-launchpad">
+                <h1 className="text-xl lg:text-2xl font-bold text-pink-launchpad">
                   Launchpad
                 </h1>
 
-                <p>{t('Getting Creators ready to fly.')}</p>
+                <p className="text-sm lg:text-base">
+                  {t('Getting Creators ready to fly.')}
+                </p>
               </div>
 
               <Image
