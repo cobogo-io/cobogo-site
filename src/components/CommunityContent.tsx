@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useRef } from 'react'
 import Button from './Button'
+import Testimonial from './Testimonial'
 
 export default function CommunityContent() {
   const { t } = useTranslation('common')
@@ -23,6 +24,9 @@ export default function CommunityContent() {
   const membersRefIsInView = useInView(membersRef, { once: true })
   const jacuzziRef = useRef(null)
   const jacuzziRefIsInView = useInView(jacuzziRef, { once: true })
+  const testimonialsRef = useRef(null)
+  const testimonialsRefIsInView = useInView(testimonialsRef, { once: true })
+
   const footerRef = useRef(null)
   const footerRefIsInView = useInView(footerRef, { once: true })
 
@@ -54,6 +58,7 @@ export default function CommunityContent() {
 
       {section1RefIsInView && (
         <div className="absolute left-0 w-full bottom-[3050px] z-10 hidden lg:flex items-center justify-center">
+        <div className="absolute left-0 w-full bottom-[2500px] z-10 hidden lg:flex items-center justify-center">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -221,6 +226,13 @@ export default function CommunityContent() {
                   className="lg:bg-white/5 flex flex-col lg:flex-row items-stretch rounded-[15px] overflow-hidden w-full max-w-[860px]"
                 >
                   <div className="bg-white/5 p-5 lg:p-10 hidden lg:flex items-center justify-center">
+          <div className="w-full flex items-center justify-center py-32 px-7 bg-community-testimonials-background-mobile lg:bg-community-testimonials-background bg-no-repeat lg:bg-cover">
+            <div ref={testimonialsRef} />
+
+            <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-16 lg:gap-0 min-h-[566px]">
+              {testimonialsRefIsInView && (
+                <div className="flex flex-col items-center lg:items-start max-w-[320px] lg:max-w-[375px] w-full gap-16">
+                  <div className="hidden lg:flex">
                     <Image
                       src="/images/cobogo-community-cube.svg"
                       width={150}
@@ -252,6 +264,15 @@ export default function CommunityContent() {
             <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-7 lg:gap-0 min-h-[1020px]">
               {jacuzziRefIsInView && (
                 <div className="flex flex-col max-w-[320px] lg:max-w-[375px] w-full gap-7 py-32">
+                  <div className="flex lg:hidden">
+                    <Image
+                      src="/images/cobogo-community-cube.svg"
+                      width={105}
+                      height={105}
+                      alt="Cobogo Community cube mobile"
+                    />
+                  </div>
+
                   <motion.h2
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -315,6 +336,14 @@ export default function CommunityContent() {
               )}
 
               {jacuzziRefIsInView && (
+                    className="text-[30px] lg:text-[40px] text-yellow-community text-center lg:text-left"
+                  >
+                    {t('Testimonials')}
+                  </motion.h2>
+                </div>
+              )}
+
+              {testimonialsRefIsInView && (
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -371,6 +400,33 @@ export default function CommunityContent() {
             </div>
 
             <div className="h-1/2 w-full bg-gradient-to-t from-white to-white/0 absolute bottom-0" />
+                  className="flex flex-col gap-14"
+                >
+                  <Testimonial
+                    text="A oportunidade que a Cobogo está oferecendo gratuitamente,
+                      pessoalmente vale muito, muito, muito mais do que o valor
+                      do prêmio. Vida longa a COBOGO, parceiros, creators (...)"
+                    name="Vinícius Maroch"
+                    imageSrc="/images/vinicius-maroch-profile-image.svg"
+                  />
+
+                  <Testimonial
+                    text="Meu deus vocês são apaixonanteeeeesss. Amo ler esse grupo
+                    hahahh"
+                    name="Gabi Henriques"
+                    imageSrc="/images/gabi-henriques-profile-image.svg"
+                  />
+
+                  <Testimonial
+                    text="Fazer parte dessa comunidade tem mudado minha visão numa
+                    velocidade absurda. É lindo tudo isso que tá rolando e
+                    empolgante demais conhecer todos vocês (...)"
+                    name="Camilla Bueno"
+                    imageSrc="/images/camilla-bueno-profile-image.svg"
+                  />
+                </motion.div>
+              )}
+            </div>
           </div>
         </div>
       </div>

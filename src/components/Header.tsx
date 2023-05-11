@@ -94,7 +94,7 @@ export default function Header() {
 
         <Listbox value={selectedLanguage} onChange={setSelectedLanguage}>
           <div className="flex flex-col relative">
-            <Listbox.Button className="font-proxima-nova font-bold text-xs flex gap-2 items-center">
+            <Listbox.Button className="font-bold text-xs flex gap-2 items-center">
               {selectedLanguage.name}
 
               <Image
