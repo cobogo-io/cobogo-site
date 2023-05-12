@@ -215,15 +215,15 @@ export default function CommunityContent() {
           <div className="w-full flex items-center justify-center py-32 px-7">
             <div ref={membersRef} />
 
-            <div className="w-full max-w-[1110px] flex flex-col items-center justify-center min-h-[405px] lg:min-h-[240px]">
+            <div className="w-full max-w-[1110px] flex flex-col items-center justify-center min-h-[108px] lg:min-h-[240px]">
               {membersRefIsInView && (
                 <motion.div
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.25, duration: 1 }}
-                  className="bg-white/5 flex flex-col lg:flex-row items-stretch rounded-[15px] overflow-hidden w-full max-w-[860px]"
+                  className="lg:bg-white/5 flex flex-col lg:flex-row items-stretch rounded-[15px] overflow-hidden w-full max-w-[860px]"
                 >
-                  <div className="bg-white/5 p-5 lg:p-10 flex items-center justify-center">
+                  <div className="bg-white/5 p-5 lg:p-10 hidden lg:flex items-center justify-center">
                     <Image
                       src="/images/cobogo-community-cube.svg"
                       width={150}
@@ -232,9 +232,9 @@ export default function CommunityContent() {
                     />
                   </div>
 
-                  <div className="p-8 lg:p-16 flex flex-col justify-center gap-3 w-full h-full">
+                  <div className="p-0 lg:p-16 flex flex-col justify-center gap-3 w-full h-full">
                     <strong className="text-2xl lg:text-3xl leading-8">
-                      Over 650
+                      Over <span className="text-yellow-community">650</span>
                     </strong>
 
                     <p className="text-lg lg:text-[22px] leading-8">
