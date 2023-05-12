@@ -56,7 +56,7 @@ export default function CommunityContent() {
       </div>
 
       {section1RefIsInView && (
-        <div className="absolute left-0 w-full bottom-[2500px] z-10 hidden lg:flex items-center justify-center">
+        <div className="absolute left-0 w-full bottom-[2050px] z-10 hidden lg:flex items-center justify-center">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -73,7 +73,7 @@ export default function CommunityContent() {
         </div>
       )}
 
-      <div className="flex items-center justify-center w-full py-16 lg:py-32 lg:px-0 relative">
+      <div className="flex items-center justify-center w-full pt-16 lg:pt-32 lg:px-0 relative">
         <div className="w-full flex flex-col items-end relative">
           <div className="flex flex-col w-full gap-14 lg:gap-20">
             <div className="bg-yellow w-full flex items-center justify-center py-32 px-7 clip-path-polygon-[0_0,_100%_10%,_100%_100%,_0_90%]">
