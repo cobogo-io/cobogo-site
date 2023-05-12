@@ -23,6 +23,9 @@ export default function CommunityContent() {
   const section4Ref = useRef(null)
   const section4RefIsInView = useInView(section4Ref, { once: true })
 
+  const membersRef = useRef(null)
+  const membersRefIsInView = useInView(membersRef, { once: true })
+
   const footerRef = useRef(null)
   const footerRefIsInView = useInView(footerRef, { once: true })
 
@@ -204,6 +207,39 @@ export default function CommunityContent() {
                     height={568}
                     alt="Community peoples"
                   />
+                </motion.div>
+              )}
+            </div>
+          </div>
+
+          <div className="w-full flex items-center justify-center py-32 px-7">
+            <div ref={membersRef} />
+
+            <div className="w-full max-w-[1110px] flex flex-col items-center justify-center min-h-[566px]">
+              {membersRefIsInView && (
+                <motion.div
+                  initial={{ y: 100, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.25, duration: 1 }}
+                  className="bg-white/5 flex flex-col lg:flex-col items-stretch rounded-[15px] overflow-hidden w-full max-w-[860px]"
+                >
+                  <div className="bg-white/5 p-5 lg:p-10 flex items-center justify-center">
+                    <Image
+                      src="/images/cobogo-community-cube.svg"
+                      width={150}
+                      height={150}
+                      alt="Cobogo Community cube"
+                    />
+                  </div>
+
+                  <div className="p-8 lg:p-16 flex flex-col justify-center gap-3 w-full h-full">
+                    <strong className="text-3xl leading-8">Over 650</strong>
+
+                    <p className="text-[22px] leading-8">
+                      Creators, Investors and Creator Economy professionals{' '}
+                      getting together.
+                    </p>
+                  </div>
                 </motion.div>
               )}
             </div>
