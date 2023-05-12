@@ -215,7 +215,7 @@ export default function CommunityContent() {
           <div className="w-full flex items-center justify-center py-32 px-7">
             <div ref={membersRef} />
 
-            <div className="w-full max-w-[1110px] flex flex-col items-center justify-center min-h-[566px]">
+            <div className="w-full max-w-[1110px] flex flex-col items-center justify-center min-h-[405px] lg:min-h-[240px]">
               {membersRefIsInView && (
                 <motion.div
                   initial={{ y: 100, opacity: 0 }}
