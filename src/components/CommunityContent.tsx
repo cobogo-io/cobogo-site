@@ -56,7 +56,7 @@ export default function CommunityContent() {
       </div>
 
       {section1RefIsInView && (
-        <div className="absolute left-0 w-full bottom-[1650px] z-10 hidden lg:flex items-center justify-center">
+        <div className="absolute left-0 w-full bottom-[2500px] z-10 hidden lg:flex items-center justify-center">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -221,7 +221,7 @@ export default function CommunityContent() {
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.25, duration: 1 }}
-                  className="bg-white/5 flex flex-col lg:flex-col items-stretch rounded-[15px] overflow-hidden w-full max-w-[860px]"
+                  className="bg-white/5 flex flex-col lg:flex-row items-stretch rounded-[15px] overflow-hidden w-full max-w-[860px]"
                 >
                   <div className="bg-white/5 p-5 lg:p-10 flex items-center justify-center">
                     <Image
@@ -233,9 +233,11 @@ export default function CommunityContent() {
                   </div>
 
                   <div className="p-8 lg:p-16 flex flex-col justify-center gap-3 w-full h-full">
-                    <strong className="text-3xl leading-8">Over 650</strong>
+                    <strong className="text-2xl lg:text-3xl leading-8">
+                      Over 650
+                    </strong>
 
-                    <p className="text-[22px] leading-8">
+                    <p className="text-lg lg:text-[22px] leading-8">
                       Creators, Investors and Creator Economy professionals{' '}
                       getting together.
                     </p>
