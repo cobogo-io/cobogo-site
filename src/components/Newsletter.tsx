@@ -7,12 +7,12 @@ import { useRef } from 'react'
 export default function Newsletter() {
   const { t } = useTranslation('common')
 
-  const mentionsRef = useRef(null)
-  const mentionsRefIsInView = useInView(mentionsRef, { once: true })
+  const newsletterRef = useRef(null)
+  const newsletterRefIsInView = useInView(newsletterRef, { once: true })
 
   return (
     <section className="flex items-center justify-center w-full px-7 py-16 lg:py-32 relative">
-      {mentionsRefIsInView && (
+      {newsletterRefIsInView && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.25 }}
@@ -29,9 +29,9 @@ export default function Newsletter() {
       )}
 
       <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-center z-10 relative">
-        <div ref={mentionsRef} />
+        <div ref={newsletterRef} />
 
-        {mentionsRefIsInView && (
+        {newsletterRefIsInView && (
           <div className="flex items-center rounded-md overflow-hidden">
             <Image
               src="/images/newsletter-image.svg"
