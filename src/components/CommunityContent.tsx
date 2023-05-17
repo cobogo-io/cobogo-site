@@ -234,12 +234,14 @@ export default function CommunityContent() {
 
                   <div className="p-0 lg:p-16 flex flex-col justify-center gap-3 w-full h-full">
                     <strong className="text-2xl lg:text-3xl leading-8">
-                      Over <span className="text-yellow-community">650</span>
+                      {t('Over')}{' '}
+                      <span className="text-yellow-community">650</span>
                     </strong>
 
                     <p className="text-lg lg:text-[22px] leading-8">
-                      Creators, Investors and Creator Economy professionals{' '}
-                      getting together.
+                      {t(
+                        'Creators, Investors and Creator Economy professionals getting together.'
+                      )}
                     </p>
                   </div>
                 </motion.div>

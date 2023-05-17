@@ -1,6 +1,7 @@
 import Carrousel from '@/components/Carrousel'
 import Main from '@/components/Main'
 import Mentions from '@/components/Mentions'
+import Newsletter from '@/components/Newsletter'
 import RelatedContent from '@/components/RelatedContent'
 import axios from 'axios'
 import { GetStaticProps } from 'next'
@@ -26,6 +27,8 @@ export default function Home(props: HomeProps) {
       <RelatedContent mostRecentArticles={props.mostRecentArticles} />
 
       <Mentions />
+
+      <Newsletter />
     </>
   )
 }
