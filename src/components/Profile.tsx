@@ -1,4 +1,3 @@
-import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -13,8 +12,6 @@ interface ProfileProps {
 }
 
 export default function Profile(props: ProfileProps) {
-  const { t } = useTranslation('common')
-
   return (
     <div className="flex flex-col gap-6">
       <div className="w-[230px] h-[198px] rounded-[15px] bg-mentions-text-gradient flex items-center justify-center relative">
@@ -23,6 +20,7 @@ export default function Profile(props: ProfileProps) {
             <Link
               key={social.href}
               href={social.href}
+              target="_blank"
               className="w-[25px] h-[25px]"
             >
               {social.icon}
@@ -39,9 +37,9 @@ export default function Profile(props: ProfileProps) {
       </div>
 
       <div className="flex flex-col gap-2">
-        <strong className="text-[22px] w-[230px]">{t(props.name)}</strong>
+        <strong className="text-[22px] w-[230px]">{props.name}</strong>
 
-        <p className="text-[22px] w-[230px] text-gray-4">{t(props.position)}</p>
+        <p className="text-[22px] w-[230px] text-gray-4">{props.position}</p>
       </div>
     </div>
   )
