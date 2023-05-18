@@ -25,6 +25,19 @@ export default function Footer() {
       <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-between relative z-10">
         <div className="flex flex-col items-center gap-16 w-full">
           <div className="font-bold flex items-center gap-4 lg:gap-8">
+            <Link
+              href={
+                locale === 'pt'
+                  ? 'https://cobogobr.medium.com/'
+                  : 'https://medium.com/@cobogo_io'
+              }
+              target="_blank"
+            >
+              <div className="relative w-[30px] lg:w-[65px] h-[30px] lg:h-[65px]">
+                <Image src="/images/medium-2-icon.svg" fill alt="Medium icon" />
+              </div>
+            </Link>
+
             <Link href="https://www.instagram.com/cobogobr/" target="_blank">
               <div className="relative w-[30px] lg:w-[65px] h-[30px] lg:h-[65px]">
                 <Image
@@ -100,6 +113,19 @@ export default function Footer() {
       className={`items-center justify-between flex flex-col lg:flex-row w-full lg:h-[70px] col-span-2 px-7 bg-gray-2 py-8 lg:py-0 gap-14 lg:gap-0 relative z-30`}
     >
       <div className="flex items-center justify-center h-full gap-5">
+        <Link
+          href={
+            locale === 'pt'
+              ? 'https://cobogobr.medium.com/'
+              : 'https://medium.com/@cobogo_io'
+          }
+          target="_blank"
+        >
+          <div className="relative w-[30px] lg:w-[32px] h-[30px] lg:h-[32px]">
+            <Image src="/images/medium-2-icon.svg" fill alt="Medium icon" />
+          </div>
+        </Link>
+
         <Link href="https://www.instagram.com/cobogobr/" target="_blank">
           <div className="relative w-[30px] lg:w-[32px] h-[30px] lg:h-[32px]">
             <Image src="/images/instagram-icon.svg" fill alt="Instagram icon" />
