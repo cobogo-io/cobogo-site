@@ -56,7 +56,7 @@ export default function CommunityContent() {
       </div>
 
       {section1RefIsInView && (
-        <div className="absolute left-0 w-full bottom-[2050px] z-10 hidden lg:flex items-center justify-center">
+        <div className="absolute left-0 w-full bottom-[3050px] z-10 hidden lg:flex items-center justify-center">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -247,6 +247,112 @@ export default function CommunityContent() {
                 </motion.div>
               )}
             </div>
+          </div>
+
+          <div className="bg-yellow-community w-full flex items-center justify-center px-7 relative">
+            <div ref={section4Ref} />
+
+            <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-7 lg:gap-0 min-h-[566px]">
+              {section4RefIsInView && (
+                <div className="flex flex-col max-w-[320px] lg:max-w-[375px] w-full gap-7 py-32">
+                  <motion.h2
+                    initial={{ y: 100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.25, duration: 1 }}
+                    className="text-[24px] lg:text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]"
+                  >
+                    {t('Jacuzzi')} <br />
+                    {t('dos Creators')}
+                  </motion.h2>
+
+                  <motion.p
+                    initial={{ y: 100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 1 }}
+                    className="text-[20px] leading-[32px] text-black"
+                  >
+                    {t(
+                      'Um podcast realizado no Twitter da Cobogo de segunda à sexta-feira. Convidamos Creators e outros profissionais da área para discutir a Creator Economy.'
+                    )}
+                  </motion.p>
+
+                  <div className="flex flex-col gap-5 relative z-10">
+                    <div className="w-[320px] h-[320px] bg-white rounded-[15px]" />
+
+                    <strong className="text-black text-xl leading-8">
+                      Construção de comunidades para marcas e Creators
+                    </strong>
+
+                    <div className="bg-blue-social w-max rounded-md px-3 relative ml-[35px]">
+                      <img
+                        src="/images/cobogo-social-cube-2.svg"
+                        className="absolute z-10 left-[-35px] top-1/2 -translate-y-1/2 w-[41px] h-[41px]"
+                        alt="Cobogo Social cube 2"
+                      />
+
+                      <strong className="drop-shadow-[1px_1px_0px_#00000047] text-lg">
+                        Bia Miranda
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {section4RefIsInView && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.25, duration: 1 }}
+                  className="relative"
+                >
+                  <img
+                    src="/images/jacuzzi-image.svg"
+                    alt="Jacuzzi image"
+                    className="h-full hidden lg:flex"
+                  />
+
+                  <Link
+                    href="#"
+                    className="bg-pink-launchpad absolute z-10 bottom-[85px] left-[65px] hidden lg:flex items-center rounded-md overflow-hidden h-[60px]"
+                  >
+                    <strong className="flex h-[60px] w-[130px] items-center justify-center text-sm text-[#79407F]">
+                      Favorite o link
+                      <br /> do Space
+                    </strong>
+
+                    <div className="h-[60px] w-[130px] bg-black flex items-center justify-center">
+                      <Image
+                        src="/images/twitter-icon-2.svg"
+                        width={38}
+                        height={31}
+                        alt="Twitter icon 2"
+                      />
+                    </div>
+                  </Link>
+
+                  <Link
+                    href="#"
+                    className="bg-pink-launchpad absolute z-10 bottom-[85px] right-[65px] hidden lg:flex items-center rounded-md overflow-hidden h-[60px]"
+                  >
+                    <strong className="flex h-[60px] w-[130px] items-center justify-center text-sm text-[#79407F]">
+                      Escute todos os
+                      <br /> episódios
+                    </strong>
+
+                    <div className="h-[60px] w-[130px] bg-black flex items-center justify-center">
+                      <Image
+                        src="/images/spotify-icon.svg"
+                        width={84}
+                        height={40}
+                        alt="Spotify icon"
+                      />
+                    </div>
+                  </Link>
+                </motion.div>
+              )}
+            </div>
+
+            <div className="h-1/2 w-full bg-gradient-to-t from-white to-white/0 absolute bottom-0" />
           </div>
         </div>
       </div>
