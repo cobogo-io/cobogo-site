@@ -13,19 +13,16 @@ export default function CommunityContent() {
 
   const section1Ref = useRef(null)
   const section1RefIsInView = useInView(section1Ref, { once: true })
-
   const section2Ref = useRef(null)
   const section2RefIsInView = useInView(section2Ref, { once: true })
-
   const section3Ref = useRef(null)
   const section3RefIsInView = useInView(section3Ref, { once: true })
-
   const section4Ref = useRef(null)
   const section4RefIsInView = useInView(section4Ref, { once: true })
-
   const membersRef = useRef(null)
   const membersRefIsInView = useInView(membersRef, { once: true })
-
+  const jacuzziRef = useRef(null)
+  const jacuzziRefIsInView = useInView(jacuzziRef, { once: true })
   const footerRef = useRef(null)
   const footerRefIsInView = useInView(footerRef, { once: true })
 
@@ -250,10 +247,10 @@ export default function CommunityContent() {
           </div>
 
           <div className="bg-yellow-community w-full flex items-center justify-center px-7 relative">
-            <div ref={section4Ref} />
+            <div ref={jacuzziRef} />
 
-            <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-7 lg:gap-0 min-h-[566px]">
-              {section4RefIsInView && (
+            <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-7 lg:gap-0 min-h-[1020px]">
+              {jacuzziRefIsInView && (
                 <div className="flex flex-col max-w-[320px] lg:max-w-[375px] w-full gap-7 py-32">
                   <motion.h2
                     initial={{ y: 100, opacity: 0 }}
@@ -272,18 +269,37 @@ export default function CommunityContent() {
                     className="text-[20px] leading-[32px] text-black"
                   >
                     {t(
-                      'Um podcast realizado no Twitter da Cobogo de segunda à sexta-feira. Convidamos Creators e outros profissionais da área para discutir a Creator Economy.'
+                      'A podcast held on Cobogo´s Twitter from Monday to Friday. We invite Creators and other professionals in the field to discuss the Creator Economy.'
                     )}
                   </motion.p>
 
                   <div className="flex flex-col gap-5 relative z-10">
-                    <div className="w-[320px] h-[320px] bg-white rounded-[15px]" />
+                    <motion.img
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.25, duration: 1 }}
+                      src="/images/pedro-cardoso-image.png"
+                      alt="Pedro Cardoso image"
+                      className="rounded-[15px] w-[320px] h-[320px]"
+                    />
 
-                    <strong className="text-black text-xl leading-8">
-                      Construção de comunidades para marcas e Creators
-                    </strong>
+                    <motion.strong
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.75, duration: 1 }}
+                      className="text-black text-xl leading-8 max-w-[320px]"
+                    >
+                      {t(
+                        'Inovation, Creator Economy and web3 with CMO of Reserva'
+                      )}
+                    </motion.strong>
 
-                    <div className="bg-blue-social w-max rounded-md px-3 relative ml-[35px]">
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.25, duration: 1 }}
+                      className="bg-blue-social w-max rounded-md px-3 relative ml-[35px]"
+                    >
                       <img
                         src="/images/cobogo-social-cube-2.svg"
                         className="absolute z-10 left-[-35px] top-1/2 -translate-y-1/2 w-[41px] h-[41px]"
@@ -291,14 +307,14 @@ export default function CommunityContent() {
                       />
 
                       <strong className="drop-shadow-[1px_1px_0px_#00000047] text-lg">
-                        Bia Miranda
+                        Pedro Cardoso
                       </strong>
-                    </div>
+                    </motion.div>
                   </div>
                 </div>
               )}
 
-              {section4RefIsInView && (
+              {jacuzziRefIsInView && (
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -312,12 +328,13 @@ export default function CommunityContent() {
                   />
 
                   <Link
-                    href="#"
+                    href="https://twitter.com/CobogoBR/status/1651556763852759042"
+                    target="_blank"
                     className="bg-pink-launchpad absolute z-10 bottom-[85px] left-[65px] hidden lg:flex items-center rounded-md overflow-hidden h-[60px]"
                   >
                     <strong className="flex h-[60px] w-[130px] items-center justify-center text-sm text-[#79407F]">
-                      Favorite o link
-                      <br /> do Space
+                      {t('Favorite the')}
+                      <br /> {t('Space link')}
                     </strong>
 
                     <div className="h-[60px] w-[130px] bg-black flex items-center justify-center">
@@ -331,12 +348,13 @@ export default function CommunityContent() {
                   </Link>
 
                   <Link
-                    href="#"
+                    href="https://open.spotify.com/show/4H9UPxaefQshxE8ehqhwvX"
+                    target="_blank"
                     className="bg-pink-launchpad absolute z-10 bottom-[85px] right-[65px] hidden lg:flex items-center rounded-md overflow-hidden h-[60px]"
                   >
                     <strong className="flex h-[60px] w-[130px] items-center justify-center text-sm text-[#79407F]">
-                      Escute todos os
-                      <br /> episódios
+                      {t('Listen to all')}
+                      <br /> {t('episodes')}
                     </strong>
 
                     <div className="h-[60px] w-[130px] bg-black flex items-center justify-center">
