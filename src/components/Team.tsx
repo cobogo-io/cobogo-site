@@ -437,7 +437,7 @@ export default function Team() {
               />
 
               <Profile
-                imageSrc="/images/thiago-machado-profile-image.svg"
+                imageSrc="/images/thiago-machado-profile-image.jpg"
                 name="Thiago Machado"
                 position="Full Stack Developer"
                 socials={[
