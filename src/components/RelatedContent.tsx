@@ -2,17 +2,10 @@ import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { useRef } from 'react'
 
-interface RelatedContentProps {
-  mostRecentArticles: any[]
-}
-
-export default function RelatedContent(props: RelatedContentProps) {
+export default function RelatedContent() {
   const { t } = useTranslation('common')
-
-  const { locale } = useRouter()
 
   const relatedContentRef = useRef(null)
   const relatedContentRefIsInView = useInView(relatedContentRef, { once: true })
@@ -62,26 +55,6 @@ export default function RelatedContent(props: RelatedContentProps) {
                   )}
                 </motion.p>
               </div>
-
-              <motion.div
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.75, duration: 1 }}
-              >
-                <Link
-                  href="https://cobogobr.medium.com/"
-                  target="_blank"
-                  className="hidden lg:flex items-center gap-5 font-bold font-orbitron mt-3"
-                >
-                  <Image
-                    src="/images/medium-icon.svg"
-                    width={34}
-                    height={34}
-                    alt="Medium icon"
-                  />
-                  {t('Go to our Medium')}
-                </Link>
-              </motion.div>
             </div>
 
             <motion.div
@@ -90,53 +63,62 @@ export default function RelatedContent(props: RelatedContentProps) {
               transition={{ delay: 1, duration: 1 }}
               className="flex justify-between overflow-auto gap-10 bg-gray lg:bg-transparent py-8 lg:py-0"
             >
-              {props.mostRecentArticles.map(article => (
-                <Link
-                  key={article.title}
-                  className="flex flex-col gap-8 mx-7 lg:mx-0"
-                  href={article.link}
-                  target="_blank"
-                >
-                  <div className="w-[340px] h-[215px] rounded-[15px] bg-related-content-text-gradient flex items-center justify-center">
-                    <img
-                      src={article.thumbnail}
-                      className="w-full h-full rounded-[15px] p-[2px] object-cover"
-                      alt="Article thumbnail"
-                    />
-                  </div>
-
-                  <strong className="text-[22px] w-[340px]">
-                    {article.title}
-                  </strong>
-                </Link>
-              ))}
-            </motion.div>
-
-            <div className="flex lg:hidden">
-              <motion.div
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.75, duration: 1 }}
+              <Link
+                className="flex flex-col gap-8 mx-7 lg:mx-0"
+                href="https://www.linkedin.com/pulse/marcas-est%2525C3%2525A3o-tornando-se-creators-cobogopt%3FtrackingId=fom%252BG%252BqnQ2noXOBgFnOTlw%253D%253D/?trackingId=fom%2BG%2BqnQ2noXOBgFnOTlw%3D%3D"
+                target="_blank"
               >
-                <Link
-                  href={
-                    locale === 'pt'
-                      ? 'https://cobogobr.medium.com/'
-                      : 'https://medium.com/@cobogo_io/'
-                  }
-                  target="_blank"
-                  className="flex items-center gap-5 font-bold font-orbitron mt-3 px-7"
-                >
-                  <Image
-                    src="/images/medium-icon.svg"
-                    width={34}
-                    height={34}
-                    alt="Medium icon"
+                <div className="w-[340px] h-[215px] rounded-[15px] bg-related-content-text-gradient flex items-center justify-center">
+                  <img
+                    src="/images/article-1.png"
+                    className="w-full h-full rounded-[15px] p-[2px] object-cover"
+                    alt="Article thumbnail"
                   />
-                  {t('Go to our Medium')}
-                </Link>
-              </motion.div>
-            </div>
+                </div>
+
+                <strong className="text-[22px] w-[340px]">
+                  {t('Brands are becoming Creators')}
+                </strong>
+              </Link>
+
+              <Link
+                className="flex flex-col gap-8 mx-7 lg:mx-0"
+                href="https://www.linkedin.com/pulse/creators-est%25C3%25A3o-tornando-se-founders-cobogopt/?trackingId=cjR68ytgQWqc9dU9QZfNdw%3D%3D"
+                target="_blank"
+              >
+                <div className="w-[340px] h-[215px] rounded-[15px] bg-related-content-text-gradient flex items-center justify-center">
+                  <img
+                    src="/images/article-2.png"
+                    className="w-full h-full rounded-[15px] p-[2px] object-cover"
+                    alt="Article thumbnail"
+                  />
+                </div>
+
+                <strong className="text-[22px] w-[340px]">
+                  {t('Creators are becoming Founders')}
+                </strong>
+              </Link>
+
+              <Link
+                className="flex flex-col gap-8 mx-7 lg:mx-0"
+                href="https://www.linkedin.com/pulse/onde-mundo-est%25C3%25A3o-os-investidores-da-creator-economy-cobogopt/?trackingId=dWzmonGiRTqsTdngJ%2F%2FO4A%3D%3D"
+                target="_blank"
+              >
+                <div className="w-[340px] h-[215px] rounded-[15px] bg-related-content-text-gradient flex items-center justify-center">
+                  <img
+                    src="/images/article-3.png"
+                    className="w-full h-full rounded-[15px] p-[2px] object-cover"
+                    alt="Article thumbnail"
+                  />
+                </div>
+
+                <strong className="text-[22px] w-[340px]">
+                  {t(
+                    'Where in the world are the investors of the Creator Economy?'
+                  )}
+                </strong>
+              </Link>
+            </motion.div>
           </div>
         )}
       </div>

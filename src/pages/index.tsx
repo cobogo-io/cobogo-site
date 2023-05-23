@@ -3,16 +3,15 @@ import Main from '@/components/Main'
 import Mentions from '@/components/Mentions'
 import Newsletter from '@/components/Newsletter'
 import RelatedContent from '@/components/RelatedContent'
-import axios from 'axios'
 import { GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useState } from 'react'
 
-interface HomeProps {
-  mostRecentArticles: any[]
-}
+// interface HomeProps {
+//   mostRecentArticles: any[]
+// }
 
-export default function Home(props: HomeProps) {
+export default function Home() {
   const [selectedProduct, setSelectedProduct] = useState<string>('community')
 
   return (
@@ -24,7 +23,7 @@ export default function Home(props: HomeProps) {
         setSelectedProduct={setSelectedProduct}
       />
 
-      <RelatedContent mostRecentArticles={props.mostRecentArticles} />
+      <RelatedContent />
 
       <Mentions />
 
@@ -34,15 +33,15 @@ export default function Home(props: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const response = await axios.get(
-    `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${
-      locale === 'pt' ? 'cobogobr' : 'cobogo_io'
-    }/`
-  )
+  // const response = await axios.get(
+  //   `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${
+  //     locale === 'pt' ? 'cobogobr' : 'cobogo_io'
+  //   }/`
+  // )
 
   return {
     props: {
-      mostRecentArticles: response.data.items.slice(0, 3),
+      // mostRecentArticles: response.data.items.slice(0, 3),
       ...(await serverSideTranslations(locale as string, ['common'])),
     },
   }
