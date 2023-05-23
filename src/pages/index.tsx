@@ -28,9 +28,9 @@ export default function Home() {
 
       <Mentions />
 
-      <Newsletter />
-
       <Team />
+
+      <Newsletter />
     </>
   )
 }
