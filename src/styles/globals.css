@@ -20,14 +20,11 @@ h2 {
 }
 
 a,
-button {
-  @apply rounded-md;
-}
-
+button,
 select,
 input,
 textarea {
-  @apply rounded-sm;
+  @apply rounded-md;
 }
 
 button,

@@ -81,7 +81,7 @@ export default function Footer() {
             </Link>
           </div>
 
-          <div className="font-bold flex flex-col lg:flex-row text-sm lg:text-base items-center gap-4 lg:gap-8 font-orbitron">
+          <div className="font-bold flex flex-col lg:flex-row text-sm lg:text-base items-center gap-4 lg:gap-8">
             <Link href="https://l.cobogo.io/code-of-conduct/" target="_blank">
               {t('Code of conduct')}
             </Link>

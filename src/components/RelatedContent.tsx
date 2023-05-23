@@ -11,7 +11,7 @@ export default function RelatedContent() {
   const relatedContentRefIsInView = useInView(relatedContentRef, { once: true })
 
   return (
-    <section className="flex items-center justify-center w-full pt-16 pb-16 lg:pt-32 relative min-h-[607px]">
+    <section className="flex items-center justify-center w-full pt-16 pb-16 lg:pt-32 relative min-h-[599px]">
       {relatedContentRefIsInView && (
         <motion.div
           initial={{ opacity: 0 }}

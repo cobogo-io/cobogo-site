@@ -32,7 +32,7 @@ module.exports = {
         gray: '#1C1C1C',
         'gray-2': '#111111',
         'gray-3': '#1D1D1D',
-        'gray-4': '#CCCCCC',
+        'gray-4': '#999999',
       },
       backgroundImage: {
         'home-carrousel-social-background':
@@ -61,6 +61,8 @@ module.exports = {
           'linear-gradient(92.91deg, #EFE750 -2%, #BA68C8 18%, #00B9E9 38%);',
         'newsletter-text-gradient':
           'linear-gradient(92.91deg, #EFE750 -12%, #BA68C8 68%, #00B9E9 88%);',
+        'meet-the-team-text-gradient':
+          'linear-gradient(92.91deg, #EFE750 -2%, #BA68C8 18%, #00B9E9 28%);',
       },
     },
   },

@@ -3,6 +3,7 @@ import Main from '@/components/Main'
 import Mentions from '@/components/Mentions'
 import Newsletter from '@/components/Newsletter'
 import RelatedContent from '@/components/RelatedContent'
+import Team from '@/components/Team'
 import { GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useState } from 'react'
@@ -26,6 +27,8 @@ export default function Home() {
       <RelatedContent />
 
       <Mentions />
+
+      <Team />
 
       <Newsletter />
     </>
