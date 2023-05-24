@@ -1,103 +1,17 @@
 import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
 
 export default function Main() {
   const { t } = useTranslation('common')
 
   const { locale } = useRouter()
 
-  const [weeSeeText, setWeeSeeText] = useState('')
-  const [creatorsText, setCreatorsText] = useState('')
-  const [asText, setAsText] = useState('')
-  const [foundersText, setFoundersText] = useState('')
-
-  const [line, setLine] = useState(0)
-
-  const [andTheirText, setAndTheirText] = useState('')
-  const [brandsText, setBrandsText] = useState('')
-  const [as2Text, setAs2Text] = useState('')
-  const [startupsText, setStartupsText] = useState('')
-
-  const [switchText, setSwitchText] = useState(false)
-
   const mainRef = useRef(null)
   const mainRefIsInView = useInView(mainRef, { once: true })
-
-  async function writeEffect(
-    setText: Dispatch<SetStateAction<string>>,
-    text: string,
-    internalSwitchText: boolean,
-    line: number
-  ) {
-    const arrayText = text.split('')
-    let element = ''
-
-    arrayText.forEach((letter, index) => {
-      setTimeout(() => {
-        const newText = (element += letter)
-        setText(newText)
-      }, 150 * index)
-    })
-
-    if (internalSwitchText) {
-      setTimeout(() => {
-        setSwitchText(!switchText)
-        setWeeSeeText('')
-        setCreatorsText('')
-        setAsText('')
-        setFoundersText('')
-        setAndTheirText('')
-        setBrandsText('')
-        setAs2Text('')
-        setStartupsText('')
-      }, 1000 * 2)
-    }
-
-    if (line === 0) {
-      setLine(0)
-    } else if (line === 1) {
-      setLine(1)
-    } else if (line === 2) {
-      setLine(2)
-    } else if (line === 3) {
-      setLine(3)
-    }
-  }
-
-  useEffect(() => {
-    if (!switchText) {
-      writeEffect(setWeeSeeText, t('We see'), false, 0)
-
-      setTimeout(() => {
-        writeEffect(setCreatorsText, 'Creators', false, 1)
-      }, 1000 * 1.5)
-
-      setTimeout(() => {
-        writeEffect(setAsText, t('as'), false, 2)
-      }, 1000 * 3)
-
-      setTimeout(() => {
-        writeEffect(setFoundersText, t('founders'), true, 3)
-      }, 1000 * 3.5)
-    } else {
-      writeEffect(setAndTheirText, t('and their'), false, 0)
-
-      setTimeout(() => {
-        writeEffect(setBrandsText, t('brands'), false, 1)
-      }, 1000 * 1.5)
-
-      setTimeout(() => {
-        writeEffect(setAs2Text, t('as'), false, 2)
-      }, 1000 * 3)
-
-      setTimeout(() => {
-        writeEffect(setStartupsText, 'startups', true, 3)
-      }, 1000 * 3.5)
-    }
-  }, [switchText])
 
   return (
     <section className="flex items-center justify-center w-full py-32 relative px-7 min-h-[892px]">
@@ -123,41 +37,34 @@ export default function Main() {
       {mainRefIsInView && (
         <div className="w-full max-w-[1110px] flex flex-col gap-24 lg:gap-52 relative z-10">
           <div className="flex flex-col lg:flex-row gap-16 lg:gap-0 justify-between lg:items-center">
-            <div className="flex flex-col h-[190px] lg:h-[333px]">
-              <motion.h1
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.25, duration: 1 }}
-                className="leading-[55px] lg:leading-[110px] text-[22px] lg:text-[45px] text-blue-2 flex items-center"
-              >
-                {!switchText ? weeSeeText : andTheirText}{' '}
-                {line === 0 && (
-                  <div className="border h-[80px] animate-pulse" />
-                )}
-              </motion.h1>
+            <div className="flex flex-col gap-6 lg:gap-12">
+              <div className="flex flex-col gap-3 lg:gap-6">
+                <motion.h1
+                  initial={{ y: 100, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.25, duration: 1 }}
+                  className="leading-[30px] lg:leading-[60px] text-[22px] lg:text-[45px] font-bold"
+                >
+                  {t('Have a share')} <br /> {t('in the sucess of')} <br />{' '}
+                  {t('your favorite Creator')}
+                </motion.h1>
 
-              <h1 className="leading-[55px] lg:leading-[110px] text-[30px] lg:text-[65px] font-extrabold text-white flex items-center">
-                {!switchText ? creatorsText : brandsText}
-                {line === 1 && (
-                  <div className="border h-[80px] animate-pulse" />
-                )}
-              </h1>
-
-              <div className="flex items-center gap-2">
-                <h1 className="text-[30px] lg:text-[65px] text-white mr-3 flex items-center">
-                  {!switchText ? asText : as2Text}
-                  {line === 2 && (
-                    <div className="border h-[80px] animate-pulse" />
+                <p className="max-w-[300px] lg:max-w-[350px] text-sm lg:text-base">
+                  {t(
+                    'Get access to benefits, part of the future revenue or even equity from the people you trust the most on the internet.'
                   )}
-                </h1>
-
-                <h1 className="text-[30px] lg:text-[65px] font-extrabold text-white flex items-center">
-                  {!switchText ? foundersText : startupsText}
-                  {line === 3 && (
-                    <div className="border h-[80px] animate-pulse" />
-                  )}
-                </h1>
+                </p>
               </div>
+
+              <Link
+                href="https://cobogo.social/"
+                target="_blank"
+                className="bg-black h-[50px] w-max px-[20px] flex items-center justify-center"
+              >
+                <strong className="text-transparent bg-clip-text bg-newsletter-text-gradient text-lg lg:text-xl">
+                  {t('start crowdfunding')}
+                </strong>
+              </Link>
             </div>
 
             <motion.div
