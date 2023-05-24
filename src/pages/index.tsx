@@ -20,11 +20,11 @@ export default function Home() {
         setSelectedProduct={setSelectedProduct}
       />
 
+      <Team />
+
       <RelatedContent />
 
       <Mentions />
-
-      <Team />
 
       <Newsletter />
     </>

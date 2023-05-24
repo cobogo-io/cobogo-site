@@ -49,22 +49,33 @@ export default function Main() {
                   {t('your favorite Creator')}
                 </motion.h1>
 
-                <p className="max-w-[300px] lg:max-w-[350px] text-sm lg:text-base">
+                <motion.p
+                  initial={{ y: 100, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.5, duration: 1 }}
+                  className="max-w-[300px] lg:max-w-[350px] text-sm lg:text-base"
+                >
                   {t(
                     'Get access to benefits, part of the future revenue or even equity from the people you trust the most on the internet.'
                   )}
-                </p>
+                </motion.p>
               </div>
 
-              <Link
-                href="https://cobogo.social/"
-                target="_blank"
-                className="bg-black h-[50px] w-max px-[20px] flex items-center justify-center"
+              <motion.div
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.75, duration: 1 }}
               >
-                <strong className="text-transparent bg-clip-text bg-newsletter-text-gradient text-lg lg:text-xl">
-                  {t('start crowdfunding')}
-                </strong>
-              </Link>
+                <Link
+                  href="https://cobogo.social/"
+                  target="_blank"
+                  className="bg-black h-[50px] w-max px-[20px] flex items-center justify-center"
+                >
+                  <strong className="text-transparent bg-clip-text bg-newsletter-text-gradient text-lg lg:text-xl">
+                    {t('start crowdfunding')}
+                  </strong>
+                </Link>
+              </motion.div>
             </div>
 
             <motion.div

@@ -28,12 +28,12 @@ export default function Carrousel(props: CarrouselProps) {
       title: 'Community',
       subtitle: (
         <h1 className="font-bold text-[27px] lg:text-[35px] leading-[37px] lg:leading-[45px]">
-          {t('A game changer')} <br />
-          <span className="text-yellow">{t('community')}</span>
+          {t('Everything we do happens')} <br />
+          <span className="text-yellow">{t('in the Creators community')}</span>
         </h1>
       ),
       description:
-        'Formed by Creators, investors and enthusiasts of the Creator Economy boosting market knowledge, research and development to find the next early stage Creators to be invested.',
+        'Our community is a unique space where entrepreneurial creators connect, collaborate and build their brands, while providing tools and training to accelerate their growth and revenue.',
       buttonHref: '/community',
     },
     {
@@ -42,34 +42,16 @@ export default function Carrousel(props: CarrouselProps) {
       backgroundColor: 'bg-blue-social',
       borderColor: 'border-blue-social',
       textColor: 'text-blue-social',
-      title: 'Social',
+      title: 'Crowdfunding',
       subtitle: (
         <h1 className="font-bold text-[27px] lg:text-[35px] leading-[37px] lg:leading-[45px]">
-          {t('Creator as a')}
-          <br /> <span className="text-blue">{t('business platform')}</span>
+          {t('The platform where')}
+          <br /> <span className="text-blue">{t('make dreams come true')}</span>
         </h1>
       ),
       description:
-        'A all in one tool to showcase a Creators work and engagement metrics to investors and partners in a professional and automated way. All data is verified and authenticated by the Creators social media.',
+        'More than offering short-term benefits to the audience, at Cobogo it is possible to share the success of a Creator, offering part of your revenue or even a share in the company to your followers and investors, in exchange for enough capital to make your projects more viable. ambitious.',
       buttonHref: 'https://cobogo.social/',
-    },
-
-    {
-      id: 'launchpad',
-      cube: '/images/cobogo-launchpad-cube.svg',
-      backgroundColor: 'bg-pink-launchpad',
-      borderColor: 'border-pink-launchpad',
-      textColor: 'text-pink-launchpad',
-      title: 'Launchpad',
-      subtitle: (
-        <h1 className="font-bold text-[27px] lg:text-[35px] leading-[37px] lg:leading-[45px]">
-          {t('Getting Creators')} <br />{' '}
-          <span className="text-pink">{t('ready to fly')}</span>
-        </h1>
-      ),
-      description:
-        'A complete training and acceleration program for Creators who need to professionalize and grow their businesses.',
-      buttonHref: '/launchpad',
     },
   ]
 
@@ -78,10 +60,7 @@ export default function Carrousel(props: CarrouselProps) {
       transform: 'translateX(-0%)',
     },
     social: {
-      transform: 'translateX(-33.33%)',
-    },
-    launchpad: {
-      transform: 'translateX(-66.66%)',
+      transform: 'translateX(-50%)',
     },
   }
 
@@ -91,9 +70,6 @@ export default function Carrousel(props: CarrouselProps) {
     },
     social: {
       stopColor: '#00B9E9',
-    },
-    launchpad: {
-      stopColor: '#BA68C8',
     },
   }
 
@@ -137,8 +113,6 @@ export default function Carrousel(props: CarrouselProps) {
             onClick={() => {
               props.selectedProduct === 'social' &&
                 props.setSelectedProduct('community')
-              props.selectedProduct === 'launchpad' &&
-                props.setSelectedProduct('social')
             }}
             disabled={props.selectedProduct === 'community'}
           >
@@ -155,10 +129,8 @@ export default function Carrousel(props: CarrouselProps) {
             onClick={() => {
               props.selectedProduct === 'community' &&
                 props.setSelectedProduct('social')
-              props.selectedProduct === 'social' &&
-                props.setSelectedProduct('launchpad')
             }}
-            disabled={props.selectedProduct === 'launchpad'}
+            disabled={props.selectedProduct === 'social'}
           >
             <Image
               src="/images/skip-icon.svg"
@@ -240,7 +212,7 @@ export default function Carrousel(props: CarrouselProps) {
             <motion.div
               animate={props.selectedProduct}
               variants={carrouselVariants}
-              className="flex w-[300%]"
+              className="flex w-[200%]"
             >
               {products.map(product => {
                 return (
@@ -281,7 +253,7 @@ export default function Carrousel(props: CarrouselProps) {
                       className="flex w-full max-w-[1110px]"
                     >
                       <div className="flex items-center justify-between w-full">
-                        <div className="flex flex-col max-w-[500px] w-full gap-6">
+                        <div className="flex flex-col max-w-[550px] w-full gap-6">
                           <h2
                             className={`font-bold text-xl ${product.textColor}`}
                           >
