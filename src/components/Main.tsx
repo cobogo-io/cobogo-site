@@ -107,8 +107,9 @@ export default function Main() {
                   : 'bg-related-content-text-gradient-en'
               } bg-clip-text text-transparent`}
             >
-              {t('Scaling up')} <br /> {t('equity financing')} <br /> {t('for')}{' '}
-              <strong>Creators</strong>
+              {t('What if you')} <br />
+              {t('could partner with the')} <br />
+              {t('Creators brands?')}
             </motion.h2>
 
             <motion.p
@@ -118,7 +119,7 @@ export default function Main() {
               className="leading-[32px] lg:leading-[40px] text-[20px] lg:text-[24px] max-w-[450px]"
             >
               {t(
-                'Cobogo is a fund manager with a technological and productized deal-flow that counts with a community of Creators acting as the Creator Economy market intelligence.'
+                'At Cobogo, it is not only possible to become a partner in the brands and projects of great Creators through crowdfunding, but it is also where Creators prepare to create great companies, accessing the training and tools necessary in their journey.'
               )}
             </motion.p>
           </div>
