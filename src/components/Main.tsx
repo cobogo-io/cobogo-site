@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useRef } from 'react'
+import Button from './Button'
 
 export default function Main() {
   const { t } = useTranslation('common')
@@ -66,14 +67,11 @@ export default function Main() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.75, duration: 1 }}
               >
-                <Link
-                  href="https://cobogo.social/"
-                  target="_blank"
-                  className="bg-black h-[50px] w-max px-[20px] flex items-center justify-center"
-                >
-                  <strong className="text-transparent bg-clip-text bg-newsletter-text-gradient text-lg lg:text-xl">
-                    {t('start crowdfunding')}
-                  </strong>
+                <Link href="https://cobogo.social/" target="_blank">
+                  <Button
+                    text={t('start crowdfunding')}
+                    borderColor="border-blue-social"
+                  />
                 </Link>
               </motion.div>
             </div>
