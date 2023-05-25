@@ -51,7 +51,7 @@ export default function RelatedContent() {
                   className="lg:text-[22px] leading-[26px] lg:leading-[32px] w-full max-w-[660px]"
                 >
                   {t(
-                    'Learn more about the future of the Creator Economy being built by Cobogo, with articles exposing our ideas.'
+                    'Discover the secrets of the Creator Economy, read exclusive articles about the Creator Economy, and master strategies to boost your career as a content creator.'
                   )}
                 </motion.p>
               </div>

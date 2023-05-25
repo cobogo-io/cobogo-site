@@ -147,11 +147,13 @@ export default function Header() {
                 />
 
                 <h1 className="text-xl lg:text-2xl font-bold text-yellow-community">
-                  {t('Community')}
+                  Community
                 </h1>
 
-                <p className="text-sm lg:text-base">
-                  {t('The creator economy game changer.')}
+                <p className="text-sm lg:text-base max-w-[300px]">
+                  {t(
+                    'Join the largest community of Creators of Latin America.'
+                  )}
                 </p>
               </div>
 
@@ -182,11 +184,11 @@ export default function Header() {
                 />
 
                 <h1 className="text-xl lg:text-2xl font-bold text-blue-social">
-                  Social
+                  Crowdfunding
                 </h1>
 
-                <p className="text-sm lg:text-base">
-                  {t('Creator as a business platform.')}
+                <p className="text-sm lg:text-base max-w-[300px]">
+                  {t('Invest in your favorite Creators projects.')}
                 </p>
               </div>
 
@@ -195,42 +197,6 @@ export default function Header() {
                 width={115}
                 height={115}
                 alt="Cobogo Social cube"
-                className="hidden lg:flex"
-              />
-            </Link>
-
-            <Link
-              href="/launchpad"
-              className={`px-6 lg:px-12 py-7 flex items-center justify-between bg-white/10 rounded-xl ${
-                asPath !== '/launchpad' &&
-                asPath !== '/' &&
-                'brightness-50 saturate-0'
-              }`}
-              onClick={() => setMenuOpened(false)}
-            >
-              <div className="flex flex-col gap-2 lg:gap-4 text-start">
-                <Image
-                  src="/images/cobogo-launchpad-cube.svg"
-                  width={40}
-                  height={40}
-                  alt="Cobogo Launchpad cube"
-                  className="flex lg:hidden"
-                />
-
-                <h1 className="text-xl lg:text-2xl font-bold text-pink-launchpad">
-                  Launchpad
-                </h1>
-
-                <p className="text-sm lg:text-base">
-                  {t('Getting Creators ready to fly.')}
-                </p>
-              </div>
-
-              <Image
-                src="/images/cobogo-launchpad-cube.svg"
-                width={125}
-                height={125}
-                alt="Cobogo Launchpad cube"
                 className="hidden lg:flex"
               />
             </Link>

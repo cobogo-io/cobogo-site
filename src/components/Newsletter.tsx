@@ -48,7 +48,7 @@ export default function Newsletter() {
                 </h2>
 
                 <p className="text-lg text-gray-4">
-                  {t('Stay infomed about Cobogo and the Creator Economy!')}
+                  {t('Stay on top of the best insights from the Creator Economy')}
                 </p>
               </div>
 

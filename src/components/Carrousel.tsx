@@ -82,7 +82,7 @@ export default function Carrousel(props: CarrouselProps) {
           <div className="flex justify-center">
             <div className="flex items-center w-full max-w-[1110px] justify-between px-7 lg:px-0 py-6">
               <h2 className="lg:text-2xl font-medium">
-                {t('Productized deal-flow')}
+                {t('How it all happens')}
               </h2>
 
               <div className="flex items-center gap-4 transition-colors">
