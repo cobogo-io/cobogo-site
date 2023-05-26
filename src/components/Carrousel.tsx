@@ -28,12 +28,12 @@ export default function Carrousel(props: CarrouselProps) {
       title: 'Community',
       subtitle: (
         <h1 className="font-bold text-[27px] lg:text-[35px] leading-[37px] lg:leading-[45px]">
-          {t('Everything we do happens')} <br />
-          <span className="text-yellow">{t('in the Creators community')}</span>
+          Hey Creator, <br />
+          <span className="text-yellow">{t('your journey begins here!')}</span>
         </h1>
       ),
       description:
-        'Our community is a unique space where entrepreneurial creators connect, collaborate and build their brands, while providing tools and training to accelerate their growth and revenue.',
+        'Join the largest community of Creators who are creating their own businesses from their audiences, learn how to produce their knowledge, manage your company and attract investment to carry out your biggest projects. In addition to having access to exclusive benefits!',
       buttonHref: '/community',
     },
     {
@@ -51,7 +51,7 @@ export default function Carrousel(props: CarrouselProps) {
       ),
       description:
         'More than offering short-term benefits to the audience, at Cobogo it is possible to share the success of a Creator, offering part of your revenue or even a share in the company to your followers and investors, in exchange for enough capital to make your projects more viable. ambitious.',
-      buttonHref: 'https://cobogo.social/',
+      buttonHref: 'https://forms.gle/XTB2e3VDUZVDsvRn7/',
     },
   ]
 
