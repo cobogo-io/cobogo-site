@@ -44,7 +44,7 @@ export default function Main() {
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.25, duration: 1 }}
-                  className="leading-[30px] lg:leading-[60px] text-[22px] lg:text-[45px] font-bold"
+                  className="leading-[45px] lg:leading-[60px] text-[30px] lg:text-[45px] font-bold"
                 >
                   {t('Have a share')} <br /> {t('in the sucess of')} <br />{' '}
                   {t('your favorite Creator')}
@@ -106,6 +106,47 @@ export default function Main() {
                 alt="Home main cube"
               />
             </motion.div>
+          </div>
+
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 lg:items-center justify-between">
+            <div className="flex flex-col gap-12">
+              <div className="flex flex-col gap-6">
+                <motion.h2
+                  initial={{ y: 100, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 1, duration: 1 }}
+                  className="leading-[45px] lg:leading-[70px] text-[30px] lg:text-[40px] max-w-[450px]w"
+                >
+                  {t('Find the best Creator project to invest in')}
+                </motion.h2>
+
+                <motion.p
+                  initial={{ y: 100, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 1.25, duration: 1 }}
+                  className="text-sm lg:text-base max-w-[450px]"
+                >
+                  {t(
+                    'The crowdfunding platform where creators are seen as entrepreneurs and their brands and projects, as a new class of assets to invest in.'
+                  )}
+                </motion.p>
+              </div>
+
+              <Link href="https://forms.gle/XTB2e3VDUZVDsvRn7/" target="_blank">
+                <Button
+                  text={t('be a part of it!')}
+                  borderColor="border-blue-social"
+                />
+              </Link>
+            </div>
+
+            <Image
+              src="/images/profile-cards-image.svg"
+              width={550}
+              height={550}
+              alt="Profile cards image"
+              className="hidden lg:flex"
+            />
           </div>
 
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 lg:items-center justify-between">
