@@ -67,9 +67,12 @@ export default function Main() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.75, duration: 1 }}
               >
-                <Link href="https://cobogo.social/" target="_blank">
+                <Link
+                  href="https://forms.gle/XTB2e3VDUZVDsvRn7/"
+                  target="_blank"
+                >
                   <Button
-                    text={t('start crowdfunding')}
+                    text={t('fill out form')}
                     borderColor="border-blue-social"
                   />
                 </Link>
@@ -128,7 +131,7 @@ export default function Main() {
               className="leading-[32px] lg:leading-[40px] text-[20px] lg:text-[24px] max-w-[450px]"
             >
               {t(
-                'At Cobogo, it is not only possible to become a partner in the brands and projects of great Creators through crowdfunding, but it is also where Creators prepare to create great companies, accessing the training and tools necessary in their journey.'
+                'At Cobogo it is possible to become a partner of the brands and projects of Creators and receive collective funding through its audience. Actively participate in the growth and success of promising Creators and access an enabling environment and tools to boost your business.'
               )}
             </motion.p>
           </div>
