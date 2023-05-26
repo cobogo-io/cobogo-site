@@ -12,21 +12,11 @@ export default function Header() {
 
   const languages = [
     {
-      id:
-        asPath === '/'
-          ? '/en'
-          : asPath.includes('community')
-          ? '/en/community'
-          : '/en/launchpad',
+      id: asPath.includes('community') ? '/en/community' : '/en',
       name: 'English',
     },
     {
-      id:
-        asPath === '/'
-          ? '/pt'
-          : asPath.includes('community')
-          ? '/pt/community'
-          : '/pt/launchpad',
+      id: asPath.includes('community') ? '/pt/community' : '/pt',
       name: 'Português',
     },
   ]
