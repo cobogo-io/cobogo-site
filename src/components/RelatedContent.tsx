@@ -51,7 +51,7 @@ export default function RelatedContent() {
                   className="lg:text-[22px] leading-[26px] lg:leading-[32px] w-full max-w-[660px]"
                 >
                   {t(
-                    'Discover the secrets of the Creator Economy, read exclusive articles about the Creator Economy, and master strategies to boost your career as a content creator.'
+                    'Discover the secrets of the Creator Economy, read exclusive articles and dominate the market.'
                   )}
                 </motion.p>
               </div>
@@ -101,7 +101,7 @@ export default function RelatedContent() {
 
               <Link
                 className="flex flex-col gap-8 mx-7 lg:mx-0"
-                href="https://www.linkedin.com/pulse/onde-mundo-est%25C3%25A3o-os-investidores-da-creator-economy-cobogopt/?trackingId=dWzmonGiRTqsTdngJ%2F%2FO4A%3D%3D"
+                href="https://www.linkedin.com/pulse/crowdfunding-e-o-futuro-da-creator-economy-cobogopt/"
                 target="_blank"
               >
                 <div className="w-[340px] h-[215px] rounded-[15px] bg-related-content-text-gradient flex items-center justify-center">
@@ -113,9 +113,7 @@ export default function RelatedContent() {
                 </div>
 
                 <strong className="text-[22px] w-[340px]">
-                  {t(
-                    'Where in the world are the investors of the Creator Economy?'
-                  )}
+                  {t('Crowdfunding and the Future of the Creator Economy')}
                 </strong>
               </Link>
             </motion.div>

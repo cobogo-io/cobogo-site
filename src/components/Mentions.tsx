@@ -40,7 +40,7 @@ export default function Mentions() {
                 transition={{ delay: 0.25, duration: 1 }}
                 className="text-[30px] lg:text-[40px] text-transparent bg-clip-text bg-mentions-text-gradient"
               >
-                {t('Cobogo on the news')}
+                {t('All eyes on me')}
               </motion.h2>
             </div>
 
