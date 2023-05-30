@@ -19,6 +19,14 @@ export default function CommunityContent() {
   const section3RefIsInView = useInView(section3Ref, { once: true })
   const section4Ref = useRef(null)
   const section4RefIsInView = useInView(section4Ref, { once: true })
+  const launchpad1Ref = useRef(null)
+  const launchpad1RefIsInView = useInView(launchpad1Ref, { once: true })
+  const launchpad2Ref = useRef(null)
+  const launchpad2RefIsInView = useInView(launchpad2Ref, { once: true })
+  const launchpad3Ref = useRef(null)
+  const launchpad3RefIsInView = useInView(launchpad3Ref, { once: true })
+  const launchpad4Ref = useRef(null)
+  const launchpad4RefIsInView = useInView(launchpad4Ref, { once: true })
   const membersRef = useRef(null)
   const membersRefIsInView = useInView(membersRef, { once: true })
   const jacuzziRef = useRef(null)
@@ -53,7 +61,7 @@ export default function CommunityContent() {
       </div>
 
       {section1RefIsInView && (
-        <div className="absolute left-0 w-full bottom-[3050px] z-10 hidden lg:flex items-center justify-center">
+        <div className="absolute left-0 w-full bottom-[4720px] z-10 hidden lg:flex items-center justify-center">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -336,9 +344,160 @@ export default function CommunityContent() {
             <div className="h-1/2 w-full bg-gradient-to-t from-white to-white/0 absolute bottom-0" />
           </div>
 
+          <div className="w-full flex items-center justify-center py-14 px-7">
+            <div ref={launchpad1Ref} />
+
+            <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-7 lg:gap-0">
+              {launchpad1RefIsInView && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.25, duration: 1 }}
+                >
+                  <Image
+                    src="/images/cobogo-launchpad-cube.svg"
+                    width={333}
+                    height={368}
+                    alt="Community peoples"
+                  />
+                </motion.div>
+              )}
+
+              {launchpad1RefIsInView && (
+                <div className="flex flex-col max-w-[320px] lg:max-w-[375px] w-full gap-7">
+                  <motion.h2
+                    initial={{ y: 100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.25, duration: 1 }}
+                    className="text-[24px] lg:text-[28px] font-bold drop-shadow-[3px_3px_0px_#00000047]"
+                  >
+                    {t('See how the Cobogo Challenge went')}
+                  </motion.h2>
+
+                  <motion.p
+                    initial={{ y: 100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 1 }}
+                    className="text-[20px] leading-[32px]"
+                  >
+                    {t(
+                      'The first acceleration program in the creators of the Cobogo Community.'
+                    )}
+                  </motion.p>
+                </div>
+              )}
+            </div>
+          </div>
+
+          <div className="w-full relative">
+            <div className="bg-pink-launchpad w-full flex items-center justify-center py-14 px-7">
+              <div ref={launchpad2Ref} />
+
+              <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-7 lg:gap-0">
+                {launchpad2RefIsInView && (
+                  <div className="flex flex-col max-w-[320px] lg:max-w-[375px] w-full gap-7">
+                    <motion.h2
+                      initial={{ y: 100, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 0.25, duration: 1 }}
+                      className="text-[24px] lg:text-[28px] font-bold drop-shadow-[3px_3px_0px_#00000047] text-black"
+                    >
+                      {t('+350 Creators inscritos')}
+                    </motion.h2>
+
+                    <motion.p
+                      initial={{ y: 100, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 0.5, duration: 1 }}
+                      className="text-[20px] leading-[32px] text-black"
+                    >
+                      {t(
+                        'Tivemos a participação de grandes Creators da comunidade no Desafio Cobogo aprendendo sobre empreendedorismos, técnicas de startups e captação de investimentos.'
+                      )}
+                    </motion.p>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <div className="w-full flex items-center justify-center py-14 px-7 relative">
+              <div ref={launchpad3Ref} />
+
+              <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-7 lg:gap-0 relative z-10">
+                {launchpad3RefIsInView && (
+                  <div className="flex flex-col max-w-[320px] lg:max-w-[375px] w-full gap-7">
+                    <motion.h2
+                      initial={{ y: 100, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 0.25, duration: 1 }}
+                      className="text-[24px] lg:text-[28px] font-bold drop-shadow-[3px_3px_0px_#00000047]"
+                    >
+                      {t('A journey of transformation')}
+                    </motion.h2>
+
+                    <motion.p
+                      initial={{ y: 100, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 0.5, duration: 1 }}
+                      className="text-[20px] leading-[32px]"
+                    >
+                      {t(
+                        'Tivemos a participação de grandes Creators da comunidade no Desafio Cobogo aprendendo sobre empreendedorismos, técnicas de startups e captação de investimentos.'
+                      )}
+                    </motion.p>
+                  </div>
+                )}
+
+                {launchpad3RefIsInView && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.25, duration: 1 }}
+                  >
+                    <Image
+                      src="/images/cobogo-launchpad-cube.svg"
+                      width={333}
+                      height={368}
+                      alt="Community peoples"
+                    />
+                  </motion.div>
+                )}
+              </div>
+            </div>
+
+            <div className="bg-pink-launchpad w-full flex items-center justify-center py-14 px-7">
+              <div ref={launchpad4Ref} />
+
+              <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-7 lg:gap-0">
+                {launchpad4RefIsInView && (
+                  <div className="flex flex-col max-w-[320px] lg:max-w-[375px] w-full gap-7">
+                    <motion.h2
+                      initial={{ y: 100, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 0.25, duration: 1 }}
+                      className="text-[24px] lg:text-[28px] font-bold drop-shadow-[3px_3px_0px_#00000047] text-black"
+                    >
+                      {t('Community that supports itself')}
+                    </motion.h2>
+
+                    <motion.p
+                      initial={{ y: 100, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 0.5, duration: 1 }}
+                      className="text-[20px] leading-[32px] text-black"
+                    >
+                      {t(
+                        'Tivemos a participação de grandes Creators da comunidade no Desafio Cobogo aprendendo sobre empreendedorismos, técnicas de startups e captação de investimentos.'
+                      )}
+                    </motion.p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
           <div className="w-full flex items-center justify-center py-32 px-7">
             <div ref={membersRef} />
-
             <div className="w-full max-w-[1110px] flex flex-col items-center justify-center min-h-[108px] lg:min-h-[240px]">
               {membersRefIsInView && (
                 <motion.div
