@@ -47,8 +47,10 @@ export default function Newsletter() {
                   Creator Economy Research
                 </h2>
 
-                <p className="text-lg text-gray-4">
-                  {t('Stay on top of the best insights from the Creator Economy')}
+                <p className="text-lg text-gray-3">
+                  {t(
+                    'Stay on top of the best insights from the Creator Economy.'
+                  )}
                 </p>
               </div>
 

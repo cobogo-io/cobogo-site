@@ -11,7 +11,7 @@ export default function RelatedContent() {
   const relatedContentRefIsInView = useInView(relatedContentRef, { once: true })
 
   return (
-    <section className="flex items-center justify-center w-full pt-16 pb-16 lg:pt-32 relative min-h-[599px]">
+    <section className="flex items-center justify-center w-full pt-16 pb-16 lg:pt-32 relative min-h-[541px]">
       {relatedContentRefIsInView && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -70,7 +70,7 @@ export default function RelatedContent() {
               >
                 <div className="w-[340px] h-[215px] rounded-[15px] bg-related-content-text-gradient flex items-center justify-center">
                   <img
-                    src="/images/article-1.png"
+                    src="/images/article-1-image.png"
                     className="w-full h-full rounded-[15px] p-[2px] object-cover"
                     alt="Article thumbnail"
                   />
@@ -88,7 +88,7 @@ export default function RelatedContent() {
               >
                 <div className="w-[340px] h-[215px] rounded-[15px] bg-related-content-text-gradient flex items-center justify-center">
                   <img
-                    src="/images/article-2.png"
+                    src="/images/article-2-image.png"
                     className="w-full h-full rounded-[15px] p-[2px] object-cover"
                     alt="Article thumbnail"
                   />
@@ -106,7 +106,7 @@ export default function RelatedContent() {
               >
                 <div className="w-[340px] h-[215px] rounded-[15px] bg-related-content-text-gradient flex items-center justify-center">
                   <img
-                    src="/images/article-3.png"
+                    src="/images/article-3-image.png"
                     className="w-full h-full rounded-[15px] p-[2px] object-cover"
                     alt="Article thumbnail"
                   />

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useRef } from 'react'
-import Button from './Button'
+import Button from '../Button'
 
 export default function Main() {
   const { t } = useTranslation('common')
@@ -15,7 +15,7 @@ export default function Main() {
   const mainRefIsInView = useInView(mainRef, { once: true })
 
   return (
-    <section className="flex items-center justify-center w-full py-32 relative px-7 min-h-[892px]">
+    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative px-7 min-h-[474px]">
       <div className="absolute top-0 right-0 hidden lg:flex">
         <Image
           src="/images/home-main-background.svg"
@@ -36,7 +36,7 @@ export default function Main() {
       <div ref={mainRef} />
 
       {mainRefIsInView && (
-        <div className="w-full max-w-[1110px] flex flex-col gap-24 lg:gap-52 relative z-10">
+        <div className="w-full max-w-[1110px] flex flex-col relative z-10">
           <div className="flex flex-col lg:flex-row gap-16 lg:gap-0 justify-between lg:items-center">
             <div className="flex flex-col gap-6 lg:gap-12">
               <div className="flex flex-col gap-3 lg:gap-6">
@@ -44,7 +44,7 @@ export default function Main() {
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.25, duration: 1 }}
-                  className="leading-[45px] lg:leading-[60px] text-[30px] lg:text-[45px] font-bold"
+                  className="leading-[45px] lg:leading-[60px] text-4xl lg:text-[45px] font-bold"
                 >
                   {t('Have a share')} <br /> {t('in the sucess of')} <br />{' '}
                   {t('your favorite Creator')}
@@ -106,75 +106,6 @@ export default function Main() {
                 alt="Home main cube"
               />
             </motion.div>
-          </div>
-
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 lg:items-center justify-between">
-            <motion.h2
-              initial={{ y: 100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.75, duration: 1 }}
-              className={`leading-[45px] lg:leading-[70px] text-[30px] lg:text-[40px] ${
-                locale === 'pt'
-                  ? 'bg-related-content-text-gradient-pt'
-                  : 'bg-related-content-text-gradient-en'
-              } bg-clip-text text-transparent`}
-            >
-              {t('Creators are becoming')} <br />
-              {t('brands and now everyone')} <br />
-              {t('can participate in it!')}
-            </motion.h2>
-
-            <motion.p
-              initial={{ y: 100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 1, duration: 1 }}
-              className="leading-[32px] lg:leading-[40px] text-[20px] lg:text-[24px] max-w-[450px]"
-            >
-              {t(
-                'At Cobogo it is possible to become a partner of the brands and projects of Creators and receive collective funding through its audience. Actively participate in the growth and success of promising Creators and access an enabling environment and tools to boost your business.'
-              )}
-            </motion.p>
-          </div>
-
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 lg:items-center justify-between">
-            <div className="flex flex-col gap-12">
-              <div className="flex flex-col gap-6">
-                <motion.h2
-                  initial={{ y: 100, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 1, duration: 1 }}
-                  className="leading-[45px] lg:leading-[70px] text-[30px] lg:text-[40px] max-w-[450px]w"
-                >
-                  {t('Find the best Creator project to invest in')}
-                </motion.h2>
-
-                <motion.p
-                  initial={{ y: 100, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 1.25, duration: 1 }}
-                  className="text-sm lg:text-base max-w-[450px]"
-                >
-                  {t(
-                    'The crowdfunding platform where creators are seen as entrepreneurs and their brands and projects, as a new class of assets to invest in.'
-                  )}
-                </motion.p>
-              </div>
-
-              <Link href="https://forms.gle/XTB2e3VDUZVDsvRn7/" target="_blank">
-                <Button
-                  text={t('subscribe now')}
-                  borderColor="border-blue-social"
-                />
-              </Link>
-            </div>
-
-            <Image
-              src="/images/profile-cards-image.svg"
-              width={550}
-              height={550}
-              alt="Profile cards image"
-              className="hidden lg:flex"
-            />
           </div>
         </div>
       )}

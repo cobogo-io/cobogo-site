@@ -63,7 +63,7 @@ export default function LaunchpadContent() {
             className="w-full max-w-[1110px]"
           >
             <Image
-              src="/images/launchpad-hero.svg"
+              src="/images/launchpad-hero-image.svg"
               width={494}
               height={1056}
               alt="Launchpad hero"

@@ -11,7 +11,7 @@ export default function Mentions() {
   const mentionsRefIsInView = useInView(mentionsRef, { once: true })
 
   return (
-    <section className="flex items-center justify-center w-full pt-16 pb-16 lg:pb-32 relative min-h-[540px]">
+    <section className="flex items-center justify-center w-full pt-16 pb-16 lg:pb-32 relative min-h-[532px]">
       {mentionsRefIsInView && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -57,7 +57,7 @@ export default function Mentions() {
               >
                 <div className="w-[340px] h-[215px] rounded-[15px] bg-mentions-text-gradient flex items-center justify-center relative">
                   <Image
-                    src="/images/mention-1.png"
+                    src="/images/mention-1-image.png"
                     fill
                     alt="Mention 1"
                     className="rounded-[15px] overflow-hidden p-[2px] object-cover"
@@ -85,7 +85,7 @@ export default function Mentions() {
               >
                 <div className="w-[340px] h-[215px] rounded-[15px] bg-mentions-text-gradient flex items-center justify-center relative">
                   <Image
-                    src="/images/mention-2.png"
+                    src="/images/mention-2-image.png"
                     fill
                     alt="Mention 2"
                     className="rounded-[15px] overflow-hidden p-[2px] object-cover"
@@ -113,7 +113,7 @@ export default function Mentions() {
               >
                 <div className="w-[340px] h-[215px] rounded-[15px] bg-mentions-text-gradient flex items-center justify-center relative">
                   <Image
-                    src="/images/mention-3.jpg"
+                    src="/images/mention-3-image.jpg"
                     fill
                     alt="Mention 3"
                     className="rounded-[15px] overflow-hidden p-[2px] object-cover"

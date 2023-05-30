@@ -11,7 +11,7 @@ export default function ProductiveDealFlow(props: ProductiveDealFlowProps) {
     <div className="scale-50 lg:scale-100 absolute top-4 lg:top-8 left-1/2 -translate-x-1/2 z-10">
       <div className="absolute top-0 right-0">
         <Image
-          src="/images/home-productive-deal-flow.svg"
+          src="/images/home-productive-deal-flow-image.svg"
           width={153}
           height={158}
           alt="Home productive deal flow"

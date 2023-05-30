@@ -1,5 +1,5 @@
-import LaunchpadContent from '@/components/LaunchpadContent'
-import LaunchpadMain from '@/components/LaunchpadMain'
+import LaunchpadContent from '@/components/launchpad/LaunchpadContent'
+import LaunchpadMain from '@/components/launchpad/LaunchpadMain'
 import { GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 

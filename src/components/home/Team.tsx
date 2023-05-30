@@ -11,7 +11,7 @@ export default function Team() {
   const teamRefIsInView = useInView(teamRef, { once: true })
 
   return (
-    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative min-h-[437px]">
+    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative min-h-[580px]">
       {teamRefIsInView && (
         <motion.div
           initial={{ opacity: 0 }}

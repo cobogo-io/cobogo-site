@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Dispatch, SetStateAction, useRef } from 'react'
-import Button from './Button'
+import Button from '../Button'
 import ProductiveDealFlow from './ProductiveDealFlow'
 
 interface CarrouselProps {

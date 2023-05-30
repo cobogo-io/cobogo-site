@@ -28,29 +28,11 @@ module.exports = {
         'pink-3': '#FEE1FF',
         'blue-social': '#00B9E9',
         blue: '#9FE8FF',
-        'blue-2': '#DDFFFF',
         gray: '#1C1C1C',
         'gray-2': '#111111',
-        'gray-3': '#1D1D1D',
-        'gray-4': '#999999',
+        'gray-3': '#999999',
       },
       backgroundImage: {
-        'home-carrousel-social-background':
-          "url('/images/home-carrousel-social-background.svg')",
-        'home-carrousel-social-background-mobile':
-          "url('/images/home-carrousel-social-background-mobile.svg')",
-        'home-carrousel-community-background':
-          "url('/images/home-carrousel-community-background.svg')",
-        'home-carrousel-community-background-mobile':
-          "url('/images/home-carrousel-community-background-mobile.svg')",
-        'home-carrousel-launchpad-background':
-          "url('/images/home-carrousel-launchpad-background.svg')",
-        'home-carrousel-launchpad-background-mobile':
-          "url('/images/home-carrousel-launchpad-background-mobile.svg')",
-        'home-carrousel-social-background':
-          "url('/images/home-carrousel-social-background.svg')",
-        'launchpad-main-background':
-          "url('/images/launchpad-main-background.svg')",
         'related-content-text-gradient':
           'linear-gradient(92.91deg, #EFE750 -4%, #BA68C8 18%, #00B9E9 38%);',
         'related-content-text-gradient-en':

@@ -44,11 +44,11 @@ export default function Profile(props: ProfileProps) {
       <div className="flex flex-col gap-2">
         <strong className="text-[22px] w-[230px]">{props.name}</strong>
 
-        <p className="text-[22px] w-[230px] text-gray-4">{props.position}</p>
+        <p className="text-[22px] w-[230px] text-gray-3">{props.position}</p>
 
-        <p className="w-[230px] text-gray-4">{t(props.titleForDescription)}</p>
+        <p className="w-[230px] text-gray-3">{t(props.titleForDescription)}</p>
 
-        <p className="w-[230px] text-gray-4">{t(props.description)}</p>
+        <p className="w-[230px] text-gray-3">{t(props.description)}</p>
       </div>
     </div>
   )
