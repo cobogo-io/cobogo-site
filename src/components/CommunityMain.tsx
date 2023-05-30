@@ -39,8 +39,10 @@ export default function CommunityMain() {
                     transition={{ delay: 0.25, duration: 1 }}
                     className="text-[36px] lg:text-[48px] font-extrabold lg:leading-[68px]"
                   >
-                    {t('A game changer')} <br />
-                    <span className="text-yellow">{t('community')}</span>
+                    Hey Creator, <br />
+                    <span className="text-yellow">
+                      {t('your journey begins here!')}
+                    </span>
                   </motion.h1>
 
                   <motion.p
@@ -50,7 +52,7 @@ export default function CommunityMain() {
                     className="text-[24px] lg:text-[20px] lg:leading-[32px]"
                   >
                     {t(
-                      'Formed by Creators, investors and enthusiasts of the Creator Economy boosting market knowledge, research and development to find the next early stage Creators to be invested.'
+                      'Join the largest community of Creators who are creating their own businesses from their audiences, learn how to produce their knowledge, manage your company and attract investment to carry out your biggest projects. In addition to having access to exclusive benefits!'
                     )}
                   </motion.p>
                 </div>

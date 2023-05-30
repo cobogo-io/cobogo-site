@@ -72,8 +72,8 @@ export default function CommunityContent() {
 
       <div className="flex items-center justify-center w-full pt-16 lg:pt-32 lg:px-0 relative">
         <div className="w-full flex flex-col items-end relative">
-          <div className="flex flex-col w-full gap-14 lg:gap-20">
-            <div className="bg-yellow w-full flex items-center justify-center py-32 px-7 clip-path-polygon-[0_0,_100%_10%,_100%_100%,_0_90%]">
+          <div className="flex flex-col w-full gap-14">
+            <div className="bg-yellow w-full flex items-center justify-center py-14 px-7 clip-path-polygon-[0_0,_100%_10%,_100%_100%,_0_90%]">
               <div ref={section1Ref} />
 
               <div className="w-full max-w-[1110px] flex items-center justify-center lg:justify-end min-h-[230px]">
@@ -85,7 +85,7 @@ export default function CommunityContent() {
                       transition={{ delay: 0.25, duration: 1 }}
                       className="text-[24px] lg:text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]"
                     >
-                      {t('Research')}
+                      {t('Benefits')}
                     </motion.h2>
 
                     <motion.p
@@ -95,7 +95,7 @@ export default function CommunityContent() {
                       className="text-[20px] leading-[32px] text-black"
                     >
                       {t(
-                        'The community counts with an investment analysis specialized team capable of generating reports on Creators Economy trends and the future of Creators as investment assets.'
+                        'Members of the Cobogo community will have access to a range of perks offered by Cobogo`s partner companies, from discounted tools to access to events for Creators.'
                       )}
                     </motion.p>
                   </motion.div>
@@ -115,7 +115,7 @@ export default function CommunityContent() {
                       transition={{ delay: 0.25, duration: 1 }}
                       className="text-[24px] lg:text-[28px] font-bold drop-shadow-[3px_3px_0px_#00000047]"
                     >
-                      {t('Creators Valuation')}
+                      {t('Training')}
                     </motion.h2>
 
                     <motion.p
@@ -125,7 +125,7 @@ export default function CommunityContent() {
                       className="text-[20px] leading-[32px]"
                     >
                       {t(
-                        'One of the greatest values ​​created by the community will be the ability to assess and valuate Creators for the first time in the world. This will be the most important point for defining Creators valorization potential and will create a new universal relevance metric for Creators.'
+                        'Stay ahead of the market and participate in acceleration programs specially designed for creators who want to reinvent themselves and become industry leaders, Creators 3.0. Connect with other creators who are following the same path and establish a valuable network of contacts within the community.'
                       )}
                     </motion.p>
                   </div>
@@ -133,7 +133,7 @@ export default function CommunityContent() {
               </div>
             </div>
 
-            <div className="bg-yellow-2 w-full flex items-center justify-center py-32 px-7 clip-path-polygon-[0_10%,_100%_0,_100%_100%,_0_100%]">
+            <div className="bg-yellow-2 w-full flex items-center justify-center py-14 px-7 clip-path-polygon-[0_10%,_100%_0,_100%_100%,_0_100%]">
               <div ref={section3Ref} />
 
               <div className="w-full max-w-[1110px] flex items-center justify-center lg:justify-end min-h-[230px]">
@@ -145,7 +145,7 @@ export default function CommunityContent() {
                       transition={{ delay: 0.25, duration: 1 }}
                       className="text-[24px] lg:text-[28px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]"
                     >
-                      {t('Creators Selection')}
+                      {t('Early Access')}
                     </motion.h2>
 
                     <motion.p
@@ -155,7 +155,7 @@ export default function CommunityContent() {
                       className="text-[20px] leading-[32px] text-black"
                     >
                       {t(
-                        `Community members will be responsible for discovering, discussing and proposing the next Creators to be invested by our Pioneer Fund, Cobogo's Creator focused investment fund.`
+                        `Get the unique opportunity to invest in innovative ideas before they're even widely publicized, getting early access to Cobogo platform's crowdfunding campaigns, along with exclusive discounts on offers.`
                       )}
                     </motion.p>
                   </div>
@@ -204,43 +204,6 @@ export default function CommunityContent() {
                     height={568}
                     alt="Community peoples"
                   />
-                </motion.div>
-              )}
-            </div>
-          </div>
-
-          <div className="w-full flex items-center justify-center py-32 px-7">
-            <div ref={membersRef} />
-
-            <div className="w-full max-w-[1110px] flex flex-col items-center justify-center min-h-[108px] lg:min-h-[240px]">
-              {membersRefIsInView && (
-                <motion.div
-                  initial={{ y: 100, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 0.25, duration: 1 }}
-                  className="lg:bg-white/5 flex flex-col lg:flex-row items-stretch rounded-[15px] overflow-hidden w-full max-w-[860px]"
-                >
-                  <div className="bg-white/5 p-5 lg:p-10 hidden lg:flex items-center justify-center">
-                    <Image
-                      src="/images/cobogo-community-cube.svg"
-                      width={150}
-                      height={150}
-                      alt="Cobogo Community cube"
-                    />
-                  </div>
-
-                  <div className="p-0 lg:p-16 flex flex-col justify-center gap-3 w-full h-full">
-                    <strong className="text-2xl lg:text-3xl leading-8">
-                      {t('Over')}{' '}
-                      <span className="text-yellow-community">650</span>
-                    </strong>
-
-                    <p className="text-lg lg:text-[22px] leading-8">
-                      {t(
-                        'Creators, Investors and Creator Economy professionals getting together.'
-                      )}
-                    </p>
-                  </div>
                 </motion.div>
               )}
             </div>
@@ -371,6 +334,58 @@ export default function CommunityContent() {
             </div>
 
             <div className="h-1/2 w-full bg-gradient-to-t from-white to-white/0 absolute bottom-0" />
+          </div>
+
+          <div className="w-full flex items-center justify-center py-32 px-7">
+            <div ref={membersRef} />
+
+            <div className="w-full max-w-[1110px] flex flex-col items-center justify-center min-h-[108px] lg:min-h-[240px]">
+              {membersRefIsInView && (
+                <motion.div
+                  initial={{ y: 100, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.25, duration: 1 }}
+                  className="lg:bg-white/5 flex flex-col lg:flex-row items-stretch rounded-[15px] overflow-hidden w-full max-w-[860px]"
+                >
+                  <div className="bg-white/5 p-5 lg:p-10 hidden lg:flex items-center justify-center">
+                    <Image
+                      src="/images/cobogo-community-cube.svg"
+                      width={150}
+                      height={150}
+                      alt="Cobogo Community cube"
+                    />
+                  </div>
+
+                  <div className="p-0 lg:p-16 flex flex-col justify-center gap-3 w-full h-full">
+                    <strong className="text-2xl lg:text-3xl leading-8">
+                      {t('We are more than')}{' '}
+                      <span className="text-yellow-community">950</span>
+                    </strong>
+
+                    <p className="text-lg lg:text-[22px] leading-8">
+                      {t(
+                        'Visionary creators, investors, enthusiasts and professionals passionate about the Creator Economy.'
+                      )}
+                    </p>
+
+                    <Link
+                      href={
+                        locale === 'pt'
+                          ? 'https://docs.google.com/forms/d/e/1FAIpQLSdFwCXoiGKWTrgY1FgKYnPMB3ft0Aox7pZ_30tUU4qBJWoctQ/viewform?usp=share_link/'
+                          : 'https://discord.gg/93kBxA5mbT/'
+                      }
+                      className="flex"
+                      target="_blank"
+                    >
+                      <Button
+                        text={t('join community')}
+                        borderColor="border-yellow-community"
+                      />
+                    </Link>
+                  </div>
+                </motion.div>
+              )}
+            </div>
           </div>
         </div>
       </div>
