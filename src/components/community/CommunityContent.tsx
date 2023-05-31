@@ -44,8 +44,8 @@ export default function CommunityContent() {
         >
           <Image
             src="/images/community-hero-image.svg"
-            width={725}
-            height={1312}
+            width={625}
+            height={1212}
             alt="Community hero"
           />
         </motion.div>
