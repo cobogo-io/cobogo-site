@@ -15,7 +15,7 @@ export default function Main() {
   const mainRefIsInView = useInView(mainRef, { once: true })
 
   return (
-    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative px-7 min-h-[474px]">
+    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative px-7 min-h-[730px]">
       <div className="absolute top-0 right-0 hidden lg:flex">
         <Image
           src="/images/home-main-background.svg"
