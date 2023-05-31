@@ -2,9 +2,12 @@ import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { useTranslation } from 'next-i18next'
+import { useRouter } from 'next/router'
 
 export default function ClipPaths() {
   const { t } = useTranslation('common')
+
+  const { locale } = useRouter()
 
   const section1Ref = useRef(null)
   const section1RefIsInView = useInView(section1Ref, { once: true })
@@ -33,7 +36,9 @@ export default function ClipPaths() {
                   width={60}
                   height={60}
                   alt="Cobogo asset 03"
-                  className="absolute top-[-30px] left-[170px] hidden lg:flex"
+                  className={`absolute top-[-30px] ${
+                    locale === 'pt' ? 'left-[170px]' : 'left-[140px]'
+                  } hidden lg:flex`}
                 />
               </motion.h2>
 
@@ -70,7 +75,9 @@ export default function ClipPaths() {
                   width={100}
                   height={100}
                   alt="Cobogo asset 01"
-                  className="absolute top-[-60px] left-[190px] hidden lg:flex"
+                  className={`absolute top-[-60px] ${
+                    locale === 'pt' ? 'left-[190px]' : 'left-[120px]'
+                  } hidden lg:flex`}
                 />
               </motion.h2>
 
@@ -107,7 +114,9 @@ export default function ClipPaths() {
                   width={100}
                   height={100}
                   alt="Cobogo asset 02"
-                  className="absolute top-[-60px] left-[310px] hidden lg:flex"
+                  className={`absolute top-[-60px] ${
+                    locale === '/pt' ? 'left-[310px]' : 'left-[210px]'
+                  } hidden lg:flex`}
                 />
               </motion.h2>
 
