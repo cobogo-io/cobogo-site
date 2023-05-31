@@ -15,7 +15,7 @@ export default function Members() {
   const membersRefIsInView = useInView(membersRef, { once: true })
 
   return (
-    <div className="w-full flex items-center justify-center py-32 px-7">
+    <div className="w-full flex items-center justify-center py-16 lg:py-32 px-7">
       <div ref={membersRef} />
 
       <div className="w-full max-w-[1110px] flex flex-col items-center justify-center min-h-[202px] lg:min-h-[320px]">

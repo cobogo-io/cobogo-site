@@ -2,7 +2,6 @@ import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { useRef } from 'react'
 import Button from '../Button'
 
@@ -15,7 +14,7 @@ export default function CreatorExplorer() {
   })
 
   return (
-    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative px-7 min-h-[404px]">
+    <section className="flex items-center justify-center w-full py-16 lg:py-32 relative px-7 min-h-[404px] bg-gray">
       <div ref={creatorExplorerRef} />
 
       {creatorExplorerRefIsInView && (

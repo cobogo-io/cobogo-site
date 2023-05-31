@@ -6,6 +6,7 @@ import Jacuzzi from './Jacuzzi'
 import Launchpad from './Launchpad'
 import Members from './Members'
 import { motion } from 'framer-motion'
+import Testimonials from '../Testimonials'
 
 export default function CommunityContent() {
   return (
@@ -59,6 +60,8 @@ export default function CommunityContent() {
           <Jacuzzi />
 
           <Launchpad />
+
+          <Testimonials />
 
           <Members />
         </div>

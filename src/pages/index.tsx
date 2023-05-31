@@ -1,3 +1,4 @@
+import Testimonials from '@/components/Testimonials'
 import Brands from '@/components/home/Brands'
 import Carrousel from '@/components/home/Carrousel'
 import CreatorExplorer from '@/components/home/CreatorExplorer'
@@ -25,6 +26,8 @@ export default function Home() {
         selectedProduct={selectedProduct}
         setSelectedProduct={setSelectedProduct}
       />
+
+      <Testimonials />
 
       <Team />
 
