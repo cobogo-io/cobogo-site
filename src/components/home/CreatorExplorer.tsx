@@ -19,7 +19,7 @@ export default function CreatorExplorer() {
 
       {creatorExplorerRefIsInView && (
         <div className="w-full max-w-[1110px] flex flex-col relative z-10">
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 lg:items-center justify-between">
+          <div className="flex flex-col lg:flex-row gap-12 lg:items-center justify-between">
             <div className="flex flex-col gap-12">
               <div className="flex flex-col gap-6">
                 <motion.h2
@@ -53,8 +53,8 @@ export default function CreatorExplorer() {
 
             <Image
               src="/images/profile-cards-image.svg"
-              width={550}
-              height={550}
+              width={650}
+              height={650}
               alt="Profile cards image"
               className="hidden lg:flex"
             />

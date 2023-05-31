@@ -17,7 +17,7 @@ export default function Brands() {
 
       {brandsRefIsInView && (
         <div className="w-full max-w-[1110px] flex flex-col relative z-10">
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 lg:items-center justify-between">
+          <div className="flex flex-col lg:flex-row gap-12 lg:items-center justify-between">
             <motion.h2
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -40,7 +40,7 @@ export default function Brands() {
               className="leading-[32px] lg:leading-[40px] text-[20px] lg:text-[24px] max-w-[450px]"
             >
               {t(
-                'At Cobogo it is possible to become a partner of the brands and projects of Creators and receive collective funding through its audience. Actively participate in the growth and success of promising Creators and access an enabling environment and tools to boost your business.'
+                'Actively participate in the growth and success of promising Creators and access an enabling environment and tools to boost your business.'
               )}
             </motion.p>
           </div>

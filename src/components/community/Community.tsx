@@ -40,7 +40,7 @@ export default function Community() {
 
               <p className="text-[20px] leading-[32px] text-black">
                 <h2 className="text-[20px] lg:text-[24px] text-black font-bold drop-shadow-[3px_3px_0px_#00000047]">
-                  +950
+                  +650
                 </h2>
 
                 {t(

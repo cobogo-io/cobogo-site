@@ -1,10 +1,10 @@
-import Link from 'next/link'
-import Button from '../Button'
-import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
 import { useTranslation } from 'next-i18next'
+import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useRef } from 'react'
+import Button from '../Button'
 
 export default function Members() {
   const { t } = useTranslation('common')
@@ -41,7 +41,7 @@ export default function Members() {
                 <span className="text-yellow-community">950</span>
               </strong>
 
-              <p className="text-lg lg:text-[22px] leading-8">
+              <p className="text-lg lg:text-[20px] leading-8">
                 {t(
                   'Visionary creators, investors, enthusiasts and professionals passionate about the Creator Economy.'
                 )}

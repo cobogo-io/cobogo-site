@@ -1,10 +1,9 @@
 import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'next-i18next'
-import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useRef } from 'react'
 import Button from './Button'
-import { useRouter } from 'next/router'
 import Testimonial from './Testimonial'
 
 export default function Testimonials() {
@@ -78,37 +77,37 @@ export default function Testimonials() {
               <Testimonial
                 text="Cobogo is helping me take the next step in my career and become a Creator 3.0. Building and strengthening my personal brand to monetize with my audience. I’m thrilled with this partnership."
                 imgSrc="/images/raul-profile-image.png"
-                name="Raul"
+                name="Raul - Photography Creator"
               />
 
               <Testimonial
                 text="You guys are helping me both to learn how to be a better creator and the mindset on how to think and act as entrepreneur."
                 imgSrc="/images/nenesk-profile-image.png"
-                name="Nenesk"
+                name="Nenesk - Gaming Creator"
               />
 
               <Testimonial
                 text="The Cobogo community made me see that it is possible to transform our creative potential into a sustainable business model."
                 imgSrc="/images/gabriela-profile-image.png"
-                name="Gabriela"
+                name="Gabriela - Finance Creator"
               />
 
               <Testimonial
                 text="Congratulations on this startup that will be a super unicorn! And all the content you’re bringing... I’m rewatching all the classes and developing along... It’s great! Dense content that is triggering new insights, I’m listening for the second time and alongside the process!"
                 imgSrc="/images/nina-profile-image.png"
-                name="Nina"
+                name="Nina - Model Creator"
               />
 
               <Testimonial
                 text="I just to say that you have already become an essential part of my routine, and I want to thank everyone for this initiative!"
                 imgSrc="/images/wesley-profile-image.png"
-                name="Wesley"
+                name="Wesley - Web3 Creator"
               />
 
               <Testimonial
                 text="I really enjoying participating, the idea of ​​creating a community with the intention of knowledge exchange and future investments is very good! I’m also loving the Cobogo challenge, it has given me many new ideas and opened my mind, I only have praise and gratitude for this community."
                 imgSrc="/images/josy-profile-image.png"
-                name="Josy"
+                name="Josy - Beauty Creator"
               />
             </motion.div>
           </div>
