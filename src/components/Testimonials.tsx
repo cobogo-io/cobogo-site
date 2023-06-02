@@ -27,7 +27,7 @@ export default function Testimonials() {
 
       <div ref={testimonialsRef} />
 
-      <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-7 lg:gap-0 min-h-[600px]">
+      <div className="w-full max-w-[1110px] flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-7 lg:gap-0 min-h-[600px] relative z-10">
         {testimonialsRefIsInView && (
           <div className="flex flex-col max-w-[320px] lg:max-w-[375px] w-full gap-7">
             <motion.h2
