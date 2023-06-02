@@ -46,7 +46,8 @@ export default function Carrousel(props: CarrouselProps) {
       subtitle: (
         <h1 className="font-bold text-[27px] lg:text-[35px] leading-[37px] lg:leading-[45px]">
           {t('The platform where')}
-          <br /> <span className="text-blue">{t('make dreams come true')}</span>
+          <br />{' '}
+          <span className="text-blue">{t("Creators' dreams come true")}</span>
         </h1>
       ),
       description:
